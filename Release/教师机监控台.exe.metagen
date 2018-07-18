@@ -1,0 +1,83 @@
+  教师机监控台.Login.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.lookStuCom.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.mainWnd.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.ScreenCapture.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.TodayTrial.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.元件伏安特性测试.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.元件伏安特性监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.成绩查询.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.数据接收控制.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.查看学生正在做的实验.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly 教师机监控台, Version=0.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class 教师机监控台.Login: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Boolean*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean* S : Public
+Class 教师机监控台.元件伏安特性监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    This_Load(ST_元件伏安特性测试* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    chart线性Init(): PrivateScope, Public, HideBySig
+    chart白炽Init(): PrivateScope, Public, HideBySig
+    chart锗管Init(): PrivateScope, Public, HideBySig
+    chart硅管Init(): PrivateScope, Public, HideBySig
+    chart稳压Init(): PrivateScope, Public, HideBySig
+    Loadchart线性(): PrivateScope, Public, HideBySig
+    Loadchart白炽(): PrivateScope, Public, HideBySig
+    Loadchart锗管(): PrivateScope, Public, HideBySig
+    Loadchart硅管(): PrivateScope, Public, HideBySig
+    Loadchart稳压(): PrivateScope, Public, HideBySig
+Class 教师机监控台.查看学生正在做的实验: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(UInt32*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32* s : Public
+  Methods:
+    Open元件伏安特性监控(): PrivateScope, Public, HideBySig
+Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class 教师机监控台.成绩查询: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Threading.Mutex mutex : Public
+Class 教师机监控台.mainWnd: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class 教师机监控台.ScreenCapture: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(UInt32*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    UInt32* s : Public
+Class 教师机监控台.数据接收控制: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class 教师机监控台.元件伏安特性测试: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load元件伏安特性测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.TodayTrial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

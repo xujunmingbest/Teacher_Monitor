@@ -1,0 +1,10 @@
+﻿  成绩查询.cpp
+成绩查询.cpp(11): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(76): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(78): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(111): warning C4018: “<”: 有符号/无符号不匹配
+  libsocket.lib(libsocket.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+  正在生成代码
+  已完成代码的生成
+  教师机监控台.vcxproj -> E:\clr中腾\教师机监控台\Release\教师机监控台.exe
+  教师机监控台.vcxproj -> E:\clr中腾\教师机监控台\Release\教师机监控台.pdb (Full PDB)

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="查看学生电脑">
+      <UniqueIdentifier>{c788d55c-0b65-4920-a0a6-2303d33f3c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩接收">
+      <UniqueIdentifier>{d18a3459-180c-4c0a-9042-c55e1825487c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询">
+      <UniqueIdentifier>{b25f9dc1-516a-4b3f-b936-71b75ad75741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\元件伏安特性测试">
+      <UniqueIdentifier>{6cc6e486-258e-4bde-9e59-10c782e7078b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="长连接">
+      <UniqueIdentifier>{e4725d8f-e5aa-4545-b8a4-6f8aa6979adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="查看学生电脑\学生正在做的实验">
+      <UniqueIdentifier>{083e47c5-886f-438f-8ff6-47128b5c61a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="查看学生电脑\成绩监控">
+      <UniqueIdentifier>{1bfc1158-ce86-4048-88f0-9a53040077f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="今天做的实验">
+      <UniqueIdentifier>{ed0d588b-0ee8-4952-821b-efa1c5090a0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Login.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mainWnd.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="lookStuCom.h">
+      <Filter>查看学生电脑</Filter>
+    </ClInclude>
+    <ClInclude Include="tool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\c++\libsocket\libsocket\libsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="成绩接收.h">
+      <Filter>成绩接收</Filter>
+    </ClInclude>
+    <ClInclude Include="数据接收控制.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\c++\libfilesql\libfilesql\libfilesql.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\电工电路试验台\电工电路试验台\tool\gradeSubmit.h">
+      <Filter>成绩接收</Filter>
+    </ClInclude>
+    <ClInclude Include="成绩查询.h">
+      <Filter>成绩查询</Filter>
+    </ClInclude>
+    <ClInclude Include="元件伏安特性测试.h">
+      <Filter>成绩查询\元件伏安特性测试</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCapture.h">
+      <Filter>查看学生电脑</Filter>
+    </ClInclude>
+    <ClInclude Include="LongConnectServ.h">
+      <Filter>长连接</Filter>
+    </ClInclude>
+    <ClInclude Include="查看学生正在做的实验.h">
+      <Filter>查看学生电脑</Filter>
+    </ClInclude>
+    <ClInclude Include="元件伏安特性监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="monitorTrial.h">
+      <Filter>查看学生电脑\成绩监控</Filter>
+    </ClInclude>
+    <ClInclude Include="监控实验汇总.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="TodayTrial.h">
+      <Filter>今天做的实验</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mainWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lookStuCom.cpp">
+      <Filter>查看学生电脑</Filter>
+    </ClCompile>
+    <ClCompile Include="tool.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="成绩接收.cpp">
+      <Filter>成绩接收</Filter>
+    </ClCompile>
+    <ClCompile Include="成绩查询.cpp">
+      <Filter>成绩查询</Filter>
+    </ClCompile>
+    <ClCompile Include="元件伏安特性测试.cpp">
+      <Filter>成绩查询\元件伏安特性测试</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCapture.cpp">
+      <Filter>查看学生电脑</Filter>
+    </ClCompile>
+    <ClCompile Include="LongConnectServ.cpp">
+      <Filter>长连接</Filter>
+    </ClCompile>
+    <ClCompile Include="查看学生正在做的实验.cpp">
+      <Filter>查看学生电脑</Filter>
+    </ClCompile>
+    <ClCompile Include="元件伏安特性监控.cpp">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClCompile>
+    <ClCompile Include="monitorTrial.cpp">
+      <Filter>查看学生电脑\成绩监控</Filter>
+    </ClCompile>
+    <ClCompile Include="TodayTrial.cpp">
+      <Filter>今天做的实验</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Login.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lookStuCom.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainWnd.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据接收控制.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="元件伏安特性测试.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="成绩查询.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenCapture.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="元件伏安特性监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查看学生正在做的实验.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
