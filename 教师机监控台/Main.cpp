@@ -7,7 +7,6 @@
 #include "成绩接收.h"
 #include "ScreenCapture.h"
 using namespace 教师机监控台;
-#pragma comment(lib,"E:/c++/libsocket/Release/libsocket.lib")
 
 
 
@@ -17,6 +16,8 @@ using namespace 教师机监控台;
 //int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 void main(){
 	SystemStart();
+	cout << students.size() << endl;
+
 
 	bool l = false;
 	Application::Run(gcnew Login(l));

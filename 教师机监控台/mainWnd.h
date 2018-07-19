@@ -19,6 +19,9 @@ namespace 教师机监控台 {
 		mainWnd(void)
 		{
 			InitializeComponent();
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Font = gcnew System::Drawing::Font("宋体", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel, ((unsigned char)(134)));
+
 			//
 			//TODO:  在此处添加构造函数代码
 			//
@@ -41,7 +44,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel1;
 
 	private: System::Windows::Forms::ToolStripMenuItem^  查询ToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  今天提交的实验ToolStripMenuItem;
+
 
 
 
@@ -62,7 +65,6 @@ namespace 教师机监控台 {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->查看学生电脑ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->查询ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->今天提交的实验ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -72,9 +74,9 @@ namespace 教师机监控台 {
 			this->menuStrip1->AutoSize = false;
 			this->menuStrip1->BackColor = System::Drawing::Color::Silver;
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(40, 40);
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->查看学生电脑ToolStripMenuItem,
-					this->查询ToolStripMenuItem, this->今天提交的实验ToolStripMenuItem
+					this->查询ToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -98,14 +100,6 @@ namespace 教师机监控台 {
 			this->查询ToolStripMenuItem->Size = System::Drawing::Size(181, 75);
 			this->查询ToolStripMenuItem->Text = L"查询历史学生成绩";
 			this->查询ToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWnd::查询ToolStripMenuItem_Click);
-			// 
-			// 今天提交的实验ToolStripMenuItem
-			// 
-			this->今天提交的实验ToolStripMenuItem->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"今天提交的实验ToolStripMenuItem.Image")));
-			this->今天提交的实验ToolStripMenuItem->Name = L"今天提交的实验ToolStripMenuItem";
-			this->今天提交的实验ToolStripMenuItem->Size = System::Drawing::Size(166, 75);
-			this->今天提交的实验ToolStripMenuItem->Text = L"今天提交的实验";
-			this->今天提交的实验ToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWnd::今天提交的实验ToolStripMenuItem_Click);
 			// 
 			// panel1
 			// 

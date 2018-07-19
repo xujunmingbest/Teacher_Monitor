@@ -108,9 +108,10 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>E:/c++/libsocket/Release/libsocket.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -165,9 +166,6 @@
     <ClInclude Include="数据接收控制.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="查看学生正在做的实验.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="监控实验汇总.h" />
   </ItemGroup>
   <ItemGroup>
@@ -198,9 +196,6 @@
     <EmbeddedResource Include="数据接收控制.resx">
       <DependentUpon>数据接收控制.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="查看学生正在做的实验.resx">
-      <DependentUpon>查看学生正在做的实验.h</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LongConnectServ.cpp" />
@@ -215,7 +210,6 @@
     <ClCompile Include="元件伏安特性监控.cpp" />
     <ClCompile Include="成绩接收.cpp" />
     <ClCompile Include="成绩查询.cpp" />
-    <ClCompile Include="查看学生正在做的实验.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,7 +1,6 @@
 #pragma once
 #include "tool.h"
 #include "LongConnectServ.h"
-#include "查看学生正在做的实验.h"
 namespace 教师机监控台 {
 
 	using namespace System;
@@ -21,6 +20,9 @@ namespace 教师机监控台 {
 		{
 			InitializeComponent();
 			CheckForIllegalCrossThreadCalls = false;
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Font = gcnew System::Drawing::Font("宋体", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel, ((unsigned char)(134)));
+
 			//
 			//TODO:  在此处添加构造函数代码
 			//

@@ -23,3 +23,16 @@ void SystemShortDown();
 using namespace System::Windows::Forms;
 using namespace System;
 Form ^GetChildByName(String ^Name);
+
+
+
+struct Students {
+	string Class; //°à¼¶
+	vector<string> fields; //×Ö¶Î
+	vector<vector<string>> stus; //ÐÕÃû
+};
+
+extern vector<Students> students;
+void GetStudents();
+
+bool GetOneFolderFiles(string& Path, vector<string> &FData);

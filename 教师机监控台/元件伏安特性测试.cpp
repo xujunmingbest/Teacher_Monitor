@@ -13,8 +13,14 @@ void 元件伏安特性测试::SaveCorrectGrades() {
 	memcpy(&s, data.c_str(), sizeof(ST_元件伏安特性测试));
 	try {
 		s.ti.totalscore = Convert::ToInt32(labelTotalGrade->Text);
-		if (f.WriteStruct(*fileName, string((char*)&s, sizeof(ST_元件伏安特性测试)))) {
+		s.线性score = Convert::ToUInt32(textBox1->Text);
+		s.白炽score = Convert::ToUInt32(textBox2->Text);
+		s.锗管score = Convert::ToUInt32(textBox3->Text);
+		s.硅管score = Convert::ToUInt32(textBox4->Text);
+		s.稳压score = Convert::ToUInt32(textBox5->Text);
 
+
+		if (f.WriteStruct(*fileName, string((char*)&s, sizeof(ST_元件伏安特性测试)))) {
 
 			MessageBox::Show("成绩保存成功");
 		}
@@ -23,7 +29,7 @@ void 元件伏安特性测试::SaveCorrectGrades() {
 		}
 	}
 	catch (Exception^e) {
-		MessageBox::Show("成绩保存失败");
+		MessageBox::Show("成绩保存失败,有成绩没有打分");
 	}
 }
 
@@ -41,6 +47,13 @@ void 元件伏安特性测试::Load元件伏安特性测试Data(string &filename) {
 	memcpy(&s, data.c_str(), sizeof(ST_元件伏安特性测试));
 
 	/*************加载学生信息************/
+	textBox1->Text = s.线性score.ToString();
+	textBox2->Text = s.白炽score.ToString();
+	textBox3->Text = s.锗管score.ToString();
+	textBox4->Text = s.硅管score.ToString();
+	textBox5->Text = s.稳压score.ToString();
+	labelTotalGrade->Text = s.ti.totalscore.ToString();
+
 	TrialInfo ti = s.ti;
 	labelstuName1->Text = gcnew String(ti.stuName1);
 	labelstuName2->Text = gcnew String(ti.stuName2);

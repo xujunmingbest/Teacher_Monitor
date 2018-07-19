@@ -2,7 +2,6 @@
 
 
 #include "E:/c++/libsocket/libsocket/libsocket.h"
-#pragma comment(lib,"E:/c++/libsocket/Release/libsocket.lib")
 #include "E:/c++/libfilesql/libfilesql/libfilesql.h"
 #pragma comment(lib,"E:/c++/libfilesql/Release/libfilesql.lib")
 

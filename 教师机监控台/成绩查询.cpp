@@ -7,12 +7,22 @@
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
 	comboBox1->Items->Clear();
-	printf( "%d",Grades.size() );
+	comboBox2->Items->Clear();
 	for (int i = 0; i < Grades.size(); i++) {
 		comboBox1->Items->Add(gcnew String(Grades[i+1].c_str()));
 	}
+	for (int i = 0; i < students.size(); i++) {
+		comboBox2->Items->Add(gcnew String(students[i].Class.c_str()));
+	}
 }
 
+void 成绩查询::LoadcomboBox3(int index) {
+	comboBox3->Items->Clear();
+	for (int i = 0; i < students[index].stus.size(); i++) {
+		comboBox3->Items->Add(gcnew String(students[index].stus[i][0].c_str()));
+	}
+
+}
 
 
 void 成绩查询::OpenTrial(string &TrialName) {
@@ -74,30 +84,31 @@ void 成绩查询::GetDataByCondition(vector<string> &files, vector<string> &contiti
 		return;
 	}
 	for (int i = 0; i < filestemp.size(); i++) {
+		bool has = true;
 		string fileName = filestemp[i];
 		for (int j = 0; j < contitions.size(); j++) {
 			string condition = contitions[j];
 			if (fileName.find(condition, 0) == fileName.npos) { //查询不到
+				has = false;
 				break;
 			}
-			files.push_back(fileName);
 		}
+		if(has) files.push_back(fileName);
 	}
 }
 
 void 成绩查询::GetCondition(vector<string> &contitions) {
 	contitions.clear();
-	if (textBox1->Text->Trim() != "") {
-		contitions.push_back(T_to_string(textBox1->Text));
+	if (comboBox3->Text->Trim() != "") {
+		contitions.push_back(T_to_string(comboBox3->Text));
 	}
-	if (textBox2->Text->Trim() != "") {
-		contitions.push_back(T_to_string(textBox2->Text));
+	if (comboBox2->Text->Trim() != "") {
+		contitions.push_back(T_to_string(comboBox2->Text));
 	}
 	if (comboBox1->Text->Trim() != "") {
 		contitions.push_back(T_to_string(comboBox1->Text));
 	}
 	contitions.push_back(T_to_string(dateTimePicker1->Value.ToString("yyyy-MM-dd")));
-	Console::WriteLine( dateTimePicker1->Value.ToString("yyyy-MM-dd") );
 }
 
 static map<string, TrialInfo> ListFiles;
@@ -109,7 +120,6 @@ void 成绩查询::LoadListBox1() {
 	GetDataByCondition(files, contitions);
 	mutex->WaitOne();
 	for (int i = 0; i < files.size(); i++) {
-		//
 		ifstream ifile;
 		ifile.open(files[i], ios::binary);
 		if (!ifile) continue;
@@ -126,6 +136,7 @@ void 成绩查询::LoadListBox1() {
 	listView1->Items->Clear();
 	int i = 0;
 	map<string, TrialInfo>::iterator it;
+	listView1->ListViewItemSorter = nullptr;
 	for (it = ListFiles.begin(); it != ListFiles.end(); it++, i++) {
 		TrialInfo ti = it->second;
 		listView1->Items->Add(gcnew String(ti.Class));
@@ -148,3 +159,5 @@ void 成绩查询::LoadListBox1() {
 	listView1->EndUpdate();
 	mutex->ReleaseMutex();
 }
+
+

@@ -4,7 +4,6 @@
 #include  <vector>
 using namespace std;
 
-#pragma comment(lib,"E:/c++/libsocket/Release/libsocket.lib")
 
 //¶ÓÁĞ»¥³âËø
 class QueueMutex {

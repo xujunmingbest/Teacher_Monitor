@@ -424,21 +424,21 @@ private: System::Windows::Forms::Button^  button1;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea7 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea6 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea8 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea9 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea10 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend10 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series10 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea3 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea4 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea5 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(元件伏安特性测试::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->groupBox线性 = (gcnew System::Windows::Forms::GroupBox());
@@ -511,6 +511,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->label29 = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->groupBox稳压 = (gcnew System::Windows::Forms::GroupBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label45 = (gcnew System::Windows::Forms::Label());
@@ -767,7 +768,6 @@ private: System::Windows::Forms::Button^  button1;
 			this->label18 = (gcnew System::Windows::Forms::Label());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->groupBox线性->SuspendLayout();
 			this->groupBox7->SuspendLayout();
@@ -1155,16 +1155,16 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// chart线性
 			// 
-			chartArea7->Name = L"ChartArea1";
-			this->chart线性->ChartAreas->Add(chartArea7);
-			legend7->Name = L"Legend1";
-			this->chart线性->Legends->Add(legend7);
+			chartArea1->Name = L"ChartArea1";
+			this->chart线性->ChartAreas->Add(chartArea1);
+			legend1->Name = L"Legend1";
+			this->chart线性->Legends->Add(legend1);
 			this->chart线性->Location = System::Drawing::Point(12, 231);
 			this->chart线性->Name = L"chart线性";
-			series7->ChartArea = L"ChartArea1";
-			series7->Legend = L"Legend1";
-			series7->Name = L"Series1";
-			this->chart线性->Series->Add(series7);
+			series1->ChartArea = L"ChartArea1";
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			this->chart线性->Series->Add(series1);
 			this->chart线性->Size = System::Drawing::Size(570, 300);
 			this->chart线性->TabIndex = 92;
 			this->chart线性->Text = L"chart线性";
@@ -1619,6 +1619,16 @@ private: System::Windows::Forms::Button^  button1;
 			this->groupBox稳压->Text = L"测定稳压二极管的伏安特性";
 			this->groupBox稳压->Enter += gcnew System::EventHandler(this, &元件伏安特性测试::groupBox6_Enter);
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(1170, 594);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(146, 37);
+			this->button1->TabIndex = 207;
+			this->button1->Text = L"保存学生成绩";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &元件伏安特性测试::button1_Click_1);
+			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(1403, 594);
@@ -1692,16 +1702,16 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// chart稳压
 			// 
-			chartArea6->Name = L"ChartArea1";
-			this->chart稳压->ChartAreas->Add(chartArea6);
-			legend6->Name = L"Legend1";
-			this->chart稳压->Legends->Add(legend6);
+			chartArea2->Name = L"ChartArea1";
+			this->chart稳压->ChartAreas->Add(chartArea2);
+			legend2->Name = L"Legend1";
+			this->chart稳压->Legends->Add(legend2);
 			this->chart稳压->Location = System::Drawing::Point(15, 219);
 			this->chart稳压->Name = L"chart稳压";
-			series6->ChartArea = L"ChartArea1";
-			series6->Legend = L"Legend1";
-			series6->Name = L"Series1";
-			this->chart稳压->Series->Add(series6);
+			series2->ChartArea = L"ChartArea1";
+			series2->Legend = L"Legend1";
+			series2->Name = L"Series1";
+			this->chart稳压->Series->Add(series2);
 			this->chart稳压->Size = System::Drawing::Size(570, 300);
 			this->chart稳压->TabIndex = 167;
 			this->chart稳压->Text = L"chart";
@@ -2404,16 +2414,16 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// chart硅管
 			// 
-			chartArea8->Name = L"ChartArea1";
-			this->chart硅管->ChartAreas->Add(chartArea8);
-			legend8->Name = L"Legend1";
-			this->chart硅管->Legends->Add(legend8);
+			chartArea3->Name = L"ChartArea1";
+			this->chart硅管->ChartAreas->Add(chartArea3);
+			legend3->Name = L"Legend1";
+			this->chart硅管->Legends->Add(legend3);
 			this->chart硅管->Location = System::Drawing::Point(12, 225);
 			this->chart硅管->Name = L"chart硅管";
-			series8->ChartArea = L"ChartArea1";
-			series8->Legend = L"Legend1";
-			series8->Name = L"Series1";
-			this->chart硅管->Series->Add(series8);
+			series3->ChartArea = L"ChartArea1";
+			series3->Legend = L"Legend1";
+			series3->Name = L"Series1";
+			this->chart硅管->Series->Add(series3);
 			this->chart硅管->Size = System::Drawing::Size(570, 300);
 			this->chart硅管->TabIndex = 163;
 			this->chart硅管->Text = L"chart硅管";
@@ -3115,16 +3125,16 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// chart锗管
 			// 
-			chartArea9->Name = L"ChartArea1";
-			this->chart锗管->ChartAreas->Add(chartArea9);
-			legend9->Name = L"Legend1";
-			this->chart锗管->Legends->Add(legend9);
+			chartArea4->Name = L"ChartArea1";
+			this->chart锗管->ChartAreas->Add(chartArea4);
+			legend4->Name = L"Legend1";
+			this->chart锗管->Legends->Add(legend4);
 			this->chart锗管->Location = System::Drawing::Point(15, 227);
 			this->chart锗管->Name = L"chart锗管";
-			series9->ChartArea = L"ChartArea1";
-			series9->Legend = L"Legend1";
-			series9->Name = L"Series1";
-			this->chart锗管->Series->Add(series9);
+			series4->ChartArea = L"ChartArea1";
+			series4->Legend = L"Legend1";
+			series4->Name = L"Series1";
+			this->chart锗管->Series->Add(series4);
 			this->chart锗管->Size = System::Drawing::Size(570, 300);
 			this->chart锗管->TabIndex = 143;
 			this->chart锗管->Text = L"chart锗管";
@@ -3799,16 +3809,16 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// chart白炽
 			// 
-			chartArea10->Name = L"ChartArea1";
-			this->chart白炽->ChartAreas->Add(chartArea10);
-			legend10->Name = L"Legend1";
-			this->chart白炽->Legends->Add(legend10);
+			chartArea5->Name = L"ChartArea1";
+			this->chart白炽->ChartAreas->Add(chartArea5);
+			legend5->Name = L"Legend1";
+			this->chart白炽->Legends->Add(legend5);
 			this->chart白炽->Location = System::Drawing::Point(15, 219);
 			this->chart白炽->Name = L"chart白炽";
-			series10->ChartArea = L"ChartArea1";
-			series10->Legend = L"Legend1";
-			series10->Name = L"Series1";
-			this->chart白炽->Series->Add(series10);
+			series5->ChartArea = L"ChartArea1";
+			series5->Legend = L"Legend1";
+			series5->Name = L"Series1";
+			this->chart白炽->Series->Add(series5);
 			this->chart白炽->Size = System::Drawing::Size(570, 300);
 			this->chart白炽->TabIndex = 113;
 			this->chart白炽->Text = L"chart白炽";
@@ -4153,16 +4163,6 @@ private: System::Windows::Forms::Button^  button1;
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(1170, 594);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(146, 37);
-			this->button1->TabIndex = 207;
-			this->button1->Text = L"保存学生成绩";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &元件伏安特性测试::button1_Click_1);
-			// 
 			// 元件伏安特性测试
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -4170,6 +4170,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->ClientSize = System::Drawing::Size(1767, 732);
 			this->Controls->Add(this->panel1);
 			this->Name = L"元件伏安特性测试";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"元件伏安特性测试";
 			this->Load += gcnew System::EventHandler(this, &元件伏安特性测试::元件伏安特性测试_Load);
 			this->Click += gcnew System::EventHandler(this, &元件伏安特性测试::元件伏安特性测试_Click);

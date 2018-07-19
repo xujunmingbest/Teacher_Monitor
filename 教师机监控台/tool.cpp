@@ -88,13 +88,71 @@ bool QueueMutex::Create(string &QueueName) {
 
 	void SystemStart() {
 		Directory::CreateDirectory(gcnew String(GRADESAVEPATH));
+		Directory::CreateDirectory(gcnew String(STUINFOCSV));
 		LanMutex.Create(string("Lan"));
 		grs.open();
 		lcs.Open();
 		cm.Create(string("LongConnectServ"));
 		mt.Open();
+		GetStudents();
 	}
+
+	vector<Students> students;
+
+	void GetStudents() {
+		students.clear();
+		vector<string> FData;
+		GetOneFolderFiles(string(STUINFOCSV), FData);
+		for (int i = 0; i < FData.size(); i++) {
+			CSVdata cd;
+			cd.FileName = FData[i];
+			CSVLoad cl;
+			cl.Read(cd);
+			Students sts;
+			sts.fields = cd.Fields;
+			sts.Class = cd.Class;
+			sts.stus = cd.Rows;
+			students.push_back(sts);
+		}
+
+		for (int i = 0; i < students.size(); i++) {
+			cout << students[i].Class.c_str() << endl;
+		}
+	}
+
 	void SystemShortDown();
 
+
+
+	bool GetOneFolderFiles(string& Path, vector<string> &FData)
+	{
+		FData.clear();
+		WIN32_FIND_DATA FindData;
+		HANDLE hError;
+		hError = FindFirstFile((Path + "/*.*").c_str(), &FindData);
+		if (hError == INVALID_HANDLE_VALUE)
+		{
+			printf("搜索失败!");
+			return false;
+		}
+		while (::FindNextFile(hError, &FindData))
+		{
+			// 过虑.和..
+			if (memcmp(FindData.cFileName, ".", 1) == 0
+				|| memcmp(FindData.cFileName, "..", 2) == 0)
+			{  //
+				continue;
+			}
+			// 构造完整路径
+			if (FindData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{//判断是否文件夹
+				continue;
+			}
+			// 输出本级的文件
+			string Char = Path + FindData.cFileName;
+			FData.push_back(Char);
+		}
+		return true;
+	}
 
 

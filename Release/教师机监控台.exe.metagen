@@ -7,7 +7,6 @@
   教师机监控台.元件伏安特性监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.成绩查询.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.数据接收控制.resources - Embedded, ContainedInManifestFile, 
-  教师机监控台.查看学生正在做的实验.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly 教师机监控台, Version=0.0.*, Culture=固定语言(固定国家/地区): 
 	hash=SHA1, flags=PublicKey
@@ -45,13 +44,6 @@ Class 教师机监控台.元件伏安特性监控: AutoLayout, AnsiClass, Class,
     Loadchart锗管(): PrivateScope, Public, HideBySig
     Loadchart硅管(): PrivateScope, Public, HideBySig
     Loadchart稳压(): PrivateScope, Public, HideBySig
-Class 教师机监控台.查看学生正在做的实验: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
-  :System.Windows.Forms.Form
-    Void .ctor(UInt32*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Fields:
-    UInt32* s : Public
-  Methods:
-    Open元件伏安特性监控(): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -60,6 +52,13 @@ Class 教师机监控台.成绩查询: AutoLayout, AnsiClass, Class, Public, Bef
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Fields:
     System.Threading.Mutex mutex : Public
+Class 教师机监控台.成绩查询+ListViewSort: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IComparer
+  Methods:
+    Compare(Object, Object): PrivateScope, Public, Virtual, HideBySig
 Class 教师机监控台.mainWnd: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

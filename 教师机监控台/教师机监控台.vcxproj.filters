@@ -78,9 +78,6 @@
     <ClInclude Include="LongConnectServ.h">
       <Filter>长连接</Filter>
     </ClInclude>
-    <ClInclude Include="查看学生正在做的实验.h">
-      <Filter>查看学生电脑</Filter>
-    </ClInclude>
     <ClInclude Include="元件伏安特性监控.h">
       <Filter>查看学生电脑\学生正在做的实验</Filter>
     </ClInclude>
@@ -122,9 +119,6 @@
     <ClCompile Include="LongConnectServ.cpp">
       <Filter>长连接</Filter>
     </ClCompile>
-    <ClCompile Include="查看学生正在做的实验.cpp">
-      <Filter>查看学生电脑</Filter>
-    </ClCompile>
     <ClCompile Include="元件伏安特性监控.cpp">
       <Filter>查看学生电脑\学生正在做的实验</Filter>
     </ClCompile>
@@ -161,6 +155,9 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="查看学生正在做的实验.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TodayTrial.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

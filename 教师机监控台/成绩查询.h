@@ -20,12 +20,15 @@ namespace 教师机监控台 {
 		成绩查询()
 		{
 			InitializeComponent();
+			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Font = gcnew System::Drawing::Font("宋体", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel, ((unsigned char)(134)));
+
 			//
 			//TODO:  在此处添加构造函数代码
 			//
 		}
 		Mutex ^ mutex = gcnew Mutex;
-	private: System::Windows::Forms::TextBox^  textBox2;
+
 	private: System::Windows::Forms::ListView^  listView1;
 	private: System::Windows::Forms::ColumnHeader^  columnHeader1;
 	private: System::Windows::Forms::ColumnHeader^  columnHeader2;
@@ -37,6 +40,10 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::DateTimePicker^  dateTimePicker1;
+	private: System::Windows::Forms::ComboBox^  comboBox3;
+	private: System::Windows::Forms::ComboBox^  comboBox2;
+
+
 
 	public:
 	private: System::Windows::Forms::Label^  label4;
@@ -55,7 +62,7 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::ComboBox^  comboBox1;
-	private: System::Windows::Forms::TextBox^  textBox1;
+
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label1;
@@ -80,14 +87,15 @@ namespace 教师机监控台 {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(成绩查询::typeid));
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->comboBox3 = (gcnew System::Windows::Forms::ComboBox());
+			this->comboBox2 = (gcnew System::Windows::Forms::ComboBox());
+			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->statusStrip1 = (gcnew System::Windows::Forms::StatusStrip());
 			this->toolStripStatusLabel1 = (gcnew System::Windows::Forms::ToolStripStatusLabel());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
@@ -99,7 +107,6 @@ namespace 教师机监控台 {
 			this->columnHeader5 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader6 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->columnHeader7 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->dateTimePicker1 = (gcnew System::Windows::Forms::DateTimePicker());
 			this->panel1->SuspendLayout();
 			this->statusStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -107,14 +114,14 @@ namespace 教师机监控台 {
 			// panel1
 			// 
 			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel1->Controls->Add(this->comboBox3);
+			this->panel1->Controls->Add(this->comboBox2);
 			this->panel1->Controls->Add(this->dateTimePicker1);
 			this->panel1->Controls->Add(this->label5);
-			this->panel1->Controls->Add(this->textBox2);
 			this->panel1->Controls->Add(this->label4);
 			this->panel1->Controls->Add(this->statusStrip1);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->comboBox1);
-			this->panel1->Controls->Add(this->textBox1);
 			this->panel1->Controls->Add(this->label3);
 			this->panel1->Controls->Add(this->label2);
 			this->panel1->Controls->Add(this->label1);
@@ -125,31 +132,56 @@ namespace 教师机监控台 {
 			this->panel1->TabIndex = 0;
 			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &成绩查询::panel1_Paint);
 			// 
+			// comboBox3
+			// 
+			this->comboBox3->AutoCompleteMode = System::Windows::Forms::AutoCompleteMode::Suggest;
+			this->comboBox3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->comboBox3->FormattingEnabled = true;
+			this->comboBox3->Location = System::Drawing::Point(27, 355);
+			this->comboBox3->Name = L"comboBox3";
+			this->comboBox3->Size = System::Drawing::Size(327, 28);
+			this->comboBox3->TabIndex = 13;
+			// 
+			// comboBox2
+			// 
+			this->comboBox2->AutoCompleteMode = System::Windows::Forms::AutoCompleteMode::Suggest;
+			this->comboBox2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->comboBox2->FormattingEnabled = true;
+			this->comboBox2->Location = System::Drawing::Point(27, 251);
+			this->comboBox2->Name = L"comboBox2";
+			this->comboBox2->Size = System::Drawing::Size(327, 28);
+			this->comboBox2->TabIndex = 12;
+			this->comboBox2->SelectedIndexChanged += gcnew System::EventHandler(this, &成绩查询::comboBox2_SelectedIndexChanged);
+			// 
+			// dateTimePicker1
+			// 
+			this->dateTimePicker1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->dateTimePicker1->Location = System::Drawing::Point(27, 141);
+			this->dateTimePicker1->Name = L"dateTimePicker1";
+			this->dateTimePicker1->Size = System::Drawing::Size(328, 30);
+			this->dateTimePicker1->TabIndex = 11;
+			// 
 			// label5
 			// 
 			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label5->Location = System::Drawing::Point(20, 124);
+			this->label5->Location = System::Drawing::Point(27, 99);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(327, 39);
 			this->label5->TabIndex = 10;
 			this->label5->Text = L"查询日期";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(20, 258);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(326, 25);
-			this->textBox2->TabIndex = 9;
-			// 
 			// label4
 			// 
 			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label4->Location = System::Drawing::Point(20, 215);
+			this->label4->Location = System::Drawing::Point(27, 190);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(327, 39);
 			this->label4->TabIndex = 8;
@@ -179,7 +211,7 @@ namespace 教师机监控台 {
 				static_cast<System::Byte>(134)));
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button1->Location = System::Drawing::Point(129, 538);
+			this->button1->Location = System::Drawing::Point(136, 531);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(123, 53);
 			this->button1->TabIndex = 6;
@@ -191,26 +223,21 @@ namespace 教师机监控台 {
 			// comboBox1
 			// 
 			this->comboBox1->AutoCompleteMode = System::Windows::Forms::AutoCompleteMode::Suggest;
+			this->comboBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
 			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(20, 470);
+			this->comboBox1->Location = System::Drawing::Point(27, 463);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(327, 23);
+			this->comboBox1->Size = System::Drawing::Size(327, 28);
 			this->comboBox1->TabIndex = 5;
 			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &成绩查询::comboBox1_SelectedIndexChanged);
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(20, 370);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(326, 25);
-			this->textBox1->TabIndex = 3;
 			// 
 			// label3
 			// 
 			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label3->Location = System::Drawing::Point(20, 419);
+			this->label3->Location = System::Drawing::Point(27, 409);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(327, 39);
 			this->label3->TabIndex = 2;
@@ -222,7 +249,7 @@ namespace 教师机监控台 {
 			this->label2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label2->Location = System::Drawing::Point(20, 328);
+			this->label2->Location = System::Drawing::Point(27, 303);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(327, 39);
 			this->label2->TabIndex = 1;
@@ -234,7 +261,7 @@ namespace 教师机监控台 {
 			this->label1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label1->Font = (gcnew System::Drawing::Font(L"宋体", 13.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label1->Location = System::Drawing::Point(3, 47);
+			this->label1->Location = System::Drawing::Point(10, 22);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(345, 39);
 			this->label1->TabIndex = 0;
@@ -257,6 +284,7 @@ namespace 教师机监控台 {
 			this->listView1->TabIndex = 1;
 			this->listView1->UseCompatibleStateImageBehavior = false;
 			this->listView1->View = System::Windows::Forms::View::Details;
+			this->listView1->ColumnClick += gcnew System::Windows::Forms::ColumnClickEventHandler(this, &成绩查询::listView1_ColumnClick);
 			this->listView1->SelectedIndexChanged += gcnew System::EventHandler(this, &成绩查询::listView1_SelectedIndexChanged);
 			this->listView1->DoubleClick += gcnew System::EventHandler(this, &成绩查询::listView1_DoubleClick);
 			// 
@@ -292,13 +320,6 @@ namespace 教师机监控台 {
 			// columnHeader7
 			// 
 			this->columnHeader7->Text = L"状态";
-			// 
-			// dateTimePicker1
-			// 
-			this->dateTimePicker1->Location = System::Drawing::Point(92, 175);
-			this->dateTimePicker1->Name = L"dateTimePicker1";
-			this->dateTimePicker1->Size = System::Drawing::Size(188, 25);
-			this->dateTimePicker1->TabIndex = 11;
 			// 
 			// 成绩查询
 			// 
@@ -341,7 +362,12 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, Sy
 		 void GetDataByCondition(vector<string> &files, vector<string> &contitions);
 
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-	LoadListBox1();
+	try {
+		LoadListBox1();
+	}
+	catch (Exception ^e) {
+		Console::WriteLine(e->Message);
+	}
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
@@ -357,5 +383,47 @@ private: System::Void listView1_DoubleClick(System::Object^  sender, System::Eve
 	}
 }
 
+
+		 void LoadcomboBox3(int index);
+private: System::Void comboBox2_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	if (comboBox2->SelectedIndex >= 0) {
+		LoadcomboBox3(comboBox2->SelectedIndex);
+	}
+}
+
+		 public :ref class ListViewSort :IComparer
+		 {
+		 private :int col;
+		 private: bool descK;
+		 public: ListViewSort()
+			 {
+				 col = 0;
+			 }
+		 public: ListViewSort(int column, bool Desc)
+			 {
+				 descK = Desc;
+				 col = column; //当前列,0,1,2...,参数由ListView控件的ColumnClick事件传递 
+			 }
+		 public: int Compare(Object^ x, Object^ y) override
+			 {
+				 int tempInt = String::Compare(((ListViewItem^)x)->SubItems[col]->Text, ((ListViewItem^)y)->SubItems[col]->Text);
+				 if (descK) return -tempInt;
+				 else return tempInt;
+			 }
+		 };
+
+private: System::Void listView1_ColumnClick(System::Object^  sender, System::Windows::Forms::ColumnClickEventArgs^  e) {
+	static bool sortType = true;
+	try {
+		if (e->Column >= 0 ) {
+			sortType = !sortType;
+			this->listView1->ListViewItemSorter = gcnew ListViewSort(e->Column, sortType);
+			this->listView1->Sort();//对列表进行自定义排序  
+		}
+	}
+	catch (Exception ^e) {
+		Console::WriteLine(e->Message);
+	}
+}
 };
 }

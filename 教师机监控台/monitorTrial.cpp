@@ -1,7 +1,6 @@
 #include "monitorTrial.h"
 #include "E:/clr中腾/电工电路试验台/电工电路试验台/Long_connection_control.h"
 #include <stdio.h>
-#include "查看学生正在做的实验.h"
 #include <iostream>
 using namespace std;
 using namespace 教师机监控台;
