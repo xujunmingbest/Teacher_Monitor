@@ -375,7 +375,8 @@ private: System::Windows::Forms::Label^  label28;
 
 
 private: System::Windows::Forms::Label^  label43;
-private: System::Windows::Forms::Label^  label215;
+private: System::Windows::Forms::Label^  labelTrialName;
+
 private: System::Windows::Forms::Label^  label42;
 private: System::Windows::Forms::Label^  label35;
 private: System::Windows::Forms::TextBox^  textBoxteacher;
@@ -455,7 +456,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->label30 = (gcnew System::Windows::Forms::Label());
 			this->label28 = (gcnew System::Windows::Forms::Label());
 			this->label43 = (gcnew System::Windows::Forms::Label());
-			this->label215 = (gcnew System::Windows::Forms::Label());
+			this->labelTrialName = (gcnew System::Windows::Forms::Label());
 			this->label42 = (gcnew System::Windows::Forms::Label());
 			this->label35 = (gcnew System::Windows::Forms::Label());
 			this->textBoxteacher = (gcnew System::Windows::Forms::TextBox());
@@ -800,7 +801,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel1->Location = System::Drawing::Point(0, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1767, 732);
+			this->panel1->Size = System::Drawing::Size(1135, 732);
 			this->panel1->TabIndex = 0;
 			this->panel1->Click += gcnew System::EventHandler(this, &元件伏安特性测试::panel1_Click);
 			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &元件伏安特性测试::panel1_Paint);
@@ -830,7 +831,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->groupBox7->Controls->Add(this->label30);
 			this->groupBox7->Controls->Add(this->label28);
 			this->groupBox7->Controls->Add(this->label43);
-			this->groupBox7->Controls->Add(this->label215);
+			this->groupBox7->Controls->Add(this->labelTrialName);
 			this->groupBox7->Controls->Add(this->label42);
 			this->groupBox7->Controls->Add(this->label35);
 			this->groupBox7->Controls->Add(this->textBoxteacher);
@@ -848,6 +849,7 @@ private: System::Windows::Forms::Button^  button1;
 			this->groupBox7->TabIndex = 195;
 			this->groupBox7->TabStop = false;
 			this->groupBox7->Text = L"学生基础信息";
+			this->groupBox7->Enter += gcnew System::EventHandler(this, &元件伏安特性测试::groupBox7_Enter);
 			// 
 			// labellab
 			// 
@@ -966,15 +968,15 @@ private: System::Windows::Forms::Button^  button1;
 			this->label43->TabIndex = 183;
 			this->label43->Text = L"实验室";
 			// 
-			// label215
+			// labelTrialName
 			// 
-			this->label215->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label215->Location = System::Drawing::Point(133, 26);
-			this->label215->Name = L"label215";
-			this->label215->Size = System::Drawing::Size(290, 23);
-			this->label215->TabIndex = 191;
-			this->label215->Text = L"元件伏安特性的测试";
-			this->label215->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->labelTrialName->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrialName->Location = System::Drawing::Point(133, 26);
+			this->labelTrialName->Name = L"labelTrialName";
+			this->labelTrialName->Size = System::Drawing::Size(290, 23);
+			this->labelTrialName->TabIndex = 191;
+			this->labelTrialName->Text = L"元件伏安特性的测试";
+			this->labelTrialName->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label42
 			// 
@@ -4167,7 +4169,7 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1767, 732);
+			this->ClientSize = System::Drawing::Size(1135, 732);
 			this->Controls->Add(this->panel1);
 			this->Name = L"元件伏安特性测试";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
@@ -4300,7 +4302,6 @@ private: System::Void 元件伏安特性测试_Load(System::Object^  sender, System::Eve
 }
 private: System::Void 元件伏安特性测试_Click(System::Object^  sender, System::EventArgs^  e) {
 	Control ^c = (Control^)sender;
-	MessageBox::Show(c->Name);
 }
 		
 private: System::Void groupBox线性_Enter(System::Object^  sender, System::EventArgs^  e) {
@@ -4310,6 +4311,8 @@ private: System::Void groupBox线性_Enter(System::Object^  sender, System::EventA
 private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs^  e) {
 	//保存学生成绩
 	SaveCorrectGrades();
+}
+private: System::Void groupBox7_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

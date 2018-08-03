@@ -2,9 +2,21 @@
 #include "E:/c++/libsocket/libsocket/libsocket.h"
 #include "E:/clr中腾/电工电路试验台/电工电路试验台/Long_connection_control.h"
 #include  <vector>
+
 using namespace std;
 
 
+struct Students {
+	string Class; //班级
+	vector<string> fields; //字段
+	vector<vector<string>> stus; //姓名
+};
+
+
+extern vector<Students> students;
+
+
+ 
 //队列互斥锁
 class QueueMutex {
 private:
@@ -28,6 +40,11 @@ extern map<string, TrialStatus_s> cominfo;
 class LongConnectServ {
 	CPP_Server cs;  //机台号码
 public:
+	//获取学生信息
+	void GetStudents();
+	static bool IsLoginLegal(TrialInfo &ti);
+
+
 	LongConnectServ();
 	~LongConnectServ();
 	static void Addcominfo(string &computer, TrialStatus_s &cs);
@@ -39,6 +56,8 @@ public:
 	void Close();
 	static void SocketClose(SOCKET s,string &computerId);
 	static void RecvFun(SOCKET s);
+
+	static string GenerateReply(string &replyType, string &Reply);
 
 	bool SendCmdCapture(SOCKET c);  //发送命令 获取客户端屏幕截图
 	bool SendCmdStopTrial(SOCKET c);  //发送命令 获取客户端屏幕截图

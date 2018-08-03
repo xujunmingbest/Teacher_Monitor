@@ -112,6 +112,10 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>E:/c++/libsocket/Release/libsocket.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <HeapReserveSize>10000000</HeapReserveSize>
+      <HeapCommitSize>10000000</HeapCommitSize>
+      <StackReserveSize>10000000</StackReserveSize>
+      <StackCommitSize>10000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -153,17 +157,71 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="tool.h" />
+    <ClInclude Include="VCVS实验.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="VCVS实验监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="一阶电路的响应测试.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="一阶电路的响应测试监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="二端口网络的研究.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="二端口网络的研究监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="二阶动态电路响应的研究.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="二阶动态电路响应的研究监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="元件伏安特性测试.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="元件伏安特性监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="叠加原理.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="叠加原理监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="基尔霍夫定律.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="基尔霍夫定律监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="成绩接收.h" />
     <ClInclude Include="成绩查询.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="戴维南定理.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="戴维南定理监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="数据接收控制.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="最大功率传输条件的测定.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="最大功率传输条件的测定监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="电压源与电流源的等效变换.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="电压源与电流源的等效变换监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="监控实验汇总.h" />
@@ -184,17 +242,71 @@
     <EmbeddedResource Include="TodayTrial.resx">
       <DependentUpon>TodayTrial.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VCVS实验.resx">
+      <DependentUpon>VCVS实验.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCVS实验监控.resx">
+      <DependentUpon>VCVS实验监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="一阶电路的响应测试.resx">
+      <DependentUpon>一阶电路的响应测试.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="一阶电路的响应测试监控.resx">
+      <DependentUpon>一阶电路的响应测试监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二端口网络的研究.resx">
+      <DependentUpon>二端口网络的研究.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二端口网络的研究监控.resx">
+      <DependentUpon>二端口网络的研究监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二阶动态电路响应的研究.resx">
+      <DependentUpon>二阶动态电路响应的研究.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二阶动态电路响应的研究监控.resx">
+      <DependentUpon>二阶动态电路响应的研究监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="元件伏安特性测试.resx">
       <DependentUpon>元件伏安特性测试.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="元件伏安特性监控.resx">
       <DependentUpon>元件伏安特性监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="叠加原理.resx">
+      <DependentUpon>叠加原理.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="叠加原理监控.resx">
+      <DependentUpon>叠加原理监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基尔霍夫定律.resx">
+      <DependentUpon>基尔霍夫定律.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基尔霍夫定律监控.resx">
+      <DependentUpon>基尔霍夫定律监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="成绩查询.resx">
       <DependentUpon>成绩查询.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="戴维南定理.resx">
+      <DependentUpon>戴维南定理.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="戴维南定理监控.resx">
+      <DependentUpon>戴维南定理监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="数据接收控制.resx">
       <DependentUpon>数据接收控制.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="最大功率传输条件的测定.resx">
+      <DependentUpon>最大功率传输条件的测定.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="最大功率传输条件的测定监控.resx">
+      <DependentUpon>最大功率传输条件的测定监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电压源与电流源的等效变换.resx">
+      <DependentUpon>电压源与电流源的等效变换.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电压源与电流源的等效变换监控.resx">
+      <DependentUpon>电压源与电流源的等效变换监控.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -202,14 +314,23 @@
     <ClCompile Include="lookStuCom.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mainWnd.cpp" />
+    <ClCompile Include="monitorLoad.cpp" />
     <ClCompile Include="monitorTrial.cpp" />
     <ClCompile Include="ScreenCapture.cpp" />
     <ClCompile Include="TodayTrial.cpp" />
     <ClCompile Include="tool.cpp" />
+    <ClCompile Include="VCVS实验.cpp" />
+    <ClCompile Include="一阶电路的响应测试.cpp" />
+    <ClCompile Include="二端口网络的研究.cpp" />
+    <ClCompile Include="二阶动态电路响应的研究.cpp" />
     <ClCompile Include="元件伏安特性测试.cpp" />
-    <ClCompile Include="元件伏安特性监控.cpp" />
+    <ClCompile Include="叠加原理.cpp" />
+    <ClCompile Include="基尔霍夫定律.cpp" />
     <ClCompile Include="成绩接收.cpp" />
     <ClCompile Include="成绩查询.cpp" />
+    <ClCompile Include="戴维南定理.cpp" />
+    <ClCompile Include="最大功率传输条件的测定.cpp" />
+    <ClCompile Include="电压源与电流源的等效变换.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

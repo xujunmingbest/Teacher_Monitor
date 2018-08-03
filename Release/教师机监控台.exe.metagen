@@ -3,10 +3,28 @@
   教师机监控台.mainWnd.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.ScreenCapture.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.TodayTrial.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.VCVS实验.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.VCVS实验监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.一阶电路的响应测试.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.一阶电路的响应测试监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.二端口网络的研究.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.二端口网络的研究监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.二阶动态电路响应的研究.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.二阶动态电路响应的研究监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.元件伏安特性测试.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.元件伏安特性监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.叠加原理.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.叠加原理监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.基尔霍夫定律.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.基尔霍夫定律监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.成绩查询.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.戴维南定理.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.戴维南定理监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.数据接收控制.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.最大功率传输条件的测定.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.最大功率传输条件的测定监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.电压源与电流源的等效变换.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.电压源与电流源的等效变换监控.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly 教师机监控台, Version=0.0.*, Culture=固定语言(固定国家/地区): 
 	hash=SHA1, flags=PublicKey
@@ -44,6 +62,51 @@ Class 教师机监控台.元件伏安特性监控: AutoLayout, AnsiClass, Class,
     Loadchart锗管(): PrivateScope, Public, HideBySig
     Loadchart硅管(): PrivateScope, Public, HideBySig
     Loadchart稳压(): PrivateScope, Public, HideBySig
+Class 教师机监控台.基尔霍夫定律监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_基尔霍夫定律* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.叠加原理监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_叠加原理* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.戴维南定理监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_戴维南定理* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.电压源与电流源的等效变换监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_电压源与电流源的等效变换* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.一阶电路的响应测试监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_一阶电路的响应测试* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.二阶动态电路响应的研究监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_二阶动态电路响应的研究* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.VCVS实验监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_VCVS实验* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.二端口网络的研究监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_二端口网络的研究* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.最大功率传输条件的测定监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_最大功率传输条件的测定* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -80,3 +143,83 @@ Class 教师机监控台.元件伏安特性测试: AutoLayout, AnsiClass, Class,
 Class 教师机监控台.TodayTrial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class 教师机监控台.VCVS实验: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    LoadVCVS实验Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.一阶电路的响应测试: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load一阶电路的响应测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.二端口网络的研究: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load二端口网络的研究Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.二阶动态电路响应的研究: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load一阶电路的响应测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.叠加原理: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    Load叠加原理Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Print(): PrivateScope, Public, HideBySig
+    Priview(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.基尔霍夫定律: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load基尔霍夫定律Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+Class 教师机监控台.戴维南定理: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load戴维南定理Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.电压源与电流源的等效变换: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    Load电压源与电流源的等效变换Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Print(): PrivateScope, Public, HideBySig
+    Priview(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.最大功率传输条件的测定: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load最大功率传输条件的测定Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig

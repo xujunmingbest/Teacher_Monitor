@@ -16,7 +16,7 @@ using namespace 教师机监控台;
 //int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 void main(){
 	SystemStart();
-	cout << students.size() << endl;
+
 
 
 	bool l = false;

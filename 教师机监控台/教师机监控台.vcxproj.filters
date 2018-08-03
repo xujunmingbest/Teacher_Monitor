@@ -37,6 +37,33 @@
     <Filter Include="今天做的实验">
       <UniqueIdentifier>{ed0d588b-0ee8-4952-821b-efa1c5090a0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\基尔霍夫定律">
+      <UniqueIdentifier>{8e34c855-5646-40cd-b5d4-20f926ce54d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\叠加原理">
+      <UniqueIdentifier>{63b7d2e7-a754-488c-ae43-aaeb41367a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\戴维南定理">
+      <UniqueIdentifier>{f6eb9d96-ebcd-4928-a866-08cf8242aeba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\电压源与电流源的等效变换">
+      <UniqueIdentifier>{be5a64ae-8812-4fd9-9d33-1c6e96781445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\一阶电路的响应测试">
+      <UniqueIdentifier>{178a8593-2ac8-4812-b4d8-5eaa71b14859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\二阶动态电路响应的研究">
+      <UniqueIdentifier>{6a160197-2971-482a-9f06-b2cc004c5088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\VCVS实验">
+      <UniqueIdentifier>{bc573bd0-0f2f-4532-bb5c-acf66f97ecd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\二端口网络的研究">
+      <UniqueIdentifier>{ba6d91b7-e0f7-48c2-be0a-153f37be16e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\最大功率传输条件的测定">
+      <UniqueIdentifier>{1cdcf6c2-9f14-4fa0-aa36-d853a980d63b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -90,6 +117,60 @@
     <ClInclude Include="TodayTrial.h">
       <Filter>今天做的实验</Filter>
     </ClInclude>
+    <ClInclude Include="基尔霍夫定律监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="基尔霍夫定律.h">
+      <Filter>成绩查询\基尔霍夫定律</Filter>
+    </ClInclude>
+    <ClInclude Include="叠加原理监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="叠加原理.h">
+      <Filter>成绩查询\叠加原理</Filter>
+    </ClInclude>
+    <ClInclude Include="戴维南定理监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="戴维南定理.h">
+      <Filter>成绩查询\戴维南定理</Filter>
+    </ClInclude>
+    <ClInclude Include="电压源与电流源的等效变换.h">
+      <Filter>成绩查询\电压源与电流源的等效变换</Filter>
+    </ClInclude>
+    <ClInclude Include="电压源与电流源的等效变换监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="一阶电路的响应测试.h">
+      <Filter>成绩查询\一阶电路的响应测试</Filter>
+    </ClInclude>
+    <ClInclude Include="一阶电路的响应测试监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="二阶动态电路响应的研究.h">
+      <Filter>成绩查询\二阶动态电路响应的研究</Filter>
+    </ClInclude>
+    <ClInclude Include="二阶动态电路响应的研究监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="VCVS实验监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="VCVS实验.h">
+      <Filter>成绩查询\VCVS实验</Filter>
+    </ClInclude>
+    <ClInclude Include="二端口网络的研究监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="二端口网络的研究.h">
+      <Filter>成绩查询\二端口网络的研究</Filter>
+    </ClInclude>
+    <ClInclude Include="最大功率传输条件的测定监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="最大功率传输条件的测定.h">
+      <Filter>成绩查询\最大功率传输条件的测定</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -119,14 +200,41 @@
     <ClCompile Include="LongConnectServ.cpp">
       <Filter>长连接</Filter>
     </ClCompile>
-    <ClCompile Include="元件伏安特性监控.cpp">
-      <Filter>查看学生电脑\学生正在做的实验</Filter>
-    </ClCompile>
     <ClCompile Include="monitorTrial.cpp">
       <Filter>查看学生电脑\成绩监控</Filter>
     </ClCompile>
     <ClCompile Include="TodayTrial.cpp">
       <Filter>今天做的实验</Filter>
+    </ClCompile>
+    <ClCompile Include="monitorLoad.cpp">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClCompile>
+    <ClCompile Include="基尔霍夫定律.cpp">
+      <Filter>成绩查询\基尔霍夫定律</Filter>
+    </ClCompile>
+    <ClCompile Include="叠加原理.cpp">
+      <Filter>成绩查询\叠加原理</Filter>
+    </ClCompile>
+    <ClCompile Include="戴维南定理.cpp">
+      <Filter>成绩查询\戴维南定理</Filter>
+    </ClCompile>
+    <ClCompile Include="电压源与电流源的等效变换.cpp">
+      <Filter>成绩查询\电压源与电流源的等效变换</Filter>
+    </ClCompile>
+    <ClCompile Include="一阶电路的响应测试.cpp">
+      <Filter>成绩查询\一阶电路的响应测试</Filter>
+    </ClCompile>
+    <ClCompile Include="二阶动态电路响应的研究.cpp">
+      <Filter>成绩查询\二阶动态电路响应的研究</Filter>
+    </ClCompile>
+    <ClCompile Include="VCVS实验.cpp">
+      <Filter>成绩查询\VCVS实验</Filter>
+    </ClCompile>
+    <ClCompile Include="二端口网络的研究.cpp">
+      <Filter>成绩查询\二端口网络的研究</Filter>
+    </ClCompile>
+    <ClCompile Include="最大功率传输条件的测定.cpp">
+      <Filter>成绩查询\最大功率传输条件的测定</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -154,10 +262,55 @@
     <EmbeddedResource Include="元件伏安特性监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="查看学生正在做的实验.resx">
+    <EmbeddedResource Include="TodayTrial.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
-    <EmbeddedResource Include="TodayTrial.resx">
+    <EmbeddedResource Include="叠加原理.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="叠加原理监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基尔霍夫定律.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基尔霍夫定律监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="戴维南定理.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="戴维南定理监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电压源与电流源的等效变换.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电压源与电流源的等效变换监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="一阶电路的响应测试.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="一阶电路的响应测试监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二阶动态电路响应的研究.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二阶动态电路响应的研究监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCVS实验.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VCVS实验监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二端口网络的研究.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="二端口网络的研究监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

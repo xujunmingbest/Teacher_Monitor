@@ -52,7 +52,18 @@ string LongConnectServ::GenerateCmd(string &cmd) {
 	string final = l_f + l_s + string((char*)&H, sizeof(Long_connection_Head)) + data;
 	return final;
 }
+string LongConnectServ::GenerateReply(string &replyType,string &Replymsg) {
+	Long_connection_Head H;
+	memset(&H, 0x00, sizeof(Long_connection_Head));
+	snprintf(H.reply, sizeof(H.reply), "%s", replyType.c_str());
+	protocolDemo pd;
 
+	string l_f = pd.GenerateFIRSTBYTES(sizeof(Long_connection_Head));
+	string l_s = pd.GenerateSECONDBYTES(Replymsg.length());
+	string final = l_f + l_s + string((char*)&H, sizeof(Long_connection_Head)) + Replymsg;
+	return final;
+
+}
 
 void LongConnectServ::Close() {
 	cs.Destroy();
@@ -93,6 +104,11 @@ void LongConnectServ::RecvFun(SOCKET s) {
 			{ //获取机子信息
 				TrialStatus_s tss;
 				memcpy(&tss.ts, s_s.c_str(), sizeof(TrialStatus));
+				//验证是不是在实验名单中
+				string retmsg;
+				if ( IsLoginLegal(tss.ts.ti)) retmsg = GenerateReply(Long_connection_Req[4],MsgRet[2]);
+				else retmsg = GenerateReply(Long_connection_Req[4], MsgRet[-4]);
+				md.Send(s, retmsg);
 				ComputerId = tss.ts.computerId;
 				tss.s = s;
 				Addcominfo(ComputerId, tss);
@@ -113,6 +129,35 @@ void LongConnectServ::Addcominfo(string &computer, TrialStatus_s &cs) {
 	cm.Lock();
 	cominfo[computer] = cs;
 	cm.UnLock();
+}
+
+bool LongConnectServ::IsLoginLegal(TrialInfo &ti) {
+	bool legal = false;
+	int Pos = -1;
+	for (int i = 0; i < students.size(); i++) {
+		if (students[i].Class == string(ti.Class)) {
+			legal = true;
+			Pos = i;
+			break;
+		}
+	}
+	if (legal) {
+		int legalCount = 0;
+		for (int i = 0; i < students[Pos].stus.size(); i++) {
+			if ( students[Pos].stus[i][0] == string(ti.stuName1) ) {
+				if( students[Pos].stus[i][1] == string(ti.XueHao1))
+					legalCount++;
+			}
+			if (students[Pos].stus[i][0] == string(ti.stuName2)) {
+				if (students[Pos].stus[i][1] == string(ti.XueHao2))
+					legalCount++;
+			}
+		}
+		if (legalCount >= 2) {
+			return true;
+		}
+	}
+	return false;
 }
 
 void LongConnectServ::DeleteCominfo(string &computer) {
@@ -152,4 +197,28 @@ LongConnectServ::LongConnectServ() {
 
 LongConnectServ::~LongConnectServ() {
 
+}
+
+
+vector<Students> students;
+
+void LongConnectServ::GetStudents() {
+	students.clear();
+	vector<string> FData;
+	GetOneFolderFiles(string(STUINFOCSV), FData);
+	for (int i = 0; i < FData.size(); i++) {
+		CSVdata cd;
+		cd.FileName = FData[i];
+		CSVLoad cl;
+		cl.Read(cd);
+		Students sts;
+		sts.fields = cd.Fields;
+		sts.Class = cd.Class;
+		sts.stus = cd.Rows;
+		students.push_back(sts);
+	}
+
+	for (int i = 0; i < students.size(); i++) {
+		cout << students[i].Class.c_str() << endl;
+	}
 }

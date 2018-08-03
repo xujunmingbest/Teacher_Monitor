@@ -13,6 +13,7 @@ void 元件伏安特性测试::SaveCorrectGrades() {
 	memcpy(&s, data.c_str(), sizeof(ST_元件伏安特性测试));
 	try {
 		s.ti.totalscore = Convert::ToInt32(labelTotalGrade->Text);
+		if (s.ti.totalscore == -1) s.ti.totalscore = 0;
 		s.线性score = Convert::ToUInt32(textBox1->Text);
 		s.白炽score = Convert::ToUInt32(textBox2->Text);
 		s.锗管score = Convert::ToUInt32(textBox3->Text);
@@ -55,6 +56,7 @@ void 元件伏安特性测试::Load元件伏安特性测试Data(string &filename) {
 	labelTotalGrade->Text = s.ti.totalscore.ToString();
 
 	TrialInfo ti = s.ti;
+	labelTrialName->Text = gcnew String(ti.TrialName);
 	labelstuName1->Text = gcnew String(ti.stuName1);
 	labelstuName2->Text = gcnew String(ti.stuName2);
 	labelxuehao1 ->Text = gcnew String(ti.XueHao1);

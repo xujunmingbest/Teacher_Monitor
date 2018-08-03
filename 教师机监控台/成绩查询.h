@@ -278,6 +278,7 @@ namespace 教师机监控台 {
 			this->listView1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->listView1->FullRowSelect = true;
+			this->listView1->GridLines = true;
 			this->listView1->Location = System::Drawing::Point(406, 0);
 			this->listView1->Name = L"listView1";
 			this->listView1->Size = System::Drawing::Size(836, 866);

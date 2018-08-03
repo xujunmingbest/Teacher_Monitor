@@ -3,6 +3,16 @@
 #include "E:/clr中腾/电工电路试验台/电工电路试验台/tool/gradeSubmit.h"
 #include "tool.h"
 #include "元件伏安特性测试.h"
+#include "基尔霍夫定律.h"
+#include "叠加原理.h"
+#include "戴维南定理.h"
+#include "电压源与电流源的等效变换.h"
+#include "一阶电路的响应测试.h"
+#include "二阶动态电路响应的研究.h"
+#include "VCVS实验.h"
+#include "二端口网络的研究.h"
+#include "最大功率传输条件的测定.h"
+
 
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
@@ -30,10 +40,51 @@ void 成绩查询::OpenTrial(string &TrialName) {
 		元件伏安特性测试 ^ f = gcnew 元件伏安特性测试(TrialName);
 		f->ShowDialog();
 	}
-	else {
-
+	else if(TrialName.find(Grades[2], 0) != TrialName.npos) {
+		基尔霍夫定律 ^ f = gcnew 基尔霍夫定律();
+		f->Load基尔霍夫定律Data(TrialName);
+		f->ShowDialog();
 	}
-
+	else if (TrialName.find(Grades[3], 0) != TrialName.npos) {
+		叠加原理 ^ f = gcnew 叠加原理();
+		f->Load叠加原理Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[4], 0) != TrialName.npos) {
+		戴维南定理 ^ f = gcnew 戴维南定理();
+		f->Load戴维南定理Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[5], 0) != TrialName.npos) {
+		电压源与电流源的等效变换 ^ f = gcnew 电压源与电流源的等效变换();
+		f->Load电压源与电流源的等效变换Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[6], 0) != TrialName.npos) {
+		一阶电路的响应测试 ^ f = gcnew 一阶电路的响应测试();
+		f->Load一阶电路的响应测试Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[7], 0) != TrialName.npos) {
+		二阶动态电路响应的研究^ f = gcnew 二阶动态电路响应的研究();
+		f->Load一阶电路的响应测试Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[8], 0) != TrialName.npos) {
+		VCVS实验^ f = gcnew VCVS实验();
+		f->LoadVCVS实验Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[9], 0) != TrialName.npos) {
+		二端口网络的研究^ f = gcnew 二端口网络的研究();
+		f->Load二端口网络的研究Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[10], 0) != TrialName.npos) {
+		最大功率传输条件的测定^ f = gcnew 最大功率传输条件的测定();
+		f->Load最大功率传输条件的测定Data(TrialName);
+		f->ShowDialog();
+	}
 }
 
 

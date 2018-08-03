@@ -86,39 +86,20 @@ bool QueueMutex::Create(string &QueueName) {
 	GradeRecvServ grs;
 	LongConnectServ lcs;
 
+
 	void SystemStart() {
 		Directory::CreateDirectory(gcnew String(GRADESAVEPATH));
 		Directory::CreateDirectory(gcnew String(STUINFOCSV));
+		Directory::CreateDirectory(gcnew String(BMPTEMP));
+		Directory::CreateDirectory(gcnew String(MONITORTEMP));
 		LanMutex.Create(string("Lan"));
 		grs.open();
 		lcs.Open();
 		cm.Create(string("LongConnectServ"));
 		mt.Open();
-		GetStudents();
+		lcs.GetStudents();
 	}
 
-	vector<Students> students;
-
-	void GetStudents() {
-		students.clear();
-		vector<string> FData;
-		GetOneFolderFiles(string(STUINFOCSV), FData);
-		for (int i = 0; i < FData.size(); i++) {
-			CSVdata cd;
-			cd.FileName = FData[i];
-			CSVLoad cl;
-			cl.Read(cd);
-			Students sts;
-			sts.fields = cd.Fields;
-			sts.Class = cd.Class;
-			sts.stus = cd.Rows;
-			students.push_back(sts);
-		}
-
-		for (int i = 0; i < students.size(); i++) {
-			cout << students[i].Class.c_str() << endl;
-		}
-	}
 
 	void SystemShortDown();
 
