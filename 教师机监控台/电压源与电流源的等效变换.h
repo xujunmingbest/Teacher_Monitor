@@ -205,7 +205,7 @@ private: System::Windows::Forms::Label^  labelTrial2Load9;
 	private: System::Windows::Forms::Label^  label76;
 private: System::Windows::Forms::TextBox^  textBoxTrial2Score;
 
-private: System::Windows::Forms::Label^  label结论;
+
 private: System::Windows::Forms::Label^  label77;
 private: System::Windows::Forms::GroupBox^  groupBox5;
 private: System::Windows::Forms::Label^  labelTotalGrade;
@@ -224,6 +224,7 @@ private: System::Windows::Forms::Label^  labelTrial2I2;
 private: System::Windows::Forms::Label^  labelTrial2I1;
 private: System::Windows::Forms::Label^  labelTrial2I10;
 private: System::Windows::Forms::Label^  labelTrial2I9;
+private: System::Windows::Forms::Label^  label结论;
 
 
 
@@ -351,7 +352,6 @@ private: System::Windows::Forms::Label^  labelTrial2I9;
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->label77 = (gcnew System::Windows::Forms::Label());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
@@ -383,6 +383,7 @@ private: System::Windows::Forms::Label^  labelTrial2I9;
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
+			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->panel1->SuspendLayout();
@@ -1650,15 +1651,6 @@ private: System::Windows::Forms::Label^  labelTrial2I9;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &电压源与电流源的等效变换::button1_Click);
 			// 
-			// label结论
-			// 
-			this->label结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label结论->Location = System::Drawing::Point(184, 227);
-			this->label结论->Name = L"label结论";
-			this->label结论->Size = System::Drawing::Size(1000, 31);
-			this->label结论->TabIndex = 299;
-			this->label结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
 			// label77
 			// 
 			this->label77->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
@@ -2033,6 +2025,15 @@ private: System::Windows::Forms::Label^  labelTrial2I9;
 			// printDocument1
 			// 
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &电压源与电流源的等效变换::printDocument1_PrintPage);
+			// 
+			// label结论
+			// 
+			this->label结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label结论->Location = System::Drawing::Point(184, 227);
+			this->label结论->Name = L"label结论";
+			this->label结论->Size = System::Drawing::Size(1000, 31);
+			this->label结论->TabIndex = 299;
+			this->label结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// 电压源与电流源的等效变换
 			// 

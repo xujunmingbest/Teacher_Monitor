@@ -1175,3 +1175,26 @@ void 最大功率传输条件的测定监控::LoadData(ST_最大功率传输条件的测定 &d) {
 	 textBox结论->Text = gcnew String(d.summing_up);
 
 }
+
+void 电路状态轨迹的观测监控::LoadData(ST_电路状态轨迹的观测 &d) {
+	fileSql f;
+	string Name = string(BMPTEMP) + "最大功率传输条件的测定";
+	String^ ImageLocationTrial1 = gcnew String(string(Name + "Trial1.bmp").c_str());
+	String^ ImageLocationTrial2 = gcnew String(string(Name + "Trial2.bmp").c_str());
+	String^ ImageLocationTrial3 = gcnew String(string(Name + "Trial3.bmp").c_str());
+	//先删除原来有的文件
+	IO::File::Delete(ImageLocationTrial1);
+	IO::File::Delete(ImageLocationTrial2);
+	IO::File::Delete(ImageLocationTrial3);
+
+	f.Writefile(T_to_string(ImageLocationTrial1), string(d.Trial1Bmp, sizeof(d.Trial1Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial2), string(d.Trial2Bmp, sizeof(d.Trial2Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial3), string(d.Trial3Bmp, sizeof(d.Trial3Bmp)));
+
+
+	pictureBox1->ImageLocation = ImageLocationTrial1;
+	pictureBox2->ImageLocation = ImageLocationTrial2;
+	pictureBox3->ImageLocation = ImageLocationTrial3;
+
+	textBox结论->Text = gcnew String(d.summing_up);
+}

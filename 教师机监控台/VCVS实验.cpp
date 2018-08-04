@@ -26,7 +26,7 @@ void VCVS实验::SaveCorrectGrades() {
 		if (s.ti.totalscore == -1) s.ti.totalscore = 0;
 
 
-		if (f.WriteStruct(*fileName, string((char*)&s, sizeof(ST_戴维南定理)))) {
+		if (f.WriteStruct(*fileName, string((char*)&s, sizeof(ST_VCVS实验)))) {
 
 			MessageBox::Show("成绩保存成功");
 		}

@@ -12,7 +12,7 @@
 #include "VCVS实验.h"
 #include "二端口网络的研究.h"
 #include "最大功率传输条件的测定.h"
-
+#include "电路状态轨迹的观测.h"
 
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
@@ -83,6 +83,11 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[10], 0) != TrialName.npos) {
 		最大功率传输条件的测定^ f = gcnew 最大功率传输条件的测定();
 		f->Load最大功率传输条件的测定Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[11], 0) != TrialName.npos) {
+		电路状态轨迹的观测^ f = gcnew 电路状态轨迹的观测();
+		f->Load电路状态轨迹的观测Data(TrialName);
 		f->ShowDialog();
 	}
 }

@@ -34,7 +34,7 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	VCVS实验监控 ^VCVS实验监控Wnd = gcnew VCVS实验监控;
 	二端口网络的研究监控 ^二端口网络的研究监控Wnd = gcnew 二端口网络的研究监控;
 	最大功率传输条件的测定监控 ^最大功率传输条件的测定监控Wnd = gcnew 最大功率传输条件的测定监控;
-
+	电路状态轨迹的观测监控^ 电路状态轨迹的观测监控Wnd = gcnew 电路状态轨迹的观测监控;
 	bool firstEnter =true;
 
 	while (true) {
@@ -193,6 +193,19 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_最大功率传输条件的测定, s_s.c_str(), sizeof(ST_最大功率传输条件的测定));
 				if (最大功率传输条件的测定监控Wnd->Name->Contains("close")) closesocket(s);
 				最大功率传输条件的测定监控Wnd->LoadData(sT_最大功率传输条件的测定);
+				break;
+			}
+			case 11: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(电路状态轨迹的观测监控Wnd);
+					firstEnter = false;
+				}
+				ST_电路状态轨迹的观测 sT_电路状态轨迹的观测;
+				memcpy(&sT_电路状态轨迹的观测, s_s.c_str(), sizeof(ST_电路状态轨迹的观测));
+				if (电路状态轨迹的观测监控Wnd->Name->Contains("close")) closesocket(s);
+				电路状态轨迹的观测监控Wnd->LoadData(sT_电路状态轨迹的观测);
 				break;
 			}
 			}

@@ -64,6 +64,9 @@
     <Filter Include="成绩查询\最大功率传输条件的测定">
       <UniqueIdentifier>{1cdcf6c2-9f14-4fa0-aa36-d853a980d63b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\电路状态轨迹的观测">
+      <UniqueIdentifier>{6e47c445-fdcb-434e-8311-5e590d886470}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -171,6 +174,12 @@
     <ClInclude Include="最大功率传输条件的测定.h">
       <Filter>成绩查询\最大功率传输条件的测定</Filter>
     </ClInclude>
+    <ClInclude Include="电路状态轨迹的观测监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="电路状态轨迹的观测.h">
+      <Filter>成绩查询\电路状态轨迹的观测</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -235,6 +244,9 @@
     </ClCompile>
     <ClCompile Include="最大功率传输条件的测定.cpp">
       <Filter>成绩查询\最大功率传输条件的测定</Filter>
+    </ClCompile>
+    <ClCompile Include="电路状态轨迹的观测.cpp">
+      <Filter>成绩查询\电路状态轨迹的观测</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -311,6 +323,12 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="二端口网络的研究监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="最大功率传输条件的测定.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="最大功率传输条件的测定监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

@@ -224,6 +224,12 @@
     <ClInclude Include="电压源与电流源的等效变换监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="电路状态轨迹的观测.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="电路状态轨迹的观测监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="监控实验汇总.h" />
   </ItemGroup>
   <ItemGroup>
@@ -308,6 +314,12 @@
     <EmbeddedResource Include="电压源与电流源的等效变换监控.resx">
       <DependentUpon>电压源与电流源的等效变换监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="电路状态轨迹的观测.resx">
+      <DependentUpon>电路状态轨迹的观测.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电路状态轨迹的观测监控.resx">
+      <DependentUpon>电路状态轨迹的观测监控.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LongConnectServ.cpp" />
@@ -331,6 +343,7 @@
     <ClCompile Include="戴维南定理.cpp" />
     <ClCompile Include="最大功率传输条件的测定.cpp" />
     <ClCompile Include="电压源与电流源的等效变换.cpp" />
+    <ClCompile Include="电路状态轨迹的观测.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

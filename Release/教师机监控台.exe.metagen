@@ -25,6 +25,8 @@
   教师机监控台.最大功率传输条件的测定监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.电压源与电流源的等效变换.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.电压源与电流源的等效变换监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.电路状态轨迹的观测.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.电路状态轨迹的观测监控.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly 教师机监控台, Version=0.0.*, Culture=固定语言(固定国家/地区): 
 	hash=SHA1, flags=PublicKey
@@ -107,6 +109,11 @@ Class 教师机监控台.最大功率传输条件的测定监控: AutoLayout, An
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     LoadData(ST_最大功率传输条件的测定* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.电路状态轨迹的观测监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_电路状态轨迹的观测* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -221,5 +228,14 @@ Class 教师机监控台.最大功率传输条件的测定: AutoLayout, AnsiClas
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
     Load最大功率传输条件的测定Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.电路状态轨迹的观测: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load电路状态轨迹的观测Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig

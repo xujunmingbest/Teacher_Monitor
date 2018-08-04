@@ -264,6 +264,28 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	case 11: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_电路状态轨迹的观测 sT_电路状态轨迹的观测;
+		memcpy(&sT_电路状态轨迹的观测, s_s.c_str(), sizeof(ST_电路状态轨迹的观测));
+		string savePath = GenerateFileName(sT_电路状态轨迹的观测.ti);
+		fileSql f;
+		string data((char*)&sT_电路状态轨迹的观测, sizeof(ST_电路状态轨迹的观测));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
 	}
 
 	closesocket(s);

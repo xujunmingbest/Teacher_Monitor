@@ -9,6 +9,6 @@
 #include "VCVS实验监控.h"
 #include "二端口网络的研究监控.h"
 #include "最大功率传输条件的测定监控.h"
-
+#include "电路状态轨迹的观测监控.h"
 #define BMPTEMP "bmptemp/"
 #define MONITORTEMP "monitortemp/"
