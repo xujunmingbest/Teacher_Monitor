@@ -35,6 +35,8 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	二端口网络的研究监控 ^二端口网络的研究监控Wnd = gcnew 二端口网络的研究监控;
 	最大功率传输条件的测定监控 ^最大功率传输条件的测定监控Wnd = gcnew 最大功率传输条件的测定监控;
 	电路状态轨迹的观测监控^ 电路状态轨迹的观测监控Wnd = gcnew 电路状态轨迹的观测监控;
+	RLC元件阻抗特性的测定监控 ^RLC元件阻抗特性的测定监控Wnd = gcnew RLC元件阻抗特性的测定监控;
+	RLC串联谐振电路的研究监控 ^RLC串联谐振电路的研究监控Wnd = gcnew RLC串联谐振电路的研究监控;
 	bool firstEnter =true;
 
 	while (true) {
@@ -206,6 +208,32 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_电路状态轨迹的观测, s_s.c_str(), sizeof(ST_电路状态轨迹的观测));
 				if (电路状态轨迹的观测监控Wnd->Name->Contains("close")) closesocket(s);
 				电路状态轨迹的观测监控Wnd->LoadData(sT_电路状态轨迹的观测);
+				break;
+			}			
+			case 12: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(RLC元件阻抗特性的测定监控Wnd);
+					firstEnter = false;
+				}
+				ST_RLC元件阻抗特性的测定 sT_RLC元件阻抗特性的测定;
+				memcpy(&sT_RLC元件阻抗特性的测定, s_s.c_str(), sizeof(ST_RLC元件阻抗特性的测定));
+				if (RLC元件阻抗特性的测定监控Wnd->Name->Contains("close")) closesocket(s);
+				RLC元件阻抗特性的测定监控Wnd->LoadData(sT_RLC元件阻抗特性的测定);
+				break;
+			}			
+			case 13: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(RLC串联谐振电路的研究监控Wnd);
+					firstEnter = false;
+				}
+				ST_RLC串联谐振电路的研究 sT_RLC串联谐振电路的研究;
+				memcpy(&sT_RLC串联谐振电路的研究, s_s.c_str(), sizeof(ST_RLC串联谐振电路的研究));
+				if (RLC串联谐振电路的研究监控Wnd->Name->Contains("close")) closesocket(s);
+				RLC串联谐振电路的研究监控Wnd->LoadData(sT_RLC串联谐振电路的研究);
 				break;
 			}
 			}

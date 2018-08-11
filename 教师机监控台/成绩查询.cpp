@@ -13,6 +13,8 @@
 #include "二端口网络的研究.h"
 #include "最大功率传输条件的测定.h"
 #include "电路状态轨迹的观测.h"
+#include "RLC元件阻抗特性的测定.h"
+#include "RLC串联谐振电路的研究.h"
 
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
@@ -88,6 +90,16 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[11], 0) != TrialName.npos) {
 		电路状态轨迹的观测^ f = gcnew 电路状态轨迹的观测();
 		f->Load电路状态轨迹的观测Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[12], 0) != TrialName.npos) {
+		RLC元件阻抗特性的测定^ f = gcnew RLC元件阻抗特性的测定();
+		f->LoadRLC元件阻抗特性的测定Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[13], 0) != TrialName.npos) {
+		RLC串联谐振电路的研究^ f = gcnew RLC串联谐振电路的研究();
+		f->LoadRLC串联谐振电路的研究Data(TrialName);
 		f->ShowDialog();
 	}
 }

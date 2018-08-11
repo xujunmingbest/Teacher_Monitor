@@ -4527,6 +4527,7 @@ namespace 教师机监控台 {
 			this->Controls->Add(this->label1);
 			this->Name = L"VCVS实验监控";
 			this->Text = L"VCVS实验监控";
+			this->Load += gcnew System::EventHandler(this, &VCVS实验监控::VCVS实验监控_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->groupBox10->ResumeLayout(false);
 			this->groupBox10->PerformLayout();
@@ -4565,5 +4566,7 @@ namespace 教师机监控台 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void VCVS实验监控_Load(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

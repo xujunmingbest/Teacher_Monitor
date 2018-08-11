@@ -1,6 +1,10 @@
   教师机监控台.Login.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.lookStuCom.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.mainWnd.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.RLC串联谐振电路的研究.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.RLC串联谐振电路的研究监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.RLC元件阻抗特性的测定.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.RLC元件阻抗特性的测定监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.ScreenCapture.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.TodayTrial.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.VCVS实验.resources - Embedded, ContainedInManifestFile, 
@@ -114,6 +118,16 @@ Class 教师机监控台.电路状态轨迹的观测监控: AutoLayout, AnsiClas
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     LoadData(ST_电路状态轨迹的观测* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.RLC元件阻抗特性的测定监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_RLC元件阻抗特性的测定* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.RLC串联谐振电路的研究监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_RLC串联谐振电路的研究* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -150,6 +164,24 @@ Class 教师机监控台.元件伏安特性测试: AutoLayout, AnsiClass, Class,
 Class 教师机监控台.TodayTrial: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class 教师机监控台.RLC串联谐振电路的研究: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    LoadRLC串联谐振电路的研究Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.RLC元件阻抗特性的测定: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    LoadRLC元件阻抗特性的测定Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
 Class 教师机监控台.VCVS实验: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

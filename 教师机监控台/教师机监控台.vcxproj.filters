@@ -67,6 +67,12 @@
     <Filter Include="成绩查询\电路状态轨迹的观测">
       <UniqueIdentifier>{6e47c445-fdcb-434e-8311-5e590d886470}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\RLC元件阻抗特性的测定">
+      <UniqueIdentifier>{d9b5ed21-dc9f-4352-a69b-06382e141e2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\RLC串联谐振电路的研究">
+      <UniqueIdentifier>{9dc71951-c72d-4ffb-b778-036d8680a4f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -180,6 +186,18 @@
     <ClInclude Include="电路状态轨迹的观测.h">
       <Filter>成绩查询\电路状态轨迹的观测</Filter>
     </ClInclude>
+    <ClInclude Include="RLC元件阻抗特性的测定监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="RLC元件阻抗特性的测定.h">
+      <Filter>成绩查询\RLC元件阻抗特性的测定</Filter>
+    </ClInclude>
+    <ClInclude Include="RLC串联谐振电路的研究监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="RLC串联谐振电路的研究.h">
+      <Filter>成绩查询\RLC串联谐振电路的研究</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -247,6 +265,12 @@
     </ClCompile>
     <ClCompile Include="电路状态轨迹的观测.cpp">
       <Filter>成绩查询\电路状态轨迹的观测</Filter>
+    </ClCompile>
+    <ClCompile Include="RLC元件阻抗特性的测定.cpp">
+      <Filter>成绩查询\RLC元件阻抗特性的测定</Filter>
+    </ClCompile>
+    <ClCompile Include="RLC串联谐振电路的研究.cpp">
+      <Filter>成绩查询\RLC串联谐振电路的研究</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -329,6 +353,18 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="最大功率传输条件的测定监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电路状态轨迹的观测.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="电路状态轨迹的观测监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC元件阻抗特性的测定.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC元件阻抗特性的测定监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

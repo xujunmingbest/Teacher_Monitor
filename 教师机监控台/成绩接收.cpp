@@ -286,6 +286,50 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	case 12: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_RLC元件阻抗特性的测定 sT_RLC元件阻抗特性的测定;
+		memcpy(&sT_RLC元件阻抗特性的测定, s_s.c_str(), sizeof(ST_RLC元件阻抗特性的测定));
+		string savePath = GenerateFileName(sT_RLC元件阻抗特性的测定.ti);
+		fileSql f;
+		string data((char*)&sT_RLC元件阻抗特性的测定, sizeof(ST_RLC元件阻抗特性的测定));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}	
+	case 13: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_RLC串联谐振电路的研究 sT_RLC串联谐振电路的研究;
+		memcpy(&sT_RLC串联谐振电路的研究, s_s.c_str(), sizeof(ST_RLC串联谐振电路的研究));
+		string savePath = GenerateFileName(sT_RLC串联谐振电路的研究.ti);
+		fileSql f;
+		string data((char*)&sT_RLC串联谐振电路的研究, sizeof(ST_RLC串联谐振电路的研究));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
 	}
 
 	closesocket(s);

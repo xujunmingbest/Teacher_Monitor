@@ -1198,3 +1198,205 @@ void 电路状态轨迹的观测监控::LoadData(ST_电路状态轨迹的观测 &d) {
 
 	textBox结论->Text = gcnew String(d.summing_up);
 }
+
+
+void RLC元件阻抗特性的测定监控::LoadData(ST_RLC元件阻抗特性的测定 &d) {
+	fileSql f;
+	string Name = string(BMPTEMP) + "RLC元件阻抗特性的测定监控";
+	String^ ImageLocationTrial2_1 = gcnew String(string(Name + "Trial2_1.bmp").c_str());
+	String^ ImageLocationTrial2_2 = gcnew String(string(Name + "Trial2_2.bmp").c_str());
+
+	//先删除原来有的文件
+	IO::File::Delete(ImageLocationTrial2_1);
+	IO::File::Delete(ImageLocationTrial2_2);
+
+	f.Writefile(T_to_string(ImageLocationTrial2_1), string(d.Trial2_1Bmp, sizeof(d.Trial2_1Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial2_2), string(d.Trial2_2Bmp, sizeof(d.Trial2_2Bmp)));
+
+
+	pictureBoxTrial2_1->ImageLocation = ImageLocationTrial2_1;
+	pictureBoxTrial2_2->ImageLocation = ImageLocationTrial2_2;
+
+
+	textBox结论->Text = gcnew String(d.summing_up);
+	labelTrial1_F->Text =gcnew String( d.Trial1_F);
+	labelTrial1_R_Ur->Text = gcnew String(d.Trial1_R_Ur);
+	labelTrial1_R_IR->Text = gcnew String(d.Trial1_R_IR);
+	textBoxTrial1_R_R->Text = gcnew String(d.Trial1_R_R);
+	labelTrial1_L_Ur->Text = gcnew String(d.Trial1_L_Ur );
+	labelTrial1_L_IL->Text = gcnew String(d.Trial1_L_IL);
+	textBoxTrial1_L_XL->Text = gcnew String(d.Trial1_L_XL);
+	labelTrial1_C_Ur->Text = gcnew String(d.Trial1_C_Ur);
+	labelTrial1_C_IC->Text = gcnew String(d.Trial1_C_IC);
+	textBoxTrial1_C_XC->Text = gcnew String(d.Trial1_C_XC);
+	
+	labelTrial3_F->Text   = gcnew String(d.Trial3_F);
+	textBoxTrial3_n->Text = gcnew String(d.Trial3_n);
+	textBoxTrial3_m->Text = gcnew String(d.Trial3_m);
+	textBoxTrial3_φ->Text = gcnew String(d.Trial3_φ);
+}
+
+
+void RLC串联谐振电路的研究监控::LoadData(ST_RLC串联谐振电路的研究 &d) {
+	fileSql f;
+	string Name = string(BMPTEMP) + "RLC串联谐振电路的研究监控";
+	String^ ImageLocationTrial1 = gcnew String(string(Name + "Trial1.bmp").c_str());
+
+	IO::File::Delete(ImageLocationTrial1);
+	f.Writefile(T_to_string(ImageLocationTrial1), string(d.Trial1Bmp, sizeof(d.Trial1Bmp)));
+
+
+	textBox结论->Text = gcnew String(d.summing_up);
+
+	textBoxTrial2_F->Text = gcnew String(d.Trial2_F) ;
+	textBoxTrial2_F->Text = gcnew String(d.Trial2_Uc);
+	textBoxTrial2_F->Text = gcnew String(d.Trial2_UL);
+
+	textBoxTrial5_F1->Text = gcnew String(d.Trial3_F1);
+	textBoxTrial5_F2->Text = gcnew String(d.Trial3_F2);
+	textBoxTrial5_F3->Text = gcnew String(d.Trial3_F3);
+	textBoxTrial5_F4->Text = gcnew String(d.Trial3_F4);
+	textBoxTrial5_F5->Text = gcnew String(d.Trial3_F5);
+	textBoxTrial5_F6->Text = gcnew String(d.Trial3_F6);
+	textBoxTrial5_F7->Text = gcnew String(d.Trial3_F7);
+	textBoxTrial5_F8->Text = gcnew String(d.Trial3_F8);
+	textBoxTrial5_F9->Text = gcnew String(d.Trial3_F9);
+	textBoxTrial5_F10->Text = gcnew String(d.Trial3_F10);
+	textBoxTrial5_F11->Text = gcnew String(d.Trial3_F11);
+	textBoxTrial5_F12->Text = gcnew String(d.Trial3_F12);
+	textBoxTrial5_F13->Text = gcnew String(d.Trial3_F13);
+	textBoxTrial5_F14->Text = gcnew String(d.Trial3_F14);
+	textBoxTrial5_F15->Text = gcnew String(d.Trial3_F15);
+	textBoxTrial5_F16->Text = gcnew String(d.Trial3_F16);
+
+	labelTrial3_U0_1->Text = gcnew String(d.Trial3_U0_1 );
+	labelTrial3_U0_2->Text = gcnew String(d.Trial3_U0_2 );
+	labelTrial3_U0_3->Text = gcnew String(d.Trial3_U0_3 );
+	labelTrial3_U0_4->Text = gcnew String(d.Trial3_U0_4 );
+	labelTrial3_U0_5->Text = gcnew String(d.Trial3_U0_5 );
+	labelTrial3_U0_6->Text = gcnew String(d.Trial3_U0_6 );
+	labelTrial3_U0_7->Text = gcnew String(d.Trial3_U0_7 );
+	labelTrial3_U0_8->Text = gcnew String(d.Trial3_U0_8 );
+	labelTrial3_U0_9->Text = gcnew String(d.Trial3_U0_9 );
+	labelTrial3_U0_10->Text = gcnew String(d.Trial3_U0_10);
+	labelTrial3_U0_11->Text = gcnew String(d.Trial3_U0_11);
+	labelTrial3_U0_12->Text = gcnew String(d.Trial3_U0_12);
+	labelTrial3_U0_13->Text = gcnew String(d.Trial3_U0_13);
+	labelTrial3_U0_14->Text = gcnew String(d.Trial3_U0_14);
+	labelTrial3_U0_15->Text = gcnew String(d.Trial3_U0_15);
+	labelTrial3_U0_16->Text = gcnew String(d.Trial3_U0_16);
+
+	labelTrial3_UL_1->Text = gcnew String(d.Trial3_UL_1 );
+	labelTrial3_UL_2->Text = gcnew String(d.Trial3_UL_2 );
+	labelTrial3_UL_3->Text = gcnew String(d.Trial3_UL_3 );
+	labelTrial3_UL_4->Text = gcnew String(d.Trial3_UL_4 );
+	labelTrial3_UL_5->Text = gcnew String(d.Trial3_UL_5 );
+	labelTrial3_UL_6->Text = gcnew String(d.Trial3_UL_6 );
+	labelTrial3_UL_7->Text = gcnew String(d.Trial3_UL_7 );
+	labelTrial3_UL_8->Text = gcnew String(d.Trial3_UL_8 );
+	labelTrial3_UL_9->Text = gcnew String(d.Trial3_UL_9 );
+	labelTrial3_UL_10->Text = gcnew String(d.Trial3_UL_10);
+	labelTrial3_UL_11->Text = gcnew String(d.Trial3_UL_11);
+	labelTrial3_UL_12->Text = gcnew String(d.Trial3_UL_12);
+	labelTrial3_UL_13->Text = gcnew String(d.Trial3_UL_13);
+	labelTrial3_UL_14->Text = gcnew String(d.Trial3_UL_14);
+	labelTrial3_UL_15->Text = gcnew String(d.Trial3_UL_15);
+	labelTrial3_UL_16->Text = gcnew String(d.Trial3_UL_16);
+
+
+	labelTrial3_Uc_1->Text = gcnew String(d.Trial3_Uc_1 );
+	labelTrial3_Uc_2->Text = gcnew String(d.Trial3_Uc_2 );
+	labelTrial3_Uc_3->Text = gcnew String(d.Trial3_Uc_3 );
+	labelTrial3_Uc_4->Text = gcnew String(d.Trial3_Uc_4 );
+	labelTrial3_Uc_5->Text = gcnew String(d.Trial3_Uc_5 );
+	labelTrial3_Uc_6->Text = gcnew String(d.Trial3_Uc_6 );
+	labelTrial3_Uc_7->Text = gcnew String(d.Trial3_Uc_7 );
+	labelTrial3_Uc_8->Text = gcnew String(d.Trial3_Uc_8 );
+	labelTrial3_Uc_9->Text = gcnew String(d.Trial3_Uc_9 );
+	labelTrial3_Uc_10->Text = gcnew String(d.Trial3_Uc_10);
+	labelTrial3_Uc_11->Text = gcnew String(d.Trial3_Uc_11);
+	labelTrial3_Uc_12->Text = gcnew String(d.Trial3_Uc_12);
+	labelTrial3_Uc_13->Text = gcnew String(d.Trial3_Uc_13);
+	labelTrial3_Uc_14->Text = gcnew String(d.Trial3_Uc_14);
+	labelTrial3_Uc_15->Text = gcnew String(d.Trial3_Uc_15);
+	labelTrial3_Uc_16->Text = gcnew String(d.Trial3_Uc_16);
+	textBoxTrial3_Fo->Text = gcnew String(d.Trial3_Fo);
+	textBoxTrial3_Q->Text = gcnew String(d.Trial3_Q);
+	textBoxTrial3F2_F1->Text = gcnew String(d.Trial3F2_F1);
+
+	textBoxTrial4_F->Text= gcnew String(d.Trial4_F );
+	labelTrial4_Uc ->Text= gcnew String(d.Trial4_Uc);
+	labelTrial4_UL ->Text= gcnew String(d.Trial4_UL);
+
+	textBoxTrial5_F1->Text = gcnew String( d.Trial5_F1 );
+	textBoxTrial5_F2->Text = gcnew String( d.Trial5_F2 );
+	textBoxTrial5_F3->Text = gcnew String( d.Trial5_F3 );
+	textBoxTrial5_F4->Text = gcnew String( d.Trial5_F4 );
+	textBoxTrial5_F5->Text = gcnew String( d.Trial5_F5 );
+	textBoxTrial5_F6->Text = gcnew String( d.Trial5_F6 );
+	textBoxTrial5_F7->Text = gcnew String( d.Trial5_F7 );
+	textBoxTrial5_F8->Text = gcnew String( d.Trial5_F8 );
+	textBoxTrial5_F9->Text = gcnew String( d.Trial5_F9 );
+	textBoxTrial5_F10->Text = gcnew String( d.Trial5_F10);
+	textBoxTrial5_F11->Text = gcnew String( d.Trial5_F11);
+	textBoxTrial5_F12->Text = gcnew String( d.Trial5_F12);
+	textBoxTrial5_F13->Text = gcnew String( d.Trial5_F13);
+	textBoxTrial5_F14->Text = gcnew String( d.Trial5_F14);
+	textBoxTrial5_F15->Text = gcnew String( d.Trial5_F15);
+	textBoxTrial5_F16->Text = gcnew String( d.Trial5_F16);
+
+	labelTrial5_U0_1->Text = gcnew String(d.Trial5_U0_1 );
+	labelTrial5_U0_2->Text = gcnew String(d.Trial5_U0_2 );
+	labelTrial5_U0_3->Text = gcnew String(d.Trial5_U0_3 );
+	labelTrial5_U0_4->Text = gcnew String(d.Trial5_U0_4 );
+	labelTrial5_U0_5->Text = gcnew String(d.Trial5_U0_5 );
+	labelTrial5_U0_6->Text = gcnew String(d.Trial5_U0_6 );
+	labelTrial5_U0_7->Text = gcnew String(d.Trial5_U0_7 );
+	labelTrial5_U0_8->Text = gcnew String(d.Trial5_U0_8 );
+	labelTrial5_U0_9->Text = gcnew String(d.Trial5_U0_9 );
+	labelTrial5_U0_10->Text = gcnew String(d.Trial5_U0_10);
+	labelTrial5_U0_11->Text = gcnew String(d.Trial5_U0_11);
+	labelTrial5_U0_12->Text = gcnew String(d.Trial5_U0_12);
+	labelTrial5_U0_13->Text = gcnew String(d.Trial5_U0_13);
+	labelTrial5_U0_14->Text = gcnew String(d.Trial5_U0_14);
+	labelTrial5_U0_15->Text = gcnew String(d.Trial5_U0_15);
+	labelTrial5_U0_16->Text = gcnew String(d.Trial5_U0_16);
+
+	labelTrial5_UL_1->Text = gcnew String(d.Trial5_UL_1 );
+	labelTrial5_UL_2->Text = gcnew String(d.Trial5_UL_2 );
+	labelTrial5_UL_3->Text = gcnew String(d.Trial5_UL_3 );
+	labelTrial5_UL_4->Text = gcnew String(d.Trial5_UL_4 );
+	labelTrial5_UL_5->Text = gcnew String(d.Trial5_UL_5 );
+	labelTrial5_UL_6->Text = gcnew String(d.Trial5_UL_6 );
+	labelTrial5_UL_7->Text = gcnew String(d.Trial5_UL_7 );
+	labelTrial5_UL_8->Text = gcnew String(d.Trial5_UL_8 );
+	labelTrial5_UL_9->Text = gcnew String(d.Trial5_UL_9 );
+	labelTrial5_UL_10->Text = gcnew String(d.Trial5_UL_10);
+	labelTrial5_UL_11->Text = gcnew String(d.Trial5_UL_11);
+	labelTrial5_UL_12->Text = gcnew String(d.Trial5_UL_12);
+	labelTrial5_UL_13->Text = gcnew String(d.Trial5_UL_13);
+	labelTrial5_UL_14->Text = gcnew String(d.Trial5_UL_14);
+	labelTrial5_UL_15->Text = gcnew String(d.Trial5_UL_15);
+	labelTrial5_UL_16->Text = gcnew String(d.Trial5_UL_16);
+
+
+	labelTrial5_Uc_1->Text = gcnew String(d.Trial5_Uc_1 );
+	labelTrial5_Uc_2->Text = gcnew String(d.Trial5_Uc_2 );
+	labelTrial5_Uc_3->Text = gcnew String(d.Trial5_Uc_3 );
+	labelTrial5_Uc_4->Text = gcnew String(d.Trial5_Uc_4 );
+	labelTrial5_Uc_5->Text = gcnew String(d.Trial5_Uc_5 );
+	labelTrial5_Uc_6->Text = gcnew String(d.Trial5_Uc_6 );
+	labelTrial5_Uc_7->Text = gcnew String(d.Trial5_Uc_7 );
+	labelTrial5_Uc_8->Text = gcnew String(d.Trial5_Uc_8 );
+	labelTrial5_Uc_9->Text = gcnew String(d.Trial5_Uc_9 );
+	labelTrial5_Uc_10->Text = gcnew String(d.Trial5_Uc_10);
+	labelTrial5_Uc_11->Text = gcnew String(d.Trial5_Uc_11);
+	labelTrial5_Uc_12->Text = gcnew String(d.Trial5_Uc_12);
+	labelTrial5_Uc_13->Text = gcnew String(d.Trial5_Uc_13);
+	labelTrial5_Uc_14->Text = gcnew String(d.Trial5_Uc_14);
+	labelTrial5_Uc_15->Text = gcnew String(d.Trial5_Uc_15);
+	labelTrial5_Uc_16->Text = gcnew String(d.Trial5_Uc_16);
+	textBoxTrial5_Fo->Text = gcnew String(d.Trial5_Fo);
+	textBoxTrial5_Q->Text = gcnew String(d.Trial5_Q);
+	textBoxTrial5F2_F1->Text = gcnew String(d.Trial5F2_F1);  
+}

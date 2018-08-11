@@ -150,6 +150,18 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="monitorTrial.h" />
+    <ClInclude Include="RLC串联谐振电路的研究.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RLC串联谐振电路的研究监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RLC元件阻抗特性的测定.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RLC元件阻抗特性的测定监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="ScreenCapture.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -242,6 +254,18 @@
     <EmbeddedResource Include="mainWnd.resx">
       <DependentUpon>mainWnd.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RLC串联谐振电路的研究.resx">
+      <DependentUpon>RLC串联谐振电路的研究.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC串联谐振电路的研究监控.resx">
+      <DependentUpon>RLC串联谐振电路的研究监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC元件阻抗特性的测定.resx">
+      <DependentUpon>RLC元件阻抗特性的测定.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC元件阻抗特性的测定监控.resx">
+      <DependentUpon>RLC元件阻抗特性的测定监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScreenCapture.resx">
       <DependentUpon>ScreenCapture.h</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +352,8 @@
     <ClCompile Include="mainWnd.cpp" />
     <ClCompile Include="monitorLoad.cpp" />
     <ClCompile Include="monitorTrial.cpp" />
+    <ClCompile Include="RLC串联谐振电路的研究.cpp" />
+    <ClCompile Include="RLC元件阻抗特性的测定.cpp" />
     <ClCompile Include="ScreenCapture.cpp" />
     <ClCompile Include="TodayTrial.cpp" />
     <ClCompile Include="tool.cpp" />
