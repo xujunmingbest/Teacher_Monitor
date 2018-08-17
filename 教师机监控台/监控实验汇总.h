@@ -12,6 +12,11 @@
 #include "电路状态轨迹的观测监控.h"
 #include "RLC元件阻抗特性的测定监控.h"
 #include "RLC串联谐振电路的研究监控.h"
+#include "单相铁心变压器特性的测试监控.h"
+#include "单相电度表实验监控.h"
+#include "三相交流电路电压电流的测量监控.h"
+#include "日光灯功率因数的提高监控.h"
+#include "回转器监控.h"
 
 #define BMPTEMP "bmptemp/"
 #define MONITORTEMP "monitortemp/"

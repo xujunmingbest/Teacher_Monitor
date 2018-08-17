@@ -85,9 +85,9 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::Label^  label22;
-	private: System::Windows::Forms::Label^  label23;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
+
+
+
 
 	private: System::Windows::Forms::GroupBox^  groupBox1;
 	private: System::Windows::Forms::Label^  label8;
@@ -124,6 +124,9 @@ private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 private: System::Windows::Forms::Panel^  panel1;
 private: System::Windows::Forms::Panel^  panel2;
+private: System::Windows::Forms::Label^  label22;
+private: System::Windows::Forms::Label^  label23;
+private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
 
 	private:
 		/// <summary>
@@ -169,9 +172,6 @@ private: System::Windows::Forms::Panel^  panel2;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
-			this->label22 = (gcnew System::Windows::Forms::Label());
-			this->label23 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
 			this->chart2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->textBoxTrial1_C_XC = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial1_C_IC = (gcnew System::Windows::Forms::Label());
@@ -230,6 +230,9 @@ private: System::Windows::Forms::Panel^  panel2;
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
+			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart2))->BeginInit();
@@ -546,36 +549,6 @@ private: System::Windows::Forms::Panel^  panel2;
 			this->groupBox8->TabIndex = 201;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"RLC元件阻抗特性的测定 实验内容1";
-			// 
-			// label22
-			// 
-			this->label22->AutoSize = true;
-			this->label22->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label22->Location = System::Drawing::Point(489, 581);
-			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(89, 20);
-			this->label22->TabIndex = 216;
-			this->label22->Text = L"请打分：";
-			// 
-			// label23
-			// 
-			this->label23->AutoSize = true;
-			this->label23->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label23->Location = System::Drawing::Point(766, 581);
-			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(129, 20);
-			this->label23->TabIndex = 215;
-			this->label23->Text = L"本项目总分30";
-			// 
-			// textBoxTrial1Score
-			// 
-			this->textBoxTrial1Score->Location = System::Drawing::Point(591, 578);
-			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
-			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
-			this->textBoxTrial1Score->TabIndex = 214;
-			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &RLC元件阻抗特性的测定::textBoxTrial1Score_TextChanged);
 			// 
 			// chart2
 			// 
@@ -1226,6 +1199,36 @@ private: System::Windows::Forms::Panel^  panel2;
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(1336, 1323);
 			this->panel2->TabIndex = 333;
+			// 
+			// textBoxTrial1Score
+			// 
+			this->textBoxTrial1Score->Location = System::Drawing::Point(591, 578);
+			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
+			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
+			this->textBoxTrial1Score->TabIndex = 214;
+			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &RLC元件阻抗特性的测定::textBoxTrial1Score_TextChanged);
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label23->Location = System::Drawing::Point(766, 581);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(129, 20);
+			this->label23->TabIndex = 215;
+			this->label23->Text = L"本项目总分30";
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label22->Location = System::Drawing::Point(489, 581);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(89, 20);
+			this->label22->TabIndex = 216;
+			this->label22->Text = L"请打分：";
 			// 
 			// RLC元件阻抗特性的测定
 			// 

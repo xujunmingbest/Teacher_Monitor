@@ -330,6 +330,116 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	case 14: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_单相铁心变压器特性的测试 sT_单相铁心变压器特性的测试;
+		memcpy(&sT_单相铁心变压器特性的测试, s_s.c_str(), sizeof(ST_单相铁心变压器特性的测试));
+		string savePath = GenerateFileName(sT_单相铁心变压器特性的测试.ti);
+		fileSql f;
+		string data((char*)&sT_单相铁心变压器特性的测试, sizeof(ST_单相铁心变压器特性的测试));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}	
+	case 15: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_单相电度表实验 sT_单相电度表实验;
+		memcpy(&sT_单相电度表实验, s_s.c_str(), sizeof(ST_单相电度表实验));
+		string savePath = GenerateFileName(sT_单相电度表实验.ti);
+		fileSql f;
+		string data((char*)&sT_单相电度表实验, sizeof(ST_单相电度表实验));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}	
+	case 16: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_三相交流电路电压电流的测量 sT_三相交流电路电压电流的测量;
+		memcpy(&sT_三相交流电路电压电流的测量, s_s.c_str(), sizeof(ST_三相交流电路电压电流的测量));
+		string savePath = GenerateFileName(sT_三相交流电路电压电流的测量.ti);
+		fileSql f;
+		string data((char*)&sT_三相交流电路电压电流的测量, sizeof(ST_三相交流电路电压电流的测量));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
+	case 17: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_日光灯功率因数的提高 sT_日光灯功率因数的提高;
+		memcpy(&sT_日光灯功率因数的提高, s_s.c_str(), sizeof(ST_日光灯功率因数的提高));
+		string savePath = GenerateFileName(sT_日光灯功率因数的提高.ti);
+		fileSql f;
+		string data((char*)&sT_日光灯功率因数的提高, sizeof(ST_日光灯功率因数的提高));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
+	case 18: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_回转器 sT_回转器;
+		memcpy(&sT_回转器, s_s.c_str(), sizeof(ST_回转器));
+		string savePath = GenerateFileName(sT_回转器.ti);
+		fileSql f;
+		string data((char*)&sT_回转器, sizeof(ST_回转器));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
 	}
 
 	closesocket(s);

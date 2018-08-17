@@ -37,6 +37,13 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	电路状态轨迹的观测监控^ 电路状态轨迹的观测监控Wnd = gcnew 电路状态轨迹的观测监控;
 	RLC元件阻抗特性的测定监控 ^RLC元件阻抗特性的测定监控Wnd = gcnew RLC元件阻抗特性的测定监控;
 	RLC串联谐振电路的研究监控 ^RLC串联谐振电路的研究监控Wnd = gcnew RLC串联谐振电路的研究监控;
+	单相铁心变压器特性的测试监控 ^单相铁心变压器特性的测试监控Wnd = gcnew 单相铁心变压器特性的测试监控;
+	单相电度表实验监控 ^单相电度表实验监控Wnd = gcnew 单相电度表实验监控;
+	三相交流电路电压电流的测量监控 ^三相交流电路电压电流的测量监控Wnd = gcnew 三相交流电路电压电流的测量监控;
+	日光灯功率因数的提高监控 ^日光灯功率因数的提高监控Wnd = gcnew 日光灯功率因数的提高监控;
+	回转器监控 ^回转器监控Wnd = gcnew 回转器监控;
+
+
 	bool firstEnter =true;
 
 	while (true) {
@@ -234,6 +241,71 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_RLC串联谐振电路的研究, s_s.c_str(), sizeof(ST_RLC串联谐振电路的研究));
 				if (RLC串联谐振电路的研究监控Wnd->Name->Contains("close")) closesocket(s);
 				RLC串联谐振电路的研究监控Wnd->LoadData(sT_RLC串联谐振电路的研究);
+				break;
+			}			
+			case 14: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(单相铁心变压器特性的测试监控Wnd);
+					firstEnter = false;
+				}
+				ST_单相铁心变压器特性的测试 sT_单相铁心变压器特性的测试;
+				memcpy(&sT_单相铁心变压器特性的测试, s_s.c_str(), sizeof(ST_单相铁心变压器特性的测试));
+				if (单相铁心变压器特性的测试监控Wnd->Name->Contains("close")) closesocket(s);
+				单相铁心变压器特性的测试监控Wnd->LoadData(sT_单相铁心变压器特性的测试);
+				break;
+			}			
+			case 15: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(单相电度表实验监控Wnd);
+					firstEnter = false;
+				}
+				ST_单相电度表实验 sT_单相电度表实验;
+				memcpy(&sT_单相电度表实验, s_s.c_str(), sizeof(ST_单相电度表实验));
+				if (单相电度表实验监控Wnd->Name->Contains("close")) closesocket(s);
+				单相电度表实验监控Wnd->LoadData(sT_单相电度表实验);
+				break;
+			}
+			case 16: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(三相交流电路电压电流的测量监控Wnd);
+					firstEnter = false;
+				}
+				ST_三相交流电路电压电流的测量 sT_三相交流电路电压电流的测量;
+				memcpy(&sT_三相交流电路电压电流的测量, s_s.c_str(), sizeof(ST_三相交流电路电压电流的测量));
+				if (三相交流电路电压电流的测量监控Wnd->Name->Contains("close")) closesocket(s);
+				三相交流电路电压电流的测量监控Wnd->LoadData(sT_三相交流电路电压电流的测量);
+				break;
+			}
+			case 17: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(日光灯功率因数的提高监控Wnd);
+					firstEnter = false;
+				}
+				ST_日光灯功率因数的提高 sT_日光灯功率因数的提高;
+				memcpy(&sT_日光灯功率因数的提高, s_s.c_str(), sizeof(ST_日光灯功率因数的提高));
+				if (日光灯功率因数的提高监控Wnd->Name->Contains("close")) closesocket(s);
+				日光灯功率因数的提高监控Wnd->LoadData(sT_日光灯功率因数的提高);
+				break;
+			}
+			case 18: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(回转器监控Wnd);
+					firstEnter = false;
+				}
+				ST_回转器 sT_回转器;
+				memcpy(&sT_回转器, s_s.c_str(), sizeof(ST_回转器));
+				if (回转器监控Wnd->Name->Contains("close")) closesocket(s);
+				回转器监控Wnd->LoadData(sT_回转器);
 				break;
 			}
 			}

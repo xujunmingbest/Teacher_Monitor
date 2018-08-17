@@ -11,20 +11,30 @@
   教师机监控台.VCVS实验监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.一阶电路的响应测试.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.一阶电路的响应测试监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.三相交流电路电压电流的测量.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.三相交流电路电压电流的测量监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二端口网络的研究.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二端口网络的研究监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二阶动态电路响应的研究.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二阶动态电路响应的研究监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.元件伏安特性测试.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.元件伏安特性监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.单相电度表实验.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.单相电度表实验监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.单相铁心变压器特性的测试.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.单相铁心变压器特性的测试监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.叠加原理.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.叠加原理监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.回转器.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.回转器监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.基尔霍夫定律.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.基尔霍夫定律监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.成绩查询.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.戴维南定理.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.戴维南定理监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.数据接收控制.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.日光灯功率因数的提高.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.日光灯功率因数的提高监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.最大功率传输条件的测定.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.最大功率传输条件的测定监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.电压源与电流源的等效变换.resources - Embedded, ContainedInManifestFile, 
@@ -128,6 +138,31 @@ Class 教师机监控台.RLC串联谐振电路的研究监控: AutoLayout, AnsiC
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     LoadData(ST_RLC串联谐振电路的研究* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.单相铁心变压器特性的测试监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_单相铁心变压器特性的测试* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.单相电度表实验监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_单相电度表实验* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.三相交流电路电压电流的测量监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_三相交流电路电压电流的测量* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.日光灯功率因数的提高监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_日光灯功率因数的提高* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.回转器监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_回转器* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -200,6 +235,15 @@ Class 教师机监控台.一阶电路的响应测试: AutoLayout, AnsiClass, Cla
     Load一阶电路的响应测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.三相交流电路电压电流的测量: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load三相交流电路电压电流的测量Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
 Class 教师机监控台.二端口网络的研究: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -218,6 +262,24 @@ Class 教师机监控台.二阶动态电路响应的研究: AutoLayout, AnsiClas
     Load一阶电路的响应测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.单相电度表实验: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load单相电度表实验Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.单相铁心变压器特性的测试: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load单相铁心变压器特性的测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
 Class 教师机监控台.叠加原理: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -226,6 +288,15 @@ Class 教师机监控台.叠加原理: AutoLayout, AnsiClass, Class, Public, Bef
     Load叠加原理Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     Print(): PrivateScope, Public, HideBySig
     Priview(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.回转器: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load回转器Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
 Class 教师机监控台.基尔霍夫定律: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
@@ -269,5 +340,14 @@ Class 教师机监控台.电路状态轨迹的观测: AutoLayout, AnsiClass, Cla
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
     Load电路状态轨迹的观测Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.日光灯功率因数的提高: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load日光灯功率因数的提高Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig

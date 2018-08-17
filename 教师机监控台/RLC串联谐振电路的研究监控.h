@@ -3600,6 +3600,7 @@ namespace 教师机监控台 {
 			this->groupBox8->TabIndex = 191;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"RLC元件阻抗特性的测定 实验内容1";
+			this->groupBox8->Enter += gcnew System::EventHandler(this, &RLC串联谐振电路的研究监控::groupBox8_Enter);
 			// 
 			// button1
 			// 
@@ -3970,5 +3971,7 @@ namespace 教师机监控台 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

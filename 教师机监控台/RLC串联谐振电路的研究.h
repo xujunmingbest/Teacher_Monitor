@@ -2945,6 +2945,7 @@ private: System::Windows::Forms::Panel^  panel2;
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(1768, 859);
 			this->panel2->TabIndex = 339;
+			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &RLC串联谐振电路的研究::panel2_Paint);
 			// 
 			// RLC串联谐振电路的研究
 			// 
@@ -3036,6 +3037,8 @@ private: System::Void textBoxTrial2Score_TextChanged(System::Object^  sender, Sy
 }
 private: System::Void textBoxTrial4Score_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	CalScores();
+}
+private: System::Void panel2_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
 }
 };
 }

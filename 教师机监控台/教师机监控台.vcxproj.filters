@@ -73,6 +73,21 @@
     <Filter Include="成绩查询\RLC串联谐振电路的研究">
       <UniqueIdentifier>{9dc71951-c72d-4ffb-b778-036d8680a4f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\单相铁心变压器特性的测试">
+      <UniqueIdentifier>{dc367f3e-d014-4374-bb25-bb715d2bee79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\单相电度表实验">
+      <UniqueIdentifier>{9f6e22e9-8734-440b-9e50-9fce2c0dea0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\三相交流电路电压电流的测量">
+      <UniqueIdentifier>{076e9695-d05f-4de4-8bfb-58f5f7205a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\日光灯功率因数的提高">
+      <UniqueIdentifier>{b3def93f-5120-418d-a82d-da67eba6a2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\回转器">
+      <UniqueIdentifier>{7fbcd987-bda4-4fce-baf7-6307d39bd449}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -198,6 +213,36 @@
     <ClInclude Include="RLC串联谐振电路的研究.h">
       <Filter>成绩查询\RLC串联谐振电路的研究</Filter>
     </ClInclude>
+    <ClInclude Include="单相铁心变压器特性的测试监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="单相铁心变压器特性的测试.h">
+      <Filter>成绩查询\单相铁心变压器特性的测试</Filter>
+    </ClInclude>
+    <ClInclude Include="单相电度表实验监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="单相电度表实验.h">
+      <Filter>成绩查询\单相电度表实验</Filter>
+    </ClInclude>
+    <ClInclude Include="三相交流电路电压电流的测量监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="三相交流电路电压电流的测量.h">
+      <Filter>成绩查询\三相交流电路电压电流的测量</Filter>
+    </ClInclude>
+    <ClInclude Include="日光灯功率因数的提高监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="日光灯功率因数的提高.h">
+      <Filter>成绩查询\日光灯功率因数的提高</Filter>
+    </ClInclude>
+    <ClInclude Include="回转器监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="回转器.h">
+      <Filter>成绩查询\回转器</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -271,6 +316,21 @@
     </ClCompile>
     <ClCompile Include="RLC串联谐振电路的研究.cpp">
       <Filter>成绩查询\RLC串联谐振电路的研究</Filter>
+    </ClCompile>
+    <ClCompile Include="单相铁心变压器特性的测试.cpp">
+      <Filter>成绩查询\单相铁心变压器特性的测试</Filter>
+    </ClCompile>
+    <ClCompile Include="单相电度表实验.cpp">
+      <Filter>成绩查询\单相电度表实验</Filter>
+    </ClCompile>
+    <ClCompile Include="三相交流电路电压电流的测量.cpp">
+      <Filter>成绩查询\三相交流电路电压电流的测量</Filter>
+    </ClCompile>
+    <ClCompile Include="日光灯功率因数的提高.cpp">
+      <Filter>成绩查询\日光灯功率因数的提高</Filter>
+    </ClCompile>
+    <ClCompile Include="回转器.cpp">
+      <Filter>成绩查询\回转器</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -365,6 +425,36 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="RLC元件阻抗特性的测定监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC串联谐振电路的研究.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RLC串联谐振电路的研究监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相铁心变压器特性的测试.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相铁心变压器特性的测试监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相电度表实验.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相电度表实验监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相交流电路电压电流的测量.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相交流电路电压电流的测量监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日光灯功率因数的提高.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日光灯功率因数的提高监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

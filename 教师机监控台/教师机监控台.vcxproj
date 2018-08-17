@@ -181,6 +181,12 @@
     <ClInclude Include="一阶电路的响应测试监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="三相交流电路电压电流的测量.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="三相交流电路电压电流的测量监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="二端口网络的研究.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -199,10 +205,28 @@
     <ClInclude Include="元件伏安特性监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="单相电度表实验.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="单相电度表实验监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="单相铁心变压器特性的测试.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="单相铁心变压器特性的测试监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="叠加原理.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="叠加原理监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="回转器.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="回转器监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="基尔霍夫定律.h">
@@ -222,6 +246,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="数据接收控制.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="日光灯功率因数的提高.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="日光灯功率因数的提高监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="最大功率传输条件的测定.h">
@@ -284,6 +314,12 @@
     <EmbeddedResource Include="一阶电路的响应测试监控.resx">
       <DependentUpon>一阶电路的响应测试监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="三相交流电路电压电流的测量.resx">
+      <DependentUpon>三相交流电路电压电流的测量.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相交流电路电压电流的测量监控.resx">
+      <DependentUpon>三相交流电路电压电流的测量监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="二端口网络的研究.resx">
       <DependentUpon>二端口网络的研究.h</DependentUpon>
     </EmbeddedResource>
@@ -302,11 +338,29 @@
     <EmbeddedResource Include="元件伏安特性监控.resx">
       <DependentUpon>元件伏安特性监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="单相电度表实验.resx">
+      <DependentUpon>单相电度表实验.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相电度表实验监控.resx">
+      <DependentUpon>单相电度表实验监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相铁心变压器特性的测试.resx">
+      <DependentUpon>单相铁心变压器特性的测试.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="单相铁心变压器特性的测试监控.resx">
+      <DependentUpon>单相铁心变压器特性的测试监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="叠加原理.resx">
       <DependentUpon>叠加原理.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="叠加原理监控.resx">
       <DependentUpon>叠加原理监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回转器.resx">
+      <DependentUpon>回转器.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回转器监控.resx">
+      <DependentUpon>回转器监控.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="基尔霍夫定律.resx">
       <DependentUpon>基尔霍夫定律.h</DependentUpon>
@@ -325,6 +379,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="数据接收控制.resx">
       <DependentUpon>数据接收控制.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日光灯功率因数的提高.resx">
+      <DependentUpon>日光灯功率因数的提高.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="日光灯功率因数的提高监控.resx">
+      <DependentUpon>日光灯功率因数的提高监控.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="最大功率传输条件的测定.resx">
       <DependentUpon>最大功率传输条件的测定.h</DependentUpon>
@@ -359,14 +419,19 @@
     <ClCompile Include="tool.cpp" />
     <ClCompile Include="VCVS实验.cpp" />
     <ClCompile Include="一阶电路的响应测试.cpp" />
+    <ClCompile Include="三相交流电路电压电流的测量.cpp" />
     <ClCompile Include="二端口网络的研究.cpp" />
     <ClCompile Include="二阶动态电路响应的研究.cpp" />
     <ClCompile Include="元件伏安特性测试.cpp" />
+    <ClCompile Include="单相电度表实验.cpp" />
+    <ClCompile Include="单相铁心变压器特性的测试.cpp" />
     <ClCompile Include="叠加原理.cpp" />
+    <ClCompile Include="回转器.cpp" />
     <ClCompile Include="基尔霍夫定律.cpp" />
     <ClCompile Include="成绩接收.cpp" />
     <ClCompile Include="成绩查询.cpp" />
     <ClCompile Include="戴维南定理.cpp" />
+    <ClCompile Include="日光灯功率因数的提高.cpp" />
     <ClCompile Include="最大功率传输条件的测定.cpp" />
     <ClCompile Include="电压源与电流源的等效变换.cpp" />
     <ClCompile Include="电路状态轨迹的观测.cpp" />

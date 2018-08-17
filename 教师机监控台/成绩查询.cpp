@@ -15,7 +15,11 @@
 #include "电路状态轨迹的观测.h"
 #include "RLC元件阻抗特性的测定.h"
 #include "RLC串联谐振电路的研究.h"
-
+#include "单相铁心变压器特性的测试.h"
+#include "单相电度表实验.h"
+#include "三相交流电路电压电流的测量.h"
+#include "日光灯功率因数的提高.h"
+#include "回转器.h"
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
 	comboBox1->Items->Clear();
@@ -100,6 +104,31 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[13], 0) != TrialName.npos) {
 		RLC串联谐振电路的研究^ f = gcnew RLC串联谐振电路的研究();
 		f->LoadRLC串联谐振电路的研究Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[14], 0) != TrialName.npos) {
+		单相铁心变压器特性的测试^ f = gcnew 单相铁心变压器特性的测试();
+		f->Load单相铁心变压器特性的测试Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[15], 0) != TrialName.npos) {
+		单相电度表实验^ f = gcnew 单相电度表实验();
+		f->Load单相电度表实验Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[16], 0) != TrialName.npos) {
+		三相交流电路电压电流的测量^ f = gcnew 三相交流电路电压电流的测量();
+		f->Load三相交流电路电压电流的测量Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[17], 0) != TrialName.npos) {
+		日光灯功率因数的提高^ f = gcnew 日光灯功率因数的提高();
+		f->Load日光灯功率因数的提高Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[18], 0) != TrialName.npos) {
+		回转器^ f = gcnew 回转器();
+		f->Load回转器Data(TrialName);
 		f->ShowDialog();
 	}
 }

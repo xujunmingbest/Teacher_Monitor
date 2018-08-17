@@ -252,6 +252,7 @@ namespace 教师机监控台 {
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
 			this->pictureBox1->TabIndex = 8;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &一阶电路的响应测试监控::pictureBox1_Click);
 			// 
 			// label37
 			// 
@@ -447,5 +448,7 @@ namespace 教师机监控台 {
 		public :void LoadData(ST_一阶电路的响应测试 &d);
 	private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
 	}
+private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+}
 };
 }
