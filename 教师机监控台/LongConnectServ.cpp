@@ -75,6 +75,7 @@ void LongConnectServ::SocketClose(SOCKET s,string &computerId) {
 }
 
 void LongConnectServ::RecvFun(SOCKET s) {
+
 	string ComputerId;
 	while (true) {
 		protocolDemo md;
@@ -90,13 +91,13 @@ void LongConnectServ::RecvFun(SOCKET s) {
 		if (!md.RecvFIRST(s, f_l, f_s)) {
 			break;
 		}
-
 		string s_s;
 		if (!md.RecvSECOND(s, s_l, s_s)) {
 			break;
 		}
 		Long_connection_Head H;
 		memcpy(&H, f_s.c_str(), sizeof(Long_connection_Head));
+
 		string req(H.req);
 		string reply(H.reply);
 		if (req.length() != 0) {
@@ -203,6 +204,7 @@ LongConnectServ::~LongConnectServ() {
 vector<Students> students;
 
 void LongConnectServ::GetStudents() {
+
 	students.clear();
 	vector<string> FData;
 	GetOneFolderFiles(string(STUINFOCSV), FData);

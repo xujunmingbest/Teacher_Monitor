@@ -8,7 +8,7 @@ using namespace System::Threading;
 monitorTrial mt;
 
 void monitorTrial::Open() {
-	cs.Open(1238);
+	cs.Open(1239);
 	cs.SetServfun(monitorTrial::RecvGrade);
 	cs.Acpt();
 }
@@ -42,7 +42,10 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	三相交流电路电压电流的测量监控 ^三相交流电路电压电流的测量监控Wnd = gcnew 三相交流电路电压电流的测量监控;
 	日光灯功率因数的提高监控 ^日光灯功率因数的提高监控Wnd = gcnew 日光灯功率因数的提高监控;
 	回转器监控 ^回转器监控Wnd = gcnew 回转器监控;
-
+	三相电路功率的测量监控 ^三相电路功率的测量监控Wnd = gcnew 三相电路功率的测量监控;
+	负阻抗变换器监控 ^负阻抗变换器监控Wnd = gcnew 负阻抗变换器监控;
+	RC网络的频率特性监控 ^RC网络的频率特性监控Wnd = gcnew RC网络的频率特性监控;
+	仪表量程的扩展监控 ^仪表量程的扩展监控Wnd = gcnew 仪表量程的扩展监控;
 
 	bool firstEnter =true;
 
@@ -306,6 +309,58 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_回转器, s_s.c_str(), sizeof(ST_回转器));
 				if (回转器监控Wnd->Name->Contains("close")) closesocket(s);
 				回转器监控Wnd->LoadData(sT_回转器);
+				break;
+			}			
+			case 19: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(三相电路功率的测量监控Wnd);
+					firstEnter = false;
+				}
+				ST_三相电路功率的测量 sT_三相电路功率的测量;
+				memcpy(&sT_三相电路功率的测量, s_s.c_str(), sizeof(ST_三相电路功率的测量));
+				if (三相电路功率的测量监控Wnd->Name->Contains("close")) closesocket(s);
+				三相电路功率的测量监控Wnd->LoadData(sT_三相电路功率的测量);
+				break;
+			}		
+			case 20: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(负阻抗变换器监控Wnd);
+					firstEnter = false;
+				}
+				ST_负阻抗变换器 sT_负阻抗变换器;
+				memcpy(&sT_负阻抗变换器, s_s.c_str(), sizeof(ST_负阻抗变换器));
+				if (负阻抗变换器监控Wnd->Name->Contains("close")) closesocket(s);
+				负阻抗变换器监控Wnd->LoadData(sT_负阻抗变换器);
+				break;
+			}		
+			case 21: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(RC网络的频率特性监控Wnd);
+					firstEnter = false;
+				}
+				ST_RC网络的频率特性 sT_RC网络的频率特性;
+				memcpy(&sT_RC网络的频率特性, s_s.c_str(), sizeof(ST_RC网络的频率特性));
+				if (RC网络的频率特性监控Wnd->Name->Contains("close")) closesocket(s);
+				RC网络的频率特性监控Wnd->LoadData(sT_RC网络的频率特性);
+				break;
+			}
+			case 22: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(仪表量程的扩展监控Wnd);
+					firstEnter = false;
+				}
+				ST_仪表量程的扩展 sT_仪表量程的扩展;
+				memcpy(&sT_仪表量程的扩展, s_s.c_str(), sizeof(ST_仪表量程的扩展));
+				if (仪表量程的扩展监控Wnd->Name->Contains("close")) closesocket(s);
+				仪表量程的扩展监控Wnd->LoadData(sT_仪表量程的扩展);
 				break;
 			}
 			}

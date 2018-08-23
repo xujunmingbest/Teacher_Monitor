@@ -17,6 +17,11 @@
 #include "三相交流电路电压电流的测量监控.h"
 #include "日光灯功率因数的提高监控.h"
 #include "回转器监控.h"
+#include "三相电路功率的测量监控.h"
+#include "负阻抗变换器监控.h"
+#include "RC网络的频率特性监控.h"
+#include "仪表量程的扩展监控.h"
+
 
 #define BMPTEMP "bmptemp/"
 #define MONITORTEMP "monitortemp/"

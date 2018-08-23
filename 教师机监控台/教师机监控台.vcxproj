@@ -150,6 +150,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="monitorTrial.h" />
+    <ClInclude Include="RC网络的频率特性.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RC网络的频率特性监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="RLC串联谐振电路的研究.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -187,6 +193,12 @@
     <ClInclude Include="三相交流电路电压电流的测量监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="三相电路功率的测量.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="三相电路功率的测量监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="二端口网络的研究.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -197,6 +209,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="二阶动态电路响应的研究监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="仪表量程的扩展.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="仪表量程的扩展监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="元件伏安特性测试.h">
@@ -273,6 +291,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="监控实验汇总.h" />
+    <ClInclude Include="负阻抗变换器.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="负阻抗变换器监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Login.resx">
@@ -283,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="mainWnd.resx">
       <DependentUpon>mainWnd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC网络的频率特性.resx">
+      <DependentUpon>RC网络的频率特性.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC网络的频率特性监控.resx">
+      <DependentUpon>RC网络的频率特性监控.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RLC串联谐振电路的研究.resx">
       <DependentUpon>RLC串联谐振电路的研究.h</DependentUpon>
@@ -320,6 +350,12 @@
     <EmbeddedResource Include="三相交流电路电压电流的测量监控.resx">
       <DependentUpon>三相交流电路电压电流的测量监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="三相电路功率的测量.resx">
+      <DependentUpon>三相电路功率的测量.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相电路功率的测量监控.resx">
+      <DependentUpon>三相电路功率的测量监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="二端口网络的研究.resx">
       <DependentUpon>二端口网络的研究.h</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +367,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="二阶动态电路响应的研究监控.resx">
       <DependentUpon>二阶动态电路响应的研究监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仪表量程的扩展.resx">
+      <DependentUpon>仪表量程的扩展.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仪表量程的扩展监控.resx">
+      <DependentUpon>仪表量程的扩展监控.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="元件伏安特性测试.resx">
       <DependentUpon>元件伏安特性测试.h</DependentUpon>
@@ -404,6 +446,12 @@
     <EmbeddedResource Include="电路状态轨迹的观测监控.resx">
       <DependentUpon>电路状态轨迹的观测监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="负阻抗变换器.resx">
+      <DependentUpon>负阻抗变换器.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="负阻抗变换器监控.resx">
+      <DependentUpon>负阻抗变换器监控.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LongConnectServ.cpp" />
@@ -412,6 +460,7 @@
     <ClCompile Include="mainWnd.cpp" />
     <ClCompile Include="monitorLoad.cpp" />
     <ClCompile Include="monitorTrial.cpp" />
+    <ClCompile Include="RC网络的频率特性.cpp" />
     <ClCompile Include="RLC串联谐振电路的研究.cpp" />
     <ClCompile Include="RLC元件阻抗特性的测定.cpp" />
     <ClCompile Include="ScreenCapture.cpp" />
@@ -420,8 +469,10 @@
     <ClCompile Include="VCVS实验.cpp" />
     <ClCompile Include="一阶电路的响应测试.cpp" />
     <ClCompile Include="三相交流电路电压电流的测量.cpp" />
+    <ClCompile Include="三相电路功率的测量.cpp" />
     <ClCompile Include="二端口网络的研究.cpp" />
     <ClCompile Include="二阶动态电路响应的研究.cpp" />
+    <ClCompile Include="仪表量程的扩展.cpp" />
     <ClCompile Include="元件伏安特性测试.cpp" />
     <ClCompile Include="单相电度表实验.cpp" />
     <ClCompile Include="单相铁心变压器特性的测试.cpp" />
@@ -435,6 +486,7 @@
     <ClCompile Include="最大功率传输条件的测定.cpp" />
     <ClCompile Include="电压源与电流源的等效变换.cpp" />
     <ClCompile Include="电路状态轨迹的观测.cpp" />
+    <ClCompile Include="负阻抗变换器.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

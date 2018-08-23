@@ -440,6 +440,94 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	case 19: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_三相电路功率的测量 sT_三相电路功率的测量;
+		memcpy(&sT_三相电路功率的测量, s_s.c_str(), sizeof(ST_三相电路功率的测量));
+		string savePath = GenerateFileName(sT_三相电路功率的测量.ti);
+		fileSql f;
+		string data((char*)&sT_三相电路功率的测量, sizeof(ST_三相电路功率的测量));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
+	case 20: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_负阻抗变换器 sT_负阻抗变换器;
+		memcpy(&sT_负阻抗变换器, s_s.c_str(), sizeof(ST_负阻抗变换器));
+		string savePath = GenerateFileName(sT_负阻抗变换器.ti);
+		fileSql f;
+		string data((char*)&sT_负阻抗变换器, sizeof(ST_负阻抗变换器));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}	
+	case 21: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_RC网络的频率特性 sT_RC网络的频率特性;
+		memcpy(&sT_RC网络的频率特性, s_s.c_str(), sizeof(ST_RC网络的频率特性));
+		string savePath = GenerateFileName(sT_RC网络的频率特性.ti);
+		fileSql f;
+		string data((char*)&sT_RC网络的频率特性, sizeof(ST_RC网络的频率特性));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}	
+	case 22: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_仪表量程的扩展 sT_仪表量程的扩展;
+		memcpy(&sT_仪表量程的扩展, s_s.c_str(), sizeof(ST_仪表量程的扩展));
+		string savePath = GenerateFileName(sT_仪表量程的扩展.ti);
+		fileSql f;
+		string data((char*)&sT_仪表量程的扩展, sizeof(ST_仪表量程的扩展));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
 	}
 
 	closesocket(s);

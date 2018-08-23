@@ -20,6 +20,11 @@
 #include "三相交流电路电压电流的测量.h"
 #include "日光灯功率因数的提高.h"
 #include "回转器.h"
+#include "三相电路功率的测量.h"
+#include "负阻抗变换器.h"
+#include "RC网络的频率特性.h"
+#include "仪表量程的扩展.h"
+
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
 	comboBox1->Items->Clear();
@@ -129,6 +134,26 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[18], 0) != TrialName.npos) {
 		回转器^ f = gcnew 回转器();
 		f->Load回转器Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[19], 0) != TrialName.npos) {
+		三相电路功率的测量^ f = gcnew 三相电路功率的测量();
+		f->Load三相电路功率的测量Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[20], 0) != TrialName.npos) {
+		负阻抗变换器^ f = gcnew 负阻抗变换器();
+		f->Load负阻抗变换器Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[21], 0) != TrialName.npos) {
+		RC网络的频率特性^ f = gcnew RC网络的频率特性();
+		f->LoadRC网络的频率特性Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[22], 0) != TrialName.npos) {
+		仪表量程的扩展^ f = gcnew 仪表量程的扩展();
+		f->Load仪表量程的扩展Data(TrialName);
 		f->ShowDialog();
 	}
 }

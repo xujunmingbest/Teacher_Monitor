@@ -88,6 +88,18 @@
     <Filter Include="成绩查询\回转器">
       <UniqueIdentifier>{7fbcd987-bda4-4fce-baf7-6307d39bd449}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\三相电路功率的测量">
+      <UniqueIdentifier>{51aa53f9-d326-429a-81d4-7e4586f13eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\负阻抗变换器">
+      <UniqueIdentifier>{e23fed98-46ea-4273-a6a9-4ce6f7469168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\RC网络的频率特性">
+      <UniqueIdentifier>{f3ca13e3-3d25-4ffe-86b6-f8065998269f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\仪表量程的扩展">
+      <UniqueIdentifier>{3e820b95-e21a-4f9b-85e8-9772bb45a8b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -243,6 +255,30 @@
     <ClInclude Include="回转器.h">
       <Filter>成绩查询\回转器</Filter>
     </ClInclude>
+    <ClInclude Include="三相电路功率的测量监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="三相电路功率的测量.h">
+      <Filter>成绩查询\三相电路功率的测量</Filter>
+    </ClInclude>
+    <ClInclude Include="负阻抗变换器监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="负阻抗变换器.h">
+      <Filter>成绩查询\负阻抗变换器</Filter>
+    </ClInclude>
+    <ClInclude Include="RC网络的频率特性监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="RC网络的频率特性.h">
+      <Filter>成绩查询\RC网络的频率特性</Filter>
+    </ClInclude>
+    <ClInclude Include="仪表量程的扩展监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="仪表量程的扩展.h">
+      <Filter>成绩查询\仪表量程的扩展</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -331,6 +367,18 @@
     </ClCompile>
     <ClCompile Include="回转器.cpp">
       <Filter>成绩查询\回转器</Filter>
+    </ClCompile>
+    <ClCompile Include="三相电路功率的测量.cpp">
+      <Filter>成绩查询\三相电路功率的测量</Filter>
+    </ClCompile>
+    <ClCompile Include="负阻抗变换器.cpp">
+      <Filter>成绩查询\负阻抗变换器</Filter>
+    </ClCompile>
+    <ClCompile Include="RC网络的频率特性.cpp">
+      <Filter>成绩查询\RC网络的频率特性</Filter>
+    </ClCompile>
+    <ClCompile Include="仪表量程的扩展.cpp">
+      <Filter>成绩查询\仪表量程的扩展</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -455,6 +503,27 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="日光灯功率因数的提高监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回转器.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="回转器监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相电路功率的测量.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="三相电路功率的测量监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="负阻抗变换器.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="负阻抗变换器监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC网络的频率特性监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>
