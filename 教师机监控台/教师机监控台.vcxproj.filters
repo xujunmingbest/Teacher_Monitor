@@ -100,6 +100,12 @@
     <Filter Include="成绩查询\仪表量程的扩展">
       <UniqueIdentifier>{3e820b95-e21a-4f9b-85e8-9772bb45a8b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="成绩查询\基本电工仪表的使用与测量误差的计算">
+      <UniqueIdentifier>{c1dae000-fe39-4fa2-ad97-5f46ab93164c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="成绩查询\功率因数及相序的测量">
+      <UniqueIdentifier>{5cc3d9bf-321f-4c84-9f49-8843e7d608ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -279,6 +285,18 @@
     <ClInclude Include="仪表量程的扩展.h">
       <Filter>成绩查询\仪表量程的扩展</Filter>
     </ClInclude>
+    <ClInclude Include="基本电工仪表的使用与测量误差的计算监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="基本电工仪表的使用与测量误差的计算.h">
+      <Filter>成绩查询\基本电工仪表的使用与测量误差的计算</Filter>
+    </ClInclude>
+    <ClInclude Include="功率因数及相序的测量监控.h">
+      <Filter>查看学生电脑\学生正在做的实验</Filter>
+    </ClInclude>
+    <ClInclude Include="功率因数及相序的测量.h">
+      <Filter>成绩查询\功率因数及相序的测量</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -379,6 +397,12 @@
     </ClCompile>
     <ClCompile Include="仪表量程的扩展.cpp">
       <Filter>成绩查询\仪表量程的扩展</Filter>
+    </ClCompile>
+    <ClCompile Include="基本电工仪表的使用与测量误差的计算.cpp">
+      <Filter>成绩查询\基本电工仪表的使用与测量误差的计算</Filter>
+    </ClCompile>
+    <ClCompile Include="功率因数及相序的测量.cpp">
+      <Filter>成绩查询\功率因数及相序的测量</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -524,6 +548,21 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="RC网络的频率特性监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RC网络的频率特性.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仪表量程的扩展.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="仪表量程的扩展监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本电工仪表的使用与测量误差的计算.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本电工仪表的使用与测量误差的计算监控.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

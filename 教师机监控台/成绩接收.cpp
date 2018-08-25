@@ -528,6 +528,50 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	case 24: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_基本电工仪表的使用与测量误差的计算 sT_基本电工仪表的使用与测量误差的计算;
+		memcpy(&sT_基本电工仪表的使用与测量误差的计算, s_s.c_str(), sizeof(ST_基本电工仪表的使用与测量误差的计算));
+		string savePath = GenerateFileName(sT_基本电工仪表的使用与测量误差的计算.ti);
+		fileSql f;
+		string data((char*)&sT_基本电工仪表的使用与测量误差的计算, sizeof(ST_基本电工仪表的使用与测量误差的计算));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
+	case 25: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_功率因数及相序的测量 sT_功率因数及相序的测量;
+		memcpy(&sT_功率因数及相序的测量, s_s.c_str(), sizeof(ST_功率因数及相序的测量));
+		string savePath = GenerateFileName(sT_功率因数及相序的测量.ti);
+		fileSql f;
+		string data((char*)&sT_功率因数及相序的测量, sizeof(ST_功率因数及相序的测量));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
+	}
 	}
 
 	closesocket(s);

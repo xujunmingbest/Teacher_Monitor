@@ -46,6 +46,9 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	负阻抗变换器监控 ^负阻抗变换器监控Wnd = gcnew 负阻抗变换器监控;
 	RC网络的频率特性监控 ^RC网络的频率特性监控Wnd = gcnew RC网络的频率特性监控;
 	仪表量程的扩展监控 ^仪表量程的扩展监控Wnd = gcnew 仪表量程的扩展监控;
+	基本电工仪表的使用与测量误差的计算监控 ^基本电工仪表的使用与测量误差的计算监控Wnd = gcnew 基本电工仪表的使用与测量误差的计算监控;
+	功率因数及相序的测量监控 ^功率因数及相序的测量监控Wnd = gcnew 功率因数及相序的测量监控;
+
 
 	bool firstEnter =true;
 
@@ -361,6 +364,32 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_仪表量程的扩展, s_s.c_str(), sizeof(ST_仪表量程的扩展));
 				if (仪表量程的扩展监控Wnd->Name->Contains("close")) closesocket(s);
 				仪表量程的扩展监控Wnd->LoadData(sT_仪表量程的扩展);
+				break;
+			}
+			case 24: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(基本电工仪表的使用与测量误差的计算监控Wnd);
+					firstEnter = false;
+				}
+				ST_基本电工仪表的使用与测量误差的计算 sT_基本电工仪表的使用与测量误差的计算;
+				memcpy(&sT_基本电工仪表的使用与测量误差的计算, s_s.c_str(), sizeof(ST_基本电工仪表的使用与测量误差的计算));
+				if (基本电工仪表的使用与测量误差的计算监控Wnd->Name->Contains("close")) closesocket(s);
+				基本电工仪表的使用与测量误差的计算监控Wnd->LoadData(sT_基本电工仪表的使用与测量误差的计算);
+				break;
+			}		
+			case 25: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(功率因数及相序的测量监控Wnd);
+					firstEnter = false;
+				}
+				ST_功率因数及相序的测量 sT_功率因数及相序的测量;
+				memcpy(&sT_功率因数及相序的测量, s_s.c_str(), sizeof(ST_功率因数及相序的测量));
+				if (功率因数及相序的测量监控Wnd->Name->Contains("close")) closesocket(s);
+				功率因数及相序的测量监控Wnd->LoadData(sT_功率因数及相序的测量);
 				break;
 			}
 			}

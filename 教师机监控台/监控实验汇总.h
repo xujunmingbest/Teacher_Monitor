@@ -21,6 +21,8 @@
 #include "负阻抗变换器监控.h"
 #include "RC网络的频率特性监控.h"
 #include "仪表量程的扩展监控.h"
+#include "基本电工仪表的使用与测量误差的计算监控.h"
+#include "功率因数及相序的测量监控.h"
 
 
 #define BMPTEMP "bmptemp/"

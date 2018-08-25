@@ -24,6 +24,8 @@
 #include "负阻抗变换器.h"
 #include "RC网络的频率特性.h"
 #include "仪表量程的扩展.h"
+#include "基本电工仪表的使用与测量误差的计算.h"
+#include "功率因数及相序的测量.h"
 
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
@@ -154,6 +156,16 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[22], 0) != TrialName.npos) {
 		仪表量程的扩展^ f = gcnew 仪表量程的扩展();
 		f->Load仪表量程的扩展Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[24], 0) != TrialName.npos) {
+		基本电工仪表的使用与测量误差的计算^ f = gcnew 基本电工仪表的使用与测量误差的计算();
+		f->Load基本电工仪表的使用与测量误差的计算Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[25], 0) != TrialName.npos) {
+		功率因数及相序的测量^ f = gcnew 功率因数及相序的测量();
+		f->Load功率因数及相序的测量Data(TrialName);
 		f->ShowDialog();
 	}
 }

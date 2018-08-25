@@ -1971,3 +1971,59 @@ void 仪表量程的扩展监控::LoadData(ST_仪表量程的扩展 &d) {
 	textBoxTrial3_5->Text = gcnew String(d.Trial3_5);
 	textBoxTrial3_6->Text = gcnew String(d.Trial3_6);
 }
+
+void 基本电工仪表的使用与测量误差的计算监控::LoadData(ST_基本电工仪表的使用与测量误差的计算 &d) {
+
+	labelTrial1_IA_5mA->Text = gcnew String(d.Trial1_IA_5mA);
+	labelTrial1_IA_5V->Text = gcnew String(d.Trial1_IA_5V);
+	labelTrial1_IA1_5mA->Text  = gcnew String(d.Trial1_IA1_5mA);
+	labelTrial1_IA1_5V->Text = gcnew String(d.Trial1_IA1_5V);
+	textBoxTrial1_RB_5mA->Text = gcnew String(d.Trial1_RB_5mA);
+	textBoxTrial1_RB_5V->Text = gcnew String(d.Trial1_RB_5V);
+	textBoxTrial1_R1_5mA->Text = gcnew String(d.Trial1_R1_5mA);
+	textBoxTrial1_R1_5V->Text = gcnew String(d.Trial1_R1_5V);
+	textBoxTrial1_RA_5mA->Text = gcnew String(d.Trial1_RA_5mA);
+	textBoxTrial1_RA_5V->Text = gcnew String(d.Trial1_RA_5V);
+}
+void 功率因数及相序的测量监控::LoadData(ST_功率因数及相序的测量 &d) {
+	 labelTrial2_U_1->Text = gcnew String(d.Trial2_U_1);
+	 labelTrial2_U_2->Text = gcnew String(d.Trial2_U_2);
+	 labelTrial2_U_3->Text = gcnew String(d.Trial2_U_3);
+	 labelTrial2_U_4->Text = gcnew String(d.Trial2_U_4);
+
+	labelTrial2_UR_1->Text = gcnew String(d.Trial2_UR_1);
+	labelTrial2_UR_2->Text = gcnew String(d.Trial2_UR_2);
+	labelTrial2_UR_3->Text = gcnew String(d.Trial2_UR_3);
+	labelTrial2_UR_4->Text = gcnew String(d.Trial2_UR_4);
+
+	labelTrial2_UL_1->Text = gcnew String(d.Trial2_UL_1);
+	labelTrial2_UL_2->Text = gcnew String(d.Trial2_UL_2);
+	labelTrial2_UL_3->Text = gcnew String(d.Trial2_UL_3);
+	labelTrial2_UL_4->Text = gcnew String(d.Trial2_UL_4);
+
+	labelTrial2_UC_1->Text = gcnew String(d.Trial2_UC_1);
+	labelTrial2_UC_2->Text = gcnew String(d.Trial2_UC_2);
+	labelTrial2_UC_3->Text = gcnew String(d.Trial2_UC_3);
+	labelTrial2_UC_4->Text = gcnew String(d.Trial2_UC_4);
+
+	labelTrial2_I_1->Text = gcnew String(d.Trial2_I_1);
+	labelTrial2_I_2->Text = gcnew String(d.Trial2_I_2);
+	labelTrial2_I_3->Text = gcnew String(d.Trial2_I_3);
+	labelTrial2_I_4->Text = gcnew String(d.Trial2_I_4);
+
+	 labelTrial2_P_1->Text = gcnew String(d.Trial2_P_1);
+	 labelTrial2_P_2->Text = gcnew String(d.Trial2_P_2);
+	 labelTrial2_P_3->Text = gcnew String(d.Trial2_P_3);
+	 labelTrial2_P_4->Text = gcnew String(d.Trial2_P_4);
+
+	textBoxTrial2_φ_1->Text = gcnew String(d.Trial2_φ_1);
+	textBoxTrial2_φ_2->Text = gcnew String(d.Trial2_φ_2);
+	textBoxTrial2_φ_3->Text = gcnew String(d.Trial2_φ_3);
+	textBoxTrial2_φ_4->Text = gcnew String(d.Trial2_φ_4);
+
+	textBoxTrial2_Load_1->Text = gcnew String(d.Trial2_Load_1);
+	textBoxTrial2_Load_2->Text = gcnew String(d.Trial2_Load_2);
+	textBoxTrial2_Load_3->Text = gcnew String(d.Trial2_Load_3);
+	textBoxTrial2_Load_4->Text = gcnew String(d.Trial2_Load_4);
+
+}

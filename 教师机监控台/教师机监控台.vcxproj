@@ -223,6 +223,12 @@
     <ClInclude Include="元件伏安特性监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="功率因数及相序的测量.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="功率因数及相序的测量监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="单相电度表实验.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -251,6 +257,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="基尔霍夫定律监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="基本电工仪表的使用与测量误差的计算.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="基本电工仪表的使用与测量误差的计算监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="成绩接收.h" />
@@ -380,6 +392,12 @@
     <EmbeddedResource Include="元件伏安特性监控.resx">
       <DependentUpon>元件伏安特性监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="功率因数及相序的测量.resx">
+      <DependentUpon>功率因数及相序的测量.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="功率因数及相序的测量监控.resx">
+      <DependentUpon>功率因数及相序的测量监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="单相电度表实验.resx">
       <DependentUpon>单相电度表实验.h</DependentUpon>
     </EmbeddedResource>
@@ -409,6 +427,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="基尔霍夫定律监控.resx">
       <DependentUpon>基尔霍夫定律监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本电工仪表的使用与测量误差的计算.resx">
+      <DependentUpon>基本电工仪表的使用与测量误差的计算.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="基本电工仪表的使用与测量误差的计算监控.resx">
+      <DependentUpon>基本电工仪表的使用与测量误差的计算监控.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="成绩查询.resx">
       <DependentUpon>成绩查询.h</DependentUpon>
@@ -474,11 +498,13 @@
     <ClCompile Include="二阶动态电路响应的研究.cpp" />
     <ClCompile Include="仪表量程的扩展.cpp" />
     <ClCompile Include="元件伏安特性测试.cpp" />
+    <ClCompile Include="功率因数及相序的测量.cpp" />
     <ClCompile Include="单相电度表实验.cpp" />
     <ClCompile Include="单相铁心变压器特性的测试.cpp" />
     <ClCompile Include="叠加原理.cpp" />
     <ClCompile Include="回转器.cpp" />
     <ClCompile Include="基尔霍夫定律.cpp" />
+    <ClCompile Include="基本电工仪表的使用与测量误差的计算.cpp" />
     <ClCompile Include="成绩接收.cpp" />
     <ClCompile Include="成绩查询.cpp" />
     <ClCompile Include="戴维南定理.cpp" />
