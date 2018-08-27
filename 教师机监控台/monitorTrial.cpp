@@ -48,7 +48,7 @@ void monitorTrial::RecvGrade(SOCKET s) {
 	仪表量程的扩展监控 ^仪表量程的扩展监控Wnd = gcnew 仪表量程的扩展监控;
 	基本电工仪表的使用与测量误差的计算监控 ^基本电工仪表的使用与测量误差的计算监控Wnd = gcnew 基本电工仪表的使用与测量误差的计算监控;
 	功率因数及相序的测量监控 ^功率因数及相序的测量监控Wnd = gcnew 功率因数及相序的测量监控;
-
+	互感器监控 ^互感器监控Wnd = gcnew 互感器监控;
 
 	bool firstEnter =true;
 
@@ -364,6 +364,19 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				memcpy(&sT_仪表量程的扩展, s_s.c_str(), sizeof(ST_仪表量程的扩展));
 				if (仪表量程的扩展监控Wnd->Name->Contains("close")) closesocket(s);
 				仪表量程的扩展监控Wnd->LoadData(sT_仪表量程的扩展);
+				break;
+			}			
+			case 23: {
+				if (firstEnter) {
+					ParameterizedThreadStart ^pt = gcnew ParameterizedThreadStart(ShowDialog);
+					Thread ^t = gcnew Thread(pt);
+					t->Start(互感器监控Wnd);
+					firstEnter = false;
+				}
+				ST_互感器 sT_互感器;
+				memcpy(&sT_互感器, s_s.c_str(), sizeof(ST_互感器));
+				if (互感器监控Wnd->Name->Contains("close")) closesocket(s);
+				互感器监控Wnd->LoadData(sT_互感器);
 				break;
 			}
 			case 24: {

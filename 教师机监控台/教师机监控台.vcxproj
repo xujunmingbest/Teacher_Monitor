@@ -211,6 +211,12 @@
     <ClInclude Include="二阶动态电路响应的研究监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="互感器.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="互感器监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="仪表量程的扩展.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -380,6 +386,12 @@
     <EmbeddedResource Include="二阶动态电路响应的研究监控.resx">
       <DependentUpon>二阶动态电路响应的研究监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="互感器.resx">
+      <DependentUpon>互感器.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="互感器监控.resx">
+      <DependentUpon>互感器监控.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="仪表量程的扩展.resx">
       <DependentUpon>仪表量程的扩展.h</DependentUpon>
     </EmbeddedResource>
@@ -496,6 +508,7 @@
     <ClCompile Include="三相电路功率的测量.cpp" />
     <ClCompile Include="二端口网络的研究.cpp" />
     <ClCompile Include="二阶动态电路响应的研究.cpp" />
+    <ClCompile Include="互感器.cpp" />
     <ClCompile Include="仪表量程的扩展.cpp" />
     <ClCompile Include="元件伏安特性测试.cpp" />
     <ClCompile Include="功率因数及相序的测量.cpp" />

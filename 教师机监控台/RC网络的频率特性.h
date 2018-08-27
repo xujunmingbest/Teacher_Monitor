@@ -618,6 +618,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->groupBox8->TabIndex = 202;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"RC网络的频率特性 实验内容1";
+			this->groupBox8->Enter += gcnew System::EventHandler(this, &RC网络的频率特性::groupBox8_Enter);
 			// 
 			// label22
 			// 
@@ -1608,6 +1609,8 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 	x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
 	y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 	e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
+}
+private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

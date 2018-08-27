@@ -21,6 +21,8 @@
   教师机监控台.二端口网络的研究监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二阶动态电路响应的研究.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.二阶动态电路响应的研究监控.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.互感器.resources - Embedded, ContainedInManifestFile, 
+  教师机监控台.互感器监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.仪表量程的扩展.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.仪表量程的扩展监控.resources - Embedded, ContainedInManifestFile, 
   教师机监控台.元件伏安特性测试.resources - Embedded, ContainedInManifestFile, 
@@ -205,6 +207,11 @@ Class 教师机监控台.功率因数及相序的测量监控: AutoLayout, AnsiC
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     LoadData(ST_功率因数及相序的测量* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+Class 教师机监控台.互感器监控: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    LoadData(ST_互感器* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
 Class 教师机监控台.lookStuCom: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
@@ -320,6 +327,15 @@ Class 教师机监控台.二阶动态电路响应的研究: AutoLayout, AnsiClas
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
     Load一阶电路的响应测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    SaveCorrectGrades(): PrivateScope, Public, HideBySig
+    CalScores(): PrivateScope, Public, HideBySig
+Class 教师机监控台.互感器: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
+  Methods:
+    Load互感器Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
 Class 教师机监控台.仪表量程的扩展: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit

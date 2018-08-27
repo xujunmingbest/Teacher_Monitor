@@ -2027,3 +2027,34 @@ void 功率因数及相序的测量监控::LoadData(ST_功率因数及相序的测量 &d) {
 	textBoxTrial2_Load_4->Text = gcnew String(d.Trial2_Load_4);
 
 }
+
+void 互感器监控::LoadData(ST_互感器 &d) {
+
+	textBoxTrial3_Line1_1->Text = gcnew String(d.Trial3_Line1_1);
+	textBoxTrial3_Line1_2->Text = gcnew String(d.Trial3_Line1_2);
+	textBoxTrial3_Line1_3->Text = gcnew String(d.Trial3_Line1_3);
+	textBoxTrial3_Line1_4->Text = gcnew String(d.Trial3_Line1_4);
+	textBoxTrial3_Line1_5->Text = gcnew String(d.Trial3_Line1_5);
+	textBoxTrial3_Line1_6->Text = gcnew String(d.Trial3_Line1_6);
+
+	textBoxTrial3_Line2_1->Text = gcnew String(d.Trial3_Line2_1);
+	textBoxTrial3_Line2_2->Text = gcnew String(d.Trial3_Line2_2);
+	textBoxTrial3_Line2_3->Text = gcnew String(d.Trial3_Line2_3);
+	textBoxTrial3_Line2_4->Text = gcnew String(d.Trial3_Line2_4);
+	textBoxTrial3_Line2_5->Text = gcnew String(d.Trial3_Line2_5);
+	textBoxTrial3_Line2_6->Text = gcnew String(d.Trial3_Line2_6);
+
+	textBoxTrial4_Line1_1->Text = gcnew String(d.Trial4_Line1_1);
+	textBoxTrial4_Line1_2->Text = gcnew String(d.Trial4_Line1_2);
+	textBoxTrial4_Line1_3->Text = gcnew String(d.Trial4_Line1_3);
+	textBoxTrial4_Line1_4->Text = gcnew String(d.Trial4_Line1_4);
+	textBoxTrial4_Line1_5->Text = gcnew String(d.Trial4_Line1_5);
+	textBoxTrial4_Line1_6->Text = gcnew String(d.Trial4_Line1_6);
+
+	textBoxTrial4_Line2_1->Text = gcnew String(d.Trial4_Line2_1);
+	textBoxTrial4_Line2_2->Text = gcnew String(d.Trial4_Line2_2);
+	textBoxTrial4_Line2_3->Text = gcnew String(d.Trial4_Line2_3);
+	textBoxTrial4_Line2_4->Text = gcnew String(d.Trial4_Line2_4);
+	textBoxTrial4_Line2_5->Text = gcnew String(d.Trial4_Line2_5);
+	textBoxTrial4_Line2_6->Text = gcnew String(d.Trial4_Line2_6);
+}

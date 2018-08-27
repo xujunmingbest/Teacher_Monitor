@@ -527,6 +527,28 @@ void GradeRecvServ::handle(SOCKET s) {
 		string ret = md.GenerateErrRet(f_s, 1);
 		md.Send(s, ret);
 		break;
+	}	
+	case 23: {
+		string RecvName(H.TrialName);
+		if (RecvName != Grades[H.TrialCode]) {
+			string ret = md.GenerateErrRet(f_s, -2);
+			md.Send(s, ret);
+			break;
+		}
+		ST_»¥¸ÐÆ÷ sT_»¥¸ÐÆ÷;
+		memcpy(&sT_»¥¸ÐÆ÷, s_s.c_str(), sizeof(ST_»¥¸ÐÆ÷));
+		string savePath = GenerateFileName(sT_»¥¸ÐÆ÷.ti);
+		fileSql f;
+		string data((char*)&sT_»¥¸ÐÆ÷, sizeof(ST_»¥¸ÐÆ÷));
+
+		if (!f.WriteStruct(savePath, data)) {
+			string ret = md.GenerateErrRet(f_s, -3);
+			md.Send(s, ret);
+			break;
+		}
+		string ret = md.GenerateErrRet(f_s, 1);
+		md.Send(s, ret);
+		break;
 	}
 	case 24: {
 		string RecvName(H.TrialName);

@@ -3757,7 +3757,7 @@ namespace 教师机监控台 {
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1465, 461);
+			this->ClientSize = System::Drawing::Size(1465, 720);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->label129);

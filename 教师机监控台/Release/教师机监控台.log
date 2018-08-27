@@ -1,16 +1,4 @@
-﻿  成绩查询.cpp
-e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(408): warning C4490: “override”: 重写说明符的用法不正确；“教师机监控台::成绩查询::ListViewSort::Compare”与 ref 基类方法不匹配
-  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(408): note: 只有存在来自 ref 类的匹配基方法时，才允许使用“new”或“override”
-  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(408): note: 匹配基方法“System::Collections::IComparer::Compare”来自接口类(而不是 ref 类)
-e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1105): warning C4101: “e”: 未引用的局部变量
-e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1114): warning C4101: “e”: 未引用的局部变量
-e:\clr中腾\教师机监控台\教师机监控台\叠加原理.h(2035): warning C4101: “e”: 未引用的局部变量
-成绩查询.cpp(34): warning C4018: “<”: 有符号/无符号不匹配
-成绩查询.cpp(37): warning C4018: “<”: 有符号/无符号不匹配
-成绩查询.cpp(44): warning C4018: “<”: 有符号/无符号不匹配
-成绩查询.cpp(220): warning C4018: “<”: 有符号/无符号不匹配
-成绩查询.cpp(223): warning C4018: “<”: 有符号/无符号不匹配
-成绩查询.cpp(256): warning C4018: “<”: 有符号/无符号不匹配
+﻿  成绩接收.cpp
   libsocket.lib(libsocket.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
   正在生成代码
   已完成代码的生成

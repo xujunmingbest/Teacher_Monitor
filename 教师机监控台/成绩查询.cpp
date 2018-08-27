@@ -26,6 +26,8 @@
 #include "仪表量程的扩展.h"
 #include "基本电工仪表的使用与测量误差的计算.h"
 #include "功率因数及相序的测量.h"
+#include "互感器.h"
+
 
 using namespace 教师机监控台;
 void 成绩查询::LoadAllTrial() {
@@ -156,6 +158,11 @@ void 成绩查询::OpenTrial(string &TrialName) {
 	else if (TrialName.find(Grades[22], 0) != TrialName.npos) {
 		仪表量程的扩展^ f = gcnew 仪表量程的扩展();
 		f->Load仪表量程的扩展Data(TrialName);
+		f->ShowDialog();
+	}
+	else if (TrialName.find(Grades[23], 0) != TrialName.npos) {
+		互感器^ f = gcnew 互感器();
+		f->Load互感器Data(TrialName);
 		f->ShowDialog();
 	}
 	else if (TrialName.find(Grades[24], 0) != TrialName.npos) {
