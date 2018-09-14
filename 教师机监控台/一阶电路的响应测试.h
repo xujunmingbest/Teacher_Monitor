@@ -61,7 +61,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::GroupBox^  groupBox2;
 	private: System::Windows::Forms::TextBox^  textBoxtrialτ;
 	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::PictureBox^  pictureBoxTrial1;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_in;
+
 	private: System::Windows::Forms::Label^  label6;
 	private: System::Windows::Forms::Label^  label11;
 	private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
@@ -70,14 +71,16 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2Score;
-	private: System::Windows::Forms::PictureBox^  pictureBoxTrial2;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial2_in;
+
 
 
 	private: System::Windows::Forms::GroupBox^  groupBox3;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::TextBox^  textBoxTrial3Score;
-	private: System::Windows::Forms::PictureBox^  pictureBoxTrial3;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_in;
+
 
 
 
@@ -95,6 +98,18 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Label^  label结论;
 	private: System::Windows::Forms::Label^  label64;
+	private: System::Windows::Forms::Label^  label8;
+	private: System::Windows::Forms::Label^  label7;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_out;
+	private: System::Windows::Forms::Label^  label10;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial2_out;
+
+	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_out;
+
+	private: System::Windows::Forms::Label^  label12;
+
 
 	private:
 		/// <summary>
@@ -139,19 +154,21 @@ namespace 教师机监控台 {
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxtrialτ = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->pictureBoxTrial1 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxTrial1_in = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
-			this->pictureBoxTrial2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxTrial2_in = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial3Score = (gcnew System::Windows::Forms::TextBox());
-			this->pictureBoxTrial3 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBoxTrial3_in = (gcnew System::Windows::Forms::PictureBox());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->label64 = (gcnew System::Windows::Forms::Label());
+			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
@@ -159,18 +176,28 @@ namespace 教师机监控台 {
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->label结论 = (gcnew System::Windows::Forms::Label());
-			this->label64 = (gcnew System::Windows::Forms::Label());
+			this->pictureBoxTrial1_out = (gcnew System::Windows::Forms::PictureBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->pictureBoxTrial2_out = (gcnew System::Windows::Forms::PictureBox());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->pictureBoxTrial3_out = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox7->SuspendLayout();
 			this->groupBox2->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_in))->BeginInit();
 			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2_in))->BeginInit();
 			this->groupBox3->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3_in))->BeginInit();
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->groupBox5->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_out))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2_out))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3_out))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// groupBox7
@@ -439,17 +466,20 @@ namespace 教师机监控台 {
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->label8);
+			this->groupBox2->Controls->Add(this->label7);
+			this->groupBox2->Controls->Add(this->pictureBoxTrial1_out);
 			this->groupBox2->Controls->Add(this->label6);
 			this->groupBox2->Controls->Add(this->label11);
 			this->groupBox2->Controls->Add(this->textBoxTrial1Score);
 			this->groupBox2->Controls->Add(this->textBoxtrialτ);
 			this->groupBox2->Controls->Add(this->label3);
-			this->groupBox2->Controls->Add(this->pictureBoxTrial1);
+			this->groupBox2->Controls->Add(this->pictureBoxTrial1_in);
 			this->groupBox2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox2->Location = System::Drawing::Point(14, 341);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(977, 639);
+			this->groupBox2->Size = System::Drawing::Size(977, 1193);
 			this->groupBox2->TabIndex = 200;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"实验内容一";
@@ -459,7 +489,7 @@ namespace 教师机监控台 {
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label6->Location = System::Drawing::Point(21, 592);
+			this->label6->Location = System::Drawing::Point(36, 1139);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(89, 20);
 			this->label6->TabIndex = 311;
@@ -470,7 +500,7 @@ namespace 教师机监控台 {
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label11->Location = System::Drawing::Point(298, 592);
+			this->label11->Location = System::Drawing::Point(313, 1139);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(129, 20);
 			this->label11->TabIndex = 310;
@@ -478,7 +508,7 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial1Score
 			// 
-			this->textBoxTrial1Score->Location = System::Drawing::Point(123, 589);
+			this->textBoxTrial1Score->Location = System::Drawing::Point(138, 1136);
 			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
 			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial1Score->TabIndex = 309;
@@ -488,7 +518,7 @@ namespace 教师机监控台 {
 			// 
 			this->textBoxtrialτ->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->textBoxtrialτ->Location = System::Drawing::Point(144, 544);
+			this->textBoxtrialτ->Location = System::Drawing::Point(159, 1091);
 			this->textBoxtrialτ->Name = L"textBoxtrialτ";
 			this->textBoxtrialτ->Size = System::Drawing::Size(284, 30);
 			this->textBoxtrialτ->TabIndex = 91;
@@ -498,31 +528,36 @@ namespace 教师机监控台 {
 			this->label3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label3->ForeColor = System::Drawing::Color::Black;
-			this->label3->Location = System::Drawing::Point(13, 544);
+			this->label3->Location = System::Drawing::Point(28, 1091);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(113, 25);
 			this->label3->TabIndex = 90;
 			this->label3->Text = L"时间常数τ";
 			// 
-			// pictureBoxTrial1
+			// pictureBoxTrial1_in
 			// 
-			this->pictureBoxTrial1->Location = System::Drawing::Point(17, 29);
-			this->pictureBoxTrial1->Name = L"pictureBoxTrial1";
-			this->pictureBoxTrial1->Size = System::Drawing::Size(872, 498);
-			this->pictureBoxTrial1->TabIndex = 89;
-			this->pictureBoxTrial1->TabStop = false;
+			this->pictureBoxTrial1_in->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial1_in.Image")));
+			this->pictureBoxTrial1_in->Location = System::Drawing::Point(17, 29);
+			this->pictureBoxTrial1_in->Name = L"pictureBoxTrial1_in";
+			this->pictureBoxTrial1_in->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial1_in->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial1_in->TabIndex = 89;
+			this->pictureBoxTrial1_in->TabStop = false;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->label10);
+			this->groupBox1->Controls->Add(this->pictureBoxTrial2_out);
+			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->textBoxTrial2Score);
-			this->groupBox1->Controls->Add(this->pictureBoxTrial2);
+			this->groupBox1->Controls->Add(this->pictureBoxTrial2_in);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox1->Location = System::Drawing::Point(31, 15);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(977, 592);
+			this->groupBox1->Size = System::Drawing::Size(977, 1120);
 			this->groupBox1->TabIndex = 201;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"实验内容二";
@@ -532,7 +567,7 @@ namespace 教师机监控台 {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label1->Location = System::Drawing::Point(17, 544);
+			this->label1->Location = System::Drawing::Point(121, 1081);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(89, 20);
 			this->label1->TabIndex = 311;
@@ -543,7 +578,7 @@ namespace 教师机监控台 {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label2->Location = System::Drawing::Point(294, 544);
+			this->label2->Location = System::Drawing::Point(398, 1081);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(129, 20);
 			this->label2->TabIndex = 310;
@@ -551,32 +586,36 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial2Score
 			// 
-			this->textBoxTrial2Score->Location = System::Drawing::Point(119, 541);
+			this->textBoxTrial2Score->Location = System::Drawing::Point(223, 1078);
 			this->textBoxTrial2Score->Name = L"textBoxTrial2Score";
 			this->textBoxTrial2Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial2Score->TabIndex = 309;
 			this->textBoxTrial2Score->TextChanged += gcnew System::EventHandler(this, &一阶电路的响应测试::textBoxTrial2Score_TextChanged);
 			// 
-			// pictureBoxTrial2
+			// pictureBoxTrial2_in
 			// 
-			this->pictureBoxTrial2->Location = System::Drawing::Point(17, 29);
-			this->pictureBoxTrial2->Name = L"pictureBoxTrial2";
-			this->pictureBoxTrial2->Size = System::Drawing::Size(872, 498);
-			this->pictureBoxTrial2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
-			this->pictureBoxTrial2->TabIndex = 89;
-			this->pictureBoxTrial2->TabStop = false;
+			this->pictureBoxTrial2_in->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial2_in.Image")));
+			this->pictureBoxTrial2_in->Location = System::Drawing::Point(17, 29);
+			this->pictureBoxTrial2_in->Name = L"pictureBoxTrial2_in";
+			this->pictureBoxTrial2_in->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial2_in->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial2_in->TabIndex = 89;
+			this->pictureBoxTrial2_in->TabStop = false;
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->label13);
+			this->groupBox3->Controls->Add(this->pictureBoxTrial3_out);
+			this->groupBox3->Controls->Add(this->label12);
 			this->groupBox3->Controls->Add(this->label4);
 			this->groupBox3->Controls->Add(this->label5);
 			this->groupBox3->Controls->Add(this->textBoxTrial3Score);
-			this->groupBox3->Controls->Add(this->pictureBoxTrial3);
+			this->groupBox3->Controls->Add(this->pictureBoxTrial3_in);
 			this->groupBox3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox3->Location = System::Drawing::Point(31, 623);
+			this->groupBox3->Location = System::Drawing::Point(31, 1151);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(977, 592);
+			this->groupBox3->Size = System::Drawing::Size(977, 1115);
 			this->groupBox3->TabIndex = 312;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"实验内容三";
@@ -586,7 +625,7 @@ namespace 教师机监控台 {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label4->Location = System::Drawing::Point(17, 544);
+			this->label4->Location = System::Drawing::Point(146, 1070);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(89, 20);
 			this->label4->TabIndex = 311;
@@ -597,7 +636,7 @@ namespace 教师机监控台 {
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label5->Location = System::Drawing::Point(294, 544);
+			this->label5->Location = System::Drawing::Point(423, 1070);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(129, 20);
 			this->label5->TabIndex = 310;
@@ -605,20 +644,21 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial3Score
 			// 
-			this->textBoxTrial3Score->Location = System::Drawing::Point(119, 541);
+			this->textBoxTrial3Score->Location = System::Drawing::Point(248, 1067);
 			this->textBoxTrial3Score->Name = L"textBoxTrial3Score";
 			this->textBoxTrial3Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial3Score->TabIndex = 309;
 			this->textBoxTrial3Score->TextChanged += gcnew System::EventHandler(this, &一阶电路的响应测试::textBoxTrial3Score_TextChanged);
 			// 
-			// pictureBoxTrial3
+			// pictureBoxTrial3_in
 			// 
-			this->pictureBoxTrial3->Location = System::Drawing::Point(17, 29);
-			this->pictureBoxTrial3->Name = L"pictureBoxTrial3";
-			this->pictureBoxTrial3->Size = System::Drawing::Size(872, 498);
-			this->pictureBoxTrial3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
-			this->pictureBoxTrial3->TabIndex = 89;
-			this->pictureBoxTrial3->TabStop = false;
+			this->pictureBoxTrial3_in->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial3_in.Image")));
+			this->pictureBoxTrial3_in->Location = System::Drawing::Point(17, 29);
+			this->pictureBoxTrial3_in->Name = L"pictureBoxTrial3_in";
+			this->pictureBoxTrial3_in->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial3_in->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial3_in->TabIndex = 89;
+			this->pictureBoxTrial3_in->TabStop = false;
 			// 
 			// panel1
 			// 
@@ -626,7 +666,7 @@ namespace 教师机监控台 {
 			this->panel1->Controls->Add(this->groupBox2);
 			this->panel1->Location = System::Drawing::Point(12, 18);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1037, 989);
+			this->panel1->Size = System::Drawing::Size(1037, 1543);
 			this->panel1->TabIndex = 313;
 			// 
 			// panel2
@@ -639,14 +679,34 @@ namespace 教师机监控台 {
 			this->panel2->Controls->Add(this->groupBox3);
 			this->panel2->Controls->Add(this->button1);
 			this->panel2->Controls->Add(this->groupBox5);
-			this->panel2->Location = System::Drawing::Point(12, 1041);
+			this->panel2->Location = System::Drawing::Point(12, 1579);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(1034, 1366);
+			this->panel2->Size = System::Drawing::Size(1034, 2419);
 			this->panel2->TabIndex = 314;
+			// 
+			// label64
+			// 
+			this->label64->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label64->ForeColor = System::Drawing::Color::Black;
+			this->label64->Location = System::Drawing::Point(26, 2282);
+			this->label64->Name = L"label64";
+			this->label64->Size = System::Drawing::Size(104, 27);
+			this->label64->TabIndex = 326;
+			this->label64->Text = L"实验结论";
+			// 
+			// label结论
+			// 
+			this->label结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label结论->Location = System::Drawing::Point(170, 2276);
+			this->label结论->Name = L"label结论";
+			this->label结论->Size = System::Drawing::Size(814, 33);
+			this->label结论->TabIndex = 327;
+			this->label结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(897, 1313);
+			this->button3->Location = System::Drawing::Point(890, 2358);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(101, 36);
 			this->button3->TabIndex = 325;
@@ -656,7 +716,7 @@ namespace 教师机监控台 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(784, 1313);
+			this->button2->Location = System::Drawing::Point(777, 2358);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(101, 36);
 			this->button2->TabIndex = 324;
@@ -666,7 +726,7 @@ namespace 教师机监控台 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(677, 1313);
+			this->button1->Location = System::Drawing::Point(670, 2358);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(101, 36);
 			this->button1->TabIndex = 323;
@@ -679,7 +739,7 @@ namespace 教师机监控台 {
 			this->groupBox5->Controls->Add(this->labelTotalGrade);
 			this->groupBox5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox5->Location = System::Drawing::Point(14, 1285);
+			this->groupBox5->Location = System::Drawing::Point(7, 2330);
 			this->groupBox5->Name = L"groupBox5";
 			this->groupBox5->Size = System::Drawing::Size(381, 73);
 			this->groupBox5->TabIndex = 322;
@@ -710,25 +770,101 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
-			// label结论
+			// pictureBoxTrial1_out
 			// 
-			this->label结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label结论->Location = System::Drawing::Point(177, 1231);
-			this->label结论->Name = L"label结论";
-			this->label结论->Size = System::Drawing::Size(814, 33);
-			this->label结论->TabIndex = 327;
-			this->label结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->pictureBoxTrial1_out->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial1_out.Image")));
+			this->pictureBoxTrial1_out->Location = System::Drawing::Point(17, 548);
+			this->pictureBoxTrial1_out->Name = L"pictureBoxTrial1_out";
+			this->pictureBoxTrial1_out->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial1_out->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial1_out->TabIndex = 312;
+			this->pictureBoxTrial1_out->TabStop = false;
 			// 
-			// label64
+			// label7
 			// 
-			this->label64->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label7->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label64->ForeColor = System::Drawing::Color::Black;
-			this->label64->Location = System::Drawing::Point(33, 1237);
-			this->label64->Name = L"label64";
-			this->label64->Size = System::Drawing::Size(104, 27);
-			this->label64->TabIndex = 326;
-			this->label64->Text = L"实验结论";
+			this->label7->ForeColor = System::Drawing::Color::Black;
+			this->label7->Location = System::Drawing::Point(310, 1036);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(113, 25);
+			this->label7->TabIndex = 313;
+			this->label7->Text = L"输出波形";
+			// 
+			// label8
+			// 
+			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label8->ForeColor = System::Drawing::Color::Black;
+			this->label8->Location = System::Drawing::Point(296, 520);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(113, 25);
+			this->label8->TabIndex = 314;
+			this->label8->Text = L"输入波形";
+			// 
+			// label9
+			// 
+			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label9->ForeColor = System::Drawing::Color::Black;
+			this->label9->Location = System::Drawing::Point(303, 517);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(113, 25);
+			this->label9->TabIndex = 314;
+			this->label9->Text = L"输入波形";
+			// 
+			// label10
+			// 
+			this->label10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label10->ForeColor = System::Drawing::Color::Black;
+			this->label10->Location = System::Drawing::Point(303, 1036);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(113, 25);
+			this->label10->TabIndex = 316;
+			this->label10->Text = L"输出波形";
+			// 
+			// pictureBoxTrial2_out
+			// 
+			this->pictureBoxTrial2_out->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial2_out.Image")));
+			this->pictureBoxTrial2_out->Location = System::Drawing::Point(6, 545);
+			this->pictureBoxTrial2_out->Name = L"pictureBoxTrial2_out";
+			this->pictureBoxTrial2_out->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial2_out->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial2_out->TabIndex = 315;
+			this->pictureBoxTrial2_out->TabStop = false;
+			// 
+			// label12
+			// 
+			this->label12->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label12->ForeColor = System::Drawing::Color::Black;
+			this->label12->Location = System::Drawing::Point(319, 515);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(113, 25);
+			this->label12->TabIndex = 315;
+			this->label12->Text = L"输入波形";
+			// 
+			// label13
+			// 
+			this->label13->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label13->ForeColor = System::Drawing::Color::Black;
+			this->label13->Location = System::Drawing::Point(317, 1029);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(113, 25);
+			this->label13->TabIndex = 317;
+			this->label13->Text = L"输出波形";
+			// 
+			// pictureBoxTrial3_out
+			// 
+			this->pictureBoxTrial3_out->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial3_out.Image")));
+			this->pictureBoxTrial3_out->Location = System::Drawing::Point(15, 543);
+			this->pictureBoxTrial3_out->Name = L"pictureBoxTrial3_out";
+			this->pictureBoxTrial3_out->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial3_out->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial3_out->TabIndex = 316;
+			this->pictureBoxTrial3_out->TabStop = false;
 			// 
 			// 一阶电路的响应测试
 			// 
@@ -745,17 +881,20 @@ namespace 教师机监控台 {
 			this->groupBox7->PerformLayout();
 			this->groupBox2->ResumeLayout(false);
 			this->groupBox2->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_in))->EndInit();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2_in))->EndInit();
 			this->groupBox3->ResumeLayout(false);
 			this->groupBox3->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3_in))->EndInit();
 			this->panel1->ResumeLayout(false);
 			this->panel2->ResumeLayout(false);
 			this->groupBox5->ResumeLayout(false);
 			this->groupBox5->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_out))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial2_out))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial3_out))->EndInit();
 			this->ResumeLayout(false);
 
 		}

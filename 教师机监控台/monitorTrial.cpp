@@ -8,7 +8,7 @@ using namespace System::Threading;
 monitorTrial mt;
 
 void monitorTrial::Open() {
-	cs.Open(1239);
+	cs.Open(10002);
 	cs.SetServfun(monitorTrial::RecvGrade);
 	cs.Acpt();
 }

@@ -1,4 +1,189 @@
-﻿  成绩接收.cpp
+﻿  LongConnectServ.cpp
+LongConnectServ.cpp(138): warning C4018: “<”: 有符号/无符号不匹配
+LongConnectServ.cpp(147): warning C4018: “<”: 有符号/无符号不匹配
+LongConnectServ.cpp(166): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+LongConnectServ.cpp(175): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+LongConnectServ.cpp(211): warning C4018: “<”: 有符号/无符号不匹配
+LongConnectServ.cpp(223): warning C4018: “<”: 有符号/无符号不匹配
+  Main.cpp
+e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): warning C4490: “override”: 重写说明符的用法不正确；“教师机监控台::成绩查询::ListViewSort::Compare”与 ref 基类方法不匹配
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 只有存在来自 ref 类的匹配基方法时，才允许使用“new”或“override”
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 匹配基方法“System::Collections::IComparer::Compare”来自接口类(而不是 ref 类)
+  RC网络的频率特性.cpp
+RC网络的频率特性.cpp(30): warning C4101: “e”: 未引用的局部变量
+RC网络的频率特性.cpp(43): warning C4101: “e”: 未引用的局部变量
+RC网络的频率特性.cpp(52): warning C4101: “e”: 未引用的局部变量
+RC网络的频率特性.cpp(62): warning C4101: “e”: 未引用的局部变量
+  RLC串联谐振电路的研究.cpp
+RLC串联谐振电路的研究.cpp(35): warning C4101: “e”: 未引用的局部变量
+RLC串联谐振电路的研究.cpp(51): warning C4101: “e”: 未引用的局部变量
+RLC串联谐振电路的研究.cpp(67): warning C4101: “e”: 未引用的局部变量
+RLC串联谐振电路的研究.cpp(84): warning C4101: “e”: 未引用的局部变量
+  RLC元件阻抗特性的测定.cpp
+RLC元件阻抗特性的测定.cpp(32): warning C4101: “e”: 未引用的局部变量
+RLC元件阻抗特性的测定.cpp(46): warning C4101: “e”: 未引用的局部变量
+RLC元件阻抗特性的测定.cpp(56): warning C4101: “e”: 未引用的局部变量
+RLC元件阻抗特性的测定.cpp(68): warning C4101: “e”: 未引用的局部变量
+RLC元件阻抗特性的测定.cpp(283): warning C4101: “E”: 未引用的局部变量
+  ScreenCapture.cpp
+ScreenCapture.cpp(73): warning C4018: “<”: 有符号/无符号不匹配
+ScreenCapture.cpp(84): warning C4101: “e”: 未引用的局部变量
+  TodayTrial.cpp
+TodayTrial.cpp(53): warning C4018: “<”: 有符号/无符号不匹配
+  VCVS实验.cpp
+VCVS实验.cpp(37): warning C4101: “e”: 未引用的局部变量
+VCVS实验.cpp(55): warning C4101: “e”: 未引用的局部变量
+VCVS实验.cpp(65): warning C4101: “e”: 未引用的局部变量
+VCVS实验.cpp(77): warning C4101: “e”: 未引用的局部变量
+  lookStuCom.cpp
+lookStuCom.cpp(13): warning C4018: “<”: 有符号/无符号不匹配
+lookStuCom.cpp(38): warning C4018: “<”: 有符号/无符号不匹配
+lookStuCom.cpp(67): warning C4018: “<”: 有符号/无符号不匹配
+  mainWnd.cpp
+e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): warning C4490: “override”: 重写说明符的用法不正确；“教师机监控台::成绩查询::ListViewSort::Compare”与 ref 基类方法不匹配
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 只有存在来自 ref 类的匹配基方法时，才允许使用“new”或“override”
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 匹配基方法“System::Collections::IComparer::Compare”来自接口类(而不是 ref 类)
+  monitorLoad.cpp
+monitorLoad.cpp(347): warning C4101: “E”: 未引用的局部变量
+monitorLoad.cpp(388): warning C4101: “E”: 未引用的局部变量
+monitorLoad.cpp(438): warning C4101: “E”: 未引用的局部变量
+monitorLoad.cpp(486): warning C4101: “E”: 未引用的局部变量
+monitorLoad.cpp(538): warning C4101: “E”: 未引用的局部变量
+  monitorTrial.cpp
+  tool.cpp
+tool.cpp(9): warning C4477: “snprintf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“System::String ^”
+tool.cpp(40): warning C4947: “System::Net::Dns::GetHostByName”: 标记为已过时
+  tool.cpp(40): note: 消息: “GetHostByName is obsoleted for this type, please use GetHostEntry instead. http://go.microsoft.com/fwlink/?linkid=14202”
+  一阶电路的响应测试.cpp
+一阶电路的响应测试.cpp(31): warning C4101: “e”: 未引用的局部变量
+一阶电路的响应测试.cpp(44): warning C4101: “e”: 未引用的局部变量
+一阶电路的响应测试.cpp(53): warning C4101: “e”: 未引用的局部变量
+一阶电路的响应测试.cpp(64): warning C4101: “e”: 未引用的局部变量
+  三相交流电路电压电流的测量.cpp
+三相交流电路电压电流的测量.cpp(33): warning C4101: “e”: 未引用的局部变量
+三相交流电路电压电流的测量.cpp(46): warning C4101: “e”: 未引用的局部变量
+三相交流电路电压电流的测量.cpp(55): warning C4101: “e”: 未引用的局部变量
+三相交流电路电压电流的测量.cpp(67): warning C4101: “e”: 未引用的局部变量
+  三相电路功率的测量.cpp
+三相电路功率的测量.cpp(31): warning C4101: “e”: 未引用的局部变量
+三相电路功率的测量.cpp(44): warning C4101: “e”: 未引用的局部变量
+三相电路功率的测量.cpp(53): warning C4101: “e”: 未引用的局部变量
+三相电路功率的测量.cpp(64): warning C4101: “e”: 未引用的局部变量
+  二端口网络的研究.cpp
+二端口网络的研究.cpp(30): warning C4101: “e”: 未引用的局部变量
+二端口网络的研究.cpp(42): warning C4101: “e”: 未引用的局部变量
+二端口网络的研究.cpp(52): warning C4101: “e”: 未引用的局部变量
+二端口网络的研究.cpp(64): warning C4101: “e”: 未引用的局部变量
+  二阶动态电路响应的研究.cpp
+二阶动态电路响应的研究.cpp(32): warning C4101: “e”: 未引用的局部变量
+二阶动态电路响应的研究.cpp(45): warning C4101: “e”: 未引用的局部变量
+二阶动态电路响应的研究.cpp(54): warning C4101: “e”: 未引用的局部变量
+二阶动态电路响应的研究.cpp(65): warning C4101: “e”: 未引用的局部变量
+  互感器.cpp
+互感器.cpp(31): warning C4101: “e”: 未引用的局部变量
+互感器.cpp(44): warning C4101: “e”: 未引用的局部变量
+互感器.cpp(53): warning C4101: “e”: 未引用的局部变量
+互感器.cpp(63): warning C4101: “e”: 未引用的局部变量
+  仪表量程的扩展.cpp
+仪表量程的扩展.cpp(32): warning C4101: “e”: 未引用的局部变量
+仪表量程的扩展.cpp(45): warning C4101: “e”: 未引用的局部变量
+仪表量程的扩展.cpp(54): warning C4101: “e”: 未引用的局部变量
+仪表量程的扩展.cpp(64): warning C4101: “e”: 未引用的局部变量
+  正在生成代码...
+  正在编译...
+  元件伏安特性测试.cpp
+元件伏安特性测试.cpp(32): warning C4101: “e”: 未引用的局部变量
+元件伏安特性测试.cpp(377): warning C4101: “E”: 未引用的局部变量
+元件伏安特性测试.cpp(413): warning C4101: “E”: 未引用的局部变量
+元件伏安特性测试.cpp(460): warning C4101: “E”: 未引用的局部变量
+元件伏安特性测试.cpp(506): warning C4101: “E”: 未引用的局部变量
+元件伏安特性测试.cpp(551): warning C4101: “E”: 未引用的局部变量
+元件伏安特性测试.cpp(568): warning C4101: “e”: 未引用的局部变量
+元件伏安特性测试.cpp(604): warning C4101: “e”: 未引用的局部变量
+元件伏安特性测试.cpp(616): warning C4101: “e”: 未引用的局部变量
+  功率因数及相序的测量.cpp
+功率因数及相序的测量.cpp(28): warning C4101: “e”: 未引用的局部变量
+功率因数及相序的测量.cpp(40): warning C4101: “e”: 未引用的局部变量
+功率因数及相序的测量.cpp(49): warning C4101: “e”: 未引用的局部变量
+功率因数及相序的测量.cpp(59): warning C4101: “e”: 未引用的局部变量
+  单相电度表实验.cpp
+单相电度表实验.cpp(27): warning C4101: “e”: 未引用的局部变量
+单相电度表实验.cpp(39): warning C4101: “e”: 未引用的局部变量
+单相电度表实验.cpp(48): warning C4101: “e”: 未引用的局部变量
+单相电度表实验.cpp(58): warning C4101: “e”: 未引用的局部变量
+  单相铁心变压器特性的测试.cpp
+单相铁心变压器特性的测试.cpp(31): warning C4101: “e”: 未引用的局部变量
+单相铁心变压器特性的测试.cpp(44): warning C4101: “e”: 未引用的局部变量
+单相铁心变压器特性的测试.cpp(53): warning C4101: “e”: 未引用的局部变量
+单相铁心变压器特性的测试.cpp(65): warning C4101: “e”: 未引用的局部变量
+单相铁心变压器特性的测试.cpp(185): warning C4101: “E”: 未引用的局部变量
+单相铁心变压器特性的测试.cpp(220): warning C4101: “E”: 未引用的局部变量
+  叠加原理.cpp
+e:\clr中腾\教师机监控台\教师机监控台\叠加原理.h(2035): warning C4101: “e”: 未引用的局部变量
+叠加原理.cpp(29): warning C4101: “e”: 未引用的局部变量
+叠加原理.cpp(167): warning C4101: “e”: 未引用的局部变量
+叠加原理.cpp(179): warning C4101: “e”: 未引用的局部变量
+  回转器.cpp
+回转器.cpp(32): warning C4101: “e”: 未引用的局部变量
+回转器.cpp(46): warning C4101: “e”: 未引用的局部变量
+回转器.cpp(55): warning C4101: “e”: 未引用的局部变量
+回转器.cpp(65): warning C4101: “e”: 未引用的局部变量
+  基尔霍夫定律.cpp
+e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1105): warning C4101: “e”: 未引用的局部变量
+e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1114): warning C4101: “e”: 未引用的局部变量
+基尔霍夫定律.cpp(26): warning C4101: “e”: 未引用的局部变量
+  基本电工仪表的使用与测量误差的计算.cpp
+基本电工仪表的使用与测量误差的计算.cpp(29): warning C4101: “e”: 未引用的局部变量
+基本电工仪表的使用与测量误差的计算.cpp(41): warning C4101: “e”: 未引用的局部变量
+基本电工仪表的使用与测量误差的计算.cpp(50): warning C4101: “e”: 未引用的局部变量
+基本电工仪表的使用与测量误差的计算.cpp(60): warning C4101: “e”: 未引用的局部变量
+  成绩查询.cpp
+e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): warning C4490: “override”: 重写说明符的用法不正确；“教师机监控台::成绩查询::ListViewSort::Compare”与 ref 基类方法不匹配
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 只有存在来自 ref 类的匹配基方法时，才允许使用“new”或“override”
+  e:\clr中腾\教师机监控台\教师机监控台\成绩查询.h(409): note: 匹配基方法“System::Collections::IComparer::Compare”来自接口类(而不是 ref 类)
+e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1105): warning C4101: “e”: 未引用的局部变量
+e:\clr中腾\教师机监控台\教师机监控台\基尔霍夫定律.h(1114): warning C4101: “e”: 未引用的局部变量
+e:\clr中腾\教师机监控台\教师机监控台\叠加原理.h(2035): warning C4101: “e”: 未引用的局部变量
+成绩查询.cpp(36): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(39): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(46): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(227): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(230): warning C4018: “<”: 有符号/无符号不匹配
+成绩查询.cpp(263): warning C4018: “<”: 有符号/无符号不匹配
+  戴维南定理.cpp
+戴维南定理.cpp(32): warning C4101: “e”: 未引用的局部变量
+戴维南定理.cpp(46): warning C4101: “e”: 未引用的局部变量
+戴维南定理.cpp(56): warning C4101: “e”: 未引用的局部变量
+戴维南定理.cpp(68): warning C4101: “e”: 未引用的局部变量
+戴维南定理.cpp(200): warning C4101: “E”: 未引用的局部变量
+戴维南定理.cpp(237): warning C4101: “E”: 未引用的局部变量
+  日光灯功率因数的提高.cpp
+日光灯功率因数的提高.cpp(32): warning C4101: “e”: 未引用的局部变量
+日光灯功率因数的提高.cpp(46): warning C4101: “e”: 未引用的局部变量
+日光灯功率因数的提高.cpp(55): warning C4101: “e”: 未引用的局部变量
+日光灯功率因数的提高.cpp(66): warning C4101: “e”: 未引用的局部变量
+  最大功率传输条件的测定.cpp
+最大功率传输条件的测定.cpp(32): warning C4101: “e”: 未引用的局部变量
+最大功率传输条件的测定.cpp(45): warning C4101: “e”: 未引用的局部变量
+最大功率传输条件的测定.cpp(55): warning C4101: “e”: 未引用的局部变量
+最大功率传输条件的测定.cpp(67): warning C4101: “e”: 未引用的局部变量
+  电压源与电流源的等效变换.cpp
+电压源与电流源的等效变换.cpp(30): warning C4101: “e”: 未引用的局部变量
+电压源与电流源的等效变换.cpp(172): warning C4101: “e”: 未引用的局部变量
+电压源与电流源的等效变换.cpp(184): warning C4101: “e”: 未引用的局部变量
+电压源与电流源的等效变换.cpp(197): warning C4101: “e”: 未引用的局部变量
+  电路状态轨迹的观测.cpp
+电路状态轨迹的观测.cpp(31): warning C4101: “e”: 未引用的局部变量
+电路状态轨迹的观测.cpp(43): warning C4101: “e”: 未引用的局部变量
+电路状态轨迹的观测.cpp(53): warning C4101: “e”: 未引用的局部变量
+电路状态轨迹的观测.cpp(65): warning C4101: “e”: 未引用的局部变量
+  负阻抗变换器.cpp
+负阻抗变换器.cpp(30): warning C4101: “e”: 未引用的局部变量
+负阻抗变换器.cpp(42): warning C4101: “e”: 未引用的局部变量
+负阻抗变换器.cpp(51): warning C4101: “e”: 未引用的局部变量
+负阻抗变换器.cpp(62): warning C4101: “e”: 未引用的局部变量
+负阻抗变换器.cpp(194): warning C4101: “E”: 未引用的局部变量
+  正在生成代码...
   libsocket.lib(libsocket.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
   正在生成代码
   已完成代码的生成

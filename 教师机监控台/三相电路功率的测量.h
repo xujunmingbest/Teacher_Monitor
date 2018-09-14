@@ -65,9 +65,9 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  labelTrial1_PC_1;
 	private: System::Windows::Forms::Label^  labelTrial1_PB_1;
 	private: System::Windows::Forms::Label^  labelTrial1_PA_1;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_P_2;
+
 	private: System::Windows::Forms::Label^  label22;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_P_1;
+
 	private: System::Windows::Forms::Label^  label21;
 	private: System::Windows::Forms::Label^  label20;
 	private: System::Windows::Forms::Label^  label18;
@@ -103,8 +103,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  labelTrial2_P1_4;
 	private: System::Windows::Forms::Label^  labelTrial2_P2_3;
 	private: System::Windows::Forms::Label^  labelTrial2_P1_3;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_P_4;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_P_3;
+
+
 	private: System::Windows::Forms::Label^  labelTrial2_P2_2;
 	private: System::Windows::Forms::Label^  labelTrial2_P1_2;
 	private: System::Windows::Forms::Label^  labelTrial2_P2_1;
@@ -117,9 +117,9 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label68;
 	private: System::Windows::Forms::Label^  label61;
 	private: System::Windows::Forms::Label^  label62;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_P_2;
+
 	private: System::Windows::Forms::Label^  label14;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_P_1;
+
 	private: System::Windows::Forms::Label^  label25;
 	private: System::Windows::Forms::Label^  label27;
 	private: System::Windows::Forms::Label^  label29;
@@ -157,15 +157,15 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::PictureBox^  pictureBox4;
 	private: System::Windows::Forms::Label^  labelTrial3_I_3;
 	private: System::Windows::Forms::Label^  labelTrial3_U_3;
-	private: System::Windows::Forms::TextBox^  textBoxTrial3_QQ_3;
+
 	private: System::Windows::Forms::Label^  labelTrial3_I_2;
 	private: System::Windows::Forms::Label^  labelTrial3_U_2;
 	private: System::Windows::Forms::Label^  labelTrial3_I_1;
 	private: System::Windows::Forms::Label^  labelTrial3_U_1;
 	private: System::Windows::Forms::Label^  label99;
-	private: System::Windows::Forms::TextBox^  textBoxTrial3_QQ_2;
+
 	private: System::Windows::Forms::Label^  label102;
-	private: System::Windows::Forms::TextBox^  textBoxTrial3_QQ_1;
+
 	private: System::Windows::Forms::Label^  label103;
 	private: System::Windows::Forms::Label^  label104;
 	private: System::Windows::Forms::Label^  label105;
@@ -205,6 +205,15 @@ private: System::Windows::Forms::Button^  button2;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 private: System::Windows::Forms::Panel^  panel1;
+private: System::Windows::Forms::Label^  textBoxTrial1_P_2;
+private: System::Windows::Forms::Label^  textBoxTrial1_P_1;
+private: System::Windows::Forms::Label^  textBoxTrial2_P_4;
+private: System::Windows::Forms::Label^  textBoxTrial2_P_3;
+private: System::Windows::Forms::Label^  textBoxTrial2_P_2;
+private: System::Windows::Forms::Label^  textBoxTrial2_P_1;
+private: System::Windows::Forms::Label^  textBoxTrial3_QQ_3;
+private: System::Windows::Forms::Label^  textBoxTrial3_QQ_2;
+private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 
 	private:
 		/// <summary>
@@ -253,9 +262,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->labelTrial1_PC_1 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial1_PB_1 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial1_PA_1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_P_2 = (gcnew System::Windows::Forms::TextBox());
 			this->label22 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_P_1 = (gcnew System::Windows::Forms::TextBox());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
@@ -294,8 +301,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->labelTrial2_P1_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_P2_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_P1_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_P_3 = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial2_P2_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_P1_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_P2_1 = (gcnew System::Windows::Forms::Label());
@@ -308,9 +313,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label68 = (gcnew System::Windows::Forms::Label());
 			this->label61 = (gcnew System::Windows::Forms::Label());
 			this->label62 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_2 = (gcnew System::Windows::Forms::TextBox());
 			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_1 = (gcnew System::Windows::Forms::TextBox());
 			this->label25 = (gcnew System::Windows::Forms::Label());
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->label29 = (gcnew System::Windows::Forms::Label());
@@ -351,15 +354,12 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			this->labelTrial3_I_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial3_U_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_3 = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial3_I_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial3_U_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial3_I_1 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial3_U_1 = (gcnew System::Windows::Forms::Label());
 			this->label99 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_2 = (gcnew System::Windows::Forms::TextBox());
 			this->label102 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_1 = (gcnew System::Windows::Forms::TextBox());
 			this->label103 = (gcnew System::Windows::Forms::Label());
 			this->label104 = (gcnew System::Windows::Forms::Label());
 			this->label105 = (gcnew System::Windows::Forms::Label());
@@ -387,6 +387,15 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->textBoxTrial1_P_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_P_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_QQ_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_QQ_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_QQ_1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -662,6 +671,8 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// groupBox8
 			// 
+			this->groupBox8->Controls->Add(this->textBoxTrial1_P_2);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_P_1);
 			this->groupBox8->Controls->Add(this->label77);
 			this->groupBox8->Controls->Add(this->label78);
 			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
@@ -671,9 +682,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox8->Controls->Add(this->labelTrial1_PC_1);
 			this->groupBox8->Controls->Add(this->labelTrial1_PB_1);
 			this->groupBox8->Controls->Add(this->labelTrial1_PA_1);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_P_2);
 			this->groupBox8->Controls->Add(this->label22);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_P_1);
 			this->groupBox8->Controls->Add(this->label21);
 			this->groupBox8->Controls->Add(this->label20);
 			this->groupBox8->Controls->Add(this->label18);
@@ -810,13 +819,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->labelTrial1_PA_1->Size = System::Drawing::Size(80, 30);
 			this->labelTrial1_PA_1->TabIndex = 87;
 			// 
-			// textBoxTrial1_P_2
-			// 
-			this->textBoxTrial1_P_2->Location = System::Drawing::Point(776, 195);
-			this->textBoxTrial1_P_2->Name = L"textBoxTrial1_P_2";
-			this->textBoxTrial1_P_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial1_P_2->TabIndex = 73;
-			// 
 			// label22
 			// 
 			this->label22->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -828,13 +830,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label22->Size = System::Drawing::Size(110, 27);
 			this->label22->TabIndex = 72;
 			this->label22->Text = L"∑P（W）";
-			// 
-			// textBoxTrial1_P_1
-			// 
-			this->textBoxTrial1_P_1->Location = System::Drawing::Point(776, 151);
-			this->textBoxTrial1_P_1->Name = L"textBoxTrial1_P_1";
-			this->textBoxTrial1_P_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial1_P_1->TabIndex = 71;
 			// 
 			// label21
 			// 
@@ -1180,6 +1175,10 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->textBoxTrial2_P_4);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_P_3);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_P_2);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_P_1);
 			this->groupBox1->Controls->Add(this->label52);
 			this->groupBox1->Controls->Add(this->label58);
 			this->groupBox1->Controls->Add(this->textBoxTrial2Score);
@@ -1187,8 +1186,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox1->Controls->Add(this->labelTrial2_P1_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_P2_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_P1_3);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_P_4);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_P_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_P2_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_P1_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_P2_1);
@@ -1201,9 +1198,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox1->Controls->Add(this->label68);
 			this->groupBox1->Controls->Add(this->label61);
 			this->groupBox1->Controls->Add(this->label62);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_P_2);
 			this->groupBox1->Controls->Add(this->label14);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_P_1);
 			this->groupBox1->Controls->Add(this->label25);
 			this->groupBox1->Controls->Add(this->label27);
 			this->groupBox1->Controls->Add(this->label29);
@@ -1316,20 +1311,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->labelTrial2_P1_3->Name = L"labelTrial2_P1_3";
 			this->labelTrial2_P1_3->Size = System::Drawing::Size(80, 30);
 			this->labelTrial2_P1_3->TabIndex = 91;
-			// 
-			// textBoxTrial2_P_4
-			// 
-			this->textBoxTrial2_P_4->Location = System::Drawing::Point(645, 305);
-			this->textBoxTrial2_P_4->Name = L"textBoxTrial2_P_4";
-			this->textBoxTrial2_P_4->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_4->TabIndex = 90;
-			// 
-			// textBoxTrial2_P_3
-			// 
-			this->textBoxTrial2_P_3->Location = System::Drawing::Point(645, 253);
-			this->textBoxTrial2_P_3->Name = L"textBoxTrial2_P_3";
-			this->textBoxTrial2_P_3->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_3->TabIndex = 89;
 			// 
 			// labelTrial2_P2_2
 			// 
@@ -1471,13 +1452,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label62->TabIndex = 77;
 			this->label62->Text = L"△接不平衡负载";
 			// 
-			// textBoxTrial2_P_2
-			// 
-			this->textBoxTrial2_P_2->Location = System::Drawing::Point(642, 197);
-			this->textBoxTrial2_P_2->Name = L"textBoxTrial2_P_2";
-			this->textBoxTrial2_P_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_2->TabIndex = 73;
-			// 
 			// label14
 			// 
 			this->label14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -1489,13 +1463,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label14->Size = System::Drawing::Size(110, 27);
 			this->label14->TabIndex = 72;
 			this->label14->Text = L"∑P（W）";
-			// 
-			// textBoxTrial2_P_1
-			// 
-			this->textBoxTrial2_P_1->Location = System::Drawing::Point(642, 143);
-			this->textBoxTrial2_P_1->Name = L"textBoxTrial2_P_1";
-			this->textBoxTrial2_P_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_1->TabIndex = 71;
 			// 
 			// label25
 			// 
@@ -1830,6 +1797,9 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_3);
+			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_2);
+			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_1);
 			this->groupBox2->Controls->Add(this->label60);
 			this->groupBox2->Controls->Add(this->label76);
 			this->groupBox2->Controls->Add(this->textBoxTrial3Score);
@@ -1840,15 +1810,12 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox2->Controls->Add(this->pictureBox4);
 			this->groupBox2->Controls->Add(this->labelTrial3_I_3);
 			this->groupBox2->Controls->Add(this->labelTrial3_U_3);
-			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_3);
 			this->groupBox2->Controls->Add(this->labelTrial3_I_2);
 			this->groupBox2->Controls->Add(this->labelTrial3_U_2);
 			this->groupBox2->Controls->Add(this->labelTrial3_I_1);
 			this->groupBox2->Controls->Add(this->labelTrial3_U_1);
 			this->groupBox2->Controls->Add(this->label99);
-			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_2);
 			this->groupBox2->Controls->Add(this->label102);
-			this->groupBox2->Controls->Add(this->textBoxTrial3_QQ_1);
 			this->groupBox2->Controls->Add(this->label103);
 			this->groupBox2->Controls->Add(this->label104);
 			this->groupBox2->Controls->Add(this->label105);
@@ -1985,13 +1952,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->labelTrial3_U_3->Size = System::Drawing::Size(80, 30);
 			this->labelTrial3_U_3->TabIndex = 91;
 			// 
-			// textBoxTrial3_QQ_3
-			// 
-			this->textBoxTrial3_QQ_3->Location = System::Drawing::Point(712, 231);
-			this->textBoxTrial3_QQ_3->Name = L"textBoxTrial3_QQ_3";
-			this->textBoxTrial3_QQ_3->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_3->TabIndex = 89;
-			// 
 			// labelTrial3_I_2
 			// 
 			this->labelTrial3_I_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -2048,13 +2008,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label99->TabIndex = 77;
 			this->label99->Text = L"（1）、（2）的并联负载";
 			// 
-			// textBoxTrial3_QQ_2
-			// 
-			this->textBoxTrial3_QQ_2->Location = System::Drawing::Point(712, 184);
-			this->textBoxTrial3_QQ_2->Name = L"textBoxTrial3_QQ_2";
-			this->textBoxTrial3_QQ_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_2->TabIndex = 73;
-			// 
 			// label102
 			// 
 			this->label102->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -2066,13 +2019,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label102->Size = System::Drawing::Size(110, 27);
 			this->label102->TabIndex = 72;
 			this->label102->Text = L"∑Q=";
-			// 
-			// textBoxTrial3_QQ_1
-			// 
-			this->textBoxTrial3_QQ_1->Location = System::Drawing::Point(712, 141);
-			this->textBoxTrial3_QQ_1->Name = L"textBoxTrial3_QQ_1";
-			this->textBoxTrial3_QQ_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_1->TabIndex = 71;
 			// 
 			// label103
 			// 
@@ -2365,6 +2311,105 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(1280, 1485);
 			this->panel1->TabIndex = 342;
+			// 
+			// textBoxTrial1_P_2
+			// 
+			this->textBoxTrial1_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_P_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_P_2->Location = System::Drawing::Point(776, 194);
+			this->textBoxTrial1_P_2->Name = L"textBoxTrial1_P_2";
+			this->textBoxTrial1_P_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial1_P_2->TabIndex = 224;
+			// 
+			// textBoxTrial1_P_1
+			// 
+			this->textBoxTrial1_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_P_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_P_1->Location = System::Drawing::Point(776, 150);
+			this->textBoxTrial1_P_1->Name = L"textBoxTrial1_P_1";
+			this->textBoxTrial1_P_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial1_P_1->TabIndex = 223;
+			// 
+			// textBoxTrial2_P_4
+			// 
+			this->textBoxTrial2_P_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_4->Location = System::Drawing::Point(645, 308);
+			this->textBoxTrial2_P_4->Name = L"textBoxTrial2_P_4";
+			this->textBoxTrial2_P_4->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_4->TabIndex = 226;
+			// 
+			// textBoxTrial2_P_3
+			// 
+			this->textBoxTrial2_P_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_3->Location = System::Drawing::Point(645, 255);
+			this->textBoxTrial2_P_3->Name = L"textBoxTrial2_P_3";
+			this->textBoxTrial2_P_3->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_3->TabIndex = 225;
+			// 
+			// textBoxTrial2_P_2
+			// 
+			this->textBoxTrial2_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_2->Location = System::Drawing::Point(642, 200);
+			this->textBoxTrial2_P_2->Name = L"textBoxTrial2_P_2";
+			this->textBoxTrial2_P_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_2->TabIndex = 224;
+			// 
+			// textBoxTrial2_P_1
+			// 
+			this->textBoxTrial2_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_1->Location = System::Drawing::Point(642, 145);
+			this->textBoxTrial2_P_1->Name = L"textBoxTrial2_P_1";
+			this->textBoxTrial2_P_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_1->TabIndex = 223;
+			// 
+			// textBoxTrial3_QQ_3
+			// 
+			this->textBoxTrial3_QQ_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_3->Location = System::Drawing::Point(712, 233);
+			this->textBoxTrial3_QQ_3->Name = L"textBoxTrial3_QQ_3";
+			this->textBoxTrial3_QQ_3->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_3->TabIndex = 225;
+			// 
+			// textBoxTrial3_QQ_2
+			// 
+			this->textBoxTrial3_QQ_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_2->Location = System::Drawing::Point(712, 186);
+			this->textBoxTrial3_QQ_2->Name = L"textBoxTrial3_QQ_2";
+			this->textBoxTrial3_QQ_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_2->TabIndex = 224;
+			// 
+			// textBoxTrial3_QQ_1
+			// 
+			this->textBoxTrial3_QQ_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_1->Location = System::Drawing::Point(712, 141);
+			this->textBoxTrial3_QQ_1->Name = L"textBoxTrial3_QQ_1";
+			this->textBoxTrial3_QQ_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_1->TabIndex = 223;
 			// 
 			// 三相电路功率的测量
 			// 

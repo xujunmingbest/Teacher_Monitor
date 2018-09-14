@@ -178,6 +178,13 @@ private: System::Windows::Forms::Label^  labelTrial2_1_D;
 private: System::Windows::Forms::Label^  labelTrial2_1_C;
 private: System::Windows::Forms::Label^  labelTrial2_1_B;
 private: System::Windows::Forms::Label^  labelTrial2_1_A;
+private: System::Windows::Forms::Label^  label25;
+private: System::Windows::Forms::Label^  textBoxTrial1_1_U11;
+private: System::Windows::Forms::Label^  label26;
+private: System::Windows::Forms::Label^  textBoxTrial1_1_U21;
+private: System::Windows::Forms::Label^  label27;
+private: System::Windows::Forms::Label^  textBoxTrial2_1_U;
+
 
 
 
@@ -324,6 +331,12 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial1_1_U11 = (gcnew System::Windows::Forms::Label());
+			this->label25 = (gcnew System::Windows::Forms::Label());
+			this->label26 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_1_U21 = (gcnew System::Windows::Forms::Label());
+			this->label27 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_1_U = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
@@ -598,6 +611,10 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->label26);
+			this->groupBox1->Controls->Add(this->textBoxTrial1_1_U21);
+			this->groupBox1->Controls->Add(this->label25);
+			this->groupBox1->Controls->Add(this->textBoxTrial1_1_U11);
 			this->groupBox1->Controls->Add(this->labelTrial1_2_D2);
 			this->groupBox1->Controls->Add(this->labelTrial1_2_C2);
 			this->groupBox1->Controls->Add(this->labelTrial1_2_B2);
@@ -996,7 +1013,7 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			this->label50->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label50->ForeColor = System::Drawing::Color::Black;
-			this->label50->Location = System::Drawing::Point(90, 644);
+			this->label50->Location = System::Drawing::Point(93, 661);
 			this->label50->Name = L"label50";
 			this->label50->Size = System::Drawing::Size(130, 50);
 			this->label50->TabIndex = 30;
@@ -1008,7 +1025,7 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			this->label51->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label51->ForeColor = System::Drawing::Color::Black;
-			this->label51->Location = System::Drawing::Point(91, 540);
+			this->label51->Location = System::Drawing::Point(101, 516);
 			this->label51->Name = L"label51";
 			this->label51->Size = System::Drawing::Size(130, 50);
 			this->label51->TabIndex = 29;
@@ -1285,6 +1302,8 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->label27);
+			this->groupBox2->Controls->Add(this->textBoxTrial2_1_U);
 			this->groupBox2->Controls->Add(this->labelTrial2_1_D);
 			this->groupBox2->Controls->Add(this->labelTrial2_1_C);
 			this->groupBox2->Controls->Add(this->labelTrial2_1_B);
@@ -1891,6 +1910,78 @@ private: System::Windows::Forms::Label^  labelTrial2_1_A;
 			this->button1->Text = L"保存成绩";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &二端口网络的研究::button1_Click);
+			// 
+			// textBoxTrial1_1_U11
+			// 
+			this->textBoxTrial1_1_U11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_1_U11->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_1_U11->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_1_U11->Location = System::Drawing::Point(104, 303);
+			this->textBoxTrial1_1_U11->Name = L"textBoxTrial1_1_U11";
+			this->textBoxTrial1_1_U11->Size = System::Drawing::Size(130, 29);
+			this->textBoxTrial1_1_U11->TabIndex = 224;
+			// 
+			// label25
+			// 
+			this->label25->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label25->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label25->ForeColor = System::Drawing::Color::Black;
+			this->label25->Location = System::Drawing::Point(104, 274);
+			this->label25->Name = L"label25";
+			this->label25->Size = System::Drawing::Size(130, 29);
+			this->label25->TabIndex = 225;
+			this->label25->Text = L"U11";
+			this->label25->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label26
+			// 
+			this->label26->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label26->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label26->ForeColor = System::Drawing::Color::Black;
+			this->label26->Location = System::Drawing::Point(101, 583);
+			this->label26->Name = L"label26";
+			this->label26->Size = System::Drawing::Size(130, 29);
+			this->label26->TabIndex = 227;
+			this->label26->Text = L"U21";
+			this->label26->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_1_U21
+			// 
+			this->textBoxTrial1_1_U21->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_1_U21->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_1_U21->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_1_U21->Location = System::Drawing::Point(101, 612);
+			this->textBoxTrial1_1_U21->Name = L"textBoxTrial1_1_U21";
+			this->textBoxTrial1_1_U21->Size = System::Drawing::Size(130, 29);
+			this->textBoxTrial1_1_U21->TabIndex = 226;
+			// 
+			// label27
+			// 
+			this->label27->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label27->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label27->ForeColor = System::Drawing::Color::Black;
+			this->label27->Location = System::Drawing::Point(36, 355);
+			this->label27->Name = L"label27";
+			this->label27->Size = System::Drawing::Size(130, 29);
+			this->label27->TabIndex = 229;
+			this->label27->Text = L"输入电压";
+			this->label27->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial2_1_U
+			// 
+			this->textBoxTrial2_1_U->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_1_U->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_1_U->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_1_U->Location = System::Drawing::Point(36, 384);
+			this->textBoxTrial2_1_U->Name = L"textBoxTrial2_1_U";
+			this->textBoxTrial2_1_U->Size = System::Drawing::Size(130, 29);
+			this->textBoxTrial2_1_U->TabIndex = 228;
 			// 
 			// 二端口网络的研究
 			// 

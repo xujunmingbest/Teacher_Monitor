@@ -7,7 +7,7 @@ QueueMutex cm;
 
 bool LongConnectServ::Open() {
 	cs.SetServfun(RecvFun);
-	if (!cs.Open(1236)) return false;
+	if (!cs.Open(10001)) return false;
 	cs.Acpt();
 	return true;
 }

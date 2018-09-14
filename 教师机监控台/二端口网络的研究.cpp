@@ -98,6 +98,10 @@ void 二端口网络的研究::Load二端口网络的研究Data(string &filename) {
 	textBoxTrial2Score->Text = d.score2.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
+	textBoxTrial1_1_U11->Text = gcnew String(d.Trial1_1_U11);
+	textBoxTrial1_1_U21->Text = gcnew String(d.Trial1_1_U21);
+	textBoxTrial2_1_U->Text = gcnew String(d.Trial2_1_U);
+
 	labelTrial1_1_A1->Text = gcnew String(d.Trial1_1_A1);
 	labelTrial1_1_B1->Text = gcnew String(d.Trial1_1_B1);
 	labelTrial1_1_C1->Text = gcnew String(d.Trial1_1_C1);

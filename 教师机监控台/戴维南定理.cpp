@@ -105,6 +105,13 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
 
+	labelMethod1Uoc->Text = gcnew String(d.Method1Us);
+	textBoxMethod1I->Text = gcnew String(d.Method1I);
+	textBoxMethod2Ro->Text = gcnew String(d.Method2Ro);
+	textBoxMethod2Ro->Text = gcnew String(d.Method3Uoc);
+	textBoxMethod2Ro->Text = gcnew String(d.Method3Ro);
+	textBoxMethod4Uoc->Text = gcnew String(d.Method4Uoc);
+	textBoxMethod5R0->Text = gcnew String(d.Method5R0);
 	labelMethod1Isc->Text = gcnew String(d.Method1Isc);
 	//textBoxMethod1Ro->Text = gcnew String(d.Method1Ro);
 	labelMethod1Uoc->Text = gcnew String(d.Method1Uoc);
@@ -129,7 +136,7 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	labelMethod2RL9->Text = gcnew String(d.Method2RL9);
 	labelMethod2RL10->Text = gcnew String(d.Method2RL10);
 
-	textBoxMethod3Ro->Text = gcnew String(d.Method3ro);
+	textBoxMethod3Ro->Text = gcnew String(d.Method3Ro);
 	textBoxMethod3Uoc->Text = gcnew String(d.Method3Uoc);
 
 	labelMethod6I1->Text = gcnew String(d.Method6I1);
@@ -154,4 +161,81 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	labelMethod6RL10->Text = gcnew String(d.Method6RL10);
 
 	label结论->Text = gcnew String(d.summing_up);
+}
+
+using namespace System::Windows::Forms::DataVisualization::Charting;
+
+void 戴维南定理::chartTrial2_load() {
+	Series ^s = chartTrial2->Series[0];
+	textBoxMethod2Ro->Text;
+
+	ChartArea ^ c = chartTrial2->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电流mA";
+	c->AxisY->Title = "电压V";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Line;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I1->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I2->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I3->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I4->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I5->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I6->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I7->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I8->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I9->Text), Convert::ToSingle(labelMethod2URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod2I10->Text), Convert::ToSingle(labelMethod2URL1->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
+
+}
+
+
+void 戴维南定理::chartTrial6_load() {
+	Series ^s = chartTrial6->Series[0];
+	ChartArea ^ c = chartTrial6->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电流mA";
+	c->AxisY->Title = "电压V";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Line;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I1->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I2->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I3->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I4->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I5->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I6->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I7->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I8->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I9->Text), Convert::ToSingle(labelMethod6URL1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelMethod6I10->Text), Convert::ToSingle(labelMethod6URL1->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
+
 }

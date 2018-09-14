@@ -145,14 +145,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	textBoxTrial5_F6->Text = gcnew String(d.Trial3_F6);
 	textBoxTrial5_F7->Text = gcnew String(d.Trial3_F7);
 	textBoxTrial5_F8->Text = gcnew String(d.Trial3_F8);
-	textBoxTrial5_F9->Text = gcnew String(d.Trial3_F9);
-	textBoxTrial5_F10->Text = gcnew String(d.Trial3_F10);
-	textBoxTrial5_F11->Text = gcnew String(d.Trial3_F11);
-	textBoxTrial5_F12->Text = gcnew String(d.Trial3_F12);
-	textBoxTrial5_F13->Text = gcnew String(d.Trial3_F13);
-	textBoxTrial5_F14->Text = gcnew String(d.Trial3_F14);
-	textBoxTrial5_F15->Text = gcnew String(d.Trial3_F15);
-	textBoxTrial5_F16->Text = gcnew String(d.Trial3_F16);
 
 	labelTrial3_U0_1->Text = gcnew String(d.Trial3_U0_1);
 	labelTrial3_U0_2->Text = gcnew String(d.Trial3_U0_2);
@@ -162,14 +154,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial3_U0_6->Text = gcnew String(d.Trial3_U0_6);
 	labelTrial3_U0_7->Text = gcnew String(d.Trial3_U0_7);
 	labelTrial3_U0_8->Text = gcnew String(d.Trial3_U0_8);
-	labelTrial3_U0_9->Text = gcnew String(d.Trial3_U0_9);
-	labelTrial3_U0_10->Text = gcnew String(d.Trial3_U0_10);
-	labelTrial3_U0_11->Text = gcnew String(d.Trial3_U0_11);
-	labelTrial3_U0_12->Text = gcnew String(d.Trial3_U0_12);
-	labelTrial3_U0_13->Text = gcnew String(d.Trial3_U0_13);
-	labelTrial3_U0_14->Text = gcnew String(d.Trial3_U0_14);
-	labelTrial3_U0_15->Text = gcnew String(d.Trial3_U0_15);
-	labelTrial3_U0_16->Text = gcnew String(d.Trial3_U0_16);
 
 	labelTrial3_UL_1->Text = gcnew String(d.Trial3_UL_1);
 	labelTrial3_UL_2->Text = gcnew String(d.Trial3_UL_2);
@@ -179,14 +163,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial3_UL_6->Text = gcnew String(d.Trial3_UL_6);
 	labelTrial3_UL_7->Text = gcnew String(d.Trial3_UL_7);
 	labelTrial3_UL_8->Text = gcnew String(d.Trial3_UL_8);
-	labelTrial3_UL_9->Text = gcnew String(d.Trial3_UL_9);
-	labelTrial3_UL_10->Text = gcnew String(d.Trial3_UL_10);
-	labelTrial3_UL_11->Text = gcnew String(d.Trial3_UL_11);
-	labelTrial3_UL_12->Text = gcnew String(d.Trial3_UL_12);
-	labelTrial3_UL_13->Text = gcnew String(d.Trial3_UL_13);
-	labelTrial3_UL_14->Text = gcnew String(d.Trial3_UL_14);
-	labelTrial3_UL_15->Text = gcnew String(d.Trial3_UL_15);
-	labelTrial3_UL_16->Text = gcnew String(d.Trial3_UL_16);
 
 
 	labelTrial3_Uc_1->Text = gcnew String(d.Trial3_Uc_1);
@@ -197,14 +173,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial3_Uc_6->Text = gcnew String(d.Trial3_Uc_6);
 	labelTrial3_Uc_7->Text = gcnew String(d.Trial3_Uc_7);
 	labelTrial3_Uc_8->Text = gcnew String(d.Trial3_Uc_8);
-	labelTrial3_Uc_9->Text = gcnew String(d.Trial3_Uc_9);
-	labelTrial3_Uc_10->Text = gcnew String(d.Trial3_Uc_10);
-	labelTrial3_Uc_11->Text = gcnew String(d.Trial3_Uc_11);
-	labelTrial3_Uc_12->Text = gcnew String(d.Trial3_Uc_12);
-	labelTrial3_Uc_13->Text = gcnew String(d.Trial3_Uc_13);
-	labelTrial3_Uc_14->Text = gcnew String(d.Trial3_Uc_14);
-	labelTrial3_Uc_15->Text = gcnew String(d.Trial3_Uc_15);
-	labelTrial3_Uc_16->Text = gcnew String(d.Trial3_Uc_16);
 	textBoxTrial3_Fo->Text = gcnew String(d.Trial3_Fo);
 	textBoxTrial3_Q->Text = gcnew String(d.Trial3_Q);
 	textBoxTrial3F2_F1->Text = gcnew String(d.Trial3F2_F1);
@@ -221,14 +189,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	textBoxTrial5_F6->Text = gcnew String(d.Trial5_F6);
 	textBoxTrial5_F7->Text = gcnew String(d.Trial5_F7);
 	textBoxTrial5_F8->Text = gcnew String(d.Trial5_F8);
-	textBoxTrial5_F9->Text = gcnew String(d.Trial5_F9);
-	textBoxTrial5_F10->Text = gcnew String(d.Trial5_F10);
-	textBoxTrial5_F11->Text = gcnew String(d.Trial5_F11);
-	textBoxTrial5_F12->Text = gcnew String(d.Trial5_F12);
-	textBoxTrial5_F13->Text = gcnew String(d.Trial5_F13);
-	textBoxTrial5_F14->Text = gcnew String(d.Trial5_F14);
-	textBoxTrial5_F15->Text = gcnew String(d.Trial5_F15);
-	textBoxTrial5_F16->Text = gcnew String(d.Trial5_F16);
 
 	labelTrial5_U0_1->Text = gcnew String(d.Trial5_U0_1);
 	labelTrial5_U0_2->Text = gcnew String(d.Trial5_U0_2);
@@ -238,14 +198,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial5_U0_6->Text = gcnew String(d.Trial5_U0_6);
 	labelTrial5_U0_7->Text = gcnew String(d.Trial5_U0_7);
 	labelTrial5_U0_8->Text = gcnew String(d.Trial5_U0_8);
-	labelTrial5_U0_9->Text = gcnew String(d.Trial5_U0_9);
-	labelTrial5_U0_10->Text = gcnew String(d.Trial5_U0_10);
-	labelTrial5_U0_11->Text = gcnew String(d.Trial5_U0_11);
-	labelTrial5_U0_12->Text = gcnew String(d.Trial5_U0_12);
-	labelTrial5_U0_13->Text = gcnew String(d.Trial5_U0_13);
-	labelTrial5_U0_14->Text = gcnew String(d.Trial5_U0_14);
-	labelTrial5_U0_15->Text = gcnew String(d.Trial5_U0_15);
-	labelTrial5_U0_16->Text = gcnew String(d.Trial5_U0_16);
 
 	labelTrial5_UL_1->Text = gcnew String(d.Trial5_UL_1);
 	labelTrial5_UL_2->Text = gcnew String(d.Trial5_UL_2);
@@ -255,14 +207,6 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial5_UL_6->Text = gcnew String(d.Trial5_UL_6);
 	labelTrial5_UL_7->Text = gcnew String(d.Trial5_UL_7);
 	labelTrial5_UL_8->Text = gcnew String(d.Trial5_UL_8);
-	labelTrial5_UL_9->Text = gcnew String(d.Trial5_UL_9);
-	labelTrial5_UL_10->Text = gcnew String(d.Trial5_UL_10);
-	labelTrial5_UL_11->Text = gcnew String(d.Trial5_UL_11);
-	labelTrial5_UL_12->Text = gcnew String(d.Trial5_UL_12);
-	labelTrial5_UL_13->Text = gcnew String(d.Trial5_UL_13);
-	labelTrial5_UL_14->Text = gcnew String(d.Trial5_UL_14);
-	labelTrial5_UL_15->Text = gcnew String(d.Trial5_UL_15);
-	labelTrial5_UL_16->Text = gcnew String(d.Trial5_UL_16);
 
 
 	labelTrial5_Uc_1->Text = gcnew String(d.Trial5_Uc_1);
@@ -273,14 +217,7 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial5_Uc_6->Text = gcnew String(d.Trial5_Uc_6);
 	labelTrial5_Uc_7->Text = gcnew String(d.Trial5_Uc_7);
 	labelTrial5_Uc_8->Text = gcnew String(d.Trial5_Uc_8);
-	labelTrial5_Uc_9->Text = gcnew String(d.Trial5_Uc_9);
-	labelTrial5_Uc_10->Text = gcnew String(d.Trial5_Uc_10);
-	labelTrial5_Uc_11->Text = gcnew String(d.Trial5_Uc_11);
-	labelTrial5_Uc_12->Text = gcnew String(d.Trial5_Uc_12);
-	labelTrial5_Uc_13->Text = gcnew String(d.Trial5_Uc_13);
-	labelTrial5_Uc_14->Text = gcnew String(d.Trial5_Uc_14);
-	labelTrial5_Uc_15->Text = gcnew String(d.Trial5_Uc_15);
-	labelTrial5_Uc_16->Text = gcnew String(d.Trial5_Uc_16);
+
 	textBoxTrial5_Fo->Text = gcnew String(d.Trial5_Fo);
 	textBoxTrial5_Q->Text = gcnew String(d.Trial5_Q);
 	textBoxTrial5F2_F1->Text = gcnew String(d.Trial5F2_F1);

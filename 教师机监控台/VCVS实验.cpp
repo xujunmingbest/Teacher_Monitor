@@ -118,6 +118,43 @@ void VCVS实验::LoadVCVS实验Data(string &filename) {
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
 	labeltrial1_1u->Text = gcnew String(d.trial1_1u);
+	labeltrial1_1U1_1->Text = gcnew String(d.trial1_1U1_1);
+	labeltrial1_1U1_2->Text = gcnew String(d.trial1_1U1_2);
+	labeltrial1_1U1_3->Text = gcnew String(d.trial1_1U1_3);
+	labeltrial1_1U1_4->Text = gcnew String(d.trial1_1U1_4);
+	labeltrial1_1U1_5->Text = gcnew String(d.trial1_1U1_5);
+	labeltrial1_1U1_6->Text = gcnew String(d.trial1_1U1_6);
+	labeltrial1_1U1_7->Text = gcnew String(d.trial1_1U1_7);
+	labeltrial1_1U1_8->Text = gcnew String(d.trial1_1U1_8);
+	labeltrial1_1U1_9->Text = gcnew String(d.trial1_1U1_9);
+
+	textBoxtrial3_2RL_1->Text = gcnew String(d.trial3_2RL_1);
+	textBoxtrial3_2RL_2->Text = gcnew String(d.trial3_2RL_2);
+	textBoxtrial3_2RL_3->Text = gcnew String(d.trial3_2RL_3);
+	textBoxtrial3_2RL_4->Text = gcnew String(d.trial3_2RL_4);
+	textBoxtrial3_2RL_5->Text = gcnew String(d.trial3_2RL_5);
+	textBoxtrial3_2RL_6->Text = gcnew String(d.trial3_2RL_6);
+	textBoxtrial3_2RL_7->Text = gcnew String(d.trial3_2RL_7);
+	textBoxtrial3_2RL_8->Text = gcnew String(d.trial3_2RL_8);
+
+	labeltrial2_1U1_1->Text = gcnew String(d.trial2_1U1_1);
+	labeltrial2_1U1_2->Text = gcnew String(d.trial2_1U1_2);
+	labeltrial2_1U1_3->Text = gcnew String(d.trial2_1U1_3);
+	labeltrial2_1U1_4->Text = gcnew String(d.trial2_1U1_4);
+	labeltrial2_1U1_5->Text = gcnew String(d.trial2_1U1_5);
+	labeltrial2_1U1_6->Text = gcnew String(d.trial2_1U1_6);
+	labeltrial2_1U1_7->Text = gcnew String(d.trial2_1U1_7);
+	labeltrial2_1U1_8->Text = gcnew String(d.trial2_1U1_8);
+
+	textBoxtrial2_2RL_1->Text = gcnew String(d.trial2_2RL_1);
+	textBoxtrial2_2RL_2->Text = gcnew String(d.trial2_2RL_2);
+	textBoxtrial2_2RL_3->Text = gcnew String(d.trial2_2RL_3);
+	textBoxtrial2_2RL_4->Text = gcnew String(d.trial2_2RL_4);
+	textBoxtrial2_2RL_5->Text = gcnew String(d.trial2_2RL_5);
+	textBoxtrial2_2RL_6->Text = gcnew String(d.trial2_2RL_6);
+	textBoxtrial2_2RL_7->Text = gcnew String(d.trial2_2RL_7);
+
+
 	labeltrial1_1U2_1->Text = gcnew String(d.trial1_1U2_1);
 	labeltrial1_1U2_2->Text = gcnew String(d.trial1_1U2_2);
 	labeltrial1_1U2_3->Text = gcnew String(d.trial1_1U2_3);

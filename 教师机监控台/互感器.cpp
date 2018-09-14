@@ -97,6 +97,9 @@ void 互感器::Load互感器Data(string &filename) {
 	textBoxTrial4Score->Text = d.score4.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
+	textBoxTrial1_1结论->Text = gcnew String(d.Trial1_1结论);
+	textBoxTrial1_2结论->Text = gcnew String(d.Trial1_2结论);
+
 	textBoxTrial3_Line1_1->Text = gcnew String(d.Trial3_Line1_1);
 	textBoxTrial3_Line1_2->Text = gcnew String(d.Trial3_Line1_2);
 	textBoxTrial3_Line1_3->Text = gcnew String(d.Trial3_Line1_3);

@@ -34,11 +34,13 @@ namespace 教师机监控台 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_4;
+	private: System::Windows::Forms::TextBox^  labelTrial2_P_4;
 	protected:
+	private: System::Windows::Forms::TextBox^  labelTrial2_P_3;
+	private: System::Windows::Forms::TextBox^  labelTrial2_P_2;
+	private: System::Windows::Forms::TextBox^  labelTrial2_P_1;
+	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_4;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_4;
-	private: System::Windows::Forms::Label^  labelTrial2_P_4;
-	private: System::Windows::Forms::Button^  button19;
 	private: System::Windows::Forms::Label^  labelTrial2_I_4;
 	private: System::Windows::Forms::Button^  button20;
 	private: System::Windows::Forms::Label^  labelTrial2_UC_4;
@@ -51,8 +53,6 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button24;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_3;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_3;
-	private: System::Windows::Forms::Label^  labelTrial2_P_3;
-	private: System::Windows::Forms::Button^  button13;
 	private: System::Windows::Forms::Label^  labelTrial2_I_3;
 	private: System::Windows::Forms::Button^  button14;
 	private: System::Windows::Forms::Label^  labelTrial2_UC_3;
@@ -64,12 +64,13 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  labelTrial2_U_3;
 	private: System::Windows::Forms::Button^  button18;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_2;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_2;
-	private: System::Windows::Forms::Label^  labelTrial2_P_2;
-	private: System::Windows::Forms::Button^  button7;
-	private: System::Windows::Forms::Label^  label129;
 	private: System::Windows::Forms::Label^  labelTrial2_I_2;
 	private: System::Windows::Forms::Button^  button8;
+	private: System::Windows::Forms::TextBox^  textBox结论;
+	private: System::Windows::Forms::Label^  label129;
+	private: System::Windows::Forms::Button^  button102;
+	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_2;
+	private: System::Windows::Forms::Label^  label105;
 	private: System::Windows::Forms::Label^  labelTrial2_UC_2;
 	private: System::Windows::Forms::Button^  button9;
 	private: System::Windows::Forms::Label^  labelTrial2_UL_2;
@@ -80,18 +81,22 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button12;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_1;
 	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_1;
+	private: System::Windows::Forms::Label^  label22;
 	private: System::Windows::Forms::Label^  label23;
 	private: System::Windows::Forms::Label^  label18;
-	private: System::Windows::Forms::Label^  labelTrial2_P_1;
-	private: System::Windows::Forms::Button^  button5;
-	private: System::Windows::Forms::GroupBox^  groupBox1;
-	private: System::Windows::Forms::Label^  label22;
 	private: System::Windows::Forms::Label^  label20;
 	private: System::Windows::Forms::Label^  labelTrial2_I_1;
 	private: System::Windows::Forms::Button^  button6;
 	private: System::Windows::Forms::Label^  label14;
 	private: System::Windows::Forms::Label^  labelTrial2_UC_1;
+	private: System::Windows::Forms::Label^  label9;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::GroupBox^  groupBox8;
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::Label^  label37;
 	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::Label^  label1;
+	private: System::Windows::Forms::GroupBox^  groupBox1;
 	private: System::Windows::Forms::Label^  label16;
 	private: System::Windows::Forms::Label^  labelTrial2_UL_1;
 	private: System::Windows::Forms::Button^  button3;
@@ -109,13 +114,88 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::PictureBox^  pictureBox2;
 	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::Button^  button102;
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::GroupBox^  groupBox8;
-	private: System::Windows::Forms::Label^  label9;
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
-	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Label^  label37;
+
+	protected:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private:
 		/// <summary>
@@ -131,10 +211,12 @@ namespace 教师机监控台 {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(功率因数及相序的测量监控::typeid));
+			this->labelTrial2_P_4 = (gcnew System::Windows::Forms::TextBox());
+			this->labelTrial2_P_3 = (gcnew System::Windows::Forms::TextBox());
+			this->labelTrial2_P_2 = (gcnew System::Windows::Forms::TextBox());
+			this->labelTrial2_P_1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxTrial2_Load_4 = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxTrial2_φ_4 = (gcnew System::Windows::Forms::TextBox());
-			this->labelTrial2_P_4 = (gcnew System::Windows::Forms::Label());
-			this->button19 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial2_I_4 = (gcnew System::Windows::Forms::Label());
 			this->button20 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial2_UC_4 = (gcnew System::Windows::Forms::Label());
@@ -147,8 +229,6 @@ namespace 教师机监控台 {
 			this->button24 = (gcnew System::Windows::Forms::Button());
 			this->textBoxTrial2_Load_3 = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxTrial2_φ_3 = (gcnew System::Windows::Forms::TextBox());
-			this->labelTrial2_P_3 = (gcnew System::Windows::Forms::Label());
-			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial2_I_3 = (gcnew System::Windows::Forms::Label());
 			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial2_UC_3 = (gcnew System::Windows::Forms::Label());
@@ -160,12 +240,13 @@ namespace 教师机监控台 {
 			this->labelTrial2_U_3 = (gcnew System::Windows::Forms::Label());
 			this->button18 = (gcnew System::Windows::Forms::Button());
 			this->textBoxTrial2_Load_2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_φ_2 = (gcnew System::Windows::Forms::TextBox());
-			this->labelTrial2_P_2 = (gcnew System::Windows::Forms::Label());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->label129 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_2 = (gcnew System::Windows::Forms::Label());
 			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->textBox结论 = (gcnew System::Windows::Forms::TextBox());
+			this->label129 = (gcnew System::Windows::Forms::Label());
+			this->button102 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial2_φ_2 = (gcnew System::Windows::Forms::TextBox());
+			this->label105 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_2 = (gcnew System::Windows::Forms::Label());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial2_UL_2 = (gcnew System::Windows::Forms::Label());
@@ -176,18 +257,22 @@ namespace 教师机监控台 {
 			this->button12 = (gcnew System::Windows::Forms::Button());
 			this->textBoxTrial2_Load_1 = (gcnew System::Windows::Forms::TextBox());
 			this->textBoxTrial2_φ_1 = (gcnew System::Windows::Forms::TextBox());
+			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
-			this->labelTrial2_P_1 = (gcnew System::Windows::Forms::Label());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_1 = (gcnew System::Windows::Forms::Label());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_1 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label37 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UL_1 = (gcnew System::Windows::Forms::Label());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -205,54 +290,53 @@ namespace 教师机监控台 {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->button102 = (gcnew System::Windows::Forms::Button());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label37 = (gcnew System::Windows::Forms::Label());
-			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->groupBox8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			this->groupBox1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->SuspendLayout();
+			// 
+			// labelTrial2_P_4
+			// 
+			this->labelTrial2_P_4->Location = System::Drawing::Point(711, 757);
+			this->labelTrial2_P_4->Name = L"labelTrial2_P_4";
+			this->labelTrial2_P_4->Size = System::Drawing::Size(100, 30);
+			this->labelTrial2_P_4->TabIndex = 219;
+			// 
+			// labelTrial2_P_3
+			// 
+			this->labelTrial2_P_3->Location = System::Drawing::Point(711, 645);
+			this->labelTrial2_P_3->Name = L"labelTrial2_P_3";
+			this->labelTrial2_P_3->Size = System::Drawing::Size(100, 30);
+			this->labelTrial2_P_3->TabIndex = 218;
+			// 
+			// labelTrial2_P_2
+			// 
+			this->labelTrial2_P_2->Location = System::Drawing::Point(711, 536);
+			this->labelTrial2_P_2->Name = L"labelTrial2_P_2";
+			this->labelTrial2_P_2->Size = System::Drawing::Size(100, 30);
+			this->labelTrial2_P_2->TabIndex = 217;
+			// 
+			// labelTrial2_P_1
+			// 
+			this->labelTrial2_P_1->Location = System::Drawing::Point(711, 432);
+			this->labelTrial2_P_1->Name = L"labelTrial2_P_1";
+			this->labelTrial2_P_1->Size = System::Drawing::Size(100, 30);
+			this->labelTrial2_P_1->TabIndex = 216;
 			// 
 			// textBoxTrial2_Load_4
 			// 
-			this->textBoxTrial2_Load_4->Location = System::Drawing::Point(916, 757);
+			this->textBoxTrial2_Load_4->Location = System::Drawing::Point(962, 757);
 			this->textBoxTrial2_Load_4->Name = L"textBoxTrial2_Load_4";
 			this->textBoxTrial2_Load_4->Size = System::Drawing::Size(159, 30);
 			this->textBoxTrial2_Load_4->TabIndex = 215;
 			// 
 			// textBoxTrial2_φ_4
 			// 
-			this->textBoxTrial2_φ_4->Location = System::Drawing::Point(805, 757);
+			this->textBoxTrial2_φ_4->Location = System::Drawing::Point(851, 757);
 			this->textBoxTrial2_φ_4->Name = L"textBoxTrial2_φ_4";
 			this->textBoxTrial2_φ_4->Size = System::Drawing::Size(100, 30);
 			this->textBoxTrial2_φ_4->TabIndex = 214;
-			// 
-			// labelTrial2_P_4
-			// 
-			this->labelTrial2_P_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial2_P_4->Location = System::Drawing::Point(711, 745);
-			this->labelTrial2_P_4->Name = L"labelTrial2_P_4";
-			this->labelTrial2_P_4->Size = System::Drawing::Size(88, 50);
-			this->labelTrial2_P_4->TabIndex = 213;
-			this->labelTrial2_P_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button19
-			// 
-			this->button19->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button19->ForeColor = System::Drawing::Color::Black;
-			this->button19->Location = System::Drawing::Point(711, 798);
-			this->button19->Name = L"button19";
-			this->button19->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button19->Size = System::Drawing::Size(88, 29);
-			this->button19->TabIndex = 212;
-			this->button19->Text = L"获取";
-			this->button19->UseVisualStyleBackColor = true;
 			// 
 			// labelTrial2_I_4
 			// 
@@ -366,39 +450,17 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial2_Load_3
 			// 
-			this->textBoxTrial2_Load_3->Location = System::Drawing::Point(916, 645);
+			this->textBoxTrial2_Load_3->Location = System::Drawing::Point(962, 645);
 			this->textBoxTrial2_Load_3->Name = L"textBoxTrial2_Load_3";
 			this->textBoxTrial2_Load_3->Size = System::Drawing::Size(159, 30);
 			this->textBoxTrial2_Load_3->TabIndex = 201;
 			// 
 			// textBoxTrial2_φ_3
 			// 
-			this->textBoxTrial2_φ_3->Location = System::Drawing::Point(805, 645);
+			this->textBoxTrial2_φ_3->Location = System::Drawing::Point(851, 645);
 			this->textBoxTrial2_φ_3->Name = L"textBoxTrial2_φ_3";
 			this->textBoxTrial2_φ_3->Size = System::Drawing::Size(100, 30);
 			this->textBoxTrial2_φ_3->TabIndex = 200;
-			// 
-			// labelTrial2_P_3
-			// 
-			this->labelTrial2_P_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial2_P_3->Location = System::Drawing::Point(711, 633);
-			this->labelTrial2_P_3->Name = L"labelTrial2_P_3";
-			this->labelTrial2_P_3->Size = System::Drawing::Size(88, 50);
-			this->labelTrial2_P_3->TabIndex = 199;
-			this->labelTrial2_P_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button13
-			// 
-			this->button13->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button13->ForeColor = System::Drawing::Color::Black;
-			this->button13->Location = System::Drawing::Point(711, 686);
-			this->button13->Name = L"button13";
-			this->button13->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button13->Size = System::Drawing::Size(88, 29);
-			this->button13->TabIndex = 198;
-			this->button13->Text = L"获取";
-			this->button13->UseVisualStyleBackColor = true;
 			// 
 			// labelTrial2_I_3
 			// 
@@ -512,51 +574,10 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial2_Load_2
 			// 
-			this->textBoxTrial2_Load_2->Location = System::Drawing::Point(916, 536);
+			this->textBoxTrial2_Load_2->Location = System::Drawing::Point(962, 536);
 			this->textBoxTrial2_Load_2->Name = L"textBoxTrial2_Load_2";
 			this->textBoxTrial2_Load_2->Size = System::Drawing::Size(159, 30);
 			this->textBoxTrial2_Load_2->TabIndex = 187;
-			// 
-			// textBoxTrial2_φ_2
-			// 
-			this->textBoxTrial2_φ_2->Location = System::Drawing::Point(805, 536);
-			this->textBoxTrial2_φ_2->Name = L"textBoxTrial2_φ_2";
-			this->textBoxTrial2_φ_2->Size = System::Drawing::Size(100, 30);
-			this->textBoxTrial2_φ_2->TabIndex = 186;
-			// 
-			// labelTrial2_P_2
-			// 
-			this->labelTrial2_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial2_P_2->Location = System::Drawing::Point(711, 524);
-			this->labelTrial2_P_2->Name = L"labelTrial2_P_2";
-			this->labelTrial2_P_2->Size = System::Drawing::Size(88, 50);
-			this->labelTrial2_P_2->TabIndex = 185;
-			this->labelTrial2_P_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button7
-			// 
-			this->button7->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button7->ForeColor = System::Drawing::Color::Black;
-			this->button7->Location = System::Drawing::Point(711, 577);
-			this->button7->Name = L"button7";
-			this->button7->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button7->Size = System::Drawing::Size(88, 29);
-			this->button7->TabIndex = 184;
-			this->button7->Text = L"获取";
-			this->button7->UseVisualStyleBackColor = true;
-			// 
-			// label129
-			// 
-			this->label129->BackColor = System::Drawing::Color::SkyBlue;
-			this->label129->Font = (gcnew System::Drawing::Font(L"宋体", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label129->Location = System::Drawing::Point(-1, 1531);
-			this->label129->Name = L"label129";
-			this->label129->Size = System::Drawing::Size(1314, 52);
-			this->label129->TabIndex = 202;
-			this->label129->Text = L"答题结束";
-			this->label129->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// labelTrial2_I_2
 			// 
@@ -579,6 +600,55 @@ namespace 教师机监控台 {
 			this->button8->TabIndex = 182;
 			this->button8->Text = L"获取";
 			this->button8->UseVisualStyleBackColor = true;
+			// 
+			// textBox结论
+			// 
+			this->textBox结论->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBox结论->Location = System::Drawing::Point(203, 519);
+			this->textBox结论->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBox结论->Name = L"textBox结论";
+			this->textBox结论->Size = System::Drawing::Size(1137, 28);
+			this->textBox结论->TabIndex = 181;
+			// 
+			// label129
+			// 
+			this->label129->BackColor = System::Drawing::Color::SkyBlue;
+			this->label129->Font = (gcnew System::Drawing::Font(L"宋体", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label129->Location = System::Drawing::Point(17, 1599);
+			this->label129->Name = L"label129";
+			this->label129->Size = System::Drawing::Size(1314, 52);
+			this->label129->TabIndex = 202;
+			this->label129->Text = L"答题结束";
+			this->label129->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// button102
+			// 
+			this->button102->Location = System::Drawing::Point(571, 1557);
+			this->button102->Name = L"button102";
+			this->button102->Size = System::Drawing::Size(195, 39);
+			this->button102->TabIndex = 201;
+			this->button102->Text = L"成绩完成并上传";
+			this->button102->UseVisualStyleBackColor = true;
+			// 
+			// textBoxTrial2_φ_2
+			// 
+			this->textBoxTrial2_φ_2->Location = System::Drawing::Point(851, 536);
+			this->textBoxTrial2_φ_2->Name = L"textBoxTrial2_φ_2";
+			this->textBoxTrial2_φ_2->Size = System::Drawing::Size(100, 30);
+			this->textBoxTrial2_φ_2->TabIndex = 186;
+			// 
+			// label105
+			// 
+			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label105->ForeColor = System::Drawing::Color::Black;
+			this->label105->Location = System::Drawing::Point(27, 523);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(95, 25);
+			this->label105->TabIndex = 180;
+			this->label105->Text = L"实验结论";
 			// 
 			// labelTrial2_UC_2
 			// 
@@ -670,17 +740,29 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial2_Load_1
 			// 
-			this->textBoxTrial2_Load_1->Location = System::Drawing::Point(916, 432);
+			this->textBoxTrial2_Load_1->Location = System::Drawing::Point(962, 432);
 			this->textBoxTrial2_Load_1->Name = L"textBoxTrial2_Load_1";
 			this->textBoxTrial2_Load_1->Size = System::Drawing::Size(159, 30);
 			this->textBoxTrial2_Load_1->TabIndex = 173;
 			// 
 			// textBoxTrial2_φ_1
 			// 
-			this->textBoxTrial2_φ_1->Location = System::Drawing::Point(805, 432);
+			this->textBoxTrial2_φ_1->Location = System::Drawing::Point(851, 432);
 			this->textBoxTrial2_φ_1->Name = L"textBoxTrial2_φ_1";
 			this->textBoxTrial2_φ_1->Size = System::Drawing::Size(100, 30);
 			this->textBoxTrial2_φ_1->TabIndex = 172;
+			// 
+			// label22
+			// 
+			this->label22->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label22->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label22->ForeColor = System::Drawing::Color::Black;
+			this->label22->Location = System::Drawing::Point(962, 370);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(159, 27);
+			this->label22->TabIndex = 171;
+			this->label22->Text = L"负载性质";
 			// 
 			// label23
 			// 
@@ -688,7 +770,7 @@ namespace 教师机监控台 {
 			this->label23->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label23->ForeColor = System::Drawing::Color::Black;
-			this->label23->Location = System::Drawing::Point(812, 370);
+			this->label23->Location = System::Drawing::Point(858, 370);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(88, 27);
 			this->label23->TabIndex = 170;
@@ -702,127 +784,9 @@ namespace 教师机监控台 {
 			this->label18->ForeColor = System::Drawing::Color::Black;
 			this->label18->Location = System::Drawing::Point(711, 370);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(88, 27);
+			this->label18->Size = System::Drawing::Size(100, 27);
 			this->label18->TabIndex = 169;
 			this->label18->Text = L"P(w)";
-			// 
-			// labelTrial2_P_1
-			// 
-			this->labelTrial2_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial2_P_1->Location = System::Drawing::Point(711, 420);
-			this->labelTrial2_P_1->Name = L"labelTrial2_P_1";
-			this->labelTrial2_P_1->Size = System::Drawing::Size(88, 50);
-			this->labelTrial2_P_1->TabIndex = 168;
-			this->labelTrial2_P_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button5
-			// 
-			this->button5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button5->ForeColor = System::Drawing::Color::Black;
-			this->button5->Location = System::Drawing::Point(711, 473);
-			this->button5->Name = L"button5";
-			this->button5->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button5->Size = System::Drawing::Size(88, 29);
-			this->button5->TabIndex = 167;
-			this->button5->Text = L"获取";
-			this->button5->UseVisualStyleBackColor = true;
-			// 
-			// groupBox1
-			// 
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_4);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_4);
-			this->groupBox1->Controls->Add(this->labelTrial2_P_4);
-			this->groupBox1->Controls->Add(this->button19);
-			this->groupBox1->Controls->Add(this->labelTrial2_I_4);
-			this->groupBox1->Controls->Add(this->button20);
-			this->groupBox1->Controls->Add(this->labelTrial2_UC_4);
-			this->groupBox1->Controls->Add(this->button21);
-			this->groupBox1->Controls->Add(this->labelTrial2_UL_4);
-			this->groupBox1->Controls->Add(this->button22);
-			this->groupBox1->Controls->Add(this->labelTrial2_UR_4);
-			this->groupBox1->Controls->Add(this->button23);
-			this->groupBox1->Controls->Add(this->labelTrial2_U_4);
-			this->groupBox1->Controls->Add(this->button24);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_3);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_3);
-			this->groupBox1->Controls->Add(this->labelTrial2_P_3);
-			this->groupBox1->Controls->Add(this->button13);
-			this->groupBox1->Controls->Add(this->labelTrial2_I_3);
-			this->groupBox1->Controls->Add(this->button14);
-			this->groupBox1->Controls->Add(this->labelTrial2_UC_3);
-			this->groupBox1->Controls->Add(this->button15);
-			this->groupBox1->Controls->Add(this->labelTrial2_UL_3);
-			this->groupBox1->Controls->Add(this->button16);
-			this->groupBox1->Controls->Add(this->labelTrial2_UR_3);
-			this->groupBox1->Controls->Add(this->button17);
-			this->groupBox1->Controls->Add(this->labelTrial2_U_3);
-			this->groupBox1->Controls->Add(this->button18);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_2);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_2);
-			this->groupBox1->Controls->Add(this->labelTrial2_P_2);
-			this->groupBox1->Controls->Add(this->button7);
-			this->groupBox1->Controls->Add(this->labelTrial2_I_2);
-			this->groupBox1->Controls->Add(this->button8);
-			this->groupBox1->Controls->Add(this->labelTrial2_UC_2);
-			this->groupBox1->Controls->Add(this->button9);
-			this->groupBox1->Controls->Add(this->labelTrial2_UL_2);
-			this->groupBox1->Controls->Add(this->button10);
-			this->groupBox1->Controls->Add(this->labelTrial2_UR_2);
-			this->groupBox1->Controls->Add(this->button11);
-			this->groupBox1->Controls->Add(this->labelTrial2_U_2);
-			this->groupBox1->Controls->Add(this->button12);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_1);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_1);
-			this->groupBox1->Controls->Add(this->label22);
-			this->groupBox1->Controls->Add(this->label23);
-			this->groupBox1->Controls->Add(this->label18);
-			this->groupBox1->Controls->Add(this->labelTrial2_P_1);
-			this->groupBox1->Controls->Add(this->button5);
-			this->groupBox1->Controls->Add(this->label20);
-			this->groupBox1->Controls->Add(this->labelTrial2_I_1);
-			this->groupBox1->Controls->Add(this->button6);
-			this->groupBox1->Controls->Add(this->label14);
-			this->groupBox1->Controls->Add(this->labelTrial2_UC_1);
-			this->groupBox1->Controls->Add(this->button2);
-			this->groupBox1->Controls->Add(this->label16);
-			this->groupBox1->Controls->Add(this->labelTrial2_UL_1);
-			this->groupBox1->Controls->Add(this->button3);
-			this->groupBox1->Controls->Add(this->label12);
-			this->groupBox1->Controls->Add(this->labelTrial2_UR_1);
-			this->groupBox1->Controls->Add(this->button1);
-			this->groupBox1->Controls->Add(this->label11);
-			this->groupBox1->Controls->Add(this->label10);
-			this->groupBox1->Controls->Add(this->label7);
-			this->groupBox1->Controls->Add(this->label6);
-			this->groupBox1->Controls->Add(this->labelTrial2_U_1);
-			this->groupBox1->Controls->Add(this->button4);
-			this->groupBox1->Controls->Add(this->label3);
-			this->groupBox1->Controls->Add(this->label5);
-			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->pictureBox2);
-			this->groupBox1->Controls->Add(this->label8);
-			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->groupBox1->ForeColor = System::Drawing::Color::Red;
-			this->groupBox1->Location = System::Drawing::Point(12, 611);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(1247, 866);
-			this->groupBox1->TabIndex = 200;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"功率因数及相序的测量 实验内容2";
-			// 
-			// label22
-			// 
-			this->label22->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label22->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label22->ForeColor = System::Drawing::Color::Black;
-			this->label22->Location = System::Drawing::Point(916, 370);
-			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(159, 27);
-			this->label22->TabIndex = 171;
-			this->label22->Text = L"负载性质";
 			// 
 			// label20
 			// 
@@ -879,6 +843,70 @@ namespace 教师机监控台 {
 			this->labelTrial2_UC_1->TabIndex = 162;
 			this->labelTrial2_UC_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
+			// label9
+			// 
+			this->label9->BackColor = System::Drawing::Color::Transparent;
+			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label9->ForeColor = System::Drawing::Color::Black;
+			this->label9->Location = System::Drawing::Point(543, 334);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(144, 28);
+			this->label9->TabIndex = 90;
+			this->label9->Text = L"    图25－1";
+			// 
+			// label4
+			// 
+			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label4->ForeColor = System::Drawing::Color::Black;
+			this->label4->Location = System::Drawing::Point(11, 472);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(1119, 35);
+			this->label4->TabIndex = 86;
+			this->label4->Text = L"    （2）将电源线任意调换两相后再接入电路，观察两灯的明亮状态，判断三相交流电源的相序。";
+			// 
+			// groupBox8
+			// 
+			this->groupBox8->Controls->Add(this->textBox结论);
+			this->groupBox8->Controls->Add(this->label105);
+			this->groupBox8->Controls->Add(this->label9);
+			this->groupBox8->Controls->Add(this->pictureBox1);
+			this->groupBox8->Controls->Add(this->label4);
+			this->groupBox8->Controls->Add(this->label37);
+			this->groupBox8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox8->ForeColor = System::Drawing::Color::Red;
+			this->groupBox8->Location = System::Drawing::Point(24, 85);
+			this->groupBox8->Name = L"groupBox8";
+			this->groupBox8->Size = System::Drawing::Size(1367, 565);
+			this->groupBox8->TabIndex = 199;
+			this->groupBox8->TabStop = false;
+			this->groupBox8->Text = L"功率因数及相序的测量 实验内容1";
+			this->groupBox8->Enter += gcnew System::EventHandler(this, &功率因数及相序的测量监控::groupBox8_Enter);
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(455, 51);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(335, 266);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBox1->TabIndex = 89;
+			this->pictureBox1->TabStop = false;
+			// 
+			// label37
+			// 
+			this->label37->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label37->ForeColor = System::Drawing::Color::Black;
+			this->label37->Location = System::Drawing::Point(34, 389);
+			this->label37->Name = L"label37";
+			this->label37->Size = System::Drawing::Size(1119, 65);
+			this->label37->TabIndex = 0;
+			this->label37->Text = L" 1．相序的测定\r\n   （1）将实验台上三相调压器输出调节至U1V1=220V，断电取220V、15W白炽灯两只，0.47μF/450V电容器一只按图25－1接"
+				L"线，判断三相交流电源的相序。\r\n";
+			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -891,6 +919,98 @@ namespace 教师机监控台 {
 			this->button2->TabIndex = 161;
 			this->button2->Text = L"获取";
 			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Font = (gcnew System::Drawing::Font(L"宋体", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label1->ForeColor = System::Drawing::Color::Red;
+			this->label1->Location = System::Drawing::Point(360, 9);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(390, 25);
+			this->label1->TabIndex = 198;
+			this->label1->Text = L"功率因数及相序的测量 实验内容";
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->labelTrial2_P_4);
+			this->groupBox1->Controls->Add(this->labelTrial2_P_3);
+			this->groupBox1->Controls->Add(this->labelTrial2_P_2);
+			this->groupBox1->Controls->Add(this->labelTrial2_P_1);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_4);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_4);
+			this->groupBox1->Controls->Add(this->labelTrial2_I_4);
+			this->groupBox1->Controls->Add(this->button20);
+			this->groupBox1->Controls->Add(this->labelTrial2_UC_4);
+			this->groupBox1->Controls->Add(this->button21);
+			this->groupBox1->Controls->Add(this->labelTrial2_UL_4);
+			this->groupBox1->Controls->Add(this->button22);
+			this->groupBox1->Controls->Add(this->labelTrial2_UR_4);
+			this->groupBox1->Controls->Add(this->button23);
+			this->groupBox1->Controls->Add(this->labelTrial2_U_4);
+			this->groupBox1->Controls->Add(this->button24);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_3);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_3);
+			this->groupBox1->Controls->Add(this->labelTrial2_I_3);
+			this->groupBox1->Controls->Add(this->button14);
+			this->groupBox1->Controls->Add(this->labelTrial2_UC_3);
+			this->groupBox1->Controls->Add(this->button15);
+			this->groupBox1->Controls->Add(this->labelTrial2_UL_3);
+			this->groupBox1->Controls->Add(this->button16);
+			this->groupBox1->Controls->Add(this->labelTrial2_UR_3);
+			this->groupBox1->Controls->Add(this->button17);
+			this->groupBox1->Controls->Add(this->labelTrial2_U_3);
+			this->groupBox1->Controls->Add(this->button18);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_2);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_2);
+			this->groupBox1->Controls->Add(this->labelTrial2_I_2);
+			this->groupBox1->Controls->Add(this->button8);
+			this->groupBox1->Controls->Add(this->labelTrial2_UC_2);
+			this->groupBox1->Controls->Add(this->button9);
+			this->groupBox1->Controls->Add(this->labelTrial2_UL_2);
+			this->groupBox1->Controls->Add(this->button10);
+			this->groupBox1->Controls->Add(this->labelTrial2_UR_2);
+			this->groupBox1->Controls->Add(this->button11);
+			this->groupBox1->Controls->Add(this->labelTrial2_U_2);
+			this->groupBox1->Controls->Add(this->button12);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_1);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_1);
+			this->groupBox1->Controls->Add(this->label22);
+			this->groupBox1->Controls->Add(this->label23);
+			this->groupBox1->Controls->Add(this->label18);
+			this->groupBox1->Controls->Add(this->label20);
+			this->groupBox1->Controls->Add(this->labelTrial2_I_1);
+			this->groupBox1->Controls->Add(this->button6);
+			this->groupBox1->Controls->Add(this->label14);
+			this->groupBox1->Controls->Add(this->labelTrial2_UC_1);
+			this->groupBox1->Controls->Add(this->button2);
+			this->groupBox1->Controls->Add(this->label16);
+			this->groupBox1->Controls->Add(this->labelTrial2_UL_1);
+			this->groupBox1->Controls->Add(this->button3);
+			this->groupBox1->Controls->Add(this->label12);
+			this->groupBox1->Controls->Add(this->labelTrial2_UR_1);
+			this->groupBox1->Controls->Add(this->button1);
+			this->groupBox1->Controls->Add(this->label11);
+			this->groupBox1->Controls->Add(this->label10);
+			this->groupBox1->Controls->Add(this->label7);
+			this->groupBox1->Controls->Add(this->label6);
+			this->groupBox1->Controls->Add(this->labelTrial2_U_1);
+			this->groupBox1->Controls->Add(this->button4);
+			this->groupBox1->Controls->Add(this->label3);
+			this->groupBox1->Controls->Add(this->label5);
+			this->groupBox1->Controls->Add(this->label2);
+			this->groupBox1->Controls->Add(this->pictureBox2);
+			this->groupBox1->Controls->Add(this->label8);
+			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox1->ForeColor = System::Drawing::Color::Red;
+			this->groupBox1->Location = System::Drawing::Point(24, 656);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(1247, 866);
+			this->groupBox1->TabIndex = 200;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"功率因数及相序的测量 实验内容2";
 			// 
 			// label16
 			// 
@@ -1088,88 +1208,6 @@ namespace 教师机监控台 {
 			this->label8->Text = L"2．电路功率（P）和功率因数（cosφ）的测定\r\n    按图25－2接线，按下表所述开关合闸，记录cosφ表及其它各表的读数，并分析负载性质。SA1、SA2、S"
 				L"A3用导线代替。";
 			// 
-			// button102
-			// 
-			this->button102->Location = System::Drawing::Point(553, 1489);
-			this->button102->Name = L"button102";
-			this->button102->Size = System::Drawing::Size(195, 39);
-			this->button102->TabIndex = 201;
-			this->button102->Text = L"成绩完成并上传";
-			this->button102->UseVisualStyleBackColor = true;
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"宋体", 15, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label1->ForeColor = System::Drawing::Color::Red;
-			this->label1->Location = System::Drawing::Point(348, 8);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(390, 25);
-			this->label1->TabIndex = 198;
-			this->label1->Text = L"功率因数及相序的测量 实验内容";
-			// 
-			// groupBox8
-			// 
-			this->groupBox8->Controls->Add(this->label9);
-			this->groupBox8->Controls->Add(this->pictureBox1);
-			this->groupBox8->Controls->Add(this->label4);
-			this->groupBox8->Controls->Add(this->label37);
-			this->groupBox8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->groupBox8->ForeColor = System::Drawing::Color::Red;
-			this->groupBox8->Location = System::Drawing::Point(12, 84);
-			this->groupBox8->Name = L"groupBox8";
-			this->groupBox8->Size = System::Drawing::Size(1247, 510);
-			this->groupBox8->TabIndex = 199;
-			this->groupBox8->TabStop = false;
-			this->groupBox8->Text = L"功率因数及相序的测量 实验内容1";
-			// 
-			// label9
-			// 
-			this->label9->BackColor = System::Drawing::Color::Transparent;
-			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label9->ForeColor = System::Drawing::Color::Black;
-			this->label9->Location = System::Drawing::Point(543, 334);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(144, 28);
-			this->label9->TabIndex = 90;
-			this->label9->Text = L"    图25－1";
-			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(455, 51);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(335, 266);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
-			this->pictureBox1->TabIndex = 89;
-			this->pictureBox1->TabStop = false;
-			// 
-			// label4
-			// 
-			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label4->ForeColor = System::Drawing::Color::Black;
-			this->label4->Location = System::Drawing::Point(11, 472);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(1119, 35);
-			this->label4->TabIndex = 86;
-			this->label4->Text = L"    （2）将电源线任意调换两相后再接入电路，观察两灯的明亮状态，判断三相交流电源的相序。";
-			// 
-			// label37
-			// 
-			this->label37->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label37->ForeColor = System::Drawing::Color::Black;
-			this->label37->Location = System::Drawing::Point(34, 389);
-			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(1119, 65);
-			this->label37->TabIndex = 0;
-			this->label37->Text = L" 1．相序的测定\r\n   （1）将实验台上三相调压器输出调节至U1V1=220V，断电取220V、15W白炽灯两只，0.47μF/450V电容器一只按图25－1接"
-				L"线，判断三相交流电源的相序。\r\n";
-			// 
 			// 功率因数及相序的测量监控
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -1177,22 +1215,24 @@ namespace 教师机监控台 {
 			this->AutoScroll = true;
 			this->ClientSize = System::Drawing::Size(1416, 664);
 			this->Controls->Add(this->label129);
-			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->button102);
-			this->Controls->Add(this->label1);
 			this->Controls->Add(this->groupBox8);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->groupBox1);
 			this->Name = L"功率因数及相序的测量监控";
 			this->Text = L"功率因数及相序的测量监控";
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->groupBox8->ResumeLayout(false);
 			this->groupBox8->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+	private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

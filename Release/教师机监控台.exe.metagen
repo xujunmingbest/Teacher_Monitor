@@ -272,6 +272,7 @@ Class 教师机监控台.RLC元件阻抗特性的测定: AutoLayout, AnsiClass, 
   Fields:
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
+    chartTrial3oad(): PrivateScope, Public, HideBySig
     LoadRLC元件阻抗特性的测定Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
@@ -371,6 +372,8 @@ Class 教师机监控台.单相铁心变压器特性的测试: AutoLayout, AnsiC
   Fields:
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
+    chartTrial2_load(): PrivateScope, Public, HideBySig
+    chartTrial3_load(): PrivateScope, Public, HideBySig
     Load单相铁心变压器特性的测试Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
@@ -415,6 +418,8 @@ Class 教师机监控台.戴维南定理: AutoLayout, AnsiClass, Class, Public, 
   Fields:
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
+    chartTrial2_load(): PrivateScope, Public, HideBySig
+    chartTrial6_load(): PrivateScope, Public, HideBySig
     Load戴维南定理Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig
@@ -460,6 +465,7 @@ Class 教师机监控台.负阻抗变换器: AutoLayout, AnsiClass, Class, Publi
   Fields:
     std.basic_string<char\,std::char_traits<char>\,std::allocator<char> >* fileName : Public
   Methods:
+    chart_load(): PrivateScope, Public, HideBySig
     Load负阻抗变换器Data(basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
     SaveCorrectGrades(): PrivateScope, Public, HideBySig
     CalScores(): PrivateScope, Public, HideBySig

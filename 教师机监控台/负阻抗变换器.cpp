@@ -97,12 +97,48 @@ void ¸º×è¿¹±ä»»Æ÷::Load¸º×è¿¹±ä»»Æ÷Data(string &filename) {
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
 
-	labelTrial1_300_U1->Text = gcnew String(d.Trial1_300_U1);
-	labelTrial1_300_I1->Text = gcnew String(d.Trial1_300_I1);
-	textBoxTrial1_300_R_->Text = gcnew String(d.Trial1_300_R_);
-	labelTrial1_600_U1->Text = gcnew String(d.Trial1_600_U1);
-	labelTrial1_600_I1->Text = gcnew String(d.Trial1_600_I1);
-	textBoxTrial1_600_R_->Text = gcnew String(d.Trial1_600_R_);
+
+	labelTrial1_300_U1_1->Text = gcnew String(d.Trial1_300_U1_1);
+	labelTrial1_300_U1_2->Text = gcnew String(d.Trial1_300_U1_2);
+	labelTrial1_300_U1_3->Text = gcnew String(d.Trial1_300_U1_3);
+	labelTrial1_300_U1_4->Text = gcnew String(d.Trial1_300_U1_4);
+	labelTrial1_300_U1_5->Text = gcnew String(d.Trial1_300_U1_5);
+	labelTrial1_300_U1_6->Text = gcnew String(d.Trial1_300_U1_6);
+
+	labelTrial1_300_I1_1->Text = gcnew String(d.Trial1_300_I1_1);
+	labelTrial1_300_I1_2->Text = gcnew String(d.Trial1_300_I1_2);
+	labelTrial1_300_I1_3->Text = gcnew String(d.Trial1_300_I1_3);
+	labelTrial1_300_I1_4->Text = gcnew String(d.Trial1_300_I1_4);
+	labelTrial1_300_I1_5->Text = gcnew String(d.Trial1_300_I1_5);
+	labelTrial1_300_I1_6->Text = gcnew String(d.Trial1_300_I1_6);
+
+	textBoxTrial1_300_R_1->Text = gcnew String(d.Trial1_300_R_1);
+	textBoxTrial1_300_R_2->Text = gcnew String(d.Trial1_300_R_2);
+	textBoxTrial1_300_R_3->Text = gcnew String(d.Trial1_300_R_3);
+	textBoxTrial1_300_R_4->Text = gcnew String(d.Trial1_300_R_4);
+	textBoxTrial1_300_R_5->Text = gcnew String(d.Trial1_300_R_5);
+	textBoxTrial1_300_R_6->Text = gcnew String(d.Trial1_300_R_6);
+
+	labelTrial1_600_U1_1->Text = gcnew String(d.Trial1_600_U1_1);
+	labelTrial1_600_U1_2->Text = gcnew String(d.Trial1_600_U1_2);
+	labelTrial1_600_U1_3->Text = gcnew String(d.Trial1_600_U1_3);
+	labelTrial1_600_U1_4->Text = gcnew String(d.Trial1_600_U1_4);
+	labelTrial1_600_U1_5->Text = gcnew String(d.Trial1_600_U1_5);
+	labelTrial1_600_U1_6->Text = gcnew String(d.Trial1_600_U1_6);
+
+	labelTrial1_600_I1_1->Text = gcnew String(d.Trial1_600_I1_1);
+	labelTrial1_600_I1_2->Text = gcnew String(d.Trial1_600_I1_2);
+	labelTrial1_600_I1_3->Text = gcnew String(d.Trial1_600_I1_3);
+	labelTrial1_600_I1_4->Text = gcnew String(d.Trial1_600_I1_4);
+	labelTrial1_600_I1_5->Text = gcnew String(d.Trial1_600_I1_5);
+	labelTrial1_600_I1_6->Text = gcnew String(d.Trial1_600_I1_6);
+
+	textBoxTrial1_600_R_1->Text = gcnew String(d.Trial1_600_R_1);
+	textBoxTrial1_600_R_2->Text = gcnew String(d.Trial1_600_R_2);
+	textBoxTrial1_600_R_3->Text = gcnew String(d.Trial1_600_R_3);
+	textBoxTrial1_600_R_4->Text = gcnew String(d.Trial1_600_R_4);
+	textBoxTrial1_600_R_5->Text = gcnew String(d.Trial1_600_R_5);
+	textBoxTrial1_600_R_6->Text = gcnew String(d.Trial1_600_R_6);
 
 	string Name = string(MONITORTEMP) + "¸º×è¿¹±ä»»Æ÷";
 	String^ ImageLocation1 = gcnew String(string(Name + "1.bmp").c_str());
@@ -115,6 +151,48 @@ void ¸º×è¿¹±ä»»Æ÷::Load¸º×è¿¹±ä»»Æ÷Data(string &filename) {
 
 	pictureBox_1->ImageLocation = ImageLocation1;
 	pictureBox_2->ImageLocation = ImageLocation2;
+}
 
+using namespace System::Windows::Forms::DataVisualization::Charting;
+void ¸º×è¿¹±ä»»Æ÷::chart_load() {
+	Series ^s1 = chartTrial1->Series[0];
+	Series ^s2 = chartTrial1->Series[1];
+	ChartArea ^ c = chartTrial1->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "I1(mA)";
+	c->AxisY->Title = "U1(V)";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s1->ChartType = SeriesChartType::Line;
+	//s1->IsVisibleInLegend = false;
+	s2->ChartType = SeriesChartType::Line;
+	//s2->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s1->Points->Clear();
+	s2->Points->Clear();
+	try {
+		s1->Name = "RL=300¦¸";
+		s2->Name = "RL=600¦¸";
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_1->Text), Convert::ToSingle(labelTrial1_300_U1_1->Text));
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_2->Text), Convert::ToSingle(labelTrial1_300_U1_2->Text));
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_3->Text), Convert::ToSingle(labelTrial1_300_U1_3->Text));
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_4->Text), Convert::ToSingle(labelTrial1_300_U1_4->Text));
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_5->Text), Convert::ToSingle(labelTrial1_300_U1_5->Text));
+		s1->Points->AddXY(Convert::ToSingle(labelTrial1_300_I1_6->Text), Convert::ToSingle(labelTrial1_300_U1_6->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_1->Text), Convert::ToSingle(labelTrial1_600_U1_1->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_2->Text), Convert::ToSingle(labelTrial1_600_U1_2->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_3->Text), Convert::ToSingle(labelTrial1_600_U1_3->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_4->Text), Convert::ToSingle(labelTrial1_600_U1_4->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_5->Text), Convert::ToSingle(labelTrial1_600_U1_5->Text));
+		s2->Points->AddXY(Convert::ToSingle(labelTrial1_600_I1_6->Text), Convert::ToSingle(labelTrial1_600_U1_6->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
 
 }

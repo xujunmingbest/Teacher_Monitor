@@ -100,6 +100,21 @@ void 回转器::Load回转器Data(string &filename) {
 	textBoxScore4->Text = d.score3.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
+	fileSql f;
+	string Name = string(BMPTEMP) + "回转器";
+	String^ ImageLocationTrial1_U = gcnew String(string(Name + "Trial1_U.bmp").c_str());
+	String^ ImageLocationTrial1_I = gcnew String(string(Name + "Trial1_I.bmp").c_str());
+
+	//先删除原来有的文件
+	IO::File::Delete(ImageLocationTrial1_U);
+	IO::File::Delete(ImageLocationTrial1_I);
+
+	f.Writefile(T_to_string(ImageLocationTrial1_U), string(d.Trial1_Bmp_U, sizeof(d.Trial1_Bmp_U)));
+	f.Writefile(T_to_string(ImageLocationTrial1_I), string(d.Trial1_Bmp_I, sizeof(d.Trial1_Bmp_I)));
+
+	pictureBoxTrial1_U->ImageLocation = ImageLocationTrial1_U;
+	pictureBoxTrial1_I->ImageLocation = ImageLocationTrial1_I;
+
 	labelTrial1_U1_line1->Text = gcnew String(d.Trial1_U1_line1);
 	labelTrial1_U1_line2->Text = gcnew String(d.Trial1_U1_line2);
 	labelTrial1_U1_line3->Text = gcnew String(d.Trial1_U1_line3);
@@ -160,91 +175,91 @@ void 回转器::Load回转器Data(string &filename) {
 	labelTrial2_F200_line1->Text = gcnew String(d.Trial2_F200_line1);
 	labelTrial2_F200_line2->Text = gcnew String(d.Trial2_F200_line2);
 	labelTrial2_F200_line3->Text = gcnew String(d.Trial2_F200_line3);
-	textBoxTrial2_F200_line4->Text = gcnew String(d.Trial2_F200_line4);
-	textBoxTrial2_F200_line5->Text = gcnew String(d.Trial2_F200_line5);
-	textBoxTrial2_F200_line6->Text = gcnew String(d.Trial2_F200_line6);
-	textBoxTrial2_F200_line7->Text = gcnew String(d.Trial2_F200_line7);
+	labelTrial2_F200_line4->Text = gcnew String(d.Trial2_F200_line4);
+	labelTrial2_F200_line5->Text = gcnew String(d.Trial2_F200_line5);
+	labelTrial2_F200_line6->Text = gcnew String(d.Trial2_F200_line6);
+	labelTrial2_F200_line7->Text = gcnew String(d.Trial2_F200_line7);
 
 	labelTrial2_F400_line1->Text = gcnew String(d.Trial2_F400_line1);
 	labelTrial2_F400_line2->Text = gcnew String(d.Trial2_F400_line2);
 	labelTrial2_F400_line3->Text = gcnew String(d.Trial2_F400_line3);
-	textBoxTrial2_F400_line4->Text = gcnew String(d.Trial2_F400_line4);
-	textBoxTrial2_F400_line5->Text = gcnew String(d.Trial2_F400_line5);
-	textBoxTrial2_F400_line6->Text = gcnew String(d.Trial2_F400_line6);
-	textBoxTrial2_F400_line7->Text = gcnew String(d.Trial2_F400_line7);
+	labelTrial2_F400_line4->Text = gcnew String(d.Trial2_F400_line4);
+	labelTrial2_F400_line5->Text = gcnew String(d.Trial2_F400_line5);
+	labelTrial2_F400_line6->Text = gcnew String(d.Trial2_F400_line6);
+	labelTrial2_F400_line7->Text = gcnew String(d.Trial2_F400_line7);
 
 	labelTrial2_F500_line1->Text = gcnew String(d.Trial2_F500_line1);
 	labelTrial2_F500_line2->Text = gcnew String(d.Trial2_F500_line2);
 	labelTrial2_F500_line3->Text = gcnew String(d.Trial2_F500_line3);
-	textBoxTrial2_F500_line4->Text = gcnew String(d.Trial2_F500_line4);
-	textBoxTrial2_F500_line5->Text = gcnew String(d.Trial2_F500_line5);
-	textBoxTrial2_F500_line6->Text = gcnew String(d.Trial2_F500_line6);
-	textBoxTrial2_F500_line7->Text = gcnew String(d.Trial2_F500_line7);
+	labelTrial2_F500_line4->Text = gcnew String(d.Trial2_F500_line4);
+	labelTrial2_F500_line5->Text = gcnew String(d.Trial2_F500_line5);
+	labelTrial2_F500_line6->Text = gcnew String(d.Trial2_F500_line6);
+	labelTrial2_F500_line7->Text = gcnew String(d.Trial2_F500_line7);
 
 	labelTrial2_F700_line1->Text = gcnew String(d.Trial2_F700_line1);
 	labelTrial2_F700_line2->Text = gcnew String(d.Trial2_F700_line2);
 	labelTrial2_F700_line3->Text = gcnew String(d.Trial2_F700_line3);
-	textBoxTrial2_F700_line4->Text = gcnew String(d.Trial2_F700_line4);
-	textBoxTrial2_F700_line5->Text = gcnew String(d.Trial2_F700_line5);
-	textBoxTrial2_F700_line6->Text = gcnew String(d.Trial2_F700_line6);
-	textBoxTrial2_F700_line7->Text = gcnew String(d.Trial2_F700_line7);
+	labelTrial2_F700_line4->Text = gcnew String(d.Trial2_F700_line4);
+	labelTrial2_F700_line5->Text = gcnew String(d.Trial2_F700_line5);
+	labelTrial2_F700_line6->Text = gcnew String(d.Trial2_F700_line6);
+	labelTrial2_F700_line7->Text = gcnew String(d.Trial2_F700_line7);
 
 	labelTrial2_F800_line1->Text = gcnew String(d.Trial2_F800_line1);
 	labelTrial2_F800_line2->Text = gcnew String(d.Trial2_F800_line2);
 	labelTrial2_F800_line3->Text = gcnew String(d.Trial2_F800_line3);
-	textBoxTrial2_F800_line4->Text = gcnew String(d.Trial2_F800_line4);
-	textBoxTrial2_F800_line5->Text = gcnew String(d.Trial2_F800_line5);
-	textBoxTrial2_F800_line6->Text = gcnew String(d.Trial2_F800_line6);
-	textBoxTrial2_F800_line7->Text = gcnew String(d.Trial2_F800_line7);
+	labelTrial2_F800_line4->Text = gcnew String(d.Trial2_F800_line4);
+	labelTrial2_F800_line5->Text = gcnew String(d.Trial2_F800_line5);
+	labelTrial2_F800_line6->Text = gcnew String(d.Trial2_F800_line6);
+	labelTrial2_F800_line7->Text = gcnew String(d.Trial2_F800_line7);
 
 
 	labelTrial2_F900_line1->Text = gcnew String(d.Trial2_F900_line1);
 	labelTrial2_F900_line2->Text = gcnew String(d.Trial2_F900_line2);
 	labelTrial2_F900_line3->Text = gcnew String(d.Trial2_F900_line3);
-	textBoxTrial2_F900_line4->Text = gcnew String(d.Trial2_F900_line4);
-	textBoxTrial2_F900_line5->Text = gcnew String(d.Trial2_F900_line5);
-	textBoxTrial2_F900_line6->Text = gcnew String(d.Trial2_F900_line6);
-	textBoxTrial2_F900_line7->Text = gcnew String(d.Trial2_F900_line7);
+	labelTrial2_F900_line4->Text = gcnew String(d.Trial2_F900_line4);
+	labelTrial2_F900_line5->Text = gcnew String(d.Trial2_F900_line5);
+	labelTrial2_F900_line6->Text = gcnew String(d.Trial2_F900_line6);
+	labelTrial2_F900_line7->Text = gcnew String(d.Trial2_F900_line7);
 
 	labelTrial2_F1000_line1->Text = gcnew String(d.Trial2_F1000_line1);
 	labelTrial2_F1000_line2->Text = gcnew String(d.Trial2_F1000_line2);
 	labelTrial2_F1000_line3->Text = gcnew String(d.Trial2_F1000_line3);
-	textBoxTrial2_F1000_line4->Text = gcnew String(d.Trial2_F1000_line4);
-	textBoxTrial2_F1000_line5->Text = gcnew String(d.Trial2_F1000_line5);
-	textBoxTrial2_F1000_line6->Text = gcnew String(d.Trial2_F1000_line6);
-	textBoxTrial2_F1000_line7->Text = gcnew String(d.Trial2_F1000_line7);
+	labelTrial2_F1000_line4->Text = gcnew String(d.Trial2_F1000_line4);
+	labelTrial2_F1000_line5->Text = gcnew String(d.Trial2_F1000_line5);
+	labelTrial2_F1000_line6->Text = gcnew String(d.Trial2_F1000_line6);
+	labelTrial2_F1000_line7->Text = gcnew String(d.Trial2_F1000_line7);
 
 	labelTrial2_F1200_line1->Text = gcnew String(d.Trial2_F1200_line1);
 	labelTrial2_F1200_line2->Text = gcnew String(d.Trial2_F1200_line2);
 	labelTrial2_F1200_line3->Text = gcnew String(d.Trial2_F1200_line3);
-	textBoxTrial2_F1200_line4->Text = gcnew String(d.Trial2_F1200_line4);
-	textBoxTrial2_F1200_line5->Text = gcnew String(d.Trial2_F1200_line5);
-	textBoxTrial2_F1200_line6->Text = gcnew String(d.Trial2_F1200_line6);
-	textBoxTrial2_F1200_line7->Text = gcnew String(d.Trial2_F1200_line7);
+	labelTrial2_F1200_line4->Text = gcnew String(d.Trial2_F1200_line4);
+	labelTrial2_F1200_line5->Text = gcnew String(d.Trial2_F1200_line5);
+	labelTrial2_F1200_line6->Text = gcnew String(d.Trial2_F1200_line6);
+	labelTrial2_F1200_line7->Text = gcnew String(d.Trial2_F1200_line7);
 
 	labelTrial2_F1300_line1->Text = gcnew String(d.Trial2_F1300_line1);
 	labelTrial2_F1300_line2->Text = gcnew String(d.Trial2_F1300_line2);
 	labelTrial2_F1300_line3->Text = gcnew String(d.Trial2_F1300_line3);
-	textBoxTrial2_F1300_line4->Text = gcnew String(d.Trial2_F1300_line4);
-	textBoxTrial2_F1300_line5->Text = gcnew String(d.Trial2_F1300_line5);
-	textBoxTrial2_F1300_line6->Text = gcnew String(d.Trial2_F1300_line6);
-	textBoxTrial2_F1300_line7->Text = gcnew String(d.Trial2_F1300_line7);
+	labelTrial2_F1300_line4->Text = gcnew String(d.Trial2_F1300_line4);
+	labelTrial2_F1300_line5->Text = gcnew String(d.Trial2_F1300_line5);
+	labelTrial2_F1300_line6->Text = gcnew String(d.Trial2_F1300_line6);
+	labelTrial2_F1300_line7->Text = gcnew String(d.Trial2_F1300_line7);
 
 	labelTrial2_F1500_line1->Text = gcnew String(d.Trial2_F1500_line1);
 	labelTrial2_F1500_line2->Text = gcnew String(d.Trial2_F1500_line2);
 	labelTrial2_F1500_line3->Text = gcnew String(d.Trial2_F1500_line3);
-	textBoxTrial2_F1500_line4->Text = gcnew String(d.Trial2_F1500_line4);
-	textBoxTrial2_F1500_line5->Text = gcnew String(d.Trial2_F1500_line5);
-	textBoxTrial2_F1500_line6->Text = gcnew String(d.Trial2_F1500_line6);
-	textBoxTrial2_F1500_line7->Text = gcnew String(d.Trial2_F1500_line7);
+	labelTrial2_F1500_line4->Text = gcnew String(d.Trial2_F1500_line4);
+	labelTrial2_F1500_line5->Text = gcnew String(d.Trial2_F1500_line5);
+	labelTrial2_F1500_line6->Text = gcnew String(d.Trial2_F1500_line6);
+	labelTrial2_F1500_line7->Text = gcnew String(d.Trial2_F1500_line7);
 
 	labelTrial2_F2000_line1->Text = gcnew String(d.Trial2_F2000_line1);
 	labelTrial2_F2000_line2->Text = gcnew String(d.Trial2_F2000_line2);
 	labelTrial2_F2000_line3->Text = gcnew String(d.Trial2_F2000_line3);
-	textBoxTrial2_F2000_line4->Text = gcnew String(d.Trial2_F2000_line4);
-	textBoxTrial2_F2000_line5->Text = gcnew String(d.Trial2_F2000_line5);
-	textBoxTrial2_F2000_line6->Text = gcnew String(d.Trial2_F2000_line6);
-	textBoxTrial2_F2000_line7->Text = gcnew String(d.Trial2_F2000_line7);
+	labelTrial2_F2000_line4->Text = gcnew String(d.Trial2_F2000_line4);
+	labelTrial2_F2000_line5->Text = gcnew String(d.Trial2_F2000_line5);
+	labelTrial2_F2000_line6->Text = gcnew String(d.Trial2_F2000_line6);
+	labelTrial2_F2000_line7->Text = gcnew String(d.Trial2_F2000_line7);
 
 	labelTrial3_200->Text = gcnew String(d.Trial3_200);
 	labelTrial3_400->Text = gcnew String(d.Trial3_400);

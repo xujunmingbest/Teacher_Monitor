@@ -66,6 +66,10 @@ void 电压源与电流源的等效变换::Load电压源与电流源的等效变换Data(string &filename
 	textBoxTrial2Score->Text = d.Trial2Score.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
+	textBoxTrial11UP1->Text = gcnew String(d.Trial11UP1);
+	textBoxTrial11UP2->Text = gcnew String(d.Trial11UP2);
+	textBoxTrial2Is->Text = gcnew String(d.Trial2Is);
+
 	labelTrial11Load1->Text = gcnew String(d.Trial11Load1);
 	labelTrial11Load2->Text = gcnew String(d.Trial11Load2);
 	labelTrial11Load3->Text = gcnew String(d.Trial11Load3);

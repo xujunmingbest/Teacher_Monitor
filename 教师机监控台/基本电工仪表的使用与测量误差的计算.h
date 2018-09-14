@@ -59,17 +59,17 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label38;
 	private: System::Windows::Forms::Label^  label39;
 	private: System::Windows::Forms::GroupBox^  groupBox8;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_RA_5V;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_RA_5mA;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_R1_5V;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_R1_5mA;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_RB_5V;
+
+
+
+
+
 	private: System::Windows::Forms::Label^  labelTrial1_IA1_5V;
-	private: System::Windows::Forms::Button^  button9;
+
 	private: System::Windows::Forms::Label^  labelTrial1_IA1_5mA;
-	private: System::Windows::Forms::Button^  button10;
+
 	private: System::Windows::Forms::Label^  labelTrial1_IA_5V;
-	private: System::Windows::Forms::Button^  button16;
+
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label10;
@@ -77,8 +77,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label8;
 	private: System::Windows::Forms::Label^  label7;
 	private: System::Windows::Forms::Label^  labelTrial1_IA_5mA;
-	private: System::Windows::Forms::Button^  button15;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_RB_5mA;
+
+
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Button^  button3;
@@ -92,6 +92,12 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Drawing::Printing::PrintDocument^  printDocument1;
 	private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
+	private: System::Windows::Forms::Label^  textBoxTrial1_RA_5V;
+	private: System::Windows::Forms::Label^  textBoxTrial1_R1_5V;
+	private: System::Windows::Forms::Label^  textBoxTrial1_RB_5V;
+	private: System::Windows::Forms::Label^  textBoxTrial1_RA_5mA;
+	private: System::Windows::Forms::Label^  textBoxTrial1_R1_5mA;
+	private: System::Windows::Forms::Label^  textBoxTrial1_RB_5mA;
 
 	private:
 		/// <summary>
@@ -134,17 +140,9 @@ namespace 教师机监控台 {
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_RA_5V = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_RA_5mA = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_R1_5V = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_R1_5mA = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_RB_5V = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial1_IA1_5V = (gcnew System::Windows::Forms::Label());
-			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial1_IA1_5mA = (gcnew System::Windows::Forms::Label());
-			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->labelTrial1_IA_5V = (gcnew System::Windows::Forms::Label());
-			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
@@ -152,8 +150,6 @@ namespace 教师机监控台 {
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial1_IA_5mA = (gcnew System::Windows::Forms::Label());
-			this->button15 = (gcnew System::Windows::Forms::Button());
-			this->textBoxTrial1_RB_5mA = (gcnew System::Windows::Forms::TextBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -164,6 +160,12 @@ namespace 教师机监控台 {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
+			this->textBoxTrial1_RB_5mA = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_R1_5mA = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_RA_5mA = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_RB_5V = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_R1_5V = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_RA_5V = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox5->SuspendLayout();
@@ -437,20 +439,18 @@ namespace 教师机监控台 {
 			// 
 			// groupBox8
 			// 
+			this->groupBox8->Controls->Add(this->textBoxTrial1_RA_5V);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_R1_5V);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_RB_5V);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_RA_5mA);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_R1_5mA);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_RB_5mA);
 			this->groupBox8->Controls->Add(this->label13);
 			this->groupBox8->Controls->Add(this->label14);
 			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_RA_5V);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_RA_5mA);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_R1_5V);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_R1_5mA);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_RB_5V);
 			this->groupBox8->Controls->Add(this->labelTrial1_IA1_5V);
-			this->groupBox8->Controls->Add(this->button9);
 			this->groupBox8->Controls->Add(this->labelTrial1_IA1_5mA);
-			this->groupBox8->Controls->Add(this->button10);
 			this->groupBox8->Controls->Add(this->labelTrial1_IA_5V);
-			this->groupBox8->Controls->Add(this->button16);
 			this->groupBox8->Controls->Add(this->label5);
 			this->groupBox8->Controls->Add(this->label4);
 			this->groupBox8->Controls->Add(this->label10);
@@ -458,8 +458,6 @@ namespace 教师机监控台 {
 			this->groupBox8->Controls->Add(this->label8);
 			this->groupBox8->Controls->Add(this->label7);
 			this->groupBox8->Controls->Add(this->labelTrial1_IA_5mA);
-			this->groupBox8->Controls->Add(this->button15);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_RB_5mA);
 			this->groupBox8->Controls->Add(this->label3);
 			this->groupBox8->Controls->Add(this->label2);
 			this->groupBox8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
@@ -502,41 +500,6 @@ namespace 教师机监控台 {
 			this->textBoxTrial1Score->TabIndex = 223;
 			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &基本电工仪表的使用与测量误差的计算::textBoxTrial1Score_TextChanged);
 			// 
-			// textBoxTrial1_RA_5V
-			// 
-			this->textBoxTrial1_RA_5V->Location = System::Drawing::Point(892, 167);
-			this->textBoxTrial1_RA_5V->Name = L"textBoxTrial1_RA_5V";
-			this->textBoxTrial1_RA_5V->Size = System::Drawing::Size(179, 30);
-			this->textBoxTrial1_RA_5V->TabIndex = 178;
-			// 
-			// textBoxTrial1_RA_5mA
-			// 
-			this->textBoxTrial1_RA_5mA->Location = System::Drawing::Point(892, 88);
-			this->textBoxTrial1_RA_5mA->Name = L"textBoxTrial1_RA_5mA";
-			this->textBoxTrial1_RA_5mA->Size = System::Drawing::Size(179, 30);
-			this->textBoxTrial1_RA_5mA->TabIndex = 177;
-			// 
-			// textBoxTrial1_R1_5V
-			// 
-			this->textBoxTrial1_R1_5V->Location = System::Drawing::Point(771, 163);
-			this->textBoxTrial1_R1_5V->Name = L"textBoxTrial1_R1_5V";
-			this->textBoxTrial1_R1_5V->Size = System::Drawing::Size(102, 30);
-			this->textBoxTrial1_R1_5V->TabIndex = 176;
-			// 
-			// textBoxTrial1_R1_5mA
-			// 
-			this->textBoxTrial1_R1_5mA->Location = System::Drawing::Point(771, 84);
-			this->textBoxTrial1_R1_5mA->Name = L"textBoxTrial1_R1_5mA";
-			this->textBoxTrial1_R1_5mA->Size = System::Drawing::Size(102, 30);
-			this->textBoxTrial1_R1_5mA->TabIndex = 175;
-			// 
-			// textBoxTrial1_RB_5V
-			// 
-			this->textBoxTrial1_RB_5V->Location = System::Drawing::Point(663, 164);
-			this->textBoxTrial1_RB_5V->Name = L"textBoxTrial1_RB_5V";
-			this->textBoxTrial1_RB_5V->Size = System::Drawing::Size(102, 30);
-			this->textBoxTrial1_RB_5V->TabIndex = 174;
-			// 
 			// labelTrial1_IA1_5V
 			// 
 			this->labelTrial1_IA1_5V->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -545,19 +508,6 @@ namespace 教师机监控台 {
 			this->labelTrial1_IA1_5V->Size = System::Drawing::Size(243, 27);
 			this->labelTrial1_IA1_5V->TabIndex = 173;
 			this->labelTrial1_IA1_5V->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button9
-			// 
-			this->button9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button9->ForeColor = System::Drawing::Color::Black;
-			this->button9->Location = System::Drawing::Point(413, 209);
-			this->button9->Name = L"button9";
-			this->button9->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button9->Size = System::Drawing::Size(243, 29);
-			this->button9->TabIndex = 172;
-			this->button9->Text = L"获取";
-			this->button9->UseVisualStyleBackColor = true;
 			// 
 			// labelTrial1_IA1_5mA
 			// 
@@ -568,19 +518,6 @@ namespace 教师机监控台 {
 			this->labelTrial1_IA1_5mA->TabIndex = 171;
 			this->labelTrial1_IA1_5mA->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
-			// button10
-			// 
-			this->button10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button10->ForeColor = System::Drawing::Color::Black;
-			this->button10->Location = System::Drawing::Point(414, 129);
-			this->button10->Name = L"button10";
-			this->button10->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button10->Size = System::Drawing::Size(243, 29);
-			this->button10->TabIndex = 170;
-			this->button10->Text = L"获取";
-			this->button10->UseVisualStyleBackColor = true;
-			// 
 			// labelTrial1_IA_5V
 			// 
 			this->labelTrial1_IA_5V->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -589,19 +526,6 @@ namespace 教师机监控台 {
 			this->labelTrial1_IA_5V->Size = System::Drawing::Size(197, 27);
 			this->labelTrial1_IA_5V->TabIndex = 169;
 			this->labelTrial1_IA_5V->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button16
-			// 
-			this->button16->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button16->ForeColor = System::Drawing::Color::Black;
-			this->button16->Location = System::Drawing::Point(201, 209);
-			this->button16->Name = L"button16";
-			this->button16->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button16->Size = System::Drawing::Size(197, 29);
-			this->button16->TabIndex = 168;
-			this->button16->Text = L"获取";
-			this->button16->UseVisualStyleBackColor = true;
 			// 
 			// label5
 			// 
@@ -683,26 +607,6 @@ namespace 教师机监控台 {
 			this->labelTrial1_IA_5mA->Size = System::Drawing::Size(197, 27);
 			this->labelTrial1_IA_5mA->TabIndex = 145;
 			this->labelTrial1_IA_5mA->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button15
-			// 
-			this->button15->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->button15->ForeColor = System::Drawing::Color::Black;
-			this->button15->Location = System::Drawing::Point(202, 129);
-			this->button15->Name = L"button15";
-			this->button15->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->button15->Size = System::Drawing::Size(197, 29);
-			this->button15->TabIndex = 71;
-			this->button15->Text = L"获取";
-			this->button15->UseVisualStyleBackColor = true;
-			// 
-			// textBoxTrial1_RB_5mA
-			// 
-			this->textBoxTrial1_RB_5mA->Location = System::Drawing::Point(663, 85);
-			this->textBoxTrial1_RB_5mA->Name = L"textBoxTrial1_RB_5mA";
-			this->textBoxTrial1_RB_5mA->Size = System::Drawing::Size(102, 30);
-			this->textBoxTrial1_RB_5mA->TabIndex = 6;
 			// 
 			// label3
 			// 
@@ -806,6 +710,60 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
+			// 
+			// textBoxTrial1_RB_5mA
+			// 
+			this->textBoxTrial1_RB_5mA->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_RB_5mA->Location = System::Drawing::Point(663, 87);
+			this->textBoxTrial1_RB_5mA->Name = L"textBoxTrial1_RB_5mA";
+			this->textBoxTrial1_RB_5mA->Size = System::Drawing::Size(102, 27);
+			this->textBoxTrial1_RB_5mA->TabIndex = 226;
+			this->textBoxTrial1_RB_5mA->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_R1_5mA
+			// 
+			this->textBoxTrial1_R1_5mA->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_R1_5mA->Location = System::Drawing::Point(771, 87);
+			this->textBoxTrial1_R1_5mA->Name = L"textBoxTrial1_R1_5mA";
+			this->textBoxTrial1_R1_5mA->Size = System::Drawing::Size(102, 27);
+			this->textBoxTrial1_R1_5mA->TabIndex = 227;
+			this->textBoxTrial1_R1_5mA->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_RA_5mA
+			// 
+			this->textBoxTrial1_RA_5mA->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_RA_5mA->Location = System::Drawing::Point(892, 85);
+			this->textBoxTrial1_RA_5mA->Name = L"textBoxTrial1_RA_5mA";
+			this->textBoxTrial1_RA_5mA->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_RA_5mA->TabIndex = 228;
+			this->textBoxTrial1_RA_5mA->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_RB_5V
+			// 
+			this->textBoxTrial1_RB_5V->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_RB_5V->Location = System::Drawing::Point(663, 166);
+			this->textBoxTrial1_RB_5V->Name = L"textBoxTrial1_RB_5V";
+			this->textBoxTrial1_RB_5V->Size = System::Drawing::Size(102, 27);
+			this->textBoxTrial1_RB_5V->TabIndex = 229;
+			this->textBoxTrial1_RB_5V->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_R1_5V
+			// 
+			this->textBoxTrial1_R1_5V->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_R1_5V->Location = System::Drawing::Point(771, 165);
+			this->textBoxTrial1_R1_5V->Name = L"textBoxTrial1_R1_5V";
+			this->textBoxTrial1_R1_5V->Size = System::Drawing::Size(102, 27);
+			this->textBoxTrial1_R1_5V->TabIndex = 230;
+			this->textBoxTrial1_R1_5V->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_RA_5V
+			// 
+			this->textBoxTrial1_RA_5V->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_RA_5V->Location = System::Drawing::Point(892, 165);
+			this->textBoxTrial1_RA_5V->Name = L"textBoxTrial1_RA_5V";
+			this->textBoxTrial1_RA_5V->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_RA_5V->TabIndex = 231;
+			this->textBoxTrial1_RA_5V->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// 基本电工仪表的使用与测量误差的计算
 			// 

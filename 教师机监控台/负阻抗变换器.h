@@ -18,11 +18,12 @@ namespace 教师机监控台 {
 		负阻抗变换器(void)
 		{
 			InitializeComponent();
+			chart_load();
 			//
 			//TODO:  在此处添加构造函数代码
 			//
 		}
-
+		void chart_load();
 	protected:
 		/// <summary>
 		/// 清理所有正在使用的资源。
@@ -60,20 +61,20 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label39;
 	private: System::Windows::Forms::GroupBox^  groupBox8;
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial1;
-	private: System::Windows::Forms::Label^  labelTrial1_600_I1;
-	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::Label^  label12;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_600_R_;
-	private: System::Windows::Forms::Label^  labelTrial1_600_U1;
-	private: System::Windows::Forms::Label^  labelTrial1_300_I1;
-	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::Label^  label11;
-	private: System::Windows::Forms::Label^  label10;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_300_R_;
-	private: System::Windows::Forms::Label^  labelTrial1_U1_line1;
-	private: System::Windows::Forms::Label^  labelTrial1_300_U1;
-	private: System::Windows::Forms::Label^  label9;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^  label77;
 	private: System::Windows::Forms::Label^  label78;
 	private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
@@ -94,6 +95,62 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Drawing::Printing::PrintDocument^  printDocument1;
 	private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_6;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_6;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_6;
+
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_6;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_5;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_5;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_5;
+
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_5;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_4;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_4;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_4;
+
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_4;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_3;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_3;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_3;
+
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_3;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_2;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_2;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_2;
+
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_2;
+	private: System::Windows::Forms::Label^  labelTrial1_600_I1_1;
+	private: System::Windows::Forms::Label^  label8;
+	private: System::Windows::Forms::Label^  label12;
+
+	private: System::Windows::Forms::Label^  labelTrial1_600_U1_1;
+	private: System::Windows::Forms::Label^  labelTrial1_300_I1_1;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label3;
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::Label^  label10;
+
+	private: System::Windows::Forms::Label^  labelTrial1_U1_line1;
+	private: System::Windows::Forms::Label^  labelTrial1_300_U1_1;
+	private: System::Windows::Forms::Label^  label9;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_6;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_5;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_4;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_3;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_2;
+private: System::Windows::Forms::Label^  textBoxTrial1_600_R_1;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_6;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_5;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_4;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_3;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_2;
+private: System::Windows::Forms::Label^  textBoxTrial1_300_R_1;
 
 	private:
 		/// <summary>
@@ -111,6 +168,7 @@ namespace 教师机监控台 {
 			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
 			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
 			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(负阻抗变换器::typeid));
 			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
 			this->labellab = (gcnew System::Windows::Forms::Label());
@@ -136,24 +194,42 @@ namespace 教师机监控台 {
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
-			this->label77 = (gcnew System::Windows::Forms::Label());
-			this->label78 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
-			this->chartTrial1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
-			this->labelTrial1_600_I1 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_6 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_6 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_6 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_6 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_5 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_5 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_5 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_5 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_4 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_4 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_4 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_4 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_3 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_3 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_3 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_3 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_2 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_2 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_2 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_2 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_I1_1 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_600_R_ = (gcnew System::Windows::Forms::TextBox());
-			this->labelTrial1_600_U1 = (gcnew System::Windows::Forms::Label());
-			this->labelTrial1_300_I1 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_600_U1_1 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_I1_1 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_300_R_ = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial1_U1_line1 = (gcnew System::Windows::Forms::Label());
-			this->labelTrial1_300_U1 = (gcnew System::Windows::Forms::Label());
+			this->labelTrial1_300_U1_1 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->label77 = (gcnew System::Windows::Forms::Label());
+			this->label78 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
+			this->chartTrial1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -170,6 +246,18 @@ namespace 教师机监控台 {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
+			this->textBoxTrial1_300_R_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_300_R_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_300_R_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_300_R_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_300_R_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_300_R_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_600_R_1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial1))->BeginInit();
@@ -446,40 +534,454 @@ namespace 教师机监控台 {
 			// 
 			// groupBox8
 			// 
-			this->groupBox8->Controls->Add(this->label77);
-			this->groupBox8->Controls->Add(this->label78);
-			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
-			this->groupBox8->Controls->Add(this->chartTrial1);
-			this->groupBox8->Controls->Add(this->labelTrial1_600_I1);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_6);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_5);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_4);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_3);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_2);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_1);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_6);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_5);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_4);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_3);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_2);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_1);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_6);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_6);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_6);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_6);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_5);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_5);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_5);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_5);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_4);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_4);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_4);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_4);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_3);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_3);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_3);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_3);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_2);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_2);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_2);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_2);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_I1_1);
 			this->groupBox8->Controls->Add(this->label8);
 			this->groupBox8->Controls->Add(this->label12);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_600_R_);
-			this->groupBox8->Controls->Add(this->labelTrial1_600_U1);
-			this->groupBox8->Controls->Add(this->labelTrial1_300_I1);
+			this->groupBox8->Controls->Add(this->labelTrial1_600_U1_1);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_I1_1);
 			this->groupBox8->Controls->Add(this->label4);
 			this->groupBox8->Controls->Add(this->label3);
 			this->groupBox8->Controls->Add(this->label11);
 			this->groupBox8->Controls->Add(this->label10);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_300_R_);
 			this->groupBox8->Controls->Add(this->labelTrial1_U1_line1);
-			this->groupBox8->Controls->Add(this->labelTrial1_300_U1);
+			this->groupBox8->Controls->Add(this->labelTrial1_300_U1_1);
 			this->groupBox8->Controls->Add(this->label9);
+			this->groupBox8->Controls->Add(this->label77);
+			this->groupBox8->Controls->Add(this->label78);
+			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
+			this->groupBox8->Controls->Add(this->chartTrial1);
 			this->groupBox8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox8->ForeColor = System::Drawing::Color::Red;
 			this->groupBox8->Location = System::Drawing::Point(13, 334);
 			this->groupBox8->Name = L"groupBox8";
-			this->groupBox8->Size = System::Drawing::Size(1296, 424);
+			this->groupBox8->Size = System::Drawing::Size(1296, 685);
 			this->groupBox8->TabIndex = 204;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"负阻抗变换器 实验内容1";
+			// 
+			// labelTrial1_600_I1_6
+			// 
+			this->labelTrial1_600_I1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_6->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_6->Location = System::Drawing::Point(907, 195);
+			this->labelTrial1_600_I1_6->Name = L"labelTrial1_600_I1_6";
+			this->labelTrial1_600_I1_6->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_6->TabIndex = 269;
+			this->labelTrial1_600_I1_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_U1_6
+			// 
+			this->labelTrial1_600_U1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_6->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_6->Location = System::Drawing::Point(907, 155);
+			this->labelTrial1_600_U1_6->Name = L"labelTrial1_600_U1_6";
+			this->labelTrial1_600_U1_6->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_6->TabIndex = 267;
+			this->labelTrial1_600_U1_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_6
+			// 
+			this->labelTrial1_300_I1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_6->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_6->Location = System::Drawing::Point(907, 82);
+			this->labelTrial1_300_I1_6->Name = L"labelTrial1_300_I1_6";
+			this->labelTrial1_300_I1_6->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_6->TabIndex = 266;
+			this->labelTrial1_300_I1_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_U1_6
+			// 
+			this->labelTrial1_300_U1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_6->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_6->Location = System::Drawing::Point(907, 40);
+			this->labelTrial1_300_U1_6->Name = L"labelTrial1_300_U1_6";
+			this->labelTrial1_300_U1_6->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_6->TabIndex = 264;
+			this->labelTrial1_300_U1_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_I1_5
+			// 
+			this->labelTrial1_600_I1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_5->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_5->Location = System::Drawing::Point(794, 195);
+			this->labelTrial1_600_I1_5->Name = L"labelTrial1_600_I1_5";
+			this->labelTrial1_600_I1_5->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_5->TabIndex = 263;
+			this->labelTrial1_600_I1_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_U1_5
+			// 
+			this->labelTrial1_600_U1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_5->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_5->Location = System::Drawing::Point(794, 155);
+			this->labelTrial1_600_U1_5->Name = L"labelTrial1_600_U1_5";
+			this->labelTrial1_600_U1_5->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_5->TabIndex = 261;
+			this->labelTrial1_600_U1_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_5
+			// 
+			this->labelTrial1_300_I1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_5->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_5->Location = System::Drawing::Point(794, 82);
+			this->labelTrial1_300_I1_5->Name = L"labelTrial1_300_I1_5";
+			this->labelTrial1_300_I1_5->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_5->TabIndex = 260;
+			this->labelTrial1_300_I1_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_U1_5
+			// 
+			this->labelTrial1_300_U1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_5->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_5->Location = System::Drawing::Point(794, 40);
+			this->labelTrial1_300_U1_5->Name = L"labelTrial1_300_U1_5";
+			this->labelTrial1_300_U1_5->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_5->TabIndex = 258;
+			this->labelTrial1_300_U1_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_I1_4
+			// 
+			this->labelTrial1_600_I1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_4->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_4->Location = System::Drawing::Point(681, 194);
+			this->labelTrial1_600_I1_4->Name = L"labelTrial1_600_I1_4";
+			this->labelTrial1_600_I1_4->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_4->TabIndex = 257;
+			this->labelTrial1_600_I1_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_U1_4
+			// 
+			this->labelTrial1_600_U1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_4->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_4->Location = System::Drawing::Point(681, 154);
+			this->labelTrial1_600_U1_4->Name = L"labelTrial1_600_U1_4";
+			this->labelTrial1_600_U1_4->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_4->TabIndex = 255;
+			this->labelTrial1_600_U1_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_4
+			// 
+			this->labelTrial1_300_I1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_4->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_4->Location = System::Drawing::Point(681, 81);
+			this->labelTrial1_300_I1_4->Name = L"labelTrial1_300_I1_4";
+			this->labelTrial1_300_I1_4->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_4->TabIndex = 254;
+			this->labelTrial1_300_I1_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_U1_4
+			// 
+			this->labelTrial1_300_U1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_4->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_4->Location = System::Drawing::Point(681, 39);
+			this->labelTrial1_300_U1_4->Name = L"labelTrial1_300_U1_4";
+			this->labelTrial1_300_U1_4->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_4->TabIndex = 252;
+			this->labelTrial1_300_U1_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_I1_3
+			// 
+			this->labelTrial1_600_I1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_3->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_3->Location = System::Drawing::Point(568, 195);
+			this->labelTrial1_600_I1_3->Name = L"labelTrial1_600_I1_3";
+			this->labelTrial1_600_I1_3->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_3->TabIndex = 251;
+			this->labelTrial1_600_I1_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_U1_3
+			// 
+			this->labelTrial1_600_U1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_3->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_3->Location = System::Drawing::Point(568, 155);
+			this->labelTrial1_600_U1_3->Name = L"labelTrial1_600_U1_3";
+			this->labelTrial1_600_U1_3->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_3->TabIndex = 249;
+			this->labelTrial1_600_U1_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_3
+			// 
+			this->labelTrial1_300_I1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_3->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_3->Location = System::Drawing::Point(568, 82);
+			this->labelTrial1_300_I1_3->Name = L"labelTrial1_300_I1_3";
+			this->labelTrial1_300_I1_3->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_3->TabIndex = 248;
+			this->labelTrial1_300_I1_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_U1_3
+			// 
+			this->labelTrial1_300_U1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_3->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_3->Location = System::Drawing::Point(568, 40);
+			this->labelTrial1_300_U1_3->Name = L"labelTrial1_300_U1_3";
+			this->labelTrial1_300_U1_3->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_3->TabIndex = 246;
+			this->labelTrial1_300_U1_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_I1_2
+			// 
+			this->labelTrial1_600_I1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_2->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_2->Location = System::Drawing::Point(455, 195);
+			this->labelTrial1_600_I1_2->Name = L"labelTrial1_600_I1_2";
+			this->labelTrial1_600_I1_2->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_2->TabIndex = 245;
+			this->labelTrial1_600_I1_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_U1_2
+			// 
+			this->labelTrial1_600_U1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_2->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_2->Location = System::Drawing::Point(455, 155);
+			this->labelTrial1_600_U1_2->Name = L"labelTrial1_600_U1_2";
+			this->labelTrial1_600_U1_2->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_2->TabIndex = 243;
+			this->labelTrial1_600_U1_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_2
+			// 
+			this->labelTrial1_300_I1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_2->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_2->Location = System::Drawing::Point(455, 82);
+			this->labelTrial1_300_I1_2->Name = L"labelTrial1_300_I1_2";
+			this->labelTrial1_300_I1_2->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_2->TabIndex = 242;
+			this->labelTrial1_300_I1_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_U1_2
+			// 
+			this->labelTrial1_300_U1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_2->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_2->Location = System::Drawing::Point(455, 40);
+			this->labelTrial1_300_U1_2->Name = L"labelTrial1_300_U1_2";
+			this->labelTrial1_300_U1_2->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_2->TabIndex = 240;
+			this->labelTrial1_300_U1_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_600_I1_1
+			// 
+			this->labelTrial1_600_I1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_I1_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_I1_1->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_I1_1->Location = System::Drawing::Point(342, 195);
+			this->labelTrial1_600_I1_1->Name = L"labelTrial1_600_I1_1";
+			this->labelTrial1_600_I1_1->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_I1_1->TabIndex = 239;
+			this->labelTrial1_600_I1_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label8
+			// 
+			this->label8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label8->ForeColor = System::Drawing::Color::Black;
+			this->label8->Location = System::Drawing::Point(135, 241);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(191, 25);
+			this->label8->TabIndex = 238;
+			this->label8->Text = L"R_（KΩ）";
+			// 
+			// label12
+			// 
+			this->label12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label12->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label12->ForeColor = System::Drawing::Color::Black;
+			this->label12->Location = System::Drawing::Point(135, 195);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(191, 25);
+			this->label12->TabIndex = 237;
+			this->label12->Text = L"I1（mA）";
+			// 
+			// labelTrial1_600_U1_1
+			// 
+			this->labelTrial1_600_U1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_600_U1_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_600_U1_1->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_600_U1_1->Location = System::Drawing::Point(342, 155);
+			this->labelTrial1_600_U1_1->Name = L"labelTrial1_600_U1_1";
+			this->labelTrial1_600_U1_1->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_600_U1_1->TabIndex = 235;
+			this->labelTrial1_600_U1_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// labelTrial1_300_I1_1
+			// 
+			this->labelTrial1_300_I1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_I1_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_I1_1->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_I1_1->Location = System::Drawing::Point(342, 82);
+			this->labelTrial1_300_I1_1->Name = L"labelTrial1_300_I1_1";
+			this->labelTrial1_300_I1_1->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_I1_1->TabIndex = 234;
+			this->labelTrial1_300_I1_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label4
+			// 
+			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label4->ForeColor = System::Drawing::Color::Black;
+			this->label4->Location = System::Drawing::Point(135, 122);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(191, 25);
+			this->label4->TabIndex = 233;
+			this->label4->Text = L"R_（KΩ）";
+			// 
+			// label3
+			// 
+			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label3->ForeColor = System::Drawing::Color::Black;
+			this->label3->Location = System::Drawing::Point(135, 82);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(191, 25);
+			this->label3->TabIndex = 232;
+			this->label3->Text = L"I1（mA）";
+			// 
+			// label11
+			// 
+			this->label11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label11->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label11->ForeColor = System::Drawing::Color::Black;
+			this->label11->Location = System::Drawing::Point(12, 155);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(101, 111);
+			this->label11->TabIndex = 231;
+			this->label11->Text = L"RL=600Ω";
+			// 
+			// label10
+			// 
+			this->label10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label10->ForeColor = System::Drawing::Color::Black;
+			this->label10->Location = System::Drawing::Point(12, 40);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(101, 110);
+			this->label10->TabIndex = 230;
+			this->label10->Text = L"RL=300Ω";
+			// 
+			// labelTrial1_U1_line1
+			// 
+			this->labelTrial1_U1_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_U1_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_U1_line1->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_U1_line1->Location = System::Drawing::Point(135, 155);
+			this->labelTrial1_U1_line1->Name = L"labelTrial1_U1_line1";
+			this->labelTrial1_U1_line1->Size = System::Drawing::Size(191, 25);
+			this->labelTrial1_U1_line1->TabIndex = 228;
+			this->labelTrial1_U1_line1->Text = L"U1（v）";
+			// 
+			// labelTrial1_300_U1_1
+			// 
+			this->labelTrial1_300_U1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labelTrial1_300_U1_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->labelTrial1_300_U1_1->ForeColor = System::Drawing::Color::Black;
+			this->labelTrial1_300_U1_1->Location = System::Drawing::Point(342, 40);
+			this->labelTrial1_300_U1_1->Name = L"labelTrial1_300_U1_1";
+			this->labelTrial1_300_U1_1->Size = System::Drawing::Size(107, 25);
+			this->labelTrial1_300_U1_1->TabIndex = 227;
+			this->labelTrial1_300_U1_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// label9
+			// 
+			this->label9->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label9->ForeColor = System::Drawing::Color::Black;
+			this->label9->Location = System::Drawing::Point(135, 40);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(191, 25);
+			this->label9->TabIndex = 226;
+			this->label9->Text = L"U1（v）";
 			// 
 			// label77
 			// 
 			this->label77->AutoSize = true;
 			this->label77->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label77->Location = System::Drawing::Point(104, 344);
+			this->label77->Location = System::Drawing::Point(848, 638);
 			this->label77->Name = L"label77";
 			this->label77->Size = System::Drawing::Size(89, 20);
 			this->label77->TabIndex = 225;
@@ -490,7 +992,7 @@ namespace 教师机监控台 {
 			this->label78->AutoSize = true;
 			this->label78->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label78->Location = System::Drawing::Point(381, 344);
+			this->label78->Location = System::Drawing::Point(1125, 638);
 			this->label78->Name = L"label78";
 			this->label78->Size = System::Drawing::Size(129, 20);
 			this->label78->TabIndex = 224;
@@ -498,7 +1000,7 @@ namespace 教师机监控台 {
 			// 
 			// textBoxTrial1Score
 			// 
-			this->textBoxTrial1Score->Location = System::Drawing::Point(206, 341);
+			this->textBoxTrial1Score->Location = System::Drawing::Point(950, 635);
 			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
 			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial1Score->TabIndex = 223;
@@ -510,173 +1012,19 @@ namespace 教师机监控台 {
 			this->chartTrial1->ChartAreas->Add(chartArea1);
 			legend1->Name = L"Legend1";
 			this->chartTrial1->Legends->Add(legend1);
-			this->chartTrial1->Location = System::Drawing::Point(654, 29);
+			this->chartTrial1->Location = System::Drawing::Point(12, 275);
 			this->chartTrial1->Name = L"chartTrial1";
 			series1->ChartArea = L"ChartArea1";
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
+			series2->ChartArea = L"ChartArea1";
+			series2->Legend = L"Legend1";
+			series2->Name = L"Series2";
 			this->chartTrial1->Series->Add(series1);
-			this->chartTrial1->Size = System::Drawing::Size(546, 383);
+			this->chartTrial1->Series->Add(series2);
+			this->chartTrial1->Size = System::Drawing::Size(812, 383);
 			this->chartTrial1->TabIndex = 163;
 			this->chartTrial1->Text = L"chart1";
-			// 
-			// labelTrial1_600_I1
-			// 
-			this->labelTrial1_600_I1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial1_600_I1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->labelTrial1_600_I1->ForeColor = System::Drawing::Color::Black;
-			this->labelTrial1_600_I1->Location = System::Drawing::Point(353, 189);
-			this->labelTrial1_600_I1->Name = L"labelTrial1_600_I1";
-			this->labelTrial1_600_I1->Size = System::Drawing::Size(283, 25);
-			this->labelTrial1_600_I1->TabIndex = 153;
-			this->labelTrial1_600_I1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label8
-			// 
-			this->label8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label8->ForeColor = System::Drawing::Color::Black;
-			this->label8->Location = System::Drawing::Point(146, 228);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(191, 25);
-			this->label8->TabIndex = 152;
-			this->label8->Text = L"R_（KΩ）";
-			// 
-			// label12
-			// 
-			this->label12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label12->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label12->ForeColor = System::Drawing::Color::Black;
-			this->label12->Location = System::Drawing::Point(146, 189);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(191, 25);
-			this->label12->TabIndex = 151;
-			this->label12->Text = L"I1（mA）";
-			// 
-			// textBoxTrial1_600_R_
-			// 
-			this->textBoxTrial1_600_R_->Location = System::Drawing::Point(353, 226);
-			this->textBoxTrial1_600_R_->Name = L"textBoxTrial1_600_R_";
-			this->textBoxTrial1_600_R_->Size = System::Drawing::Size(283, 30);
-			this->textBoxTrial1_600_R_->TabIndex = 150;
-			// 
-			// labelTrial1_600_U1
-			// 
-			this->labelTrial1_600_U1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial1_600_U1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->labelTrial1_600_U1->ForeColor = System::Drawing::Color::Black;
-			this->labelTrial1_600_U1->Location = System::Drawing::Point(353, 148);
-			this->labelTrial1_600_U1->Name = L"labelTrial1_600_U1";
-			this->labelTrial1_600_U1->Size = System::Drawing::Size(283, 25);
-			this->labelTrial1_600_U1->TabIndex = 148;
-			this->labelTrial1_600_U1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// labelTrial1_300_I1
-			// 
-			this->labelTrial1_300_I1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial1_300_I1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->labelTrial1_300_I1->ForeColor = System::Drawing::Color::Black;
-			this->labelTrial1_300_I1->Location = System::Drawing::Point(353, 70);
-			this->labelTrial1_300_I1->Name = L"labelTrial1_300_I1";
-			this->labelTrial1_300_I1->Size = System::Drawing::Size(283, 25);
-			this->labelTrial1_300_I1->TabIndex = 146;
-			this->labelTrial1_300_I1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label4
-			// 
-			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label4->ForeColor = System::Drawing::Color::Black;
-			this->label4->Location = System::Drawing::Point(146, 109);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(191, 25);
-			this->label4->TabIndex = 145;
-			this->label4->Text = L"R_（KΩ）";
-			// 
-			// label3
-			// 
-			this->label3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label3->ForeColor = System::Drawing::Color::Black;
-			this->label3->Location = System::Drawing::Point(146, 70);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(191, 25);
-			this->label3->TabIndex = 144;
-			this->label3->Text = L"I1（mA）";
-			// 
-			// label11
-			// 
-			this->label11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label11->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label11->ForeColor = System::Drawing::Color::Black;
-			this->label11->Location = System::Drawing::Point(23, 148);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(101, 108);
-			this->label11->TabIndex = 64;
-			this->label11->Text = L"RL=600Ω";
-			// 
-			// label10
-			// 
-			this->label10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label10->ForeColor = System::Drawing::Color::Black;
-			this->label10->Location = System::Drawing::Point(23, 31);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(101, 103);
-			this->label10->TabIndex = 63;
-			this->label10->Text = L"RL=300Ω";
-			// 
-			// textBoxTrial1_300_R_
-			// 
-			this->textBoxTrial1_300_R_->Location = System::Drawing::Point(353, 107);
-			this->textBoxTrial1_300_R_->Name = L"textBoxTrial1_300_R_";
-			this->textBoxTrial1_300_R_->Size = System::Drawing::Size(283, 30);
-			this->textBoxTrial1_300_R_->TabIndex = 62;
-			// 
-			// labelTrial1_U1_line1
-			// 
-			this->labelTrial1_U1_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial1_U1_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->labelTrial1_U1_line1->ForeColor = System::Drawing::Color::Black;
-			this->labelTrial1_U1_line1->Location = System::Drawing::Point(146, 148);
-			this->labelTrial1_U1_line1->Name = L"labelTrial1_U1_line1";
-			this->labelTrial1_U1_line1->Size = System::Drawing::Size(191, 25);
-			this->labelTrial1_U1_line1->TabIndex = 56;
-			this->labelTrial1_U1_line1->Text = L"U1（v）";
-			// 
-			// labelTrial1_300_U1
-			// 
-			this->labelTrial1_300_U1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->labelTrial1_300_U1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->labelTrial1_300_U1->ForeColor = System::Drawing::Color::Black;
-			this->labelTrial1_300_U1->Location = System::Drawing::Point(353, 31);
-			this->labelTrial1_300_U1->Name = L"labelTrial1_300_U1";
-			this->labelTrial1_300_U1->Size = System::Drawing::Size(283, 25);
-			this->labelTrial1_300_U1->TabIndex = 50;
-			this->labelTrial1_300_U1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label9
-			// 
-			this->label9->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label9->ForeColor = System::Drawing::Color::Black;
-			this->label9->Location = System::Drawing::Point(146, 31);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(191, 25);
-			this->label9->TabIndex = 46;
-			this->label9->Text = L"U1（v）";
 			// 
 			// groupBox1
 			// 
@@ -690,7 +1038,7 @@ namespace 教师机监控台 {
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox1->ForeColor = System::Drawing::Color::Red;
-			this->groupBox1->Location = System::Drawing::Point(13, 764);
+			this->groupBox1->Location = System::Drawing::Point(19, 1054);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(1296, 1092);
 			this->groupBox1->TabIndex = 205;
@@ -774,7 +1122,7 @@ namespace 教师机监控台 {
 			this->groupBox14->Controls->Add(this->labelTotalGrade);
 			this->groupBox14->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox14->Location = System::Drawing::Point(12, 1877);
+			this->groupBox14->Location = System::Drawing::Point(18, 2167);
 			this->groupBox14->Name = L"groupBox14";
 			this->groupBox14->Size = System::Drawing::Size(640, 73);
 			this->groupBox14->TabIndex = 342;
@@ -792,7 +1140,7 @@ namespace 教师机监控台 {
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(793, 1903);
+			this->button1->Location = System::Drawing::Point(799, 2193);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(101, 36);
 			this->button1->TabIndex = 343;
@@ -802,7 +1150,7 @@ namespace 教师机监控台 {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(1013, 1903);
+			this->button3->Location = System::Drawing::Point(1019, 2193);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(101, 36);
 			this->button3->TabIndex = 345;
@@ -812,7 +1160,7 @@ namespace 教师机监控台 {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(900, 1903);
+			this->button2->Location = System::Drawing::Point(906, 2193);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(101, 36);
 			this->button2->TabIndex = 344;
@@ -831,7 +1179,7 @@ namespace 教师机监控台 {
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Location = System::Drawing::Point(53, 29);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1336, 1963);
+			this->panel1->Size = System::Drawing::Size(1336, 2241);
 			this->panel1->TabIndex = 346;
 			// 
 			// printDocument1
@@ -848,6 +1196,150 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
+			// 
+			// textBoxTrial1_300_R_6
+			// 
+			this->textBoxTrial1_300_R_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_6->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_6->Location = System::Drawing::Point(907, 121);
+			this->textBoxTrial1_300_R_6->Name = L"textBoxTrial1_300_R_6";
+			this->textBoxTrial1_300_R_6->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_6->TabIndex = 275;
+			this->textBoxTrial1_300_R_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_300_R_5
+			// 
+			this->textBoxTrial1_300_R_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_5->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_5->Location = System::Drawing::Point(794, 121);
+			this->textBoxTrial1_300_R_5->Name = L"textBoxTrial1_300_R_5";
+			this->textBoxTrial1_300_R_5->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_5->TabIndex = 274;
+			this->textBoxTrial1_300_R_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_300_R_4
+			// 
+			this->textBoxTrial1_300_R_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_4->Location = System::Drawing::Point(681, 120);
+			this->textBoxTrial1_300_R_4->Name = L"textBoxTrial1_300_R_4";
+			this->textBoxTrial1_300_R_4->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_4->TabIndex = 273;
+			this->textBoxTrial1_300_R_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_300_R_3
+			// 
+			this->textBoxTrial1_300_R_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_3->Location = System::Drawing::Point(568, 121);
+			this->textBoxTrial1_300_R_3->Name = L"textBoxTrial1_300_R_3";
+			this->textBoxTrial1_300_R_3->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_3->TabIndex = 272;
+			this->textBoxTrial1_300_R_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_300_R_2
+			// 
+			this->textBoxTrial1_300_R_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_2->Location = System::Drawing::Point(455, 121);
+			this->textBoxTrial1_300_R_2->Name = L"textBoxTrial1_300_R_2";
+			this->textBoxTrial1_300_R_2->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_2->TabIndex = 271;
+			this->textBoxTrial1_300_R_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_300_R_1
+			// 
+			this->textBoxTrial1_300_R_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_300_R_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_300_R_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_300_R_1->Location = System::Drawing::Point(342, 121);
+			this->textBoxTrial1_300_R_1->Name = L"textBoxTrial1_300_R_1";
+			this->textBoxTrial1_300_R_1->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_300_R_1->TabIndex = 270;
+			this->textBoxTrial1_300_R_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_6
+			// 
+			this->textBoxTrial1_600_R_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_6->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_6->Location = System::Drawing::Point(907, 241);
+			this->textBoxTrial1_600_R_6->Name = L"textBoxTrial1_600_R_6";
+			this->textBoxTrial1_600_R_6->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_6->TabIndex = 281;
+			this->textBoxTrial1_600_R_6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_5
+			// 
+			this->textBoxTrial1_600_R_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_5->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_5->Location = System::Drawing::Point(794, 241);
+			this->textBoxTrial1_600_R_5->Name = L"textBoxTrial1_600_R_5";
+			this->textBoxTrial1_600_R_5->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_5->TabIndex = 280;
+			this->textBoxTrial1_600_R_5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_4
+			// 
+			this->textBoxTrial1_600_R_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_4->Location = System::Drawing::Point(681, 240);
+			this->textBoxTrial1_600_R_4->Name = L"textBoxTrial1_600_R_4";
+			this->textBoxTrial1_600_R_4->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_4->TabIndex = 279;
+			this->textBoxTrial1_600_R_4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_3
+			// 
+			this->textBoxTrial1_600_R_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_3->Location = System::Drawing::Point(568, 241);
+			this->textBoxTrial1_600_R_3->Name = L"textBoxTrial1_600_R_3";
+			this->textBoxTrial1_600_R_3->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_3->TabIndex = 278;
+			this->textBoxTrial1_600_R_3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_2
+			// 
+			this->textBoxTrial1_600_R_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_2->Location = System::Drawing::Point(455, 241);
+			this->textBoxTrial1_600_R_2->Name = L"textBoxTrial1_600_R_2";
+			this->textBoxTrial1_600_R_2->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_2->TabIndex = 277;
+			this->textBoxTrial1_600_R_2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBoxTrial1_600_R_1
+			// 
+			this->textBoxTrial1_600_R_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_600_R_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_600_R_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_600_R_1->Location = System::Drawing::Point(342, 241);
+			this->textBoxTrial1_600_R_1->Name = L"textBoxTrial1_600_R_1";
+			this->textBoxTrial1_600_R_1->Size = System::Drawing::Size(107, 25);
+			this->textBoxTrial1_600_R_1->TabIndex = 276;
+			this->textBoxTrial1_600_R_1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// 负阻抗变换器
 			// 

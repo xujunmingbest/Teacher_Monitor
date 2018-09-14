@@ -22,7 +22,8 @@ namespace 教师机监控台 {
 			//TODO:  在此处添加构造函数代码
 			//
 		}
-
+		void chartTrial2_load();
+		void chartTrial6_load();
 	protected:
 		/// <summary>
 		/// 清理所有正在使用的资源。
@@ -69,7 +70,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label27;
 	private: System::Windows::Forms::Label^  label19;
 	private: System::Windows::Forms::GroupBox^  groupBox2;
-	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chart2;
+	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial2;
+
 
 
 
@@ -139,16 +141,17 @@ private: System::Windows::Forms::Label^  label6;
 private: System::Windows::Forms::Label^  label11;
 private: System::Windows::Forms::TextBox^  textBoxTrial3Score;
 
-private: System::Windows::Forms::TextBox^  textBoxMethod3Ro;
+
 private: System::Windows::Forms::Label^  label33;
-private: System::Windows::Forms::TextBox^  textBoxMethod3Uoc;
+
 private: System::Windows::Forms::Label^  label32;
 private: System::Windows::Forms::GroupBox^  groupBox6;
 private: System::Windows::Forms::Label^  label12;
 private: System::Windows::Forms::Label^  label13;
 private: System::Windows::Forms::TextBox^  textBoxTrial6Score;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial6;
 
-private: System::Windows::Forms::DataVisualization::Charting::Chart^  chart1;
+
 private: System::Windows::Forms::Label^  labelMethod6I10;
 private: System::Windows::Forms::Label^  labelMethod6I9;
 private: System::Windows::Forms::Label^  labelMethod6I8;
@@ -212,6 +215,26 @@ private: System::Windows::Forms::Label^  labelMethod6RL4;
 private: System::Windows::Forms::Label^  labelMethod6RL3;
 private: System::Windows::Forms::Label^  labelMethod6RL2;
 private: System::Windows::Forms::Label^  labelMethod6RL1;
+private: System::Windows::Forms::Label^  textBoxMethod1I;
+private: System::Windows::Forms::Label^  textBoxMethod1Us;
+private: System::Windows::Forms::Label^  label14;
+private: System::Windows::Forms::Label^  label15;
+private: System::Windows::Forms::Label^  textBoxMethod2Ro;
+private: System::Windows::Forms::Label^  label16;
+private: System::Windows::Forms::Label^  textBoxMethod3Ro;
+private: System::Windows::Forms::Label^  textBoxMethod3Uoc;
+private: System::Windows::Forms::GroupBox^  groupBox8;
+private: System::Windows::Forms::Label^  textBoxMethod5R0;
+private: System::Windows::Forms::Label^  label18;
+private: System::Windows::Forms::Label^  label22;
+private: System::Windows::Forms::TextBox^  textBox2;
+private: System::Windows::Forms::Label^  label24;
+private: System::Windows::Forms::GroupBox^  groupBox4;
+private: System::Windows::Forms::Label^  textBoxMethod4Uoc;
+private: System::Windows::Forms::Label^  label20;
+private: System::Windows::Forms::Label^  label21;
+private: System::Windows::Forms::TextBox^  textBox1;
+private: System::Windows::Forms::Label^  label23;
 
 	private:
 		/// <summary>
@@ -282,7 +305,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
-			this->chart2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->chartTrial2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->labelMethod2I10 = (gcnew System::Windows::Forms::Label());
 			this->labelMethod2I9 = (gcnew System::Windows::Forms::Label());
 			this->labelMethod2I8 = (gcnew System::Windows::Forms::Label());
@@ -311,9 +334,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial3Score = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxMethod3Ro = (gcnew System::Windows::Forms::TextBox());
 			this->label33 = (gcnew System::Windows::Forms::Label());
-			this->textBoxMethod3Uoc = (gcnew System::Windows::Forms::TextBox());
 			this->label32 = (gcnew System::Windows::Forms::Label());
 			this->groupBox6 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelMethod6RL10 = (gcnew System::Windows::Forms::Label());
@@ -329,7 +350,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial6Score = (gcnew System::Windows::Forms::TextBox());
-			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
+			this->chartTrial6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->labelMethod6I10 = (gcnew System::Windows::Forms::Label());
 			this->labelMethod6I9 = (gcnew System::Windows::Forms::Label());
 			this->labelMethod6I8 = (gcnew System::Windows::Forms::Label());
@@ -363,16 +384,38 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->textBoxMethod1Us = (gcnew System::Windows::Forms::Label());
+			this->textBoxMethod1I = (gcnew System::Windows::Forms::Label());
+			this->label16 = (gcnew System::Windows::Forms::Label());
+			this->textBoxMethod2Ro = (gcnew System::Windows::Forms::Label());
+			this->textBoxMethod3Uoc = (gcnew System::Windows::Forms::Label());
+			this->textBoxMethod3Ro = (gcnew System::Windows::Forms::Label());
+			this->groupBox4 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxMethod4Uoc = (gcnew System::Windows::Forms::Label());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxMethod5R0 = (gcnew System::Windows::Forms::Label());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->label24 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->groupBox2->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial2))->BeginInit();
 			this->panel1->SuspendLayout();
 			this->groupBox3->SuspendLayout();
 			this->groupBox6->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial6))->BeginInit();
 			this->panel2->SuspendLayout();
 			this->groupBox5->SuspendLayout();
+			this->groupBox4->SuspendLayout();
+			this->groupBox8->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox7
@@ -641,6 +684,10 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->textBoxMethod1I);
+			this->groupBox1->Controls->Add(this->textBoxMethod1Us);
+			this->groupBox1->Controls->Add(this->label14);
+			this->groupBox1->Controls->Add(this->label15);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->label9);
 			this->groupBox1->Controls->Add(this->label10);
@@ -654,9 +701,9 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox1->Controls->Add(this->label19);
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox1->Location = System::Drawing::Point(659, 142);
+			this->groupBox1->Location = System::Drawing::Point(665, 31);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(708, 179);
+			this->groupBox1->Size = System::Drawing::Size(708, 275);
 			this->groupBox1->TabIndex = 199;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"1.开路电压、短路电流法";
@@ -675,7 +722,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label9->Location = System::Drawing::Point(36, 141);
+			this->label9->Location = System::Drawing::Point(36, 247);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(89, 20);
 			this->label9->TabIndex = 210;
@@ -686,7 +733,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label10->Location = System::Drawing::Point(313, 141);
+			this->label10->Location = System::Drawing::Point(313, 247);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(129, 20);
 			this->label10->TabIndex = 209;
@@ -694,7 +741,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// textBoxTrial1Score
 			// 
-			this->textBoxTrial1Score->Location = System::Drawing::Point(138, 138);
+			this->textBoxTrial1Score->Location = System::Drawing::Point(138, 242);
 			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
 			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial1Score->TabIndex = 208;
@@ -769,6 +816,8 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->textBoxMethod2Ro);
+			this->groupBox2->Controls->Add(this->label16);
 			this->groupBox2->Controls->Add(this->labelMethod2RL10);
 			this->groupBox2->Controls->Add(this->labelMethod2RL9);
 			this->groupBox2->Controls->Add(this->labelMethod2RL8);
@@ -782,7 +831,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox2->Controls->Add(this->label3);
 			this->groupBox2->Controls->Add(this->label5);
 			this->groupBox2->Controls->Add(this->textBoxTrial2Score);
-			this->groupBox2->Controls->Add(this->chart2);
+			this->groupBox2->Controls->Add(this->chartTrial2);
 			this->groupBox2->Controls->Add(this->labelMethod2I10);
 			this->groupBox2->Controls->Add(this->labelMethod2I9);
 			this->groupBox2->Controls->Add(this->labelMethod2I8);
@@ -814,6 +863,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox2->TabIndex = 200;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"2.伏安法";
+			this->groupBox2->Enter += gcnew System::EventHandler(this, &戴维南定理::groupBox2_Enter);
 			// 
 			// labelMethod2RL10
 			// 
@@ -935,21 +985,20 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->textBoxTrial2Score->TabIndex = 303;
 			this->textBoxTrial2Score->TextChanged += gcnew System::EventHandler(this, &戴维南定理::textBoxTrial2Score_TextChanged);
 			// 
-			// chart2
+			// chartTrial2
 			// 
 			chartArea1->Name = L"ChartArea1";
-			this->chart2->ChartAreas->Add(chartArea1);
+			this->chartTrial2->ChartAreas->Add(chartArea1);
 			legend1->Name = L"Legend1";
-			this->chart2->Legends->Add(legend1);
-			this->chart2->Location = System::Drawing::Point(16, 193);
-			this->chart2->Name = L"chart2";
+			this->chartTrial2->Legends->Add(legend1);
+			this->chartTrial2->Location = System::Drawing::Point(16, 193);
+			this->chartTrial2->Name = L"chartTrial2";
 			series1->ChartArea = L"ChartArea1";
 			series1->Legend = L"Legend1";
 			series1->Name = L"Series1";
-			this->chart2->Series->Add(series1);
-			this->chart2->Size = System::Drawing::Size(460, 320);
-			this->chart2->TabIndex = 302;
-			this->chart2->Text = L"chart2";
+			this->chartTrial2->Series->Add(series1);
+			this->chartTrial2->Size = System::Drawing::Size(460, 320);
+			this->chartTrial2->TabIndex = 302;
 			// 
 			// labelMethod2I10
 			// 
@@ -1173,18 +1222,18 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->textBoxMethod3Ro);
+			this->groupBox3->Controls->Add(this->textBoxMethod3Uoc);
 			this->groupBox3->Controls->Add(this->label6);
 			this->groupBox3->Controls->Add(this->label11);
 			this->groupBox3->Controls->Add(this->textBoxTrial3Score);
-			this->groupBox3->Controls->Add(this->textBoxMethod3Ro);
 			this->groupBox3->Controls->Add(this->label33);
-			this->groupBox3->Controls->Add(this->textBoxMethod3Uoc);
 			this->groupBox3->Controls->Add(this->label32);
 			this->groupBox3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox3->Location = System::Drawing::Point(10, 17);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(1165, 159);
+			this->groupBox3->Size = System::Drawing::Size(441, 212);
 			this->groupBox3->TabIndex = 202;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"3.半电压法";
@@ -1194,7 +1243,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label6->Location = System::Drawing::Point(395, 104);
+			this->label6->Location = System::Drawing::Point(14, 163);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(89, 20);
 			this->label6->TabIndex = 308;
@@ -1205,7 +1254,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label11->Location = System::Drawing::Point(672, 104);
+			this->label11->Location = System::Drawing::Point(291, 163);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(129, 20);
 			this->label11->TabIndex = 307;
@@ -1213,18 +1262,11 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// textBoxTrial3Score
 			// 
-			this->textBoxTrial3Score->Location = System::Drawing::Point(497, 101);
+			this->textBoxTrial3Score->Location = System::Drawing::Point(116, 160);
 			this->textBoxTrial3Score->Name = L"textBoxTrial3Score";
 			this->textBoxTrial3Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial3Score->TabIndex = 306;
 			this->textBoxTrial3Score->TextChanged += gcnew System::EventHandler(this, &戴维南定理::textBoxTrial3Score_TextChanged);
-			// 
-			// textBoxMethod3Ro
-			// 
-			this->textBoxMethod3Ro->Location = System::Drawing::Point(113, 109);
-			this->textBoxMethod3Ro->Name = L"textBoxMethod3Ro";
-			this->textBoxMethod3Ro->Size = System::Drawing::Size(152, 30);
-			this->textBoxMethod3Ro->TabIndex = 241;
 			// 
 			// label33
 			// 
@@ -1235,13 +1277,6 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label33->TabIndex = 240;
 			this->label33->Text = L"Ro =";
 			this->label33->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxMethod3Uoc
-			// 
-			this->textBoxMethod3Uoc->Location = System::Drawing::Point(113, 44);
-			this->textBoxMethod3Uoc->Name = L"textBoxMethod3Uoc";
-			this->textBoxMethod3Uoc->Size = System::Drawing::Size(152, 30);
-			this->textBoxMethod3Uoc->TabIndex = 106;
 			// 
 			// label32
 			// 
@@ -1268,7 +1303,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox6->Controls->Add(this->label12);
 			this->groupBox6->Controls->Add(this->label13);
 			this->groupBox6->Controls->Add(this->textBoxTrial6Score);
-			this->groupBox6->Controls->Add(this->chart1);
+			this->groupBox6->Controls->Add(this->chartTrial6);
 			this->groupBox6->Controls->Add(this->labelMethod6I10);
 			this->groupBox6->Controls->Add(this->labelMethod6I9);
 			this->groupBox6->Controls->Add(this->labelMethod6I8);
@@ -1294,7 +1329,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox6->Controls->Add(this->label62);
 			this->groupBox6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox6->Location = System::Drawing::Point(10, 194);
+			this->groupBox6->Location = System::Drawing::Point(10, 249);
 			this->groupBox6->Name = L"groupBox6";
 			this->groupBox6->Size = System::Drawing::Size(1350, 544);
 			this->groupBox6->TabIndex = 203;
@@ -1421,21 +1456,21 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->textBoxTrial6Score->TabIndex = 309;
 			this->textBoxTrial6Score->TextChanged += gcnew System::EventHandler(this, &戴维南定理::textBoxTrial6Score_TextChanged);
 			// 
-			// chart1
+			// chartTrial6
 			// 
 			chartArea2->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea2);
+			this->chartTrial6->ChartAreas->Add(chartArea2);
 			legend2->Name = L"Legend1";
-			this->chart1->Legends->Add(legend2);
-			this->chart1->Location = System::Drawing::Point(17, 184);
-			this->chart1->Name = L"chart1";
+			this->chartTrial6->Legends->Add(legend2);
+			this->chartTrial6->Location = System::Drawing::Point(17, 184);
+			this->chartTrial6->Name = L"chartTrial6";
 			series2->ChartArea = L"ChartArea1";
 			series2->Legend = L"Legend1";
 			series2->Name = L"Series1";
-			this->chart1->Series->Add(series2);
-			this->chart1->Size = System::Drawing::Size(446, 345);
-			this->chart1->TabIndex = 301;
-			this->chart1->Text = L"chart1";
+			this->chartTrial6->Series->Add(series2);
+			this->chartTrial6->Size = System::Drawing::Size(446, 345);
+			this->chartTrial6->TabIndex = 301;
+			this->chartTrial6->Text = L"chartTrial6";
 			// 
 			// labelMethod6I10
 			// 
@@ -1649,6 +1684,8 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// panel2
 			// 
+			this->panel2->Controls->Add(this->groupBox8);
+			this->panel2->Controls->Add(this->groupBox4);
 			this->panel2->Controls->Add(this->label结论);
 			this->panel2->Controls->Add(this->label64);
 			this->panel2->Controls->Add(this->button3);
@@ -1659,13 +1696,13 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->panel2->Controls->Add(this->groupBox6);
 			this->panel2->Location = System::Drawing::Point(12, 887);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(1377, 885);
+			this->panel2->Size = System::Drawing::Size(1377, 937);
 			this->panel2->TabIndex = 204;
 			// 
 			// label结论
 			// 
 			this->label结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label结论->Location = System::Drawing::Point(179, 745);
+			this->label结论->Location = System::Drawing::Point(178, 801);
 			this->label结论->Name = L"label结论";
 			this->label结论->Size = System::Drawing::Size(1000, 33);
 			this->label结论->TabIndex = 323;
@@ -1676,7 +1713,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->label64->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label64->ForeColor = System::Drawing::Color::Black;
-			this->label64->Location = System::Drawing::Point(12, 751);
+			this->label64->Location = System::Drawing::Point(11, 807);
 			this->label64->Name = L"label64";
 			this->label64->Size = System::Drawing::Size(95, 27);
 			this->label64->TabIndex = 322;
@@ -1684,7 +1721,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(1061, 817);
+			this->button3->Location = System::Drawing::Point(1060, 873);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(101, 36);
 			this->button3->TabIndex = 321;
@@ -1694,7 +1731,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(948, 817);
+			this->button2->Location = System::Drawing::Point(947, 873);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(101, 36);
 			this->button2->TabIndex = 320;
@@ -1704,7 +1741,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(841, 817);
+			this->button1->Location = System::Drawing::Point(840, 873);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(101, 36);
 			this->button1->TabIndex = 319;
@@ -1717,7 +1754,7 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox5->Controls->Add(this->labelTotalGrade);
 			this->groupBox5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox5->Location = System::Drawing::Point(14, 791);
+			this->groupBox5->Location = System::Drawing::Point(13, 847);
 			this->groupBox5->Name = L"groupBox5";
 			this->groupBox5->Size = System::Drawing::Size(640, 73);
 			this->groupBox5->TabIndex = 318;
@@ -1748,12 +1785,215 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
+			// label14
+			// 
+			this->label14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label14->Location = System::Drawing::Point(323, 138);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(119, 25);
+			this->label14->TabIndex = 254;
+			this->label14->Text = L"I(mA)";
+			this->label14->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label15
+			// 
+			this->label15->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label15->Location = System::Drawing::Point(196, 138);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(119, 25);
+			this->label15->TabIndex = 253;
+			this->label15->Text = L"Us(V)";
+			this->label15->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxMethod1Us
+			// 
+			this->textBoxMethod1Us->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod1Us->Location = System::Drawing::Point(196, 178);
+			this->textBoxMethod1Us->Name = L"textBoxMethod1Us";
+			this->textBoxMethod1Us->Size = System::Drawing::Size(119, 30);
+			this->textBoxMethod1Us->TabIndex = 257;
+			this->textBoxMethod1Us->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxMethod1I
+			// 
+			this->textBoxMethod1I->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod1I->Location = System::Drawing::Point(323, 178);
+			this->textBoxMethod1I->Name = L"textBoxMethod1I";
+			this->textBoxMethod1I->Size = System::Drawing::Size(119, 30);
+			this->textBoxMethod1I->TabIndex = 258;
+			this->textBoxMethod1I->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label16
+			// 
+			this->label16->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label16->Location = System::Drawing::Point(528, 223);
+			this->label16->Name = L"label16";
+			this->label16->Size = System::Drawing::Size(93, 30);
+			this->label16->TabIndex = 317;
+			this->label16->Text = L"Ro";
+			this->label16->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxMethod2Ro
+			// 
+			this->textBoxMethod2Ro->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod2Ro->Location = System::Drawing::Point(630, 223);
+			this->textBoxMethod2Ro->Name = L"textBoxMethod2Ro";
+			this->textBoxMethod2Ro->Size = System::Drawing::Size(180, 30);
+			this->textBoxMethod2Ro->TabIndex = 318;
+			this->textBoxMethod2Ro->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxMethod3Uoc
+			// 
+			this->textBoxMethod3Uoc->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod3Uoc->Location = System::Drawing::Point(113, 39);
+			this->textBoxMethod3Uoc->Name = L"textBoxMethod3Uoc";
+			this->textBoxMethod3Uoc->Size = System::Drawing::Size(208, 30);
+			this->textBoxMethod3Uoc->TabIndex = 319;
+			this->textBoxMethod3Uoc->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxMethod3Ro
+			// 
+			this->textBoxMethod3Ro->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod3Ro->Location = System::Drawing::Point(113, 107);
+			this->textBoxMethod3Ro->Name = L"textBoxMethod3Ro";
+			this->textBoxMethod3Ro->Size = System::Drawing::Size(208, 30);
+			this->textBoxMethod3Ro->TabIndex = 320;
+			this->textBoxMethod3Ro->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// groupBox4
+			// 
+			this->groupBox4->Controls->Add(this->textBoxMethod4Uoc);
+			this->groupBox4->Controls->Add(this->label20);
+			this->groupBox4->Controls->Add(this->label21);
+			this->groupBox4->Controls->Add(this->textBox1);
+			this->groupBox4->Controls->Add(this->label23);
+			this->groupBox4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox4->Location = System::Drawing::Point(471, 17);
+			this->groupBox4->Name = L"groupBox4";
+			this->groupBox4->Size = System::Drawing::Size(441, 212);
+			this->groupBox4->TabIndex = 324;
+			this->groupBox4->TabStop = false;
+			this->groupBox4->Text = L"4.零示法";
+			// 
+			// textBoxMethod4Uoc
+			// 
+			this->textBoxMethod4Uoc->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod4Uoc->Location = System::Drawing::Point(113, 39);
+			this->textBoxMethod4Uoc->Name = L"textBoxMethod4Uoc";
+			this->textBoxMethod4Uoc->Size = System::Drawing::Size(208, 30);
+			this->textBoxMethod4Uoc->TabIndex = 319;
+			this->textBoxMethod4Uoc->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label20->Location = System::Drawing::Point(18, 136);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(89, 20);
+			this->label20->TabIndex = 308;
+			this->label20->Text = L"请打分：";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label21->Location = System::Drawing::Point(295, 136);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(129, 20);
+			this->label21->TabIndex = 307;
+			this->label21->Text = L"本项目总分20";
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(120, 133);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(152, 30);
+			this->textBox1->TabIndex = 306;
+			// 
+			// label23
+			// 
+			this->label23->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label23->Location = System::Drawing::Point(31, 39);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(76, 30);
+			this->label23->TabIndex = 105;
+			this->label23->Text = L"Uoc =";
+			this->label23->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// groupBox8
+			// 
+			this->groupBox8->Controls->Add(this->textBoxMethod5R0);
+			this->groupBox8->Controls->Add(this->label18);
+			this->groupBox8->Controls->Add(this->label22);
+			this->groupBox8->Controls->Add(this->textBox2);
+			this->groupBox8->Controls->Add(this->label24);
+			this->groupBox8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox8->Location = System::Drawing::Point(926, 17);
+			this->groupBox8->Name = L"groupBox8";
+			this->groupBox8->Size = System::Drawing::Size(441, 212);
+			this->groupBox8->TabIndex = 325;
+			this->groupBox8->TabStop = false;
+			this->groupBox8->Text = L"5.直测法";
+			// 
+			// textBoxMethod5R0
+			// 
+			this->textBoxMethod5R0->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxMethod5R0->Location = System::Drawing::Point(113, 39);
+			this->textBoxMethod5R0->Name = L"textBoxMethod5R0";
+			this->textBoxMethod5R0->Size = System::Drawing::Size(208, 30);
+			this->textBoxMethod5R0->TabIndex = 319;
+			this->textBoxMethod5R0->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label18->Location = System::Drawing::Point(18, 136);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(89, 20);
+			this->label18->TabIndex = 308;
+			this->label18->Text = L"请打分：";
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label22->Location = System::Drawing::Point(295, 136);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(129, 20);
+			this->label22->TabIndex = 307;
+			this->label22->Text = L"本项目总分20";
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(120, 133);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(152, 30);
+			this->textBox2->TabIndex = 306;
+			// 
+			// label24
+			// 
+			this->label24->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label24->Location = System::Drawing::Point(31, 39);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(76, 30);
+			this->label24->TabIndex = 105;
+			this->label24->Text = L"R0 =";
+			this->label24->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
 			// 戴维南定理
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1581, 913);
+			this->ClientSize = System::Drawing::Size(1602, 913);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"戴维南定理";
@@ -1765,16 +2005,20 @@ private: System::Windows::Forms::Label^  labelMethod6RL1;
 			this->groupBox1->PerformLayout();
 			this->groupBox2->ResumeLayout(false);
 			this->groupBox2->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial2))->EndInit();
 			this->panel1->ResumeLayout(false);
 			this->groupBox3->ResumeLayout(false);
 			this->groupBox3->PerformLayout();
 			this->groupBox6->ResumeLayout(false);
 			this->groupBox6->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial6))->EndInit();
 			this->panel2->ResumeLayout(false);
 			this->groupBox5->ResumeLayout(false);
 			this->groupBox5->PerformLayout();
+			this->groupBox4->ResumeLayout(false);
+			this->groupBox4->PerformLayout();
+			this->groupBox8->ResumeLayout(false);
+			this->groupBox8->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -1832,6 +2076,8 @@ private: System::Void textBoxTrial3Score_TextChanged(System::Object^  sender, Sy
 }
 private: System::Void textBoxTrial6Score_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	CalScores();
+}
+private: System::Void groupBox2_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

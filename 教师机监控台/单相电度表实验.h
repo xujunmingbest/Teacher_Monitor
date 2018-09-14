@@ -59,13 +59,13 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label38;
 	private: System::Windows::Forms::Label^  label39;
 	private: System::Windows::Forms::GroupBox^  groupBox8;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_cal_WW;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_cal_calW;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_cal_meaW;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_cal_N;
+
+
+
+
 	private: System::Windows::Forms::Label^  label19;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_mea_n;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_mea_time;
+
+
 	private: System::Windows::Forms::Label^  label26;
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
@@ -85,10 +85,10 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label10;
 	private: System::Windows::Forms::Label^  label9;
 	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_accuracy;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_N;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_UN;
-	private: System::Windows::Forms::TextBox^  textBoxTrial1_IN;
+
+
+
+
 	private: System::Windows::Forms::Label^  label5;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label3;
@@ -105,6 +105,16 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Drawing::Printing::PrintDocument^  printDocument1;
 	private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
+	private: System::Windows::Forms::Label^  textBoxTrial1_mea_n;
+	private: System::Windows::Forms::Label^  textBoxTrial1_mea_time;
+	private: System::Windows::Forms::Label^  textBoxTrial1_accuracy;
+	private: System::Windows::Forms::Label^  textBoxTrial1_UN;
+	private: System::Windows::Forms::Label^  textBoxTrial1_N;
+	private: System::Windows::Forms::Label^  textBoxTrial1_IN;
+	private: System::Windows::Forms::Label^  textBoxTrial1_cal_N;
+	private: System::Windows::Forms::Label^  textBoxTrial1_cal_WW;
+	private: System::Windows::Forms::Label^  textBoxTrial1_cal_calW;
+	private: System::Windows::Forms::Label^  textBoxTrial1_cal_meaW;
 
 	private:
 		/// <summary>
@@ -147,13 +157,7 @@ namespace 教师机监控台 {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_cal_WW = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_cal_calW = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_cal_meaW = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_cal_N = (gcnew System::Windows::Forms::TextBox());
 			this->label19 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_mea_n = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_mea_time = (gcnew System::Windows::Forms::TextBox());
 			this->label26 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -173,10 +177,6 @@ namespace 教师机监控台 {
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_accuracy = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_N = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_UN = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial1_IN = (gcnew System::Windows::Forms::TextBox());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -190,6 +190,16 @@ namespace 教师机监控台 {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
+			this->textBoxTrial1_IN = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_N = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_UN = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_accuracy = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_mea_time = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_mea_n = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_meaW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_calW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_WW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_N = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox14->SuspendLayout();
@@ -462,16 +472,20 @@ namespace 教师机监控台 {
 			// 
 			// groupBox8
 			// 
-			this->groupBox8->Controls->Add(this->label6);
-			this->groupBox8->Controls->Add(this->label23);
-			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_cal_N);
 			this->groupBox8->Controls->Add(this->textBoxTrial1_cal_WW);
 			this->groupBox8->Controls->Add(this->textBoxTrial1_cal_calW);
 			this->groupBox8->Controls->Add(this->textBoxTrial1_cal_meaW);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_cal_N);
-			this->groupBox8->Controls->Add(this->label19);
 			this->groupBox8->Controls->Add(this->textBoxTrial1_mea_n);
 			this->groupBox8->Controls->Add(this->textBoxTrial1_mea_time);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_accuracy);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_UN);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_N);
+			this->groupBox8->Controls->Add(this->textBoxTrial1_IN);
+			this->groupBox8->Controls->Add(this->label6);
+			this->groupBox8->Controls->Add(this->label23);
+			this->groupBox8->Controls->Add(this->textBoxTrial1Score);
+			this->groupBox8->Controls->Add(this->label19);
 			this->groupBox8->Controls->Add(this->label26);
 			this->groupBox8->Controls->Add(this->label1);
 			this->groupBox8->Controls->Add(this->label2);
@@ -491,10 +505,6 @@ namespace 教师机监控台 {
 			this->groupBox8->Controls->Add(this->label10);
 			this->groupBox8->Controls->Add(this->label9);
 			this->groupBox8->Controls->Add(this->label8);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_accuracy);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_N);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_UN);
-			this->groupBox8->Controls->Add(this->textBoxTrial1_IN);
 			this->groupBox8->Controls->Add(this->label5);
 			this->groupBox8->Controls->Add(this->label4);
 			this->groupBox8->Controls->Add(this->label3);
@@ -509,6 +519,7 @@ namespace 教师机监控台 {
 			this->groupBox8->TabIndex = 204;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"RLC元件阻抗特性的测定 实验内容1";
+			this->groupBox8->Enter += gcnew System::EventHandler(this, &单相电度表实验::groupBox8_Enter);
 			// 
 			// label6
 			// 
@@ -540,34 +551,6 @@ namespace 教师机监控台 {
 			this->textBoxTrial1Score->TabIndex = 217;
 			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &单相电度表实验::textBoxTrial1Score_TextChanged);
 			// 
-			// textBoxTrial1_cal_WW
-			// 
-			this->textBoxTrial1_cal_WW->Location = System::Drawing::Point(446, 511);
-			this->textBoxTrial1_cal_WW->Name = L"textBoxTrial1_cal_WW";
-			this->textBoxTrial1_cal_WW->Size = System::Drawing::Size(94, 30);
-			this->textBoxTrial1_cal_WW->TabIndex = 51;
-			// 
-			// textBoxTrial1_cal_calW
-			// 
-			this->textBoxTrial1_cal_calW->Location = System::Drawing::Point(332, 512);
-			this->textBoxTrial1_cal_calW->Name = L"textBoxTrial1_cal_calW";
-			this->textBoxTrial1_cal_calW->Size = System::Drawing::Size(94, 30);
-			this->textBoxTrial1_cal_calW->TabIndex = 50;
-			// 
-			// textBoxTrial1_cal_meaW
-			// 
-			this->textBoxTrial1_cal_meaW->Location = System::Drawing::Point(216, 512);
-			this->textBoxTrial1_cal_meaW->Name = L"textBoxTrial1_cal_meaW";
-			this->textBoxTrial1_cal_meaW->Size = System::Drawing::Size(94, 30);
-			this->textBoxTrial1_cal_meaW->TabIndex = 49;
-			// 
-			// textBoxTrial1_cal_N
-			// 
-			this->textBoxTrial1_cal_N->Location = System::Drawing::Point(561, 511);
-			this->textBoxTrial1_cal_N->Name = L"textBoxTrial1_cal_N";
-			this->textBoxTrial1_cal_N->Size = System::Drawing::Size(135, 30);
-			this->textBoxTrial1_cal_N->TabIndex = 45;
-			// 
 			// label19
 			// 
 			this->label19->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -579,20 +562,6 @@ namespace 教师机监控台 {
 			this->label19->Size = System::Drawing::Size(148, 27);
 			this->label19->TabIndex = 41;
 			this->label19->Text = L"负 载  情 况";
-			// 
-			// textBoxTrial1_mea_n
-			// 
-			this->textBoxTrial1_mea_n->Location = System::Drawing::Point(728, 317);
-			this->textBoxTrial1_mea_n->Name = L"textBoxTrial1_mea_n";
-			this->textBoxTrial1_mea_n->Size = System::Drawing::Size(94, 30);
-			this->textBoxTrial1_mea_n->TabIndex = 40;
-			// 
-			// textBoxTrial1_mea_time
-			// 
-			this->textBoxTrial1_mea_time->Location = System::Drawing::Point(557, 317);
-			this->textBoxTrial1_mea_time->Name = L"textBoxTrial1_mea_time";
-			this->textBoxTrial1_mea_time->Size = System::Drawing::Size(150, 30);
-			this->textBoxTrial1_mea_time->TabIndex = 39;
 			// 
 			// label26
 			// 
@@ -821,34 +790,6 @@ namespace 教师机监控台 {
 			this->label8->TabIndex = 12;
 			this->label8->Text = L"负 载  情 况";
 			// 
-			// textBoxTrial1_accuracy
-			// 
-			this->textBoxTrial1_accuracy->Location = System::Drawing::Point(716, 147);
-			this->textBoxTrial1_accuracy->Name = L"textBoxTrial1_accuracy";
-			this->textBoxTrial1_accuracy->Size = System::Drawing::Size(183, 30);
-			this->textBoxTrial1_accuracy->TabIndex = 9;
-			// 
-			// textBoxTrial1_N
-			// 
-			this->textBoxTrial1_N->Location = System::Drawing::Point(716, 93);
-			this->textBoxTrial1_N->Name = L"textBoxTrial1_N";
-			this->textBoxTrial1_N->Size = System::Drawing::Size(183, 30);
-			this->textBoxTrial1_N->TabIndex = 8;
-			// 
-			// textBoxTrial1_UN
-			// 
-			this->textBoxTrial1_UN->Location = System::Drawing::Point(279, 149);
-			this->textBoxTrial1_UN->Name = L"textBoxTrial1_UN";
-			this->textBoxTrial1_UN->Size = System::Drawing::Size(183, 30);
-			this->textBoxTrial1_UN->TabIndex = 7;
-			// 
-			// textBoxTrial1_IN
-			// 
-			this->textBoxTrial1_IN->Location = System::Drawing::Point(279, 93);
-			this->textBoxTrial1_IN->Name = L"textBoxTrial1_IN";
-			this->textBoxTrial1_IN->Size = System::Drawing::Size(183, 30);
-			this->textBoxTrial1_IN->TabIndex = 6;
-			// 
 			// label5
 			// 
 			this->label5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -987,6 +928,116 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
+			// textBoxTrial1_IN
+			// 
+			this->textBoxTrial1_IN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_IN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_IN->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_IN->Location = System::Drawing::Point(283, 96);
+			this->textBoxTrial1_IN->Name = L"textBoxTrial1_IN";
+			this->textBoxTrial1_IN->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_IN->TabIndex = 220;
+			// 
+			// textBoxTrial1_N
+			// 
+			this->textBoxTrial1_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_N->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_N->Location = System::Drawing::Point(716, 96);
+			this->textBoxTrial1_N->Name = L"textBoxTrial1_N";
+			this->textBoxTrial1_N->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_N->TabIndex = 221;
+			// 
+			// textBoxTrial1_UN
+			// 
+			this->textBoxTrial1_UN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_UN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_UN->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_UN->Location = System::Drawing::Point(283, 152);
+			this->textBoxTrial1_UN->Name = L"textBoxTrial1_UN";
+			this->textBoxTrial1_UN->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_UN->TabIndex = 222;
+			// 
+			// textBoxTrial1_accuracy
+			// 
+			this->textBoxTrial1_accuracy->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_accuracy->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_accuracy->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_accuracy->Location = System::Drawing::Point(716, 150);
+			this->textBoxTrial1_accuracy->Name = L"textBoxTrial1_accuracy";
+			this->textBoxTrial1_accuracy->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_accuracy->TabIndex = 223;
+			// 
+			// textBoxTrial1_mea_time
+			// 
+			this->textBoxTrial1_mea_time->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_mea_time->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_mea_time->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_mea_time->Location = System::Drawing::Point(557, 317);
+			this->textBoxTrial1_mea_time->Name = L"textBoxTrial1_mea_time";
+			this->textBoxTrial1_mea_time->Size = System::Drawing::Size(153, 27);
+			this->textBoxTrial1_mea_time->TabIndex = 224;
+			// 
+			// textBoxTrial1_mea_n
+			// 
+			this->textBoxTrial1_mea_n->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_mea_n->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_mea_n->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_mea_n->Location = System::Drawing::Point(728, 317);
+			this->textBoxTrial1_mea_n->Name = L"textBoxTrial1_mea_n";
+			this->textBoxTrial1_mea_n->Size = System::Drawing::Size(92, 27);
+			this->textBoxTrial1_mea_n->TabIndex = 225;
+			// 
+			// textBoxTrial1_cal_meaW
+			// 
+			this->textBoxTrial1_cal_meaW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_meaW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_meaW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_meaW->Location = System::Drawing::Point(219, 511);
+			this->textBoxTrial1_cal_meaW->Name = L"textBoxTrial1_cal_meaW";
+			this->textBoxTrial1_cal_meaW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_meaW->TabIndex = 226;
+			// 
+			// textBoxTrial1_cal_calW
+			// 
+			this->textBoxTrial1_cal_calW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_calW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_calW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_calW->Location = System::Drawing::Point(332, 511);
+			this->textBoxTrial1_cal_calW->Name = L"textBoxTrial1_cal_calW";
+			this->textBoxTrial1_cal_calW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_calW->TabIndex = 227;
+			// 
+			// textBoxTrial1_cal_WW
+			// 
+			this->textBoxTrial1_cal_WW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_WW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_WW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_WW->Location = System::Drawing::Point(444, 511);
+			this->textBoxTrial1_cal_WW->Name = L"textBoxTrial1_cal_WW";
+			this->textBoxTrial1_cal_WW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_WW->TabIndex = 228;
+			// 
+			// textBoxTrial1_cal_N
+			// 
+			this->textBoxTrial1_cal_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_N->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_N->Location = System::Drawing::Point(557, 512);
+			this->textBoxTrial1_cal_N->Name = L"textBoxTrial1_cal_N";
+			this->textBoxTrial1_cal_N->Size = System::Drawing::Size(132, 27);
+			this->textBoxTrial1_cal_N->TabIndex = 229;
+			// 
 			// 单相电度表实验
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -1041,6 +1092,8 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	Print();
+}
+private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

@@ -187,6 +187,12 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button81;
 	private: System::Windows::Forms::TextBox^  textBox结论;
 	private: System::Windows::Forms::Label^  label105;
+private: System::Windows::Forms::Button^  button52;
+private: System::Windows::Forms::TextBox^  textBoxTrial11UP2;
+private: System::Windows::Forms::Button^  button51;
+private: System::Windows::Forms::TextBox^  textBoxTrial11UP1;
+private: System::Windows::Forms::Label^  label10;
+private: System::Windows::Forms::TextBox^  textBoxTrial2Is;
 
 	protected:
 
@@ -503,6 +509,12 @@ namespace 教师机监控台 {
 			this->button81 = (gcnew System::Windows::Forms::Button());
 			this->textBox结论 = (gcnew System::Windows::Forms::TextBox());
 			this->label105 = (gcnew System::Windows::Forms::Label());
+			this->button51 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial11UP1 = (gcnew System::Windows::Forms::TextBox());
+			this->button52 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial11UP2 = (gcnew System::Windows::Forms::TextBox());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2Is = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->groupBox3->SuspendLayout();
@@ -511,6 +523,10 @@ namespace 教师机监控台 {
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->button52);
+			this->groupBox2->Controls->Add(this->textBoxTrial11UP2);
+			this->groupBox2->Controls->Add(this->button51);
+			this->groupBox2->Controls->Add(this->textBoxTrial11UP1);
 			this->groupBox2->Controls->Add(this->textBoxTrial12Load10);
 			this->groupBox2->Controls->Add(this->textBoxTrial12Load9);
 			this->groupBox2->Controls->Add(this->textBoxTrial12Load8);
@@ -1894,6 +1910,8 @@ namespace 教师机监控台 {
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->label10);
+			this->groupBox3->Controls->Add(this->textBoxTrial2Is);
 			this->groupBox3->Controls->Add(this->label43);
 			this->groupBox3->Controls->Add(this->pictureBox2);
 			this->groupBox3->Controls->Add(this->textBoxTrial2Load10);
@@ -2364,6 +2382,76 @@ namespace 教师机监控台 {
 			this->label105->TabIndex = 182;
 			this->label105->Text = L"实验结论";
 			// 
+			// button51
+			// 
+			this->button51->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button51->ForeColor = System::Drawing::Color::Black;
+			this->button51->Location = System::Drawing::Point(23, 217);
+			this->button51->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button51->Name = L"button51";
+			this->button51->Size = System::Drawing::Size(93, 42);
+			this->button51->TabIndex = 276;
+			this->button51->Text = L"设置";
+			this->button51->UseVisualStyleBackColor = true;
+			// 
+			// textBoxTrial11UP1
+			// 
+			this->textBoxTrial11UP1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial11UP1->Location = System::Drawing::Point(23, 174);
+			this->textBoxTrial11UP1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxTrial11UP1->Name = L"textBoxTrial11UP1";
+			this->textBoxTrial11UP1->Size = System::Drawing::Size(93, 30);
+			this->textBoxTrial11UP1->TabIndex = 275;
+			// 
+			// button52
+			// 
+			this->button52->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button52->ForeColor = System::Drawing::Color::Black;
+			this->button52->Location = System::Drawing::Point(1021, 283);
+			this->button52->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->button52->Name = L"button52";
+			this->button52->Size = System::Drawing::Size(93, 42);
+			this->button52->TabIndex = 278;
+			this->button52->Text = L"设置";
+			this->button52->UseVisualStyleBackColor = true;
+			this->button52->Click += gcnew System::EventHandler(this, &电压源与电流源的等效变换监控::button52_Click);
+			// 
+			// textBoxTrial11UP2
+			// 
+			this->textBoxTrial11UP2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial11UP2->Location = System::Drawing::Point(1021, 240);
+			this->textBoxTrial11UP2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxTrial11UP2->Name = L"textBoxTrial11UP2";
+			this->textBoxTrial11UP2->Size = System::Drawing::Size(93, 30);
+			this->textBoxTrial11UP2->TabIndex = 277;
+			// 
+			// label10
+			// 
+			this->label10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label10->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label10->ForeColor = System::Drawing::Color::Black;
+			this->label10->Location = System::Drawing::Point(390, 227);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(116, 42);
+			this->label10->TabIndex = 308;
+			this->label10->Text = L"填写Is的值";
+			this->label10->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2Is
+			// 
+			this->textBoxTrial2Is->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2Is->Location = System::Drawing::Point(390, 288);
+			this->textBoxTrial2Is->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxTrial2Is->Name = L"textBoxTrial2Is";
+			this->textBoxTrial2Is->Size = System::Drawing::Size(116, 30);
+			this->textBoxTrial2Is->TabIndex = 309;
+			// 
 			// 电压源与电流源的等效变换监控
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -2393,5 +2481,7 @@ namespace 教师机监控台 {
 	private: System::Void 电压源与电流源的等效变换监控_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
 			public: void LoadData(ST_电压源与电流源的等效变换 &d);
-	};
+	private: System::Void button52_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

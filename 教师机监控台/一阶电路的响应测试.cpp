@@ -99,20 +99,33 @@ void 一阶电路的响应测试::Load一阶电路的响应测试Data(string &filename) {
 
 	labelTotalGrade->Text = ti.totalscore.ToString();
 	string Name = string(BMPTEMP) + "一阶电路的响应测试";
-	String^ ImageLocationTrial1 = gcnew String(string(Name + "trial1.bmp").c_str());
-	String^ ImageLocationTrial2 = gcnew String(string(Name + "trial2.bmp").c_str());
-	String^ ImageLocationTrial3= gcnew String(string(Name + "trial3.bmp").c_str());
+	String^ ImageLocationTrial1_in = gcnew String(string(Name + "trial1_in.bmp").c_str());
+	String^ ImageLocationTrial1_out = gcnew String(string(Name + "trial1_out.bmp").c_str());
+	String^ ImageLocationTrial2_in = gcnew String(string(Name + "trial2_in.bmp").c_str());
+	String^ ImageLocationTrial2_out = gcnew String(string(Name + "trial2_out.bmp").c_str());
+	String^ ImageLocationTrial3_in = gcnew String(string(Name + "trial3_in.bmp").c_str());
+	String^ ImageLocationTrial3_out = gcnew String(string(Name + "trial3_out.bmp").c_str());
 	//先删除原来有的文件
-	IO::File::Delete(ImageLocationTrial1);
-	IO::File::Delete(ImageLocationTrial2);
-	IO::File::Delete(ImageLocationTrial3);
-	f.Writefile(Name + "trial1.bmp", string(d.Trial1Bmp,sizeof(d.Trial1Bmp)));
-	f.Writefile(Name + "trial2.bmp", string(d.Trial2Bmp, sizeof(d.Trial2Bmp)));
-	f.Writefile(Name + "trial3.bmp", string(d.Trial3Bmp, sizeof(d.Trial3Bmp)));
+	IO::File::Delete(ImageLocationTrial1_in);
+	IO::File::Delete(ImageLocationTrial1_out);
+	IO::File::Delete(ImageLocationTrial2_in);
+	IO::File::Delete(ImageLocationTrial2_out);
+	IO::File::Delete(ImageLocationTrial3_in);
+	IO::File::Delete(ImageLocationTrial3_out);
+	f.Writefile(T_to_string(ImageLocationTrial1_in), string(d.Trial1Bmp_in, sizeof(d.Trial1Bmp_in)));
+	f.Writefile(T_to_string(ImageLocationTrial1_out), string(d.Trial1Bmp_out, sizeof(d.Trial1Bmp_out)));
+	f.Writefile(T_to_string(ImageLocationTrial2_in), string(d.Trial2Bmp_in, sizeof(d.Trial2Bmp_in)));
+	f.Writefile(T_to_string(ImageLocationTrial2_out), string(d.Trial2Bmp_out, sizeof(d.Trial2Bmp_out)));
+	f.Writefile(T_to_string(ImageLocationTrial3_in), string(d.Trial3Bmp_in, sizeof(d.Trial3Bmp_in)));
+	f.Writefile(T_to_string(ImageLocationTrial3_out), string(d.Trial3Bmp_out, sizeof(d.Trial3Bmp_out)));
+
 	textBoxtrialτ->Text = gcnew String(d.τ);
-	pictureBoxTrial1->ImageLocation= ImageLocationTrial1;
-	pictureBoxTrial2->ImageLocation = ImageLocationTrial2;
-	pictureBoxTrial3->ImageLocation = ImageLocationTrial3;
+	pictureBoxTrial1_in->ImageLocation = ImageLocationTrial1_in;
+	pictureBoxTrial1_out->ImageLocation = ImageLocationTrial1_out;
+	pictureBoxTrial2_in->ImageLocation = ImageLocationTrial2_in;
+	pictureBoxTrial2_out->ImageLocation = ImageLocationTrial2_out;
+	pictureBoxTrial3_in->ImageLocation = ImageLocationTrial3_in;
+	pictureBoxTrial3_out->ImageLocation = ImageLocationTrial3_out;
 
 	label结论->Text = gcnew String(d.summing_up);
 }

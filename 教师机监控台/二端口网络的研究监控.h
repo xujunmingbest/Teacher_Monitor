@@ -157,6 +157,12 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label59;
 	private: System::Windows::Forms::Label^  label61;
 	private: System::Windows::Forms::Label^  label57;
+private: System::Windows::Forms::Button^  button28;
+private: System::Windows::Forms::TextBox^  textBoxTrial1_1_U21;
+private: System::Windows::Forms::Button^  button27;
+private: System::Windows::Forms::TextBox^  textBoxTrial1_1_U11;
+private: System::Windows::Forms::Button^  button26;
+private: System::Windows::Forms::TextBox^  textBoxTrial2_1_U;
 
 	private:
 		/// <summary>
@@ -293,6 +299,12 @@ namespace 教师机监控台 {
 			this->label59 = (gcnew System::Windows::Forms::Label());
 			this->label61 = (gcnew System::Windows::Forms::Label());
 			this->label57 = (gcnew System::Windows::Forms::Label());
+			this->button26 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial2_1_U = (gcnew System::Windows::Forms::TextBox());
+			this->button27 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial1_1_U11 = (gcnew System::Windows::Forms::TextBox());
+			this->button28 = (gcnew System::Windows::Forms::Button());
+			this->textBoxTrial1_1_U21 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox8->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -1349,6 +1361,10 @@ namespace 教师机监控台 {
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->button28);
+			this->groupBox1->Controls->Add(this->textBoxTrial1_1_U21);
+			this->groupBox1->Controls->Add(this->button27);
+			this->groupBox1->Controls->Add(this->textBoxTrial1_1_U11);
 			this->groupBox1->Controls->Add(this->button11);
 			this->groupBox1->Controls->Add(this->button12);
 			this->groupBox1->Controls->Add(this->textBoxTrial1_2_D2);
@@ -1507,6 +1523,8 @@ namespace 教师机监控台 {
 			// 
 			// groupBox2
 			// 
+			this->groupBox2->Controls->Add(this->button26);
+			this->groupBox2->Controls->Add(this->textBoxTrial2_1_U);
 			this->groupBox2->Controls->Add(this->button19);
 			this->groupBox2->Controls->Add(this->button20);
 			this->groupBox2->Controls->Add(this->button21);
@@ -1775,12 +1793,69 @@ namespace 教师机监控台 {
 			this->label57->TabIndex = 60;
 			this->label57->Text = L"B=";
 			// 
+			// button26
+			// 
+			this->button26->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button26->ForeColor = System::Drawing::Color::Black;
+			this->button26->Location = System::Drawing::Point(44, 352);
+			this->button26->Name = L"button26";
+			this->button26->Size = System::Drawing::Size(155, 58);
+			this->button26->TabIndex = 92;
+			this->button26->Text = L"输入电压设置";
+			this->button26->UseVisualStyleBackColor = true;
+			// 
+			// textBoxTrial2_1_U
+			// 
+			this->textBoxTrial2_1_U->Location = System::Drawing::Point(44, 316);
+			this->textBoxTrial2_1_U->Name = L"textBoxTrial2_1_U";
+			this->textBoxTrial2_1_U->Size = System::Drawing::Size(155, 30);
+			this->textBoxTrial2_1_U->TabIndex = 91;
+			// 
+			// button27
+			// 
+			this->button27->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button27->ForeColor = System::Drawing::Color::Black;
+			this->button27->Location = System::Drawing::Point(104, 329);
+			this->button27->Name = L"button27";
+			this->button27->Size = System::Drawing::Size(130, 34);
+			this->button27->TabIndex = 77;
+			this->button27->Text = L"U11设置";
+			this->button27->UseVisualStyleBackColor = true;
+			// 
+			// textBoxTrial1_1_U11
+			// 
+			this->textBoxTrial1_1_U11->Location = System::Drawing::Point(104, 293);
+			this->textBoxTrial1_1_U11->Name = L"textBoxTrial1_1_U11";
+			this->textBoxTrial1_1_U11->Size = System::Drawing::Size(130, 30);
+			this->textBoxTrial1_1_U11->TabIndex = 76;
+			// 
+			// button28
+			// 
+			this->button28->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button28->ForeColor = System::Drawing::Color::Black;
+			this->button28->Location = System::Drawing::Point(104, 701);
+			this->button28->Name = L"button28";
+			this->button28->Size = System::Drawing::Size(130, 34);
+			this->button28->TabIndex = 79;
+			this->button28->Text = L"U21设置";
+			this->button28->UseVisualStyleBackColor = true;
+			// 
+			// textBoxTrial1_1_U21
+			// 
+			this->textBoxTrial1_1_U21->Location = System::Drawing::Point(104, 665);
+			this->textBoxTrial1_1_U21->Name = L"textBoxTrial1_1_U21";
+			this->textBoxTrial1_1_U21->Size = System::Drawing::Size(130, 30);
+			this->textBoxTrial1_1_U21->TabIndex = 78;
+			// 
 			// 二端口网络的研究监控
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1507, 469);
+			this->ClientSize = System::Drawing::Size(1507, 731);
 			this->Controls->Add(this->button25);
 			this->Controls->Add(this->groupBox8);
 			this->Controls->Add(this->label12);

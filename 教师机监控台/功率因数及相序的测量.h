@@ -59,8 +59,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label38;
 	private: System::Windows::Forms::Label^  label39;
 	private: System::Windows::Forms::GroupBox^  groupBox1;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_4;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_4;
+
+
 	private: System::Windows::Forms::Label^  labelTrial2_P_4;
 
 	private: System::Windows::Forms::Label^  labelTrial2_I_4;
@@ -73,8 +73,8 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Label^  labelTrial2_U_4;
 
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_3;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_3;
+
+
 	private: System::Windows::Forms::Label^  labelTrial2_P_3;
 
 	private: System::Windows::Forms::Label^  labelTrial2_I_3;
@@ -87,8 +87,8 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Label^  labelTrial2_U_3;
 
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_2;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_2;
+
+
 	private: System::Windows::Forms::Label^  labelTrial2_P_2;
 
 	private: System::Windows::Forms::Label^  labelTrial2_I_2;
@@ -101,8 +101,8 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Label^  labelTrial2_U_2;
 
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_Load_1;
-	private: System::Windows::Forms::TextBox^  textBoxTrial2_φ_1;
+
+
 	private: System::Windows::Forms::Label^  label22;
 	private: System::Windows::Forms::Label^  label23;
 	private: System::Windows::Forms::Label^  label18;
@@ -139,6 +139,20 @@ private: System::Windows::Forms::Button^  button27;
 private: System::Windows::Forms::Panel^  panel1;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
+private: System::Windows::Forms::Label^  textBoxTrial2_Load_4;
+private: System::Windows::Forms::Label^  textBoxTrial2_φ_4;
+private: System::Windows::Forms::Label^  textBoxTrial2_Load_3;
+private: System::Windows::Forms::Label^  textBoxTrial2_φ_3;
+private: System::Windows::Forms::Label^  textBoxTrial2_Load_2;
+private: System::Windows::Forms::Label^  textBoxTrial2_φ_2;
+private: System::Windows::Forms::Label^  textBoxTrial2_Load_1;
+private: System::Windows::Forms::Label^  textBoxTrial2_φ_1;
+private: System::Windows::Forms::GroupBox^  groupBox2;
+private: System::Windows::Forms::Label^  label4;
+private: System::Windows::Forms::Label^  label24;
+private: System::Windows::Forms::Label^  label105;
+private: System::Windows::Forms::Label^  label25;
+private: System::Windows::Forms::TextBox^  textBox1;
 
 	private:
 		/// <summary>
@@ -178,35 +192,35 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial2_Load_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_Load_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_Load_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_Load_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ_1 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_Load_4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_φ_4 = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial2_P_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UL_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UR_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_U_4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_Load_3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_φ_3 = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial2_P_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UL_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UR_3 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_U_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_Load_2 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_φ_2 = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial2_P_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UL_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UR_2 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_U_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_Load_1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBoxTrial2_φ_1 = (gcnew System::Windows::Forms::TextBox());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->label18 = (gcnew System::Windows::Forms::Label());
@@ -234,10 +248,17 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
+			this->label105 = (gcnew System::Windows::Forms::Label());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->label25 = (gcnew System::Windows::Forms::Label());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->groupBox5->SuspendLayout();
 			this->panel1->SuspendLayout();
+			this->groupBox2->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// groupBox7
@@ -506,35 +527,35 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_4);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_4);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_3);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_3);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_2);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_2);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_1);
+			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_1);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->label2);
 			this->groupBox1->Controls->Add(this->textBoxTrial1Score);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_4);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_P_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_I_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_UC_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_UL_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_UR_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_U_4);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_3);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_P_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_I_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_UC_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_UL_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_UR_3);
 			this->groupBox1->Controls->Add(this->labelTrial2_U_3);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_2);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_P_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_I_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_UC_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_UL_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_UR_2);
 			this->groupBox1->Controls->Add(this->labelTrial2_U_2);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_Load_1);
-			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_1);
 			this->groupBox1->Controls->Add(this->label22);
 			this->groupBox1->Controls->Add(this->label23);
 			this->groupBox1->Controls->Add(this->label18);
@@ -557,12 +578,85 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox1->ForeColor = System::Drawing::Color::Red;
-			this->groupBox1->Location = System::Drawing::Point(17, 337);
+			this->groupBox1->Location = System::Drawing::Point(3, 540);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(1084, 410);
 			this->groupBox1->TabIndex = 203;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"功率因数及相序的测量 实验内容2";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &功率因数及相序的测量::groupBox1_Enter);
+			// 
+			// textBoxTrial2_Load_4
+			// 
+			this->textBoxTrial2_Load_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_Load_4->Location = System::Drawing::Point(905, 286);
+			this->textBoxTrial2_Load_4->Name = L"textBoxTrial2_Load_4";
+			this->textBoxTrial2_Load_4->Size = System::Drawing::Size(159, 50);
+			this->textBoxTrial2_Load_4->TabIndex = 233;
+			this->textBoxTrial2_Load_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ_4
+			// 
+			this->textBoxTrial2_φ_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ_4->Location = System::Drawing::Point(801, 286);
+			this->textBoxTrial2_φ_4->Name = L"textBoxTrial2_φ_4";
+			this->textBoxTrial2_φ_4->Size = System::Drawing::Size(88, 50);
+			this->textBoxTrial2_φ_4->TabIndex = 232;
+			this->textBoxTrial2_φ_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_Load_3
+			// 
+			this->textBoxTrial2_Load_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_Load_3->Location = System::Drawing::Point(905, 223);
+			this->textBoxTrial2_Load_3->Name = L"textBoxTrial2_Load_3";
+			this->textBoxTrial2_Load_3->Size = System::Drawing::Size(159, 50);
+			this->textBoxTrial2_Load_3->TabIndex = 231;
+			this->textBoxTrial2_Load_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ_3
+			// 
+			this->textBoxTrial2_φ_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ_3->Location = System::Drawing::Point(801, 223);
+			this->textBoxTrial2_φ_3->Name = L"textBoxTrial2_φ_3";
+			this->textBoxTrial2_φ_3->Size = System::Drawing::Size(88, 50);
+			this->textBoxTrial2_φ_3->TabIndex = 230;
+			this->textBoxTrial2_φ_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_Load_2
+			// 
+			this->textBoxTrial2_Load_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_Load_2->Location = System::Drawing::Point(905, 155);
+			this->textBoxTrial2_Load_2->Name = L"textBoxTrial2_Load_2";
+			this->textBoxTrial2_Load_2->Size = System::Drawing::Size(159, 50);
+			this->textBoxTrial2_Load_2->TabIndex = 229;
+			this->textBoxTrial2_Load_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ_2
+			// 
+			this->textBoxTrial2_φ_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ_2->Location = System::Drawing::Point(801, 155);
+			this->textBoxTrial2_φ_2->Name = L"textBoxTrial2_φ_2";
+			this->textBoxTrial2_φ_2->Size = System::Drawing::Size(88, 50);
+			this->textBoxTrial2_φ_2->TabIndex = 228;
+			this->textBoxTrial2_φ_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_Load_1
+			// 
+			this->textBoxTrial2_Load_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_Load_1->Location = System::Drawing::Point(905, 90);
+			this->textBoxTrial2_Load_1->Name = L"textBoxTrial2_Load_1";
+			this->textBoxTrial2_Load_1->Size = System::Drawing::Size(159, 50);
+			this->textBoxTrial2_Load_1->TabIndex = 227;
+			this->textBoxTrial2_Load_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ_1
+			// 
+			this->textBoxTrial2_φ_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ_1->Location = System::Drawing::Point(801, 90);
+			this->textBoxTrial2_φ_1->Name = L"textBoxTrial2_φ_1";
+			this->textBoxTrial2_φ_1->Size = System::Drawing::Size(88, 50);
+			this->textBoxTrial2_φ_1->TabIndex = 226;
+			this->textBoxTrial2_φ_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label1
 			// 
@@ -593,20 +687,6 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrial1Score->TabIndex = 223;
 			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &功率因数及相序的测量::textBoxTrial1Score_TextChanged);
-			// 
-			// textBoxTrial2_Load_4
-			// 
-			this->textBoxTrial2_Load_4->Location = System::Drawing::Point(905, 298);
-			this->textBoxTrial2_Load_4->Name = L"textBoxTrial2_Load_4";
-			this->textBoxTrial2_Load_4->Size = System::Drawing::Size(159, 30);
-			this->textBoxTrial2_Load_4->TabIndex = 215;
-			// 
-			// textBoxTrial2_φ_4
-			// 
-			this->textBoxTrial2_φ_4->Location = System::Drawing::Point(794, 298);
-			this->textBoxTrial2_φ_4->Name = L"textBoxTrial2_φ_4";
-			this->textBoxTrial2_φ_4->Size = System::Drawing::Size(100, 30);
-			this->textBoxTrial2_φ_4->TabIndex = 214;
 			// 
 			// labelTrial2_P_4
 			// 
@@ -662,20 +742,6 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->labelTrial2_U_4->TabIndex = 203;
 			this->labelTrial2_U_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
-			// textBoxTrial2_Load_3
-			// 
-			this->textBoxTrial2_Load_3->Location = System::Drawing::Point(905, 235);
-			this->textBoxTrial2_Load_3->Name = L"textBoxTrial2_Load_3";
-			this->textBoxTrial2_Load_3->Size = System::Drawing::Size(159, 30);
-			this->textBoxTrial2_Load_3->TabIndex = 201;
-			// 
-			// textBoxTrial2_φ_3
-			// 
-			this->textBoxTrial2_φ_3->Location = System::Drawing::Point(794, 235);
-			this->textBoxTrial2_φ_3->Name = L"textBoxTrial2_φ_3";
-			this->textBoxTrial2_φ_3->Size = System::Drawing::Size(100, 30);
-			this->textBoxTrial2_φ_3->TabIndex = 200;
-			// 
 			// labelTrial2_P_3
 			// 
 			this->labelTrial2_P_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -730,20 +796,6 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->labelTrial2_U_3->TabIndex = 189;
 			this->labelTrial2_U_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
-			// textBoxTrial2_Load_2
-			// 
-			this->textBoxTrial2_Load_2->Location = System::Drawing::Point(905, 167);
-			this->textBoxTrial2_Load_2->Name = L"textBoxTrial2_Load_2";
-			this->textBoxTrial2_Load_2->Size = System::Drawing::Size(159, 30);
-			this->textBoxTrial2_Load_2->TabIndex = 187;
-			// 
-			// textBoxTrial2_φ_2
-			// 
-			this->textBoxTrial2_φ_2->Location = System::Drawing::Point(794, 167);
-			this->textBoxTrial2_φ_2->Name = L"textBoxTrial2_φ_2";
-			this->textBoxTrial2_φ_2->Size = System::Drawing::Size(100, 30);
-			this->textBoxTrial2_φ_2->TabIndex = 186;
-			// 
 			// labelTrial2_P_2
 			// 
 			this->labelTrial2_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -797,20 +849,6 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->labelTrial2_U_2->Size = System::Drawing::Size(88, 50);
 			this->labelTrial2_U_2->TabIndex = 175;
 			this->labelTrial2_U_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_Load_1
-			// 
-			this->textBoxTrial2_Load_1->Location = System::Drawing::Point(905, 102);
-			this->textBoxTrial2_Load_1->Name = L"textBoxTrial2_Load_1";
-			this->textBoxTrial2_Load_1->Size = System::Drawing::Size(159, 30);
-			this->textBoxTrial2_Load_1->TabIndex = 173;
-			// 
-			// textBoxTrial2_φ_1
-			// 
-			this->textBoxTrial2_φ_1->Location = System::Drawing::Point(794, 102);
-			this->textBoxTrial2_φ_1->Name = L"textBoxTrial2_φ_1";
-			this->textBoxTrial2_φ_1->Size = System::Drawing::Size(100, 30);
-			this->textBoxTrial2_φ_1->TabIndex = 172;
 			// 
 			// label22
 			// 
@@ -1024,7 +1062,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			// 
 			// button25
 			// 
-			this->button25->Location = System::Drawing::Point(922, 779);
+			this->button25->Location = System::Drawing::Point(918, 1000);
 			this->button25->Name = L"button25";
 			this->button25->Size = System::Drawing::Size(101, 36);
 			this->button25->TabIndex = 331;
@@ -1034,7 +1072,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			// 
 			// button26
 			// 
-			this->button26->Location = System::Drawing::Point(809, 779);
+			this->button26->Location = System::Drawing::Point(805, 1000);
 			this->button26->Name = L"button26";
 			this->button26->Size = System::Drawing::Size(101, 36);
 			this->button26->TabIndex = 330;
@@ -1047,7 +1085,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->groupBox5->Controls->Add(this->labelTotalGrade);
 			this->groupBox5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox5->Location = System::Drawing::Point(17, 753);
+			this->groupBox5->Location = System::Drawing::Point(13, 974);
 			this->groupBox5->Name = L"groupBox5";
 			this->groupBox5->Size = System::Drawing::Size(640, 73);
 			this->groupBox5->TabIndex = 328;
@@ -1065,7 +1103,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			// 
 			// button27
 			// 
-			this->button27->Location = System::Drawing::Point(702, 779);
+			this->button27->Location = System::Drawing::Point(698, 1000);
 			this->button27->Name = L"button27";
 			this->button27->Size = System::Drawing::Size(101, 36);
 			this->button27->TabIndex = 329;
@@ -1075,6 +1113,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->groupBox2);
 			this->panel1->Controls->Add(this->groupBox7);
 			this->panel1->Controls->Add(this->button25);
 			this->panel1->Controls->Add(this->groupBox1);
@@ -1083,7 +1122,7 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->panel1->Controls->Add(this->button27);
 			this->panel1->Location = System::Drawing::Point(54, 12);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1123, 831);
+			this->panel1->Size = System::Drawing::Size(1123, 1059);
 			this->panel1->TabIndex = 332;
 			// 
 			// printDocument1
@@ -1100,6 +1139,72 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
+			// 
+			// label105
+			// 
+			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label105->ForeColor = System::Drawing::Color::Black;
+			this->label105->Location = System::Drawing::Point(26, 50);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(95, 57);
+			this->label105->TabIndex = 332;
+			this->label105->Text = L"实验结论";
+			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->label4);
+			this->groupBox2->Controls->Add(this->label24);
+			this->groupBox2->Controls->Add(this->label105);
+			this->groupBox2->Controls->Add(this->label25);
+			this->groupBox2->Controls->Add(this->textBox1);
+			this->groupBox2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox2->ForeColor = System::Drawing::Color::Red;
+			this->groupBox2->Location = System::Drawing::Point(17, 354);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(1084, 163);
+			this->groupBox2->TabIndex = 234;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Text = L"功率因数及相序的测量 实验内容1";
+			// 
+			// label24
+			// 
+			this->label24->AutoSize = true;
+			this->label24->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label24->Location = System::Drawing::Point(333, 130);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(89, 20);
+			this->label24->TabIndex = 225;
+			this->label24->Text = L"请打分：";
+			// 
+			// label25
+			// 
+			this->label25->AutoSize = true;
+			this->label25->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label25->Location = System::Drawing::Point(610, 130);
+			this->label25->Name = L"label25";
+			this->label25->Size = System::Drawing::Size(129, 20);
+			this->label25->TabIndex = 224;
+			this->label25->Text = L"本项目总分30";
+			// 
+			// textBox1
+			// 
+			this->textBox1->Location = System::Drawing::Point(435, 127);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(152, 30);
+			this->textBox1->TabIndex = 223;
+			// 
+			// label4
+			// 
+			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label4->Location = System::Drawing::Point(125, 45);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(959, 74);
+			this->label4->TabIndex = 204;
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// 功率因数及相序的测量
 			// 
@@ -1118,6 +1223,8 @@ private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 			this->groupBox5->ResumeLayout(false);
 			this->groupBox5->PerformLayout();
 			this->panel1->ResumeLayout(false);
+			this->groupBox2->ResumeLayout(false);
+			this->groupBox2->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -1154,6 +1261,8 @@ private: System::Void button25_Click(System::Object^  sender, System::EventArgs^
 }
 private: System::Void textBoxTrial1Score_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	CalScores();
+}
+private: System::Void groupBox1_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

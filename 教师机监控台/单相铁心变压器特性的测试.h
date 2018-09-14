@@ -22,7 +22,8 @@ namespace 教师机监控台 {
 			//TODO:  在此处添加构造函数代码
 			//
 		}
-
+		void chartTrial2_load();
+		void chartTrial3_load();
 	protected:
 		/// <summary>
 		/// 清理所有正在使用的资源。
@@ -119,7 +120,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label27;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::TextBox^  textBox结论;
+
 	private: System::Windows::Forms::Label^  label64;
 private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
@@ -135,6 +136,11 @@ private: System::Windows::Forms::Label^  label5;
 private: System::Windows::Forms::Label^  label16;
 private: System::Windows::Forms::TextBox^  textBoxTrialScore1;
 private: System::Windows::Forms::Panel^  panel1;
+private: System::Windows::Forms::Label^  textBox结论;
+private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial3;
+
+private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial2;
+
 
 	private:
 		/// <summary>
@@ -149,6 +155,12 @@ private: System::Windows::Forms::Panel^  panel1;
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(单相铁心变压器特性的测试::typeid));
 			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
 			this->labellab = (gcnew System::Windows::Forms::Label());
@@ -174,6 +186,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->chartTrial3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrialScore2 = (gcnew System::Windows::Forms::TextBox());
@@ -212,6 +225,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label45 = (gcnew System::Windows::Forms::Label());
 			this->label50 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->chartTrial2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrialScore1 = (gcnew System::Windows::Forms::TextBox());
@@ -240,7 +254,6 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox结论 = (gcnew System::Windows::Forms::TextBox());
 			this->label64 = (gcnew System::Windows::Forms::Label());
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
@@ -250,9 +263,12 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->textBox结论 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial3))->BeginInit();
 			this->groupBox1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial2))->BeginInit();
 			this->groupBox14->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
@@ -523,6 +539,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->chartTrial3);
 			this->groupBox3->Controls->Add(this->label6);
 			this->groupBox3->Controls->Add(this->label8);
 			this->groupBox3->Controls->Add(this->textBoxTrialScore2);
@@ -563,20 +580,35 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->groupBox3->ForeColor = System::Drawing::Color::Red;
-			this->groupBox3->Location = System::Drawing::Point(10, 809);
+			this->groupBox3->Location = System::Drawing::Point(10, 840);
 			this->groupBox3->Name = L"groupBox3";
-			this->groupBox3->Size = System::Drawing::Size(1407, 296);
+			this->groupBox3->Size = System::Drawing::Size(1407, 629);
 			this->groupBox3->TabIndex = 249;
 			this->groupBox3->TabStop = false;
 			this->groupBox3->Text = L"实验内容三";
 			this->groupBox3->Enter += gcnew System::EventHandler(this, &单相铁心变压器特性的测试::groupBox3_Enter);
+			// 
+			// chartTrial3
+			// 
+			chartArea1->Name = L"ChartArea1";
+			this->chartTrial3->ChartAreas->Add(chartArea1);
+			legend1->Name = L"Legend1";
+			this->chartTrial3->Legends->Add(legend1);
+			this->chartTrial3->Location = System::Drawing::Point(25, 259);
+			this->chartTrial3->Name = L"chartTrial3";
+			series1->ChartArea = L"ChartArea1";
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			this->chartTrial3->Series->Add(series1);
+			this->chartTrial3->Size = System::Drawing::Size(696, 349);
+			this->chartTrial3->TabIndex = 281;
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label6->Location = System::Drawing::Point(375, 259);
+			this->label6->Location = System::Drawing::Point(842, 578);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(89, 20);
 			this->label6->TabIndex = 278;
@@ -587,7 +619,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label8->Location = System::Drawing::Point(652, 259);
+			this->label8->Location = System::Drawing::Point(1119, 578);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(129, 20);
 			this->label8->TabIndex = 277;
@@ -595,7 +627,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// textBoxTrialScore2
 			// 
-			this->textBoxTrialScore2->Location = System::Drawing::Point(477, 256);
+			this->textBoxTrialScore2->Location = System::Drawing::Point(944, 575);
 			this->textBoxTrialScore2->Name = L"textBoxTrialScore2";
 			this->textBoxTrialScore2->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrialScore2->TabIndex = 276;
@@ -948,6 +980,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->chartTrial2);
 			this->groupBox1->Controls->Add(this->label5);
 			this->groupBox1->Controls->Add(this->label16);
 			this->groupBox1->Controls->Add(this->textBoxTrialScore1);
@@ -981,17 +1014,33 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox1->ForeColor = System::Drawing::Color::Red;
 			this->groupBox1->Location = System::Drawing::Point(10, 349);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(1407, 454);
+			this->groupBox1->Size = System::Drawing::Size(1407, 473);
 			this->groupBox1->TabIndex = 248;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"实验内容二";
+			// 
+			// chartTrial2
+			// 
+			chartArea2->Name = L"ChartArea1";
+			this->chartTrial2->ChartAreas->Add(chartArea2);
+			legend2->Name = L"Legend1";
+			this->chartTrial2->Legends->Add(legend2);
+			this->chartTrial2->Location = System::Drawing::Point(859, 92);
+			this->chartTrial2->Name = L"chartTrial2";
+			series2->ChartArea = L"ChartArea1";
+			series2->Legend = L"Legend1";
+			series2->Name = L"Series1";
+			this->chartTrial2->Series->Add(series2);
+			this->chartTrial2->Size = System::Drawing::Size(523, 349);
+			this->chartTrial2->TabIndex = 280;
+			this->chartTrial2->Text = L"chart2";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label5->Location = System::Drawing::Point(849, 369);
+			this->label5->Location = System::Drawing::Point(196, 436);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(89, 20);
 			this->label5->TabIndex = 246;
@@ -1002,7 +1051,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label16->AutoSize = true;
 			this->label16->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label16->Location = System::Drawing::Point(1126, 369);
+			this->label16->Location = System::Drawing::Point(473, 436);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(129, 20);
 			this->label16->TabIndex = 245;
@@ -1010,7 +1059,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// textBoxTrialScore1
 			// 
-			this->textBoxTrialScore1->Location = System::Drawing::Point(951, 366);
+			this->textBoxTrialScore1->Location = System::Drawing::Point(298, 433);
 			this->textBoxTrialScore1->Name = L"textBoxTrialScore1";
 			this->textBoxTrialScore1->Size = System::Drawing::Size(152, 30);
 			this->textBoxTrialScore1->TabIndex = 244;
@@ -1275,21 +1324,12 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->label2->Text = L"    2．K1、K2、K3断开，控制SA1、SA2、SA3的通断来增减负载，分别测出五个仪表的读数，记入自拟的数据表格，绘制变压器外特性曲线，实验完毕将调压器调"
 				L"回零位，断开电源。";
 			// 
-			// textBox结论
-			// 
-			this->textBox结论->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBox结论->Location = System::Drawing::Point(115, 1134);
-			this->textBox结论->Name = L"textBox结论";
-			this->textBox结论->Size = System::Drawing::Size(1297, 28);
-			this->textBox结论->TabIndex = 252;
-			// 
 			// label64
 			// 
 			this->label64->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
 			this->label64->ForeColor = System::Drawing::Color::Black;
-			this->label64->Location = System::Drawing::Point(6, 1137);
+			this->label64->Location = System::Drawing::Point(11, 1483);
 			this->label64->Name = L"label64";
 			this->label64->Size = System::Drawing::Size(95, 25);
 			this->label64->TabIndex = 251;
@@ -1300,7 +1340,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox14->Controls->Add(this->labelTotalGrade);
 			this->groupBox14->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->groupBox14->Location = System::Drawing::Point(11, 1178);
+			this->groupBox14->Location = System::Drawing::Point(16, 1524);
 			this->groupBox14->Name = L"groupBox14";
 			this->groupBox14->Size = System::Drawing::Size(640, 73);
 			this->groupBox14->TabIndex = 340;
@@ -1318,7 +1358,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(792, 1204);
+			this->button1->Location = System::Drawing::Point(797, 1550);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(101, 36);
 			this->button1->TabIndex = 341;
@@ -1328,7 +1368,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(1012, 1204);
+			this->button3->Location = System::Drawing::Point(1017, 1550);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(101, 36);
 			this->button3->TabIndex = 343;
@@ -1338,7 +1378,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(899, 1204);
+			this->button2->Location = System::Drawing::Point(904, 1550);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(101, 36);
 			this->button2->TabIndex = 342;
@@ -1363,6 +1403,7 @@ private: System::Windows::Forms::Panel^  panel1;
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->textBox结论);
 			this->panel1->Controls->Add(this->groupBox7);
 			this->panel1->Controls->Add(this->groupBox14);
 			this->panel1->Controls->Add(this->groupBox1);
@@ -1371,11 +1412,19 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->label64);
 			this->panel1->Controls->Add(this->button2);
-			this->panel1->Controls->Add(this->textBox结论);
 			this->panel1->Location = System::Drawing::Point(43, 31);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(1437, 1271);
+			this->panel1->Size = System::Drawing::Size(1437, 1612);
 			this->panel1->TabIndex = 344;
+			// 
+			// textBox结论
+			// 
+			this->textBox结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBox结论->Location = System::Drawing::Point(118, 1477);
+			this->textBox结论->Name = L"textBox结论";
+			this->textBox结论->Size = System::Drawing::Size(1129, 31);
+			this->textBox结论->TabIndex = 344;
+			this->textBox结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// 单相铁心变压器特性的测试
 			// 
@@ -1391,12 +1440,13 @@ private: System::Windows::Forms::Panel^  panel1;
 			this->groupBox7->PerformLayout();
 			this->groupBox3->ResumeLayout(false);
 			this->groupBox3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial3))->EndInit();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial2))->EndInit();
 			this->groupBox14->ResumeLayout(false);
 			this->groupBox14->PerformLayout();
 			this->panel1->ResumeLayout(false);
-			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
 
 		}

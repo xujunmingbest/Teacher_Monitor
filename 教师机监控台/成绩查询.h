@@ -381,6 +381,7 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, Sy
 private: System::Void listView1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
 	if (listView1->SelectedItems->Count > 0) {
 		OpenTrial(T_to_string(listView1->SelectedItems[0]->Name));
+		
 	}
 }
 

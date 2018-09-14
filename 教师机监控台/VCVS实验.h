@@ -102,15 +102,15 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  labeltrial1_1U2_3;
 	private: System::Windows::Forms::Label^  labeltrial1_1U2_2;
 	private: System::Windows::Forms::Label^  labeltrial1_1U2_1;
-	private: System::Windows::Forms::Label^  label13;
-	private: System::Windows::Forms::Label^  label12;
-	private: System::Windows::Forms::Label^  label11;
-	private: System::Windows::Forms::Label^  label10;
-	private: System::Windows::Forms::Label^  label14;
-	private: System::Windows::Forms::Label^  label15;
-	private: System::Windows::Forms::Label^  label16;
-	private: System::Windows::Forms::Label^  label17;
-	private: System::Windows::Forms::Label^  label18;
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::Label^  label19;
 	private: System::Windows::Forms::Label^  label20;
 	private: System::Windows::Forms::Label^  label21;
@@ -145,13 +145,13 @@ private: System::Windows::Forms::Label^  labeltrial2_2IL_4;
 private: System::Windows::Forms::Label^  labeltrial2_2IL_3;
 private: System::Windows::Forms::Label^  labeltrial2_2IL_2;
 private: System::Windows::Forms::Label^  labeltrial2_2IL_1;
-private: System::Windows::Forms::Label^  label71;
-private: System::Windows::Forms::Label^  label72;
-private: System::Windows::Forms::Label^  label73;
-private: System::Windows::Forms::Label^  label74;
-private: System::Windows::Forms::Label^  label75;
-private: System::Windows::Forms::Label^  label76;
-private: System::Windows::Forms::Label^  label77;
+
+
+
+
+
+
+
 private: System::Windows::Forms::Label^  label78;
 private: System::Windows::Forms::Label^  label79;
 private: System::Windows::Forms::Label^  label80;
@@ -171,14 +171,14 @@ private: System::Windows::Forms::Label^  labeltrial2_1IL_4;
 private: System::Windows::Forms::Label^  labeltrial2_1IL_3;
 private: System::Windows::Forms::Label^  labeltrial2_1IL_2;
 private: System::Windows::Forms::Label^  labeltrial2_1IL_1;
-private: System::Windows::Forms::Label^  label92;
-private: System::Windows::Forms::Label^  label93;
-private: System::Windows::Forms::Label^  label94;
-private: System::Windows::Forms::Label^  label95;
-private: System::Windows::Forms::Label^  label96;
-private: System::Windows::Forms::Label^  label97;
-private: System::Windows::Forms::Label^  label98;
-private: System::Windows::Forms::Label^  label99;
+
+
+
+
+
+
+
+
 private: System::Windows::Forms::Label^  label100;
 private: System::Windows::Forms::Label^  label101;
 private: System::Windows::Forms::Label^  label102;
@@ -189,7 +189,7 @@ private: System::Windows::Forms::GroupBox^  groupBox9;
 
 private: System::Windows::Forms::Label^  labeltrial3_2IL_8;
 private: System::Windows::Forms::Label^  labeltrial3_2U2_8;
-private: System::Windows::Forms::Label^  label147;
+
 
 
 
@@ -221,13 +221,13 @@ private: System::Windows::Forms::Label^  labeltrial3_2U2_4;
 private: System::Windows::Forms::Label^  labeltrial3_2U2_3;
 private: System::Windows::Forms::Label^  labeltrial3_2U2_2;
 private: System::Windows::Forms::Label^  labeltrial3_2U2_1;
-private: System::Windows::Forms::Label^  label114;
-private: System::Windows::Forms::Label^  label115;
-private: System::Windows::Forms::Label^  label116;
-private: System::Windows::Forms::Label^  label117;
-private: System::Windows::Forms::Label^  label118;
-private: System::Windows::Forms::Label^  label119;
-private: System::Windows::Forms::Label^  label120;
+
+
+
+
+
+
+
 private: System::Windows::Forms::Label^  label121;
 private: System::Windows::Forms::Label^  label122;
 private: System::Windows::Forms::Label^  label123;
@@ -354,6 +354,38 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_4;
 private: System::Windows::Forms::Label^  labeltrial4_2RL_3;
 private: System::Windows::Forms::Label^  labeltrial4_2RL_2;
 private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_9;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_8;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_7;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_6;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_5;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_4;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_3;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_2;
+private: System::Windows::Forms::Label^  labeltrial1_1U1_1;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_7;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_6;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_5;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_4;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_3;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_2;
+private: System::Windows::Forms::Label^  textBoxtrial2_2RL_1;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_8;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_7;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_6;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_5;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_4;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_3;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_2;
+private: System::Windows::Forms::Label^  labeltrial2_1U1_1;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_8;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_7;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_6;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_5;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_4;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_3;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_2;
+private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 
 
 
@@ -472,15 +504,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial1_1U2_3 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial1_1U2_2 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial1_1U2_1 = (gcnew System::Windows::Forms::Label());
-			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label15 = (gcnew System::Windows::Forms::Label());
-			this->label16 = (gcnew System::Windows::Forms::Label());
-			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->label18 = (gcnew System::Windows::Forms::Label());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
@@ -505,13 +528,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial2_2IL_3 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial2_2IL_2 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial2_2IL_1 = (gcnew System::Windows::Forms::Label());
-			this->label71 = (gcnew System::Windows::Forms::Label());
-			this->label72 = (gcnew System::Windows::Forms::Label());
-			this->label73 = (gcnew System::Windows::Forms::Label());
-			this->label74 = (gcnew System::Windows::Forms::Label());
-			this->label75 = (gcnew System::Windows::Forms::Label());
-			this->label76 = (gcnew System::Windows::Forms::Label());
-			this->label77 = (gcnew System::Windows::Forms::Label());
 			this->label78 = (gcnew System::Windows::Forms::Label());
 			this->label79 = (gcnew System::Windows::Forms::Label());
 			this->label80 = (gcnew System::Windows::Forms::Label());
@@ -530,14 +546,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial2_1IL_3 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial2_1IL_2 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial2_1IL_1 = (gcnew System::Windows::Forms::Label());
-			this->label92 = (gcnew System::Windows::Forms::Label());
-			this->label93 = (gcnew System::Windows::Forms::Label());
-			this->label94 = (gcnew System::Windows::Forms::Label());
-			this->label95 = (gcnew System::Windows::Forms::Label());
-			this->label96 = (gcnew System::Windows::Forms::Label());
-			this->label97 = (gcnew System::Windows::Forms::Label());
-			this->label98 = (gcnew System::Windows::Forms::Label());
-			this->label99 = (gcnew System::Windows::Forms::Label());
 			this->label100 = (gcnew System::Windows::Forms::Label());
 			this->label101 = (gcnew System::Windows::Forms::Label());
 			this->label102 = (gcnew System::Windows::Forms::Label());
@@ -548,7 +556,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->textBoxTrial3_2Score = (gcnew System::Windows::Forms::TextBox());
 			this->labeltrial3_2IL_8 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2U2_8 = (gcnew System::Windows::Forms::Label());
-			this->label147 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2IL_7 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2IL_6 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2IL_5 = (gcnew System::Windows::Forms::Label());
@@ -565,13 +572,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial3_2U2_3 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2U2_2 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial3_2U2_1 = (gcnew System::Windows::Forms::Label());
-			this->label114 = (gcnew System::Windows::Forms::Label());
-			this->label115 = (gcnew System::Windows::Forms::Label());
-			this->label116 = (gcnew System::Windows::Forms::Label());
-			this->label117 = (gcnew System::Windows::Forms::Label());
-			this->label118 = (gcnew System::Windows::Forms::Label());
-			this->label119 = (gcnew System::Windows::Forms::Label());
-			this->label120 = (gcnew System::Windows::Forms::Label());
 			this->label121 = (gcnew System::Windows::Forms::Label());
 			this->label122 = (gcnew System::Windows::Forms::Label());
 			this->label123 = (gcnew System::Windows::Forms::Label());
@@ -670,6 +670,38 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->labeltrial1_1U1_9 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_8 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_7 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_6 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_5 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_4 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_3 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_2 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial1_1U1_1 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_8 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_7 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_6 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_5 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_4 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_3 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_2 = (gcnew System::Windows::Forms::Label());
+			this->labeltrial2_1U1_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial2_2RL_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial3_2RL_1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
@@ -969,7 +1001,7 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->groupBox2->ForeColor = System::Drawing::Color::Red;
 			this->groupBox2->Location = System::Drawing::Point(16, 338);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(1407, 1109);
+			this->groupBox2->Size = System::Drawing::Size(1280, 1109);
 			this->groupBox2->TabIndex = 200;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"实验内容一";
@@ -1328,6 +1360,15 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			// 
 			// groupBox1
 			// 
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_9);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_8);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_7);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_6);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_5);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_4);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_3);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_2);
+			this->groupBox1->Controls->Add(this->labeltrial1_1U1_1);
 			this->groupBox1->Controls->Add(this->labeltrial1_1u);
 			this->groupBox1->Controls->Add(this->label22);
 			this->groupBox1->Controls->Add(this->label23);
@@ -1343,15 +1384,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->groupBox1->Controls->Add(this->labeltrial1_1U2_3);
 			this->groupBox1->Controls->Add(this->labeltrial1_1U2_2);
 			this->groupBox1->Controls->Add(this->labeltrial1_1U2_1);
-			this->groupBox1->Controls->Add(this->label13);
-			this->groupBox1->Controls->Add(this->label12);
-			this->groupBox1->Controls->Add(this->label11);
-			this->groupBox1->Controls->Add(this->label10);
-			this->groupBox1->Controls->Add(this->label14);
-			this->groupBox1->Controls->Add(this->label15);
-			this->groupBox1->Controls->Add(this->label16);
-			this->groupBox1->Controls->Add(this->label17);
-			this->groupBox1->Controls->Add(this->label18);
 			this->groupBox1->Controls->Add(this->label19);
 			this->groupBox1->Controls->Add(this->label20);
 			this->groupBox1->Controls->Add(this->label21);
@@ -1511,96 +1543,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial1_1U2_1->Size = System::Drawing::Size(96, 30);
 			this->labeltrial1_1U2_1->TabIndex = 100;
 			// 
-			// label13
-			// 
-			this->label13->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label13->ForeColor = System::Drawing::Color::Black;
-			this->label13->Location = System::Drawing::Point(1039, 84);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(100, 26);
-			this->label13->TabIndex = 99;
-			this->label13->Text = L"8";
-			// 
-			// label12
-			// 
-			this->label12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label12->ForeColor = System::Drawing::Color::Black;
-			this->label12->Location = System::Drawing::Point(931, 84);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(100, 26);
-			this->label12->TabIndex = 98;
-			this->label12->Text = L"7";
-			// 
-			// label11
-			// 
-			this->label11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label11->ForeColor = System::Drawing::Color::Black;
-			this->label11->Location = System::Drawing::Point(817, 84);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(100, 26);
-			this->label11->TabIndex = 97;
-			this->label11->Text = L"6";
-			// 
-			// label10
-			// 
-			this->label10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label10->ForeColor = System::Drawing::Color::Black;
-			this->label10->Location = System::Drawing::Point(707, 84);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(100, 26);
-			this->label10->TabIndex = 96;
-			this->label10->Text = L"5";
-			// 
-			// label14
-			// 
-			this->label14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label14->ForeColor = System::Drawing::Color::Black;
-			this->label14->Location = System::Drawing::Point(593, 84);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(100, 26);
-			this->label14->TabIndex = 95;
-			this->label14->Text = L"4";
-			// 
-			// label15
-			// 
-			this->label15->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label15->ForeColor = System::Drawing::Color::Black;
-			this->label15->Location = System::Drawing::Point(479, 84);
-			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(100, 26);
-			this->label15->TabIndex = 94;
-			this->label15->Text = L"3";
-			// 
-			// label16
-			// 
-			this->label16->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label16->ForeColor = System::Drawing::Color::Black;
-			this->label16->Location = System::Drawing::Point(365, 84);
-			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(100, 26);
-			this->label16->TabIndex = 93;
-			this->label16->Text = L"2";
-			// 
-			// label17
-			// 
-			this->label17->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label17->ForeColor = System::Drawing::Color::Black;
-			this->label17->Location = System::Drawing::Point(257, 84);
-			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(100, 26);
-			this->label17->TabIndex = 92;
-			this->label17->Text = L"1";
-			// 
-			// label18
-			// 
-			this->label18->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label18->ForeColor = System::Drawing::Color::Black;
-			this->label18->Location = System::Drawing::Point(149, 84);
-			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(100, 26);
-			this->label18->TabIndex = 91;
-			this->label18->Text = L"0";
-			// 
 			// label19
 			// 
 			this->label19->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -1646,6 +1588,13 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			// 
 			// groupBox5
 			// 
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_7);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_6);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_5);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_4);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_3);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_2);
+			this->groupBox5->Controls->Add(this->textBoxtrial2_2RL_1);
 			this->groupBox5->Controls->Add(this->label29);
 			this->groupBox5->Controls->Add(this->label31);
 			this->groupBox5->Controls->Add(this->textBoxTrial2_2Score);
@@ -1665,13 +1614,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->groupBox5->Controls->Add(this->labeltrial2_2IL_3);
 			this->groupBox5->Controls->Add(this->labeltrial2_2IL_2);
 			this->groupBox5->Controls->Add(this->labeltrial2_2IL_1);
-			this->groupBox5->Controls->Add(this->label71);
-			this->groupBox5->Controls->Add(this->label72);
-			this->groupBox5->Controls->Add(this->label73);
-			this->groupBox5->Controls->Add(this->label74);
-			this->groupBox5->Controls->Add(this->label75);
-			this->groupBox5->Controls->Add(this->label76);
-			this->groupBox5->Controls->Add(this->label77);
 			this->groupBox5->Controls->Add(this->label78);
 			this->groupBox5->Controls->Add(this->label79);
 			this->groupBox5->Controls->Add(this->label80);
@@ -1866,76 +1808,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial2_2IL_1->Size = System::Drawing::Size(96, 30);
 			this->labeltrial2_2IL_1->TabIndex = 100;
 			// 
-			// label71
-			// 
-			this->label71->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label71->ForeColor = System::Drawing::Color::Black;
-			this->label71->Location = System::Drawing::Point(860, 101);
-			this->label71->Name = L"label71";
-			this->label71->Size = System::Drawing::Size(100, 26);
-			this->label71->TabIndex = 97;
-			this->label71->Text = L"1";
-			// 
-			// label72
-			// 
-			this->label72->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label72->ForeColor = System::Drawing::Color::Black;
-			this->label72->Location = System::Drawing::Point(750, 101);
-			this->label72->Name = L"label72";
-			this->label72->Size = System::Drawing::Size(100, 26);
-			this->label72->TabIndex = 96;
-			this->label72->Text = L"2";
-			// 
-			// label73
-			// 
-			this->label73->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label73->ForeColor = System::Drawing::Color::Black;
-			this->label73->Location = System::Drawing::Point(636, 101);
-			this->label73->Name = L"label73";
-			this->label73->Size = System::Drawing::Size(100, 26);
-			this->label73->TabIndex = 95;
-			this->label73->Text = L"4";
-			// 
-			// label74
-			// 
-			this->label74->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label74->ForeColor = System::Drawing::Color::Black;
-			this->label74->Location = System::Drawing::Point(522, 101);
-			this->label74->Name = L"label74";
-			this->label74->Size = System::Drawing::Size(100, 26);
-			this->label74->TabIndex = 94;
-			this->label74->Text = L"8";
-			// 
-			// label75
-			// 
-			this->label75->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label75->ForeColor = System::Drawing::Color::Black;
-			this->label75->Location = System::Drawing::Point(408, 101);
-			this->label75->Name = L"label75";
-			this->label75->Size = System::Drawing::Size(100, 26);
-			this->label75->TabIndex = 93;
-			this->label75->Text = L"10";
-			// 
-			// label76
-			// 
-			this->label76->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label76->ForeColor = System::Drawing::Color::Black;
-			this->label76->Location = System::Drawing::Point(300, 101);
-			this->label76->Name = L"label76";
-			this->label76->Size = System::Drawing::Size(100, 26);
-			this->label76->TabIndex = 92;
-			this->label76->Text = L"20";
-			// 
-			// label77
-			// 
-			this->label77->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label77->ForeColor = System::Drawing::Color::Black;
-			this->label77->Location = System::Drawing::Point(192, 101);
-			this->label77->Name = L"label77";
-			this->label77->Size = System::Drawing::Size(100, 26);
-			this->label77->TabIndex = 91;
-			this->label77->Text = L"50";
-			// 
 			// label78
 			// 
 			this->label78->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -1967,6 +1839,14 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			// 
 			// groupBox6
 			// 
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_8);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_7);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_6);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_5);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_4);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_3);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_2);
+			this->groupBox6->Controls->Add(this->labeltrial2_1U1_1);
 			this->groupBox6->Controls->Add(this->labeltrial2_1gm);
 			this->groupBox6->Controls->Add(this->label26);
 			this->groupBox6->Controls->Add(this->label27);
@@ -1981,14 +1861,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->groupBox6->Controls->Add(this->labeltrial2_1IL_3);
 			this->groupBox6->Controls->Add(this->labeltrial2_1IL_2);
 			this->groupBox6->Controls->Add(this->labeltrial2_1IL_1);
-			this->groupBox6->Controls->Add(this->label92);
-			this->groupBox6->Controls->Add(this->label93);
-			this->groupBox6->Controls->Add(this->label94);
-			this->groupBox6->Controls->Add(this->label95);
-			this->groupBox6->Controls->Add(this->label96);
-			this->groupBox6->Controls->Add(this->label97);
-			this->groupBox6->Controls->Add(this->label98);
-			this->groupBox6->Controls->Add(this->label99);
 			this->groupBox6->Controls->Add(this->label100);
 			this->groupBox6->Controls->Add(this->label101);
 			this->groupBox6->Controls->Add(this->label102);
@@ -2138,86 +2010,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial2_1IL_1->Size = System::Drawing::Size(96, 30);
 			this->labeltrial2_1IL_1->TabIndex = 100;
 			// 
-			// label92
-			// 
-			this->label92->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label92->ForeColor = System::Drawing::Color::Black;
-			this->label92->Location = System::Drawing::Point(910, 119);
-			this->label92->Name = L"label92";
-			this->label92->Size = System::Drawing::Size(100, 26);
-			this->label92->TabIndex = 98;
-			this->label92->Text = L"3.5";
-			// 
-			// label93
-			// 
-			this->label93->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label93->ForeColor = System::Drawing::Color::Black;
-			this->label93->Location = System::Drawing::Point(796, 119);
-			this->label93->Name = L"label93";
-			this->label93->Size = System::Drawing::Size(100, 26);
-			this->label93->TabIndex = 97;
-			this->label93->Text = L"3";
-			// 
-			// label94
-			// 
-			this->label94->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label94->ForeColor = System::Drawing::Color::Black;
-			this->label94->Location = System::Drawing::Point(686, 119);
-			this->label94->Name = L"label94";
-			this->label94->Size = System::Drawing::Size(100, 26);
-			this->label94->TabIndex = 96;
-			this->label94->Text = L"2.5";
-			// 
-			// label95
-			// 
-			this->label95->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label95->ForeColor = System::Drawing::Color::Black;
-			this->label95->Location = System::Drawing::Point(572, 119);
-			this->label95->Name = L"label95";
-			this->label95->Size = System::Drawing::Size(100, 26);
-			this->label95->TabIndex = 95;
-			this->label95->Text = L"2";
-			// 
-			// label96
-			// 
-			this->label96->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label96->ForeColor = System::Drawing::Color::Black;
-			this->label96->Location = System::Drawing::Point(458, 119);
-			this->label96->Name = L"label96";
-			this->label96->Size = System::Drawing::Size(100, 26);
-			this->label96->TabIndex = 94;
-			this->label96->Text = L"1.5";
-			// 
-			// label97
-			// 
-			this->label97->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label97->ForeColor = System::Drawing::Color::Black;
-			this->label97->Location = System::Drawing::Point(344, 119);
-			this->label97->Name = L"label97";
-			this->label97->Size = System::Drawing::Size(100, 26);
-			this->label97->TabIndex = 93;
-			this->label97->Text = L"1";
-			// 
-			// label98
-			// 
-			this->label98->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label98->ForeColor = System::Drawing::Color::Black;
-			this->label98->Location = System::Drawing::Point(236, 119);
-			this->label98->Name = L"label98";
-			this->label98->Size = System::Drawing::Size(100, 26);
-			this->label98->TabIndex = 92;
-			this->label98->Text = L"0.5";
-			// 
-			// label99
-			// 
-			this->label99->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label99->ForeColor = System::Drawing::Color::Black;
-			this->label99->Location = System::Drawing::Point(128, 119);
-			this->label99->Name = L"label99";
-			this->label99->Size = System::Drawing::Size(100, 26);
-			this->label99->TabIndex = 91;
-			this->label99->Text = L"0";
-			// 
 			// label100
 			// 
 			this->label100->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -2263,12 +2055,19 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			// 
 			// groupBox9
 			// 
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_8);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_7);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_6);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_5);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_4);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_3);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_2);
+			this->groupBox9->Controls->Add(this->textBoxtrial3_2RL_1);
 			this->groupBox9->Controls->Add(this->label47);
 			this->groupBox9->Controls->Add(this->label48);
 			this->groupBox9->Controls->Add(this->textBoxTrial3_2Score);
 			this->groupBox9->Controls->Add(this->labeltrial3_2IL_8);
 			this->groupBox9->Controls->Add(this->labeltrial3_2U2_8);
-			this->groupBox9->Controls->Add(this->label147);
 			this->groupBox9->Controls->Add(this->labeltrial3_2IL_7);
 			this->groupBox9->Controls->Add(this->labeltrial3_2IL_6);
 			this->groupBox9->Controls->Add(this->labeltrial3_2IL_5);
@@ -2285,13 +2084,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->groupBox9->Controls->Add(this->labeltrial3_2U2_3);
 			this->groupBox9->Controls->Add(this->labeltrial3_2U2_2);
 			this->groupBox9->Controls->Add(this->labeltrial3_2U2_1);
-			this->groupBox9->Controls->Add(this->label114);
-			this->groupBox9->Controls->Add(this->label115);
-			this->groupBox9->Controls->Add(this->label116);
-			this->groupBox9->Controls->Add(this->label117);
-			this->groupBox9->Controls->Add(this->label118);
-			this->groupBox9->Controls->Add(this->label119);
-			this->groupBox9->Controls->Add(this->label120);
 			this->groupBox9->Controls->Add(this->label121);
 			this->groupBox9->Controls->Add(this->label122);
 			this->groupBox9->Controls->Add(this->label123);
@@ -2351,16 +2143,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial3_2U2_8->Name = L"labeltrial3_2U2_8";
 			this->labeltrial3_2U2_8->Size = System::Drawing::Size(96, 30);
 			this->labeltrial3_2U2_8->TabIndex = 139;
-			// 
-			// label147
-			// 
-			this->label147->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label147->ForeColor = System::Drawing::Color::Black;
-			this->label147->Location = System::Drawing::Point(974, 101);
-			this->label147->Name = L"label147";
-			this->label147->Size = System::Drawing::Size(100, 26);
-			this->label147->TabIndex = 138;
-			this->label147->Text = L"8";
 			// 
 			// labeltrial3_2IL_7
 			// 
@@ -2513,76 +2295,6 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->labeltrial3_2U2_1->Name = L"labeltrial3_2U2_1";
 			this->labeltrial3_2U2_1->Size = System::Drawing::Size(96, 30);
 			this->labeltrial3_2U2_1->TabIndex = 100;
-			// 
-			// label114
-			// 
-			this->label114->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label114->ForeColor = System::Drawing::Color::Black;
-			this->label114->Location = System::Drawing::Point(860, 101);
-			this->label114->Name = L"label114";
-			this->label114->Size = System::Drawing::Size(100, 26);
-			this->label114->TabIndex = 97;
-			this->label114->Text = L"7";
-			// 
-			// label115
-			// 
-			this->label115->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label115->ForeColor = System::Drawing::Color::Black;
-			this->label115->Location = System::Drawing::Point(750, 101);
-			this->label115->Name = L"label115";
-			this->label115->Size = System::Drawing::Size(100, 26);
-			this->label115->TabIndex = 96;
-			this->label115->Text = L"6";
-			// 
-			// label116
-			// 
-			this->label116->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label116->ForeColor = System::Drawing::Color::Black;
-			this->label116->Location = System::Drawing::Point(636, 101);
-			this->label116->Name = L"label116";
-			this->label116->Size = System::Drawing::Size(100, 26);
-			this->label116->TabIndex = 95;
-			this->label116->Text = L"5";
-			// 
-			// label117
-			// 
-			this->label117->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label117->ForeColor = System::Drawing::Color::Black;
-			this->label117->Location = System::Drawing::Point(522, 101);
-			this->label117->Name = L"label117";
-			this->label117->Size = System::Drawing::Size(100, 26);
-			this->label117->TabIndex = 94;
-			this->label117->Text = L"4";
-			// 
-			// label118
-			// 
-			this->label118->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label118->ForeColor = System::Drawing::Color::Black;
-			this->label118->Location = System::Drawing::Point(408, 101);
-			this->label118->Name = L"label118";
-			this->label118->Size = System::Drawing::Size(100, 26);
-			this->label118->TabIndex = 93;
-			this->label118->Text = L"3";
-			// 
-			// label119
-			// 
-			this->label119->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label119->ForeColor = System::Drawing::Color::Black;
-			this->label119->Location = System::Drawing::Point(300, 101);
-			this->label119->Name = L"label119";
-			this->label119->Size = System::Drawing::Size(100, 26);
-			this->label119->TabIndex = 92;
-			this->label119->Text = L"2";
-			// 
-			// label120
-			// 
-			this->label120->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label120->ForeColor = System::Drawing::Color::Black;
-			this->label120->Location = System::Drawing::Point(192, 101);
-			this->label120->Name = L"label120";
-			this->label120->Size = System::Drawing::Size(100, 26);
-			this->label120->TabIndex = 91;
-			this->label120->Text = L"1";
 			// 
 			// label121
 			// 
@@ -3624,6 +3336,294 @@ private: System::Windows::Forms::Label^  labeltrial4_2RL_1;
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(1407, 1315);
 			this->panel2->TabIndex = 329;
+			// 
+			// labeltrial1_1U1_9
+			// 
+			this->labeltrial1_1U1_9->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_9->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_9->Location = System::Drawing::Point(1043, 84);
+			this->labeltrial1_1U1_9->Name = L"labeltrial1_1U1_9";
+			this->labeltrial1_1U1_9->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_9->TabIndex = 223;
+			// 
+			// labeltrial1_1U1_8
+			// 
+			this->labeltrial1_1U1_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_8->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_8->Location = System::Drawing::Point(935, 84);
+			this->labeltrial1_1U1_8->Name = L"labeltrial1_1U1_8";
+			this->labeltrial1_1U1_8->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_8->TabIndex = 222;
+			// 
+			// labeltrial1_1U1_7
+			// 
+			this->labeltrial1_1U1_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_7->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_7->Location = System::Drawing::Point(821, 84);
+			this->labeltrial1_1U1_7->Name = L"labeltrial1_1U1_7";
+			this->labeltrial1_1U1_7->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_7->TabIndex = 221;
+			// 
+			// labeltrial1_1U1_6
+			// 
+			this->labeltrial1_1U1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_6->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_6->Location = System::Drawing::Point(711, 84);
+			this->labeltrial1_1U1_6->Name = L"labeltrial1_1U1_6";
+			this->labeltrial1_1U1_6->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_6->TabIndex = 220;
+			// 
+			// labeltrial1_1U1_5
+			// 
+			this->labeltrial1_1U1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_5->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_5->Location = System::Drawing::Point(597, 84);
+			this->labeltrial1_1U1_5->Name = L"labeltrial1_1U1_5";
+			this->labeltrial1_1U1_5->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_5->TabIndex = 219;
+			// 
+			// labeltrial1_1U1_4
+			// 
+			this->labeltrial1_1U1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_4->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_4->Location = System::Drawing::Point(483, 84);
+			this->labeltrial1_1U1_4->Name = L"labeltrial1_1U1_4";
+			this->labeltrial1_1U1_4->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_4->TabIndex = 218;
+			// 
+			// labeltrial1_1U1_3
+			// 
+			this->labeltrial1_1U1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_3->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_3->Location = System::Drawing::Point(369, 84);
+			this->labeltrial1_1U1_3->Name = L"labeltrial1_1U1_3";
+			this->labeltrial1_1U1_3->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_3->TabIndex = 217;
+			// 
+			// labeltrial1_1U1_2
+			// 
+			this->labeltrial1_1U1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_2->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_2->Location = System::Drawing::Point(261, 84);
+			this->labeltrial1_1U1_2->Name = L"labeltrial1_1U1_2";
+			this->labeltrial1_1U1_2->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_2->TabIndex = 216;
+			// 
+			// labeltrial1_1U1_1
+			// 
+			this->labeltrial1_1U1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial1_1U1_1->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial1_1U1_1->Location = System::Drawing::Point(149, 84);
+			this->labeltrial1_1U1_1->Name = L"labeltrial1_1U1_1";
+			this->labeltrial1_1U1_1->Size = System::Drawing::Size(96, 30);
+			this->labeltrial1_1U1_1->TabIndex = 215;
+			// 
+			// labeltrial2_1U1_8
+			// 
+			this->labeltrial2_1U1_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_8->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_8->Location = System::Drawing::Point(914, 119);
+			this->labeltrial2_1U1_8->Name = L"labeltrial2_1U1_8";
+			this->labeltrial2_1U1_8->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_8->TabIndex = 228;
+			// 
+			// labeltrial2_1U1_7
+			// 
+			this->labeltrial2_1U1_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_7->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_7->Location = System::Drawing::Point(800, 119);
+			this->labeltrial2_1U1_7->Name = L"labeltrial2_1U1_7";
+			this->labeltrial2_1U1_7->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_7->TabIndex = 227;
+			// 
+			// labeltrial2_1U1_6
+			// 
+			this->labeltrial2_1U1_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_6->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_6->Location = System::Drawing::Point(690, 119);
+			this->labeltrial2_1U1_6->Name = L"labeltrial2_1U1_6";
+			this->labeltrial2_1U1_6->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_6->TabIndex = 226;
+			// 
+			// labeltrial2_1U1_5
+			// 
+			this->labeltrial2_1U1_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_5->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_5->Location = System::Drawing::Point(576, 119);
+			this->labeltrial2_1U1_5->Name = L"labeltrial2_1U1_5";
+			this->labeltrial2_1U1_5->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_5->TabIndex = 225;
+			// 
+			// labeltrial2_1U1_4
+			// 
+			this->labeltrial2_1U1_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_4->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_4->Location = System::Drawing::Point(462, 119);
+			this->labeltrial2_1U1_4->Name = L"labeltrial2_1U1_4";
+			this->labeltrial2_1U1_4->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_4->TabIndex = 224;
+			// 
+			// labeltrial2_1U1_3
+			// 
+			this->labeltrial2_1U1_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_3->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_3->Location = System::Drawing::Point(348, 119);
+			this->labeltrial2_1U1_3->Name = L"labeltrial2_1U1_3";
+			this->labeltrial2_1U1_3->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_3->TabIndex = 223;
+			// 
+			// labeltrial2_1U1_2
+			// 
+			this->labeltrial2_1U1_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_2->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_2->Location = System::Drawing::Point(240, 119);
+			this->labeltrial2_1U1_2->Name = L"labeltrial2_1U1_2";
+			this->labeltrial2_1U1_2->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_2->TabIndex = 222;
+			// 
+			// labeltrial2_1U1_1
+			// 
+			this->labeltrial2_1U1_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->labeltrial2_1U1_1->ForeColor = System::Drawing::Color::Black;
+			this->labeltrial2_1U1_1->Location = System::Drawing::Point(128, 119);
+			this->labeltrial2_1U1_1->Name = L"labeltrial2_1U1_1";
+			this->labeltrial2_1U1_1->Size = System::Drawing::Size(96, 30);
+			this->labeltrial2_1U1_1->TabIndex = 221;
+			// 
+			// textBoxtrial2_2RL_7
+			// 
+			this->textBoxtrial2_2RL_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_7->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_7->Location = System::Drawing::Point(864, 97);
+			this->textBoxtrial2_2RL_7->Name = L"textBoxtrial2_2RL_7";
+			this->textBoxtrial2_2RL_7->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_7->TabIndex = 226;
+			// 
+			// textBoxtrial2_2RL_6
+			// 
+			this->textBoxtrial2_2RL_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_6->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_6->Location = System::Drawing::Point(754, 97);
+			this->textBoxtrial2_2RL_6->Name = L"textBoxtrial2_2RL_6";
+			this->textBoxtrial2_2RL_6->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_6->TabIndex = 225;
+			// 
+			// textBoxtrial2_2RL_5
+			// 
+			this->textBoxtrial2_2RL_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_5->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_5->Location = System::Drawing::Point(640, 97);
+			this->textBoxtrial2_2RL_5->Name = L"textBoxtrial2_2RL_5";
+			this->textBoxtrial2_2RL_5->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_5->TabIndex = 224;
+			// 
+			// textBoxtrial2_2RL_4
+			// 
+			this->textBoxtrial2_2RL_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_4->Location = System::Drawing::Point(526, 97);
+			this->textBoxtrial2_2RL_4->Name = L"textBoxtrial2_2RL_4";
+			this->textBoxtrial2_2RL_4->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_4->TabIndex = 223;
+			// 
+			// textBoxtrial2_2RL_3
+			// 
+			this->textBoxtrial2_2RL_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_3->Location = System::Drawing::Point(412, 97);
+			this->textBoxtrial2_2RL_3->Name = L"textBoxtrial2_2RL_3";
+			this->textBoxtrial2_2RL_3->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_3->TabIndex = 222;
+			// 
+			// textBoxtrial2_2RL_2
+			// 
+			this->textBoxtrial2_2RL_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_2->Location = System::Drawing::Point(304, 97);
+			this->textBoxtrial2_2RL_2->Name = L"textBoxtrial2_2RL_2";
+			this->textBoxtrial2_2RL_2->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_2->TabIndex = 221;
+			// 
+			// textBoxtrial2_2RL_1
+			// 
+			this->textBoxtrial2_2RL_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial2_2RL_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial2_2RL_1->Location = System::Drawing::Point(192, 97);
+			this->textBoxtrial2_2RL_1->Name = L"textBoxtrial2_2RL_1";
+			this->textBoxtrial2_2RL_1->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial2_2RL_1->TabIndex = 220;
+			// 
+			// textBoxtrial3_2RL_8
+			// 
+			this->textBoxtrial3_2RL_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_8->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_8->Location = System::Drawing::Point(978, 97);
+			this->textBoxtrial3_2RL_8->Name = L"textBoxtrial3_2RL_8";
+			this->textBoxtrial3_2RL_8->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_8->TabIndex = 233;
+			// 
+			// textBoxtrial3_2RL_7
+			// 
+			this->textBoxtrial3_2RL_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_7->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_7->Location = System::Drawing::Point(864, 97);
+			this->textBoxtrial3_2RL_7->Name = L"textBoxtrial3_2RL_7";
+			this->textBoxtrial3_2RL_7->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_7->TabIndex = 232;
+			// 
+			// textBoxtrial3_2RL_6
+			// 
+			this->textBoxtrial3_2RL_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_6->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_6->Location = System::Drawing::Point(754, 97);
+			this->textBoxtrial3_2RL_6->Name = L"textBoxtrial3_2RL_6";
+			this->textBoxtrial3_2RL_6->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_6->TabIndex = 231;
+			// 
+			// textBoxtrial3_2RL_5
+			// 
+			this->textBoxtrial3_2RL_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_5->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_5->Location = System::Drawing::Point(640, 97);
+			this->textBoxtrial3_2RL_5->Name = L"textBoxtrial3_2RL_5";
+			this->textBoxtrial3_2RL_5->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_5->TabIndex = 230;
+			// 
+			// textBoxtrial3_2RL_4
+			// 
+			this->textBoxtrial3_2RL_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_4->Location = System::Drawing::Point(526, 97);
+			this->textBoxtrial3_2RL_4->Name = L"textBoxtrial3_2RL_4";
+			this->textBoxtrial3_2RL_4->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_4->TabIndex = 229;
+			// 
+			// textBoxtrial3_2RL_3
+			// 
+			this->textBoxtrial3_2RL_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_3->Location = System::Drawing::Point(412, 97);
+			this->textBoxtrial3_2RL_3->Name = L"textBoxtrial3_2RL_3";
+			this->textBoxtrial3_2RL_3->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_3->TabIndex = 228;
+			// 
+			// textBoxtrial3_2RL_2
+			// 
+			this->textBoxtrial3_2RL_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_2->Location = System::Drawing::Point(304, 97);
+			this->textBoxtrial3_2RL_2->Name = L"textBoxtrial3_2RL_2";
+			this->textBoxtrial3_2RL_2->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_2->TabIndex = 227;
+			// 
+			// textBoxtrial3_2RL_1
+			// 
+			this->textBoxtrial3_2RL_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxtrial3_2RL_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxtrial3_2RL_1->Location = System::Drawing::Point(192, 97);
+			this->textBoxtrial3_2RL_1->Name = L"textBoxtrial3_2RL_1";
+			this->textBoxtrial3_2RL_1->Size = System::Drawing::Size(96, 30);
+			this->textBoxtrial3_2RL_1->TabIndex = 226;
 			// 
 			// VCVS实验
 			// 
