@@ -13,6 +13,7 @@ void »¥¸ÐÆ÷::SaveCorrectGrades() {
 	}
 	memcpy(&s, data.c_str(), sizeof(ST_»¥¸ÐÆ÷));
 	try {
+		s.score1 = Convert::ToInt32(textBoxTrial1Score->Text);
 		s.score3 = Convert::ToInt32(textBoxTrial3Score->Text);
 		s.score4 = Convert::ToInt32(textBoxTrial4Score->Text);
 
@@ -36,10 +37,10 @@ void »¥¸ÐÆ÷::SaveCorrectGrades() {
 
 void »¥¸ÐÆ÷::CalScores() {
 	try {
-		int g1 = Convert::ToInt32(textBoxTrial3Score->Text);
-		int g2 = Convert::ToInt32(textBoxTrial4Score->Text);
-
-		labelTotalGrade->Text = (g1 + g2).ToString();
+		int g3 = Convert::ToInt32(textBoxTrial3Score->Text);
+		int g4 = Convert::ToInt32(textBoxTrial4Score->Text);
+		int g1 = Convert::ToInt32(textBoxTrial1Score->Text);
+		labelTotalGrade->Text = (g1 + g3 + g4).ToString();
 	}
 	catch (Exception^e) {
 
@@ -93,6 +94,7 @@ void »¥¸ÐÆ÷::Load»¥¸ÐÆ÷Data(string &filename) {
 	labeldate->Text = gcnew String(ti.date);
 	textBoxteacher->Text = gcnew String(ti.teacher);
 
+	textBoxTrial1Score->Text = d.score1.ToString();
 	textBoxTrial3Score->Text = d.score3.ToString();
 	textBoxTrial4Score->Text = d.score4.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();

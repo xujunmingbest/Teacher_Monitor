@@ -18,7 +18,6 @@ void main(){
 	SystemStart();
 
 
-
 	bool l = false;
 	Application::Run(gcnew Login(l));
 	if (l) {

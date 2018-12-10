@@ -15,6 +15,8 @@ void 戴维南定理::SaveCorrectGrades() {
 		s.scoreMethod1 = Convert::ToInt32(textBoxTrial1Score->Text);
 		s.scoreMethod2 = Convert::ToInt32(textBoxTrial2Score->Text);
 		s.scoreMethod3 = Convert::ToInt32(textBoxTrial3Score->Text);
+		s.scoreMethod4 = Convert::ToInt32(textBoxTrial4Score->Text);
+		s.scoreMethod5 = Convert::ToInt32(textBoxTrial5Score->Text);
 		s.scoreMethod6 = Convert::ToInt32(textBoxTrial6Score->Text);
 
 		s.ti.totalscore = Convert::ToInt32(labelTotalGrade->Text);
@@ -40,8 +42,10 @@ void 戴维南定理::CalScores() {
 		int g1 = Convert::ToInt32(textBoxTrial1Score->Text);
 		int g2 = Convert::ToInt32(textBoxTrial2Score->Text);
 		int g3 = Convert::ToInt32(textBoxTrial3Score->Text);
+		int g4 = Convert::ToInt32(textBoxTrial4Score->Text);
+		int g5 = Convert::ToInt32(textBoxTrial5Score->Text);
 		int g6 = Convert::ToInt32(textBoxTrial6Score->Text);
-		labelTotalGrade->Text = (g1 + g2 + g3 + g6).ToString();
+		labelTotalGrade->Text = (g1 + g2 + g3 + g4 + g5 + g6).ToString();
 	}
 	catch (Exception^e) {
 
@@ -101,6 +105,8 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	textBoxTrial1Score->Text = d.scoreMethod1.ToString();
 	textBoxTrial2Score->Text = d.scoreMethod2.ToString();
 	textBoxTrial3Score->Text = d.scoreMethod3.ToString();
+	textBoxTrial4Score->Text = d.scoreMethod4.ToString();
+	textBoxTrial5Score->Text = d.scoreMethod5.ToString();
 	textBoxTrial6Score->Text = d.scoreMethod6.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
@@ -200,7 +206,8 @@ void 戴维南定理::chartTrial2_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 
 
@@ -237,5 +244,6 @@ void 戴维南定理::chartTrial6_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }

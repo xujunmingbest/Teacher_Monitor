@@ -180,11 +180,13 @@ void 单相铁心变压器特性的测试::chartTrial2_load() {
 		s->Name = "";
 		s->Points->AddXY(Convert::ToSingle(labelTrial2_Line1_U1->Text), Convert::ToSingle(labelTrial2_Line1_I1->Text));
 		s->Points->AddXY(Convert::ToSingle(labelTrial2_Line2_U1->Text), Convert::ToSingle(labelTrial2_Line2_I1->Text));
-		s->Points->AddXY(Convert::ToSingle(labelTrial2_Line3_U1->Text), Convert::ToSingle(labelTrial2_Line3_U1->Text));
+		s->Points->AddXY(Convert::ToSingle(labelTrial2_Line3_U1->Text), Convert::ToSingle(labelTrial2_Line3_I1->Text));
 	}
 	catch (System::Exception^ E) {
 
 	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 
 void 单相铁心变压器特性的测试::chartTrial3_load() {
@@ -220,5 +222,6 @@ void 单相铁心变压器特性的测试::chartTrial3_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }

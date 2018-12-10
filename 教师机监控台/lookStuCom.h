@@ -52,6 +52,9 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::ToolStripMenuItem^  停止实验ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  恢复实验ToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  强制提交成绩ToolStripMenuItem;
+	private: System::Windows::Forms::Button^  button2;
+	private: System::Windows::Forms::FolderBrowserDialog^  folderBrowserDialog1;
+
 
 
 
@@ -78,6 +81,7 @@ namespace 教师机监控台 {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(lookStuCom::typeid));
 			this->imageList1 = (gcnew System::Windows::Forms::ImageList(this->components));
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
 			this->listView1 = (gcnew System::Windows::Forms::ListView());
@@ -86,6 +90,7 @@ namespace 教师机监控台 {
 			this->恢复实验ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->强制提交成绩ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
 			this->panel2->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
 			this->panel1->SuspendLayout();
@@ -100,13 +105,28 @@ namespace 教师机监控台 {
 			// 
 			// panel2
 			// 
+			this->panel2->Controls->Add(this->button2);
 			this->panel2->Controls->Add(this->button1);
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(141, 415);
+			this->panel2->Size = System::Drawing::Size(159, 415);
 			this->panel2->TabIndex = 2;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &lookStuCom::panel2_Paint);
+			// 
+			// button2
+			// 
+			this->button2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->button2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.Image")));
+			this->button2->Location = System::Drawing::Point(0, 82);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(153, 51);
+			this->button2->TabIndex = 1;
+			this->button2->Text = L"导入学生列表";
+			this->button2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &lookStuCom::button2_Click_1);
 			// 
 			// button1
 			// 
@@ -116,7 +136,7 @@ namespace 教师机监控台 {
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
 			this->button1->Location = System::Drawing::Point(0, 12);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(138, 52);
+			this->button1->Size = System::Drawing::Size(153, 52);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"刷新";
 			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -136,7 +156,7 @@ namespace 教师机监控台 {
 			this->listView1->LargeImageList = this->imageList1;
 			this->listView1->Location = System::Drawing::Point(0, 0);
 			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(796, 415);
+			this->listView1->Size = System::Drawing::Size(778, 415);
 			this->listView1->SmallImageList = this->imageList1;
 			this->listView1->TabIndex = 1;
 			this->listView1->UseCompatibleStateImageBehavior = false;
@@ -179,9 +199,9 @@ namespace 教师机监控台 {
 			// 
 			this->panel1->Controls->Add(this->listView1);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->panel1->Location = System::Drawing::Point(141, 0);
+			this->panel1->Location = System::Drawing::Point(159, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(796, 415);
+			this->panel1->Size = System::Drawing::Size(778, 415);
 			this->panel1->TabIndex = 3;
 			// 
 			// lookStuCom
@@ -259,6 +279,15 @@ private: System::Void 强制提交成绩ToolStripMenuItem_Click(System::Object^  sende
 		TrialStatus_s tss;
 		lcs.FindCominfo(T_to_string(listView1->SelectedItems[0]->Name), tss);
 		lcs.SendCmdForceCommitTrial(tss.s);
+	}
+}
+private: System::Void button2_Click_1(System::Object^  sender, System::EventArgs^  e) {
+	folderBrowserDialog1->SelectedPath = "E:\\clr中腾\\教师机监控台\\Release\\学生信息\\"; 
+	System::Windows::Forms::DialogResult d=  folderBrowserDialog1->ShowDialog();
+	if (d == ::DialogResult::OK) {
+		MessageBox::Show("选定的学生目录:\n"+folderBrowserDialog1->SelectedPath);
+		lcs.GetStudents(T_to_string(folderBrowserDialog1->SelectedPath));
+		MessageBox::Show("导入成功");
 	}
 }
 };

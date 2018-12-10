@@ -55,6 +55,7 @@ void VCVS实验::CalScores() {
 	catch (Exception^e) {
 
 	}
+
 }
 
 void VCVS实验::Print() {
@@ -164,6 +165,16 @@ void VCVS实验::LoadVCVS实验Data(string &filename) {
 	labeltrial1_1U2_7->Text = gcnew String(d.trial1_1U2_7);
 	labeltrial1_1U2_8->Text = gcnew String(d.trial1_1U2_8);
 	labeltrial1_1U2_9->Text = gcnew String(d.trial1_1U2_9);
+
+	textBoxtrial1_2RL_1->Text = gcnew String(d.trial1_2RL_1);
+	textBoxtrial1_2RL_2->Text = gcnew String(d.trial1_2RL_2);
+	textBoxtrial1_2RL_3->Text = gcnew String(d.trial1_2RL_3);
+	textBoxtrial1_2RL_4->Text = gcnew String(d.trial1_2RL_4);
+	textBoxtrial1_2RL_5->Text = gcnew String(d.trial1_2RL_5);
+	textBoxtrial1_2RL_6->Text = gcnew String(d.trial1_2RL_6);
+	textBoxtrial1_2RL_7->Text = gcnew String(d.trial1_2RL_7);
+	textBoxtrial1_2RL_8->Text = gcnew String(d.trial1_2RL_8);
+
 
 	labeltrial1_2V2_1->Text = gcnew String(d.trial1_2V2_1);
 	labeltrial1_2V2_2->Text = gcnew String(d.trial1_2V2_2);
@@ -291,3 +302,279 @@ void VCVS实验::LoadVCVS实验Data(string &filename) {
 
 }
 
+using namespace System::Windows::Forms::DataVisualization::Charting;
+void VCVS实验::LoadTrial1_1() {
+	Series ^s = chartTrial1_1->Series[0];
+	chartTrial1_1->Titles->Add("VCVS的转移特性U2＝ F（U1）");
+	ChartArea ^ c = chartTrial1_1->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "U1(V)";
+	c->AxisY->Title = "U2(V)";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_1->Text), Convert::ToSingle(labeltrial1_1U2_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_2->Text), Convert::ToSingle(labeltrial1_1U2_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_3->Text), Convert::ToSingle(labeltrial1_1U2_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_4->Text), Convert::ToSingle(labeltrial1_1U2_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_5->Text), Convert::ToSingle(labeltrial1_1U2_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_6->Text), Convert::ToSingle(labeltrial1_1U2_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_7->Text), Convert::ToSingle(labeltrial1_1U2_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_8->Text), Convert::ToSingle(labeltrial1_1U2_8->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_1U1_9->Text), Convert::ToSingle(labeltrial1_1U2_9->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+
+}
+void VCVS实验::LoadTrial1_2() {
+	Series ^s = chartTrial1_2->Series[0];
+	chartTrial1_2->Titles->Add("负载特性 U2＝F（IL）");
+	ChartArea ^ c = chartTrial1_2->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电流";
+	c->AxisY->Title = "电压";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_1->Text), Convert::ToSingle(labeltrial1_2V2_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_2->Text), Convert::ToSingle(labeltrial1_2V2_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_3->Text), Convert::ToSingle(labeltrial1_2V2_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_4->Text), Convert::ToSingle(labeltrial1_2V2_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_5->Text), Convert::ToSingle(labeltrial1_2V2_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_6->Text), Convert::ToSingle(labeltrial1_2V2_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_7->Text), Convert::ToSingle(labeltrial1_2V2_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial1_2IL_8->Text), Convert::ToSingle(labeltrial1_2V2_8->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+
+
+void VCVS实验::LoadTrial2_1() {
+	Series ^s = chartTrial2_1->Series[0];
+	chartTrial2_1->Titles->Add("IL＝F（U1）");
+	ChartArea ^ c = chartTrial2_1->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电压";
+	c->AxisY->Title = "电流";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(0), Convert::ToSingle(labeltrial2_1IL_1->Text));
+		s->Points->AddXY(Convert::ToSingle(0.5), Convert::ToSingle(labeltrial2_1IL_2->Text));
+		s->Points->AddXY(Convert::ToSingle(1), Convert::ToSingle(labeltrial2_1IL_3->Text));
+		s->Points->AddXY(Convert::ToSingle(1.5), Convert::ToSingle(labeltrial2_1IL_4->Text));
+		s->Points->AddXY(Convert::ToSingle(2), Convert::ToSingle(labeltrial2_1IL_5->Text));
+		s->Points->AddXY(Convert::ToSingle(2.5), Convert::ToSingle(labeltrial2_1IL_6->Text));
+		s->Points->AddXY(Convert::ToSingle(3), Convert::ToSingle(labeltrial2_1IL_7->Text));
+		s->Points->AddXY(Convert::ToSingle(3.5), Convert::ToSingle(labeltrial2_1IL_8->Text));
+	}
+	catch (System::Exception^ E) {
+
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+
+void VCVS实验::LoadTrial2_2() {
+	Series ^s = chartTrial2_2->Series[0];
+	chartTrial2_2->Titles->Add("IL＝F（U2）");
+	ChartArea ^ c = chartTrial2_2->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电压";
+	c->AxisY->Title = "电流";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_1->Text), Convert::ToSingle(labeltrial2_2IL_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_2->Text), Convert::ToSingle(labeltrial2_2IL_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_3->Text), Convert::ToSingle(labeltrial2_2IL_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_4->Text), Convert::ToSingle(labeltrial2_2IL_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_5->Text), Convert::ToSingle(labeltrial2_2IL_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_6->Text), Convert::ToSingle(labeltrial2_2IL_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial2_2V2_7->Text), Convert::ToSingle(labeltrial2_2IL_7->Text));
+	}
+	catch (System::Exception^ E) {
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+void VCVS实验::LoadTrial3_1() {
+	Series ^s = chartTrial3_1->Series[0];
+	chartTrial3_1->Titles->Add("U2=F（I1）");
+	ChartArea ^ c = chartTrial3_1->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电流";
+	c->AxisY->Title = "电压";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_1->Text), Convert::ToSingle(labeltrial3_1V2_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_2->Text), Convert::ToSingle(labeltrial3_1V2_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_3->Text), Convert::ToSingle(labeltrial3_1V2_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_4->Text), Convert::ToSingle(labeltrial3_1V2_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_5->Text), Convert::ToSingle(labeltrial3_1V2_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_6->Text), Convert::ToSingle(labeltrial3_1V2_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_7->Text), Convert::ToSingle(labeltrial3_1V2_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_1I1_8->Text), Convert::ToSingle(labeltrial3_1V2_8->Text));
+	}
+	catch (System::Exception^ E) {
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+void VCVS实验::LoadTrial3_2(){
+	Series ^s = chartTrial3_2->Series[0];
+	chartTrial3_2->Titles->Add("U2＝F（IL）");
+	ChartArea ^ c = chartTrial3_2->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电流";
+	c->AxisY->Title = "电压";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_1->Text), Convert::ToSingle(labeltrial3_2U2_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_2->Text), Convert::ToSingle(labeltrial3_2U2_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_3->Text), Convert::ToSingle(labeltrial3_2U2_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_4->Text), Convert::ToSingle(labeltrial3_2U2_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_5->Text), Convert::ToSingle(labeltrial3_2U2_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_6->Text), Convert::ToSingle(labeltrial3_2U2_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_7->Text), Convert::ToSingle(labeltrial3_2U2_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial3_2IL_8->Text), Convert::ToSingle(labeltrial3_2U2_8->Text));
+	}
+	catch (System::Exception^ E) {
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+void VCVS实验::LoadTrial4_1(){
+	Series ^s = chartTrial4_1->Series[0];
+	chartTrial4_1->Titles->Add("IL＝F（I1）");
+	ChartArea ^ c = chartTrial4_1->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "I1";
+	c->AxisY->Title = "IL";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_1->Text), Convert::ToSingle(labeltrial4_1IL_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_2->Text), Convert::ToSingle(labeltrial4_1IL_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_3->Text), Convert::ToSingle(labeltrial4_1IL_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_4->Text), Convert::ToSingle(labeltrial4_1IL_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_5->Text), Convert::ToSingle(labeltrial4_1IL_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_6->Text), Convert::ToSingle(labeltrial4_1IL_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_7->Text), Convert::ToSingle(labeltrial4_1IL_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_1I1_8->Text), Convert::ToSingle(labeltrial4_1IL_8->Text));
+	}
+	catch (System::Exception^ E) {
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}
+void VCVS实验::LoadTrial4_2(){
+	Series ^s = chartTrial4_2->Series[0];
+	chartTrial4_2->Titles->Add("IL＝F（U2）");
+	ChartArea ^ c = chartTrial4_2->ChartAreas[0];
+	c->AxisX->Interval = 2;
+	c->AxisY->Interval = 2;
+	c->AxisX->ScrollBar->IsPositionedInside = true;
+	c->AxisX->ScrollBar->Enabled = true;
+	c->AxisX->Title = "电压";
+	c->AxisY->Title = "电流";
+	c->AxisY->TextOrientation = TextOrientation::Horizontal;
+	s->ChartType = SeriesChartType::Spline;
+	s->IsVisibleInLegend = false;
+	c->AxisX->LabelStyle->Format = "N1";
+	c->AxisX->MajorGrid->LineColor = Color::Transparent;
+	c->AxisY->MajorGrid->LineColor = Color::Transparent;
+	s->Points->Clear();
+	try {
+		s->Name = "";
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_1->Text), Convert::ToSingle(labeltrial4_2IL_1->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_2->Text), Convert::ToSingle(labeltrial4_2IL_2->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_3->Text), Convert::ToSingle(labeltrial4_2IL_3->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_4->Text), Convert::ToSingle(labeltrial4_2IL_4->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_5->Text), Convert::ToSingle(labeltrial4_2IL_5->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_6->Text), Convert::ToSingle(labeltrial4_2IL_6->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_7->Text), Convert::ToSingle(labeltrial4_2IL_7->Text));
+		s->Points->AddXY(Convert::ToSingle(labeltrial4_2U2_8->Text), Convert::ToSingle(labeltrial4_2IL_8->Text));
+	}
+	catch (System::Exception^ E) {
+	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+}

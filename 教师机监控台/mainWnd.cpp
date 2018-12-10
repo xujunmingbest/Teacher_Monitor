@@ -2,6 +2,7 @@
 #include "lookStuCom.h"
 #include "tool.h"
 #include "数据接收控制.h"
+#include "无线电源控制主界面.h"
 #include "元件伏安特性测试.h"
 #include "TodayTrial.h"
 using namespace 教师机监控台;
@@ -72,6 +73,18 @@ void mainWnd::open成绩查询() {
 
 }
 
+void mainWnd::open无线电源控制() {
+	bool f = GetWindowsChild("无线电源控制主界面");
+	if (!f) {
+		CloseAllMidchild();
+		无线控制 ^f = gcnew 无线控制;
+		f->MdiParent = this;
+		f->Parent = this->panel1;
+		f->Name = "无线电源控制主界面";
+		f->WindowState = FormWindowState::Maximized;
+		f->Show();
+	}
+}
 
 void mainWnd::CloseAllMidchild() {
 	panel1->Controls->Clear();

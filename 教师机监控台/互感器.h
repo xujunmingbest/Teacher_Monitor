@@ -183,7 +183,9 @@ private: System::Windows::Forms::GroupBox^  groupBox1;
 
 private: System::Windows::Forms::Label^  label52;
 private: System::Windows::Forms::Label^  label53;
-private: System::Windows::Forms::TextBox^  textBox1;
+private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
+
+
 
 private: System::Windows::Forms::Button^  button4;
 private: System::Windows::Forms::Label^  label56;
@@ -341,12 +343,14 @@ private: System::Windows::Forms::Label^  label105;
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
-			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial1_2结论 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_1结论 = (gcnew System::Windows::Forms::Label());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->label105 = (gcnew System::Windows::Forms::Label());
 			this->label52 = (gcnew System::Windows::Forms::Label());
 			this->label53 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->label56 = (gcnew System::Windows::Forms::Label());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
@@ -371,10 +375,8 @@ private: System::Windows::Forms::Label^  label105;
 			this->textBox13 = (gcnew System::Windows::Forms::TextBox());
 			this->label64 = (gcnew System::Windows::Forms::Label());
 			this->label65 = (gcnew System::Windows::Forms::Label());
-			this->label105 = (gcnew System::Windows::Forms::Label());
-			this->label18 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_1结论 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_2结论 = (gcnew System::Windows::Forms::Label());
+			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
+			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->groupBox7->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			this->groupBox3->SuspendLayout();
@@ -699,6 +701,7 @@ private: System::Windows::Forms::Label^  label105;
 			this->groupBox2->TabIndex = 203;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"互感器 实验内容3";
+			this->groupBox2->Enter += gcnew System::EventHandler(this, &互感器::groupBox2_Enter);
 			// 
 			// textBoxTrial3_Line2_6
 			// 
@@ -1586,6 +1589,7 @@ private: System::Windows::Forms::Label^  label105;
 			this->button3->TabIndex = 331;
 			this->button3->Text = L"打印";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &互感器::button3_Click);
 			// 
 			// button2
 			// 
@@ -1595,6 +1599,7 @@ private: System::Windows::Forms::Label^  label105;
 			this->button2->TabIndex = 330;
 			this->button2->Text = L"预览";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &互感器::button2_Click);
 			// 
 			// groupBox5
 			// 
@@ -1642,21 +1647,6 @@ private: System::Windows::Forms::Label^  label105;
 			this->panel1->Size = System::Drawing::Size(1112, 1096);
 			this->panel1->TabIndex = 332;
 			// 
-			// printDocument1
-			// 
-			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &互感器::printDocument1_PrintPage);
-			// 
-			// printPreviewDialog1
-			// 
-			this->printPreviewDialog1->AutoScrollMargin = System::Drawing::Size(0, 0);
-			this->printPreviewDialog1->AutoScrollMinSize = System::Drawing::Size(0, 0);
-			this->printPreviewDialog1->ClientSize = System::Drawing::Size(400, 300);
-			this->printPreviewDialog1->Document = this->printDocument1;
-			this->printPreviewDialog1->Enabled = true;
-			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
-			this->printPreviewDialog1->Name = L"printPreviewDialog1";
-			this->printPreviewDialog1->Visible = false;
-			// 
 			// groupBox1
 			// 
 			this->groupBox1->Controls->Add(this->textBoxTrial1_2结论);
@@ -1665,7 +1655,7 @@ private: System::Windows::Forms::Label^  label105;
 			this->groupBox1->Controls->Add(this->label105);
 			this->groupBox1->Controls->Add(this->label52);
 			this->groupBox1->Controls->Add(this->label53);
-			this->groupBox1->Controls->Add(this->textBox1);
+			this->groupBox1->Controls->Add(this->textBoxTrial1Score);
 			this->groupBox1->Controls->Add(this->button4);
 			this->groupBox1->Controls->Add(this->label56);
 			this->groupBox1->Controls->Add(this->textBox2);
@@ -1700,6 +1690,46 @@ private: System::Windows::Forms::Label^  label105;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"互感器 实验内容1";
 			// 
+			// textBoxTrial1_2结论
+			// 
+			this->textBoxTrial1_2结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_2结论->Location = System::Drawing::Point(127, 102);
+			this->textBoxTrial1_2结论->Name = L"textBoxTrial1_2结论";
+			this->textBoxTrial1_2结论->Size = System::Drawing::Size(952, 59);
+			this->textBoxTrial1_2结论->TabIndex = 240;
+			this->textBoxTrial1_2结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_1结论
+			// 
+			this->textBoxTrial1_1结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_1结论->Location = System::Drawing::Point(127, 26);
+			this->textBoxTrial1_1结论->Name = L"textBoxTrial1_1结论";
+			this->textBoxTrial1_1结论->Size = System::Drawing::Size(952, 55);
+			this->textBoxTrial1_1结论->TabIndex = 204;
+			this->textBoxTrial1_1结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label18
+			// 
+			this->label18->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label18->ForeColor = System::Drawing::Color::Black;
+			this->label18->Location = System::Drawing::Point(10, 108);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(104, 56);
+			this->label18->TabIndex = 239;
+			this->label18->Text = L"实验结论2";
+			// 
+			// label105
+			// 
+			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label105->ForeColor = System::Drawing::Color::Black;
+			this->label105->Location = System::Drawing::Point(10, 29);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(111, 52);
+			this->label105->TabIndex = 237;
+			this->label105->Text = L"实验结论1";
+			// 
 			// label52
 			// 
 			this->label52->AutoSize = true;
@@ -1722,12 +1752,13 @@ private: System::Windows::Forms::Label^  label105;
 			this->label53->TabIndex = 224;
 			this->label53->Text = L"本项目总分30";
 			// 
-			// textBox1
+			// textBoxTrial1Score
 			// 
-			this->textBox1->Location = System::Drawing::Point(357, 178);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(152, 30);
-			this->textBox1->TabIndex = 223;
+			this->textBoxTrial1Score->Location = System::Drawing::Point(357, 178);
+			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
+			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
+			this->textBoxTrial1Score->TabIndex = 223;
+			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &互感器::textBox1_TextChanged);
 			// 
 			// button4
 			// 
@@ -1979,52 +2010,27 @@ private: System::Windows::Forms::Label^  label105;
 			this->label65->TabIndex = 69;
 			this->label65->Text = L"4K";
 			// 
-			// label105
+			// printDocument1
 			// 
-			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label105->ForeColor = System::Drawing::Color::Black;
-			this->label105->Location = System::Drawing::Point(10, 29);
-			this->label105->Name = L"label105";
-			this->label105->Size = System::Drawing::Size(111, 52);
-			this->label105->TabIndex = 237;
-			this->label105->Text = L"实验结论1";
+			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &互感器::printDocument1_PrintPage);
 			// 
-			// label18
+			// printPreviewDialog1
 			// 
-			this->label18->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label18->ForeColor = System::Drawing::Color::Black;
-			this->label18->Location = System::Drawing::Point(10, 108);
-			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(104, 56);
-			this->label18->TabIndex = 239;
-			this->label18->Text = L"实验结论2";
-			// 
-			// textBoxTrial1_1结论
-			// 
-			this->textBoxTrial1_1结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_1结论->Location = System::Drawing::Point(127, 26);
-			this->textBoxTrial1_1结论->Name = L"textBoxTrial1_1结论";
-			this->textBoxTrial1_1结论->Size = System::Drawing::Size(952, 55);
-			this->textBoxTrial1_1结论->TabIndex = 204;
-			this->textBoxTrial1_1结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_2结论
-			// 
-			this->textBoxTrial1_2结论->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_2结论->Location = System::Drawing::Point(127, 102);
-			this->textBoxTrial1_2结论->Name = L"textBoxTrial1_2结论";
-			this->textBoxTrial1_2结论->Size = System::Drawing::Size(952, 59);
-			this->textBoxTrial1_2结论->TabIndex = 240;
-			this->textBoxTrial1_2结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			this->printPreviewDialog1->AutoScrollMargin = System::Drawing::Size(0, 0);
+			this->printPreviewDialog1->AutoScrollMinSize = System::Drawing::Size(0, 0);
+			this->printPreviewDialog1->ClientSize = System::Drawing::Size(400, 300);
+			this->printPreviewDialog1->Document = this->printDocument1;
+			this->printPreviewDialog1->Enabled = true;
+			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
+			this->printPreviewDialog1->Name = L"printPreviewDialog1";
+			this->printPreviewDialog1->Visible = false;
 			// 
 			// 互感器
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1450, 727);
+			this->ClientSize = System::Drawing::Size(1492, 727);
 			this->Controls->Add(this->panel1);
 			this->Name = L"互感器";
 			this->Text = L"互感器";
@@ -2076,6 +2082,17 @@ private: System::Void textBoxTrial4Score_TextChanged(System::Object^  sender, Sy
 	CalScores();
 }
 private: System::Void label18_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	CalScores();
+}
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+	Priview();
+}
+private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
+	Print();
+}
+private: System::Void groupBox2_Enter(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

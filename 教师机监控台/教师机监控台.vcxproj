@@ -112,10 +112,12 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>E:/c++/libsocket/Release/libsocket.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <HeapReserveSize>10000000</HeapReserveSize>
-      <HeapCommitSize>10000000</HeapCommitSize>
-      <StackReserveSize>10000000</StackReserveSize>
-      <StackCommitSize>10000000</StackCommitSize>
+      <HeapReserveSize>50000000</HeapReserveSize>
+      <HeapCommitSize>
+      </HeapCommitSize>
+      <StackReserveSize>50000000</StackReserveSize>
+      <StackCommitSize>
+      </StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,6 +136,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>D:\software\DockPanel_2.4_Bin\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\c++\libfilesql\libfilesql\libfilesql.h" />
@@ -150,6 +155,7 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="monitorTrial.h" />
+    <ClInclude Include="NumberHandle.h" />
     <ClInclude Include="RC网络的频率特性.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -217,10 +223,16 @@
     <ClInclude Include="互感器监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="交流电源.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="仪表量程的扩展.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="仪表量程的扩展监控.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="信号源控制.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="元件伏安特性测试.h">
@@ -271,6 +283,21 @@
     <ClInclude Include="基本电工仪表的使用与测量误差的计算监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="总电源.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="总电源全班.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="总电源第一组.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="总电源第三组.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="总电源第二组.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="成绩接收.h" />
     <ClInclude Include="成绩查询.h">
       <FileType>CppForm</FileType>
@@ -281,7 +308,16 @@
     <ClInclude Include="戴维南定理监控.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="扫频参数设置.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="数据接收控制.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="无线控制.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="无线电源控制主界面.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="日光灯功率因数的提高.h">
@@ -309,6 +345,12 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="监控实验汇总.h" />
+    <ClInclude Include="直流电源1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="直流电源2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="负阻抗变换器.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -392,11 +434,17 @@
     <EmbeddedResource Include="互感器监控.resx">
       <DependentUpon>互感器监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="交流电源.resx">
+      <DependentUpon>交流电源.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="仪表量程的扩展.resx">
       <DependentUpon>仪表量程的扩展.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="仪表量程的扩展监控.resx">
       <DependentUpon>仪表量程的扩展监控.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="信号源控制.resx">
+      <DependentUpon>信号源控制.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="元件伏安特性测试.resx">
       <DependentUpon>元件伏安特性测试.h</DependentUpon>
@@ -446,6 +494,21 @@
     <EmbeddedResource Include="基本电工仪表的使用与测量误差的计算监控.resx">
       <DependentUpon>基本电工仪表的使用与测量误差的计算监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="总电源.resx">
+      <DependentUpon>总电源.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源全班.resx">
+      <DependentUpon>总电源全班.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第一组.resx">
+      <DependentUpon>总电源第一组.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第三组.resx">
+      <DependentUpon>总电源第三组.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第二组.resx">
+      <DependentUpon>总电源第二组.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="成绩查询.resx">
       <DependentUpon>成绩查询.h</DependentUpon>
     </EmbeddedResource>
@@ -455,8 +518,17 @@
     <EmbeddedResource Include="戴维南定理监控.resx">
       <DependentUpon>戴维南定理监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="扫频参数设置.resx">
+      <DependentUpon>扫频参数设置.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="数据接收控制.resx">
       <DependentUpon>数据接收控制.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="无线控制.resx">
+      <DependentUpon>无线控制.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="无线电源控制主界面.resx">
+      <DependentUpon>无线电源控制主界面.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="日光灯功率因数的提高.resx">
       <DependentUpon>日光灯功率因数的提高.h</DependentUpon>
@@ -482,6 +554,12 @@
     <EmbeddedResource Include="电路状态轨迹的观测监控.resx">
       <DependentUpon>电路状态轨迹的观测监控.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="直流电源1.resx">
+      <DependentUpon>直流电源1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="直流电源2.resx">
+      <DependentUpon>直流电源2.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="负阻抗变换器.resx">
       <DependentUpon>负阻抗变换器.h</DependentUpon>
     </EmbeddedResource>
@@ -496,6 +574,7 @@
     <ClCompile Include="mainWnd.cpp" />
     <ClCompile Include="monitorLoad.cpp" />
     <ClCompile Include="monitorTrial.cpp" />
+    <ClCompile Include="NumberHandle.cpp" />
     <ClCompile Include="RC网络的频率特性.cpp" />
     <ClCompile Include="RLC串联谐振电路的研究.cpp" />
     <ClCompile Include="RLC元件阻抗特性的测定.cpp" />
@@ -521,6 +600,8 @@
     <ClCompile Include="成绩接收.cpp" />
     <ClCompile Include="成绩查询.cpp" />
     <ClCompile Include="戴维南定理.cpp" />
+    <ClCompile Include="无线控制.cpp" />
+    <ClCompile Include="无线电源控制主界面.cpp" />
     <ClCompile Include="日光灯功率因数的提高.cpp" />
     <ClCompile Include="最大功率传输条件的测定.cpp" />
     <ClCompile Include="电压源与电流源的等效变换.cpp" />

@@ -53,6 +53,7 @@ void 成绩查询::LoadcomboBox3(int index) {
 void 成绩查询::OpenTrial(string &TrialName) {
 	if (TrialName.find(Grades[1], 0) != TrialName.npos) {
 		元件伏安特性测试 ^ f = gcnew 元件伏安特性测试(TrialName);
+		f->Load元件伏安特性测试Data(TrialName);
 		f->ShowDialog();
 	}
 	else if(TrialName.find(Grades[2], 0) != TrialName.npos) {

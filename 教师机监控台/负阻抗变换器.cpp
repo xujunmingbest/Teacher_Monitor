@@ -194,5 +194,8 @@ void 负阻抗变换器::chart_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s1->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s1->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
+	s2->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s2->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }

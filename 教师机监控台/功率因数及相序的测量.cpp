@@ -16,6 +16,10 @@ void 功率因数及相序的测量::SaveCorrectGrades() {
 		s.ti.totalscore = Convert::ToInt32(labelTotalGrade->Text);
 		if (s.ti.totalscore == -1) s.ti.totalscore = 0;
 
+		textBoxTrial1Score->Text = s.score1.ToString();
+		textBoxTrial2Score->Text = s.score2.ToString();
+
+		int g2 = Convert::ToInt32(textBoxTrial2Score->Text);
 
 		if (f.WriteStruct(*fileName, string((char*)&s, sizeof(ST_功率因数及相序的测量)))) {
 
@@ -34,8 +38,8 @@ void 功率因数及相序的测量::SaveCorrectGrades() {
 void 功率因数及相序的测量::CalScores() {
 	try {
 		int g1 = Convert::ToInt32(textBoxTrial1Score->Text);
-
-		labelTotalGrade->Text = (g1).ToString();
+		int g2 = Convert::ToInt32(textBoxTrial2Score->Text);
+		labelTotalGrade->Text = (g1 + g2).ToString();
 	}
 	catch (Exception^e) {
 
@@ -90,6 +94,8 @@ void 功率因数及相序的测量::Load功率因数及相序的测量Data(string &filename) {
 	textBoxteacher->Text = gcnew String(ti.teacher);
 
 	labelTotalGrade->Text = ti.totalscore.ToString();
+	textBoxTrial1Score->Text = d.score1.ToString();
+	textBoxTrial2Score->Text = d.score2.ToString();
 
 	labelTrial2_U_1->Text = gcnew String(d.Trial2_U_1);
 	labelTrial2_U_2->Text = gcnew String(d.Trial2_U_2);

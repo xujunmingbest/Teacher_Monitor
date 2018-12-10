@@ -142,6 +142,7 @@ namespace 教师机监控台 {
 			this->comboBox3->Name = L"comboBox3";
 			this->comboBox3->Size = System::Drawing::Size(327, 28);
 			this->comboBox3->TabIndex = 13;
+			this->comboBox3->SelectedIndexChanged += gcnew System::EventHandler(this, &成绩查询::comboBox3_SelectedIndexChanged);
 			// 
 			// comboBox2
 			// 
@@ -426,6 +427,8 @@ private: System::Void listView1_ColumnClick(System::Object^  sender, System::Win
 	catch (Exception ^e) {
 		Console::WriteLine(e->Message);
 	}
+}
+private: System::Void comboBox3_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }

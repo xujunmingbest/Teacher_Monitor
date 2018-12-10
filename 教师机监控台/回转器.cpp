@@ -100,7 +100,6 @@ void 回转器::Load回转器Data(string &filename) {
 	textBoxScore4->Text = d.score3.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
-	fileSql f;
 	string Name = string(BMPTEMP) + "回转器";
 	String^ ImageLocationTrial1_U = gcnew String(string(Name + "Trial1_U.bmp").c_str());
 	String^ ImageLocationTrial1_I = gcnew String(string(Name + "Trial1_I.bmp").c_str());

@@ -18,6 +18,8 @@ namespace 教师机监控台 {
 		单相铁心变压器特性的测试(void)
 		{
 			InitializeComponent();
+			chartTrial2_load();
+			chartTrial3_load();
 			//
 			//TODO:  在此处添加构造函数代码
 			//

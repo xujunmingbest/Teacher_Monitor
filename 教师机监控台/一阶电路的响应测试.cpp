@@ -113,19 +113,13 @@ void 一阶电路的响应测试::Load一阶电路的响应测试Data(string &filename) {
 	IO::File::Delete(ImageLocationTrial3_in);
 	IO::File::Delete(ImageLocationTrial3_out);
 	f.Writefile(T_to_string(ImageLocationTrial1_in), string(d.Trial1Bmp_in, sizeof(d.Trial1Bmp_in)));
-	f.Writefile(T_to_string(ImageLocationTrial1_out), string(d.Trial1Bmp_out, sizeof(d.Trial1Bmp_out)));
 	f.Writefile(T_to_string(ImageLocationTrial2_in), string(d.Trial2Bmp_in, sizeof(d.Trial2Bmp_in)));
-	f.Writefile(T_to_string(ImageLocationTrial2_out), string(d.Trial2Bmp_out, sizeof(d.Trial2Bmp_out)));
 	f.Writefile(T_to_string(ImageLocationTrial3_in), string(d.Trial3Bmp_in, sizeof(d.Trial3Bmp_in)));
-	f.Writefile(T_to_string(ImageLocationTrial3_out), string(d.Trial3Bmp_out, sizeof(d.Trial3Bmp_out)));
 
 	textBoxtrialτ->Text = gcnew String(d.τ);
 	pictureBoxTrial1_in->ImageLocation = ImageLocationTrial1_in;
-	pictureBoxTrial1_out->ImageLocation = ImageLocationTrial1_out;
 	pictureBoxTrial2_in->ImageLocation = ImageLocationTrial2_in;
-	pictureBoxTrial2_out->ImageLocation = ImageLocationTrial2_out;
 	pictureBoxTrial3_in->ImageLocation = ImageLocationTrial3_in;
-	pictureBoxTrial3_out->ImageLocation = ImageLocationTrial3_out;
 
 	label结论->Text = gcnew String(d.summing_up);
 }

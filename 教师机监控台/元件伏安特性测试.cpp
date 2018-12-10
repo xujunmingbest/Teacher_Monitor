@@ -377,7 +377,8 @@ void 元件伏安特性测试::chart线性_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 void 元件伏安特性测试::chart白炽_load() {
 	Series ^s = chart白炽->Series[0];
@@ -413,7 +414,8 @@ void 元件伏安特性测试::chart白炽_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 
 void 元件伏安特性测试::chart稳压_load() {
@@ -460,7 +462,8 @@ void 元件伏安特性测试::chart稳压_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 void 元件伏安特性测试::chart锗管_load() {
 	Series ^s = chart锗管->Series[0];
@@ -506,6 +509,8 @@ void 元件伏安特性测试::chart锗管_load() {
 	catch (System::Exception^ E) {
 
 	}
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 void 元件伏安特性测试::chart硅管_load() {
 	Series ^s = chart硅管->Series[0];
@@ -551,7 +556,8 @@ void 元件伏安特性测试::chart硅管_load() {
 	catch (System::Exception^ E) {
 
 	}
-
+	s->Sort(System::Windows::Forms::DataVisualization::Charting::PointSortOrder::Descending, "X");
+	s->MarkerStyle = MarkerStyle::Circle;  //获取标记样式
 }
 
 

@@ -109,6 +109,9 @@
     <Filter Include="成绩查询\互感器">
       <UniqueIdentifier>{6cc84ca3-a71c-4a9c-a0d7-10d2b925e2d3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="无线电源控制">
+      <UniqueIdentifier>{52014a5b-29a7-476b-aad2-8690e9b90bf3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Login.h">
@@ -306,6 +309,45 @@
     <ClInclude Include="互感器.h">
       <Filter>成绩查询\互感器</Filter>
     </ClInclude>
+    <ClInclude Include="无线电源控制主界面.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="直流电源1.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberHandle.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="直流电源2.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="交流电源.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="总电源.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="总电源第一组.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="总电源第二组.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="总电源第三组.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="总电源全班.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="信号源控制.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="扫频参数设置.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
+    <ClInclude Include="无线控制.h">
+      <Filter>无线电源控制</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -415,6 +457,15 @@
     </ClCompile>
     <ClCompile Include="互感器.cpp">
       <Filter>成绩查询\互感器</Filter>
+    </ClCompile>
+    <ClCompile Include="无线电源控制主界面.cpp">
+      <Filter>无线电源控制</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberHandle.cpp">
+      <Filter>无线电源控制</Filter>
+    </ClCompile>
+    <ClCompile Include="无线控制.cpp">
+      <Filter>无线电源控制</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -581,6 +632,45 @@
       <Filter>资源文件</Filter>
     </EmbeddedResource>
     <EmbeddedResource Include="功率因数及相序的测量监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="互感器.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="互感器监控.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="无线电源控制主界面.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="直流电源1.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="交流电源.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="信号源控制.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源全班.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第一组.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第三组.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="总电源第二组.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="直流电源2.resx">
+      <Filter>资源文件</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="扫频参数设置.resx">
       <Filter>资源文件</Filter>
     </EmbeddedResource>
   </ItemGroup>

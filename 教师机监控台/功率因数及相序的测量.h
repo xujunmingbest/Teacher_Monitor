@@ -130,7 +130,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label5;
 private: System::Windows::Forms::Label^  label1;
 private: System::Windows::Forms::Label^  label2;
-private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
+private: System::Windows::Forms::TextBox^  textBoxTrial2Score;
+
 private: System::Windows::Forms::Button^  button25;
 private: System::Windows::Forms::Button^  button26;
 private: System::Windows::Forms::GroupBox^  groupBox5;
@@ -152,7 +153,9 @@ private: System::Windows::Forms::Label^  label4;
 private: System::Windows::Forms::Label^  label24;
 private: System::Windows::Forms::Label^  label105;
 private: System::Windows::Forms::Label^  label25;
-private: System::Windows::Forms::TextBox^  textBox1;
+private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
+
+
 
 	private:
 		/// <summary>
@@ -202,7 +205,7 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->textBoxTrial2_φ_1 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
 			this->labelTrial2_P_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_I_4 = (gcnew System::Windows::Forms::Label());
 			this->labelTrial2_UC_4 = (gcnew System::Windows::Forms::Label());
@@ -246,14 +249,14 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button27 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->label105 = (gcnew System::Windows::Forms::Label());
+			this->label25 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->label105 = (gcnew System::Windows::Forms::Label());
-			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
-			this->label24 = (gcnew System::Windows::Forms::Label());
-			this->label25 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->groupBox5->SuspendLayout();
@@ -537,7 +540,7 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->groupBox1->Controls->Add(this->textBoxTrial2_φ_1);
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Controls->Add(this->label2);
-			this->groupBox1->Controls->Add(this->textBoxTrial1Score);
+			this->groupBox1->Controls->Add(this->textBoxTrial2Score);
 			this->groupBox1->Controls->Add(this->labelTrial2_P_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_I_4);
 			this->groupBox1->Controls->Add(this->labelTrial2_UC_4);
@@ -680,13 +683,13 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->label2->TabIndex = 224;
 			this->label2->Text = L"本项目总分30";
 			// 
-			// textBoxTrial1Score
+			// textBoxTrial2Score
 			// 
-			this->textBoxTrial1Score->Location = System::Drawing::Point(472, 360);
-			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
-			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
-			this->textBoxTrial1Score->TabIndex = 223;
-			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &功率因数及相序的测量::textBoxTrial1Score_TextChanged);
+			this->textBoxTrial2Score->Location = System::Drawing::Point(472, 360);
+			this->textBoxTrial2Score->Name = L"textBoxTrial2Score";
+			this->textBoxTrial2Score->Size = System::Drawing::Size(152, 30);
+			this->textBoxTrial2Score->TabIndex = 223;
+			this->textBoxTrial2Score->TextChanged += gcnew System::EventHandler(this, &功率因数及相序的测量::textBoxTrial1Score_TextChanged);
 			// 
 			// labelTrial2_P_4
 			// 
@@ -1125,6 +1128,73 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->panel1->Size = System::Drawing::Size(1123, 1059);
 			this->panel1->TabIndex = 332;
 			// 
+			// groupBox2
+			// 
+			this->groupBox2->Controls->Add(this->label4);
+			this->groupBox2->Controls->Add(this->label24);
+			this->groupBox2->Controls->Add(this->label105);
+			this->groupBox2->Controls->Add(this->label25);
+			this->groupBox2->Controls->Add(this->textBoxTrial1Score);
+			this->groupBox2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->groupBox2->ForeColor = System::Drawing::Color::Red;
+			this->groupBox2->Location = System::Drawing::Point(17, 354);
+			this->groupBox2->Name = L"groupBox2";
+			this->groupBox2->Size = System::Drawing::Size(1084, 163);
+			this->groupBox2->TabIndex = 234;
+			this->groupBox2->TabStop = false;
+			this->groupBox2->Text = L"功率因数及相序的测量 实验内容1";
+			// 
+			// label4
+			// 
+			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label4->Location = System::Drawing::Point(125, 45);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(959, 74);
+			this->label4->TabIndex = 204;
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// label24
+			// 
+			this->label24->AutoSize = true;
+			this->label24->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label24->Location = System::Drawing::Point(333, 130);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(89, 20);
+			this->label24->TabIndex = 225;
+			this->label24->Text = L"请打分：";
+			// 
+			// label105
+			// 
+			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label105->ForeColor = System::Drawing::Color::Black;
+			this->label105->Location = System::Drawing::Point(26, 50);
+			this->label105->Name = L"label105";
+			this->label105->Size = System::Drawing::Size(95, 57);
+			this->label105->TabIndex = 332;
+			this->label105->Text = L"实验结论";
+			// 
+			// label25
+			// 
+			this->label25->AutoSize = true;
+			this->label25->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label25->Location = System::Drawing::Point(610, 130);
+			this->label25->Name = L"label25";
+			this->label25->Size = System::Drawing::Size(129, 20);
+			this->label25->TabIndex = 224;
+			this->label25->Text = L"本项目总分30";
+			// 
+			// textBoxTrial1Score
+			// 
+			this->textBoxTrial1Score->Location = System::Drawing::Point(435, 127);
+			this->textBoxTrial1Score->Name = L"textBoxTrial1Score";
+			this->textBoxTrial1Score->Size = System::Drawing::Size(152, 30);
+			this->textBoxTrial1Score->TabIndex = 223;
+			this->textBoxTrial1Score->TextChanged += gcnew System::EventHandler(this, &功率因数及相序的测量::textBox1_TextChanged);
+			// 
 			// printDocument1
 			// 
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &功率因数及相序的测量::printDocument1_PrintPage);
@@ -1140,78 +1210,12 @@ private: System::Windows::Forms::TextBox^  textBox1;
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
-			// label105
-			// 
-			this->label105->Font = (gcnew System::Drawing::Font(L"宋体", 10.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label105->ForeColor = System::Drawing::Color::Black;
-			this->label105->Location = System::Drawing::Point(26, 50);
-			this->label105->Name = L"label105";
-			this->label105->Size = System::Drawing::Size(95, 57);
-			this->label105->TabIndex = 332;
-			this->label105->Text = L"实验结论";
-			// 
-			// groupBox2
-			// 
-			this->groupBox2->Controls->Add(this->label4);
-			this->groupBox2->Controls->Add(this->label24);
-			this->groupBox2->Controls->Add(this->label105);
-			this->groupBox2->Controls->Add(this->label25);
-			this->groupBox2->Controls->Add(this->textBox1);
-			this->groupBox2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->groupBox2->ForeColor = System::Drawing::Color::Red;
-			this->groupBox2->Location = System::Drawing::Point(17, 354);
-			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(1084, 163);
-			this->groupBox2->TabIndex = 234;
-			this->groupBox2->TabStop = false;
-			this->groupBox2->Text = L"功率因数及相序的测量 实验内容1";
-			// 
-			// label24
-			// 
-			this->label24->AutoSize = true;
-			this->label24->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label24->Location = System::Drawing::Point(333, 130);
-			this->label24->Name = L"label24";
-			this->label24->Size = System::Drawing::Size(89, 20);
-			this->label24->TabIndex = 225;
-			this->label24->Text = L"请打分：";
-			// 
-			// label25
-			// 
-			this->label25->AutoSize = true;
-			this->label25->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label25->Location = System::Drawing::Point(610, 130);
-			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(129, 20);
-			this->label25->TabIndex = 224;
-			this->label25->Text = L"本项目总分30";
-			// 
-			// textBox1
-			// 
-			this->textBox1->Location = System::Drawing::Point(435, 127);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(152, 30);
-			this->textBox1->TabIndex = 223;
-			// 
-			// label4
-			// 
-			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label4->Location = System::Drawing::Point(125, 45);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(959, 74);
-			this->label4->TabIndex = 204;
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
 			// 功率因数及相序的测量
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1539, 705);
+			this->ClientSize = System::Drawing::Size(1560, 705);
 			this->Controls->Add(this->panel1);
 			this->Name = L"功率因数及相序的测量";
 			this->Text = L"功率因数及相序的测量";
@@ -1263,6 +1267,9 @@ private: System::Void textBoxTrial1Score_TextChanged(System::Object^  sender, Sy
 	CalScores();
 }
 private: System::Void groupBox1_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	CalScores();
 }
 };
 }

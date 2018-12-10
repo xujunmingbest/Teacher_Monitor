@@ -1,6 +1,7 @@
 #pragma once
 #include "tool.h"
 #include "成绩查询.h"
+#include "无线控制.h"
 namespace 教师机监控台 {
 
 	using namespace System;
@@ -44,6 +45,11 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel1;
 
 	private: System::Windows::Forms::ToolStripMenuItem^  查询ToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem4;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  无线电源控制ToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem2;
+	private: System::Windows::Forms::ToolStripMenuItem^  toolStripMenuItem3;
 
 
 
@@ -66,6 +72,11 @@ namespace 教师机监控台 {
 			this->查看学生电脑ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->查询ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->无线电源控制ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem2 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem3 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripMenuItem4 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -74,9 +85,10 @@ namespace 教师机监控台 {
 			this->menuStrip1->AutoSize = false;
 			this->menuStrip1->BackColor = System::Drawing::Color::Silver;
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(40, 40);
-			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->查看学生电脑ToolStripMenuItem,
-					this->查询ToolStripMenuItem
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(7) {
+				this->toolStripMenuItem4,
+					this->查看学生电脑ToolStripMenuItem, this->toolStripMenuItem1, this->查询ToolStripMenuItem, this->toolStripMenuItem2, this->无线电源控制ToolStripMenuItem,
+					this->toolStripMenuItem3
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -110,6 +122,38 @@ namespace 教师机监控台 {
 			this->panel1->Size = System::Drawing::Size(1220, 626);
 			this->panel1->TabIndex = 2;
 			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &mainWnd::panel1_Paint);
+			// 
+			// 无线电源控制ToolStripMenuItem
+			// 
+			this->无线电源控制ToolStripMenuItem->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"无线电源控制ToolStripMenuItem.Image")));
+			this->无线电源控制ToolStripMenuItem->Name = L"无线电源控制ToolStripMenuItem";
+			this->无线电源控制ToolStripMenuItem->Size = System::Drawing::Size(151, 75);
+			this->无线电源控制ToolStripMenuItem->Text = L"无线电源控制";
+			this->无线电源控制ToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainWnd::无线电源控制ToolStripMenuItem_Click);
+			// 
+			// toolStripMenuItem1
+			// 
+			this->toolStripMenuItem1->Name = L"toolStripMenuItem1";
+			this->toolStripMenuItem1->Size = System::Drawing::Size(25, 75);
+			this->toolStripMenuItem1->Text = L"|";
+			// 
+			// toolStripMenuItem2
+			// 
+			this->toolStripMenuItem2->Name = L"toolStripMenuItem2";
+			this->toolStripMenuItem2->Size = System::Drawing::Size(25, 75);
+			this->toolStripMenuItem2->Text = L"|";
+			// 
+			// toolStripMenuItem3
+			// 
+			this->toolStripMenuItem3->Name = L"toolStripMenuItem3";
+			this->toolStripMenuItem3->Size = System::Drawing::Size(25, 75);
+			this->toolStripMenuItem3->Text = L"|";
+			// 
+			// toolStripMenuItem4
+			// 
+			this->toolStripMenuItem4->Name = L"toolStripMenuItem4";
+			this->toolStripMenuItem4->Size = System::Drawing::Size(25, 75);
+			this->toolStripMenuItem4->Text = L"|";
 			// 
 			// mainWnd
 			// 
@@ -147,6 +191,7 @@ namespace 教师机监控台 {
 			 void openTrialReport(string &FileName);
 			 void openTodayTrials();
 			 void open成绩查询();
+			 void open无线电源控制();
 	private: System::Void 退出ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 		exit(-1);
 	}
@@ -163,6 +208,9 @@ private: System::Void toolStripMenuItem1_Click(System::Object^  sender, System::
 }
 private: System::Void 今天提交的实验ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 	openTodayTrials();
+}
+private: System::Void 无线电源控制ToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	open无线电源控制();
 }
 };
 }

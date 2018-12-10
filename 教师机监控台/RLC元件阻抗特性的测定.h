@@ -1,6 +1,7 @@
 #pragma once
 #include "tool.h"
 
+//添加一个断线检测
 namespace 教师机监控台 {
 
 	using namespace System;

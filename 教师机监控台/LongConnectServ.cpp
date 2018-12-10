@@ -114,6 +114,29 @@ void LongConnectServ::RecvFun(SOCKET s) {
 				tss.s = s;
 				Addcominfo(ComputerId, tss);
 			}
+			if (req == Long_connection_Req[7])
+			{ //获取学生列表
+				string stuList;
+				for (int i = 0; i < students.size(); i++) {
+					ClassElement CE;
+					memset(&CE, 0x00, sizeof(ClassElement));
+					memcpy(CE.ClassName, students[i].Class.c_str(), students[i].Class.length());
+					for (int j = 0; j < students[i].stus.size(); j++) {
+						if (j >= 100) break;
+						string stuName = students[i].stus[j][0];
+						string stuXueHao = students[i].stus[j][1];
+						if (stuName.length() > 100) continue;
+						if (stuXueHao.length() > 50) continue;
+						memcpy(CE.SEs[j].stuName, stuName.c_str(), stuName.length());
+						memcpy(CE.SEs[j].XueHao, stuXueHao.c_str(), stuXueHao.length());
+					}
+					stuList += string((char*)&CE, sizeof(ClassElement));
+				}
+				string retmsg;
+				if (stuList.length() == 0) GenerateReply(Long_connection_Req[7], MsgRet[-5]);
+			    else retmsg = GenerateReply(Long_connection_Req[7], stuList);
+				md.Send(s, retmsg);
+			}
 		}
 		else if (reply.length() != 0 ) {
 			if (reply == Long_connection_Req[6]) {
@@ -203,12 +226,13 @@ LongConnectServ::~LongConnectServ() {
 
 vector<Students> students;
 
-void LongConnectServ::GetStudents() {
+void LongConnectServ::GetStudents(string Path) {
 
 	students.clear();
 	vector<string> FData;
-	GetOneFolderFiles(string(STUINFOCSV), FData);
+	GetOneFolderFiles(Path, FData);
 	for (int i = 0; i < FData.size(); i++) {
+		cout << FData[i].c_str() << endl;
 		CSVdata cd;
 		cd.FileName = FData[i];
 		CSVLoad cl;

@@ -41,7 +41,7 @@ class LongConnectServ {
 	CPP_Server cs;  //机台号码
 public:
 	//获取学生信息
-	void GetStudents();
+	void GetStudents(string Path);
 	static bool IsLoginLegal(TrialInfo &ti);
 
 

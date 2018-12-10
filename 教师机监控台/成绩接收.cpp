@@ -7,10 +7,14 @@ bool GradeRecvServ::open() {
 	}
 	cs.SetServfun(handle);
 	cs.Acpt();
+
 	return true;
 }
 using namespace System::IO; 
 using namespace System;
+public ref class m {
+public: static System::Threading::Mutex ^mutex = gcnew System::Threading::Mutex;
+};
 
 void GradeRecvServ::handle(SOCKET s) {
 	RecvGradeProtocol md;
@@ -36,14 +40,15 @@ void GradeRecvServ::handle(SOCKET s) {
 		closesocket(s);
 		return;
 	}
-
 	//报文已经全部接受完毕
 	GradesHead H;
 	memcpy(&H, f_s.c_str(), sizeof(GradesHead));
+
+	m::mutex->WaitOne();
 	//判断是哪个实验 
 	switch (H.TrialCode) {
 	case 1: //元件伏安特性测试
-	{   
+	{  
 		string RecvName(H.TrialName);
 		if (RecvName != Grades[H.TrialCode]) {
 			string ret = md.GenerateErrRet(f_s,-2);
@@ -65,6 +70,7 @@ void GradeRecvServ::handle(SOCKET s) {
 		md.Send(s, ret);
 		break;
 	}
+	
 	case 2: {
 		string RecvName(H.TrialName);
 		if (RecvName != Grades[H.TrialCode]) {
@@ -595,8 +601,8 @@ void GradeRecvServ::handle(SOCKET s) {
 		break;
 	}
 	}
-
 	closesocket(s);
+	m::mutex->ReleaseMutex();
 }
 
 

@@ -2165,8 +2165,8 @@ public:
 			panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
 		}
 		else {
-			_NewBitmap = gcnew  Bitmap(groupBox1->Width, groupBox1->Height);
-			groupBox1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, groupBox1->Width, groupBox1->Height));
+			_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
+			panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
 		}
 		int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 		int y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;

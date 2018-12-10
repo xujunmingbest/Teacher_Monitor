@@ -57,6 +57,8 @@ void lookStuCom::SearchComLoad() {
 	t->Start();
 }
 
+
+//»ñÈ¡ 
 void lookStuCom::GetComputers() {
 	mutex->WaitOne();
 	listView1->Items->Clear();

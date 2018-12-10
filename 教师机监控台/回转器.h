@@ -336,7 +336,8 @@ private: System::Windows::Forms::Label^  labelTrial2_F200_line4;
 private: System::Windows::Forms::Label^  label23;
 private: System::Windows::Forms::Panel^  panel2;
 private: System::Windows::Forms::Label^  label7;
-private: System::Windows::Forms::PictureBox^  pictureBox1;
+private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_I;
+
 private: System::Windows::Forms::Label^  label6;
 private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 
@@ -378,6 +379,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1_GAver_line7 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1_GAver_line6 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1_GAver_line5 = (gcnew System::Windows::Forms::Label());
@@ -585,11 +587,10 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->pictureBoxTrial1_U = (gcnew System::Windows::Forms::PictureBox());
-			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->pictureBoxTrial1_I = (gcnew System::Windows::Forms::PictureBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->pictureBoxTrial1_U = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -597,8 +598,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->groupBox14->SuspendLayout();
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_I))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_U))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// groupBox7
@@ -946,6 +947,18 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->groupBox8->TabIndex = 203;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"回转器 实验内容1";
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label23->ForeColor = System::Drawing::Color::Black;
+			this->label23->Location = System::Drawing::Point(897, 387);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(109, 20);
+			this->label23->TabIndex = 247;
+			this->label23->Text = L"波形见最后";
 			// 
 			// textBoxTrial1_GAver_line7
 			// 
@@ -3380,35 +3393,13 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			// panel2
 			// 
 			this->panel2->Controls->Add(this->label7);
-			this->panel2->Controls->Add(this->pictureBox1);
+			this->panel2->Controls->Add(this->pictureBoxTrial1_I);
 			this->panel2->Controls->Add(this->label6);
 			this->panel2->Controls->Add(this->pictureBoxTrial1_U);
 			this->panel2->Location = System::Drawing::Point(59, 1577);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(853, 1087);
 			this->panel2->TabIndex = 343;
-			// 
-			// pictureBoxTrial1_U
-			// 
-			this->pictureBoxTrial1_U->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial1_U.Image")));
-			this->pictureBoxTrial1_U->Location = System::Drawing::Point(79, 19);
-			this->pictureBoxTrial1_U->Name = L"pictureBoxTrial1_U";
-			this->pictureBoxTrial1_U->Size = System::Drawing::Size(726, 474);
-			this->pictureBoxTrial1_U->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
-			this->pictureBoxTrial1_U->TabIndex = 159;
-			this->pictureBoxTrial1_U->TabStop = false;
-			// 
-			// label6
-			// 
-			this->label6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label6->ForeColor = System::Drawing::Color::Black;
-			this->label6->Location = System::Drawing::Point(359, 502);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(167, 25);
-			this->label6->TabIndex = 161;
-			this->label6->Text = L"输入电压波形图";
 			// 
 			// label7
 			// 
@@ -3422,27 +3413,37 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->label7->TabIndex = 163;
 			this->label7->Text = L"输入电流波形图";
 			// 
-			// pictureBox1
+			// pictureBoxTrial1_I
 			// 
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(79, 550);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(726, 474);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
-			this->pictureBox1->TabIndex = 162;
-			this->pictureBox1->TabStop = false;
+			this->pictureBoxTrial1_I->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial1_I.Image")));
+			this->pictureBoxTrial1_I->Location = System::Drawing::Point(79, 550);
+			this->pictureBoxTrial1_I->Name = L"pictureBoxTrial1_I";
+			this->pictureBoxTrial1_I->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial1_I->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial1_I->TabIndex = 162;
+			this->pictureBoxTrial1_I->TabStop = false;
 			// 
-			// label23
+			// label6
 			// 
-			this->label23->AutoSize = true;
-			this->label23->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label6->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(134)));
-			this->label23->ForeColor = System::Drawing::Color::Black;
-			this->label23->Location = System::Drawing::Point(897, 387);
-			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(109, 20);
-			this->label23->TabIndex = 247;
-			this->label23->Text = L"波形见最后";
+			this->label6->ForeColor = System::Drawing::Color::Black;
+			this->label6->Location = System::Drawing::Point(359, 502);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(167, 25);
+			this->label6->TabIndex = 161;
+			this->label6->Text = L"输入电压波形图";
+			// 
+			// pictureBoxTrial1_U
+			// 
+			this->pictureBoxTrial1_U->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBoxTrial1_U.Image")));
+			this->pictureBoxTrial1_U->Location = System::Drawing::Point(79, 19);
+			this->pictureBoxTrial1_U->Name = L"pictureBoxTrial1_U";
+			this->pictureBoxTrial1_U->Size = System::Drawing::Size(726, 474);
+			this->pictureBoxTrial1_U->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBoxTrial1_U->TabIndex = 159;
+			this->pictureBoxTrial1_U->TabStop = false;
 			// 
 			// 回转器
 			// 
@@ -3468,8 +3469,8 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->panel1->ResumeLayout(false);
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_I))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_U))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}

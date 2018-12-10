@@ -97,7 +97,7 @@ bool QueueMutex::Create(string &QueueName) {
 		lcs.Open();
 		cm.Create(string("LongConnectServ"));
 		mt.Open();
-		lcs.GetStudents();
+		lcs.GetStudents(STUINFOCSV);
 	}
 
 
@@ -130,7 +130,7 @@ bool QueueMutex::Create(string &QueueName) {
 				continue;
 			}
 			// 输出本级的文件
-			string Char = Path + FindData.cFileName;
+			string Char = Path +"\\" +FindData.cFileName;
 			FData.push_back(Char);
 		}
 		return true;
