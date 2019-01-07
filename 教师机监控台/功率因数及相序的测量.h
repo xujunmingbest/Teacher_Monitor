@@ -132,7 +132,7 @@ private: System::Windows::Forms::Label^  label1;
 private: System::Windows::Forms::Label^  label2;
 private: System::Windows::Forms::TextBox^  textBoxTrial2Score;
 
-private: System::Windows::Forms::Button^  button25;
+
 private: System::Windows::Forms::Button^  button26;
 private: System::Windows::Forms::GroupBox^  groupBox5;
 private: System::Windows::Forms::Label^  labelTotalGrade;
@@ -243,7 +243,6 @@ private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
 			this->labelTrial2_U_1 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->button25 = (gcnew System::Windows::Forms::Button());
 			this->button26 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
@@ -1063,16 +1062,6 @@ private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
 			this->label5->TabIndex = 146;
 			this->label5->Text = L"开关状态";
 			// 
-			// button25
-			// 
-			this->button25->Location = System::Drawing::Point(918, 1000);
-			this->button25->Name = L"button25";
-			this->button25->Size = System::Drawing::Size(101, 36);
-			this->button25->TabIndex = 331;
-			this->button25->Text = L"打印";
-			this->button25->UseVisualStyleBackColor = true;
-			this->button25->Click += gcnew System::EventHandler(this, &功率因数及相序的测量::button25_Click);
-			// 
 			// button26
 			// 
 			this->button26->Location = System::Drawing::Point(805, 1000);
@@ -1118,7 +1107,6 @@ private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
 			// 
 			this->panel1->Controls->Add(this->groupBox2);
 			this->panel1->Controls->Add(this->groupBox7);
-			this->panel1->Controls->Add(this->button25);
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button26);
 			this->panel1->Controls->Add(this->groupBox5);
@@ -1197,6 +1185,7 @@ private: System::Windows::Forms::TextBox^  textBoxTrial1Score;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &功率因数及相序的测量::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &功率因数及相序的测量::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1270,6 +1259,8 @@ private: System::Void groupBox1_Enter(System::Object^  sender, System::EventArgs
 }
 private: System::Void textBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	CalScores();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }

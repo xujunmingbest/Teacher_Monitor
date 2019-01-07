@@ -119,7 +119,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel1;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::Button^  button2;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
@@ -217,7 +217,6 @@ private: System::Windows::Forms::TextBox^  textBoxscore;
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->groupBox7->SuspendLayout();
@@ -1036,18 +1035,9 @@ private: System::Windows::Forms::TextBox^  textBoxscore;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &基尔霍夫定律::button2_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(833, 747);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(91, 36);
-			this->button3->TabIndex = 201;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &基尔霍夫定律::button3_Click);
-			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &基尔霍夫定律::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &基尔霍夫定律::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1066,7 +1056,6 @@ private: System::Windows::Forms::TextBox^  textBoxscore;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1499, 812);
-			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel1);
@@ -1119,6 +1108,8 @@ private: System::Void groupBox2_Enter(System::Object^  sender, System::EventArgs
 }
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	SaveCorrectGrades();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }

@@ -24,6 +24,16 @@ using namespace System::Windows::Forms;
 using namespace System;
 Form ^GetChildByName(String ^Name);
 
-
+template<class T>
+class LocalPointer {
+public:
+	T*data;
+	LocalPointer() {
+		data = new T;
+	}
+    ~LocalPointer() {
+		delete data;
+	}
+};
 
 bool GetOneFolderFiles(string& Path, vector<string> &FData);

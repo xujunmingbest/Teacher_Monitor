@@ -14,6 +14,11 @@ public:
 	virtual string GenerateErrRet(string &OriginHead, int errorCode) override;
 };
 
+public ref class m {
+public: static System::Threading::Mutex ^mutex = gcnew System::Threading::Mutex;
+};
+
+
 class GradeRecvServ {
 private:
 	CPP_Server cs;
@@ -22,4 +27,9 @@ public:
 	bool open();
 	static void handle(SOCKET s);
 	void close();
+
+
+
+
+
 };

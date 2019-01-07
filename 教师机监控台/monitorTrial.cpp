@@ -6,7 +6,7 @@ using namespace std;
 using namespace 教师机监控台;
 using namespace System::Threading;
 monitorTrial mt;
-
+#include <stdio.h>
 void monitorTrial::Open() {
 	cs.Open(10002);
 	cs.SetServfun(monitorTrial::RecvGrade);
@@ -24,6 +24,16 @@ Form ^GetChildByName(String ^Name) {
 }
 
 void monitorTrial::RecvGrade(SOCKET s) {
+	Tool::clrmutex->WaitOne();
+	if (Tool::openMonitorCount == 0) {
+		Tool::openMonitorCount++;
+		Tool::clrmutex->ReleaseMutex();
+	}
+	else {
+		Tool::clrmutex->ReleaseMutex();
+		closesocket(s);
+		return;
+	}
 	元件伏安特性监控 ^ 元件伏安特性监控wnd = gcnew 元件伏安特性监控;
 	基尔霍夫定律监控 ^ 基尔霍夫定律监控wnd = gcnew 基尔霍夫定律监控;
 	叠加原理监控 ^ 叠加原理监控wnd = gcnew 叠加原理监控;
@@ -89,7 +99,9 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				}
 				ST_元件伏安特性测试 sT_元件伏安特性测试;
 				memcpy(&sT_元件伏安特性测试, s_s.c_str(),sizeof(ST_元件伏安特性测试));
-				if(元件伏安特性监控wnd->Name->Contains("close")) closesocket(s);
+				if (元件伏安特性监控wnd->Name->Contains("close")) {
+					closesocket(s);
+				}
 				元件伏安特性监控wnd->This_Load(sT_元件伏安特性测试);
 				break;
 			}
@@ -102,7 +114,10 @@ void monitorTrial::RecvGrade(SOCKET s) {
 				}
 				ST_基尔霍夫定律 sT_基尔霍夫定律;
 				memcpy(&sT_基尔霍夫定律, s_s.c_str(), sizeof(ST_基尔霍夫定律));
-				if (基尔霍夫定律监控wnd->Name->Contains("close")) closesocket(s);
+				if (基尔霍夫定律监控wnd->Name->Contains("close")) {
+					closesocket(s);
+					cout << "基尔霍夫定理已关闭" << endl;
+				}
 				基尔霍夫定律监控wnd->LoadData(sT_基尔霍夫定律);
 				break;
 			}
@@ -412,6 +427,9 @@ void monitorTrial::RecvGrade(SOCKET s) {
 		}
 	}
 	closesocket(s);
+	Tool::clrmutex->WaitOne();
+	Tool::openMonitorCount--;
+	Tool::clrmutex->ReleaseMutex();
 }
 
 void monitorTrial::Close() {
@@ -419,7 +437,6 @@ void monitorTrial::Close() {
 }
 
 void ShowDialog(Object^f) {
-
 	((Form^)f)->ShowDialog();
 	((Form^)f)->Name += "close";
 }

@@ -142,6 +142,28 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	labelMethod2RL9->Text = gcnew String(d.Method2RL9);
 	labelMethod2RL10->Text = gcnew String(d.Method2RL10);
 
+	labelMethod2URL1->Text = gcnew String(d.Method2URL1);
+	labelMethod2URL2->Text = gcnew String(d.Method2URL2);
+	labelMethod2URL3->Text = gcnew String(d.Method2URL3);
+	labelMethod2URL4->Text = gcnew String(d.Method2URL4);
+	labelMethod2URL5->Text = gcnew String(d.Method2URL5);
+	labelMethod2URL6->Text = gcnew String(d.Method2URL6);
+	labelMethod2URL7->Text = gcnew String(d.Method2URL7);
+	labelMethod2URL8->Text = gcnew String(d.Method2URL8);
+	labelMethod2URL9->Text = gcnew String(d.Method2URL9);
+	labelMethod2URL10->Text = gcnew String(d.Method2URL10);
+
+	labelMethod6URL1->Text = gcnew String(d.Method6URL1);
+	labelMethod6URL2->Text = gcnew String(d.Method6URL2);
+	labelMethod6URL3->Text = gcnew String(d.Method6URL3);
+	labelMethod6URL4->Text = gcnew String(d.Method6URL4);
+	labelMethod6URL5->Text = gcnew String(d.Method6URL5);
+	labelMethod6URL6->Text = gcnew String(d.Method6URL6);
+	labelMethod6URL7->Text = gcnew String(d.Method6URL7);
+	labelMethod6URL8->Text = gcnew String(d.Method6URL8);
+	labelMethod6URL9->Text = gcnew String(d.Method6URL9);
+	labelMethod6URL10->Text = gcnew String(d.Method6URL10);
+
 	textBoxMethod3Ro->Text = gcnew String(d.Method3Ro);
 	textBoxMethod3Uoc->Text = gcnew String(d.Method3Uoc);
 
@@ -165,6 +187,8 @@ void 戴维南定理::Load戴维南定理Data(string &filename) {
 	labelMethod6RL8->Text = gcnew String(d.Method6RL8);
 	labelMethod6RL9->Text = gcnew String(d.Method6RL9);
 	labelMethod6RL10->Text = gcnew String(d.Method6RL10);
+
+
 
 	label结论->Text = gcnew String(d.summing_up);
 }

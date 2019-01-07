@@ -98,6 +98,7 @@ void 一阶电路的响应测试::Load一阶电路的响应测试Data(string &filename) {
 	textBoxTrial3Score->Text = d.Trial3Score.ToString();
 
 	labelTotalGrade->Text = ti.totalscore.ToString();
+	try {
 	string Name = string(BMPTEMP) + "一阶电路的响应测试";
 	String^ ImageLocationTrial1_in = gcnew String(string(Name + "trial1_in.bmp").c_str());
 	String^ ImageLocationTrial1_out = gcnew String(string(Name + "trial1_out.bmp").c_str());
@@ -117,9 +118,13 @@ void 一阶电路的响应测试::Load一阶电路的响应测试Data(string &filename) {
 	f.Writefile(T_to_string(ImageLocationTrial3_in), string(d.Trial3Bmp_in, sizeof(d.Trial3Bmp_in)));
 
 	textBoxtrialτ->Text = gcnew String(d.τ);
-	pictureBoxTrial1_in->ImageLocation = ImageLocationTrial1_in;
-	pictureBoxTrial2_in->ImageLocation = ImageLocationTrial2_in;
-	pictureBoxTrial3_in->ImageLocation = ImageLocationTrial3_in;
+		pictureBoxTrial1_in->ImageLocation = ImageLocationTrial1_in;
+		pictureBoxTrial2_in->ImageLocation = ImageLocationTrial2_in;
+		pictureBoxTrial3_in->ImageLocation = ImageLocationTrial3_in;
+	}
+	catch (System::Exception ^e) {
+		Console::WriteLine(e->ToString());
+	}
 
 	label结论->Text = gcnew String(d.summing_up);
 }

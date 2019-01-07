@@ -190,7 +190,7 @@ private: System::Windows::Forms::Label^  label62;
 private: System::Windows::Forms::Panel^  panel2;
 private: System::Windows::Forms::Label^  label结论;
 private: System::Windows::Forms::Label^  label64;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::GroupBox^  groupBox5;
@@ -401,7 +401,6 @@ private: System::Windows::Forms::Label^  label23;
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->label64 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
@@ -1768,7 +1767,6 @@ private: System::Windows::Forms::Label^  label23;
 			this->panel2->Controls->Add(this->groupBox4);
 			this->panel2->Controls->Add(this->label结论);
 			this->panel2->Controls->Add(this->label64);
-			this->panel2->Controls->Add(this->button3);
 			this->panel2->Controls->Add(this->button2);
 			this->panel2->Controls->Add(this->button1);
 			this->panel2->Controls->Add(this->groupBox5);
@@ -1929,16 +1927,6 @@ private: System::Windows::Forms::Label^  label23;
 			this->label64->TabIndex = 322;
 			this->label64->Text = L"实验结论";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1060, 873);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 321;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &戴维南定理::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(947, 873);
@@ -1982,6 +1970,7 @@ private: System::Windows::Forms::Label^  label23;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &戴维南定理::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &戴维南定理::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -2035,10 +2024,13 @@ private: System::Windows::Forms::Label^  label23;
 		if (SelectedArea == "panel1") {
 			_NewBitmap = gcnew  Bitmap(panel1->Width, panel1->Height);
 			panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
+			e->HasMorePages = true;
+			SelectedArea = "finally";
 		}
 		else {
 			_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 			panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
+			e->HasMorePages = false;
 		}
 		int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 		int y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
@@ -2048,8 +2040,6 @@ private: System::Windows::Forms::Label^  label23;
 			 
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
-	Priview();
-	SelectedArea = "panel2";
 	Priview();
 }
 		 String ^SelectedArea = "";
@@ -2093,6 +2083,9 @@ private: System::Void textBox2_TextChanged(System::Object^  sender, System::Even
 	CalScores();
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

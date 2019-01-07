@@ -16,7 +16,7 @@ struct Students {
 extern vector<Students> students;
 
 
- 
+using namespace System::Threading;
 //队列互斥锁
 class QueueMutex {
 private:
@@ -35,7 +35,11 @@ struct TrialStatus_s {
 };
 
 extern map<string, TrialStatus_s> cominfo;
-
+public ref class Tool {
+public: static Mutex ^clrmutex = gcnew Mutex();
+		static int openMonitorCount = 0;
+public:
+};
 
 class LongConnectServ {
 	CPP_Server cs;  //机台号码

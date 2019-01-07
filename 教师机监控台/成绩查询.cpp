@@ -302,4 +302,30 @@ void 成绩查询::LoadListBox1() {
 	mutex->ReleaseMutex();
 }
 
+//在批改成绩关闭之后 修改成绩
+void 成绩查询::updateGrade(int listView1ItemIndex) {
+	map<string, TrialInfo>::iterator it = ListFiles.begin();
+	advance(it, listView1ItemIndex);
+	ifstream ifile;
+	ifile.open(T_to_string(listView1->SelectedItems[0]->Name), ios::binary);
+	if (!ifile) return;
+	char buff[sizeof(TrialInfo)];
+	ifile.read(buff, 4);
+	ifile.read(buff, sizeof(TrialInfo));
+	ifile.close();
+	TrialInfo ti;
+	memcpy(&ti, buff, sizeof(TrialInfo));
 
+	listView1->Items[listView1ItemIndex]->SubItems[0]->Text =gcnew String(ti.Class);
+	listView1->Items[listView1ItemIndex]->SubItems[1]->Text = gcnew String(ti.stuName1);
+	listView1->Items[listView1ItemIndex]->SubItems[2]->Text = gcnew String(ti.stuName2);
+	listView1->Items[listView1ItemIndex]->SubItems[3]->Text = gcnew String(ti.TrialName);
+	listView1->Items[listView1ItemIndex]->SubItems[4]->Text = gcnew String(ti.date);
+	listView1->Items[listView1ItemIndex]->SubItems[5]->Text = ti.totalscore.ToString();
+	if (ti.totalscore == -1) {
+		listView1->Items[listView1ItemIndex]->SubItems[6]->Text = gcnew String("未批改");
+	}
+	else {
+		listView1->Items[listView1ItemIndex]->SubItems[6]->Text = gcnew String("已批改");
+	}
+}

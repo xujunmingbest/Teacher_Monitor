@@ -135,5 +135,3 @@ bool QueueMutex::Create(string &QueueName) {
 		}
 		return true;
 	}
-
-

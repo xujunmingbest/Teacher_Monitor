@@ -134,8 +134,8 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 
 
 	textBoxTrial2_F->Text = gcnew String(d.Trial2_F);
-	textBoxTrial2_F->Text = gcnew String(d.Trial2_Uc);
-	textBoxTrial2_F->Text = gcnew String(d.Trial2_UL);
+	labelTrial2_Uc->Text = gcnew String(d.Trial2_Uc);
+	labelTrial2_UL->Text = gcnew String(d.Trial2_UL);
 
 	textBoxTrial5_F1->Text = gcnew String(d.Trial3_F1);
 	textBoxTrial5_F2->Text = gcnew String(d.Trial3_F2);
@@ -164,6 +164,14 @@ void RLC串联谐振电路的研究::LoadRLC串联谐振电路的研究Data(string &filename) {
 	labelTrial3_UL_7->Text = gcnew String(d.Trial3_UL_7);
 	labelTrial3_UL_8->Text = gcnew String(d.Trial3_UL_8);
 
+	textBoxTrial3_F1->Text = gcnew String(d.Trial3_F1);
+	textBoxTrial3_F2->Text = gcnew String(d.Trial3_F2);
+	textBoxTrial3_F3->Text = gcnew String(d.Trial3_F3);
+	textBoxTrial3_F4->Text = gcnew String(d.Trial3_F4);
+	textBoxTrial3_F5->Text = gcnew String(d.Trial3_F5);
+	textBoxTrial3_F6->Text = gcnew String(d.Trial3_F6);
+	textBoxTrial3_F7->Text = gcnew String(d.Trial3_F7);
+	textBoxTrial3_F8->Text = gcnew String(d.Trial3_F8);
 
 	labelTrial3_Uc_1->Text = gcnew String(d.Trial3_Uc_1);
 	labelTrial3_Uc_2->Text = gcnew String(d.Trial3_Uc_2);

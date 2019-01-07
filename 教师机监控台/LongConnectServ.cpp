@@ -37,6 +37,16 @@ bool LongConnectServ::SendCmdForceCommitTrial(SOCKET c) {
 }
 
 bool LongConnectServ::SendCmdGetNowTrial(SOCKET c) {
+	Tool::clrmutex->WaitOne();
+	if (Tool::openMonitorCount == 0) {
+		Tool::clrmutex->ReleaseMutex();
+	}
+	else {
+		Tool::clrmutex->ReleaseMutex();
+		MessageBox::Show("先关闭现有监控");
+		return false;
+	}
+
 	string r_s = GenerateCmd(Long_connection_Req[6]);
 	protocolDemo md;
 	return md.Send(c, r_s);
@@ -74,8 +84,8 @@ void LongConnectServ::SocketClose(SOCKET s,string &computerId) {
 
 }
 
-void LongConnectServ::RecvFun(SOCKET s) {
 
+void LongConnectServ::RecvFun(SOCKET s) {
 	string ComputerId;
 	while (true) {
 		protocolDemo md;

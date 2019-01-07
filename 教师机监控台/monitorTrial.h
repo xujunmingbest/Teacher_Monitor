@@ -7,7 +7,7 @@
 using namespace System::Windows::Forms;
 using namespace System::Diagnostics;
 using namespace System;
-
+using namespace System::Threading;
 
 class monitorTrial {
 	CPP_Server cs;

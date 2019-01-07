@@ -583,15 +583,19 @@ Bitmap^ 元件伏安特性测试::PrintLoad() {
 
 	if (NowPrint == "线性") {
 		g = groupBox线性;
+		NowPrint = "白炽";
 	}
 	else if(NowPrint == "白炽"){
 		g = groupBox白炽;
+		NowPrint = "锗管";
 	}
 	else if (NowPrint == "锗管") {
 		g = groupBox锗管;
+		NowPrint = "硅管";
 	}
 	else if (NowPrint == "硅管") {
 		g = groupBox硅管;
+		NowPrint = "稳压";
 	}
 	else if (NowPrint == "稳压") {
 		g = groupBox稳压;
@@ -616,6 +620,8 @@ void 元件伏安特性测试::Priview()
 {
 	try {
 		printDocument1->DefaultPageSettings->Landscape = true;
+		printPreviewDialog1->VerticalScroll->Enabled = true;
+		printPreviewDialog1->AutoScroll = true;
 
 		printPreviewDialog1->ShowDialog();
 	}

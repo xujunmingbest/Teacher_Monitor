@@ -136,7 +136,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::TextBox^  textBox42;
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label44;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::GroupBox^  groupBox5;
 private: System::Windows::Forms::Label^  labelTotalGrade;
@@ -337,7 +337,6 @@ private: System::Windows::Forms::Label^  label105;
 			this->textBox42 = (gcnew System::Windows::Forms::TextBox());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label44 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
@@ -1581,16 +1580,6 @@ private: System::Windows::Forms::Label^  label105;
 			this->label44->TabIndex = 69;
 			this->label44->Text = L"4K";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(753, 1033);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 331;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &互感器::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(646, 1033);
@@ -1636,7 +1625,6 @@ private: System::Windows::Forms::Label^  label105;
 			// 
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->groupBox7);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox2);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Controls->Add(this->groupBox3);
@@ -2012,6 +2000,7 @@ private: System::Windows::Forms::Label^  label105;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &互感器::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &互感器::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -2093,6 +2082,9 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	Print();
 }
 private: System::Void groupBox2_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

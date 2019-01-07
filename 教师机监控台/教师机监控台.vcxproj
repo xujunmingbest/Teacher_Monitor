@@ -112,7 +112,8 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>E:/c++/libsocket/Release/libsocket.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <HeapReserveSize>50000000</HeapReserveSize>
+      <HeapReserveSize>
+      </HeapReserveSize>
       <HeapCommitSize>
       </HeapCommitSize>
       <StackReserveSize>50000000</StackReserveSize>
@@ -573,7 +574,9 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="mainWnd.cpp" />
     <ClCompile Include="monitorLoad.cpp" />
-    <ClCompile Include="monitorTrial.cpp" />
+    <ClCompile Include="monitorTrial.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</CompileAsManaged>
+    </ClCompile>
     <ClCompile Include="NumberHandle.cpp" />
     <ClCompile Include="RC网络的频率特性.cpp" />
     <ClCompile Include="RLC串联谐振电路的研究.cpp" />

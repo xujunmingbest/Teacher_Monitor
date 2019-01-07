@@ -740,6 +740,28 @@ void 戴维南定理监控::LoadData(ST_戴维南定理 &d) {
 	textBoxMethod6RL9->Text = gcnew String(d.Method6RL9);
 	textBoxMethod6RL10->Text = gcnew String(d.Method6RL10);
 
+	labelMethod2URL1->Text = gcnew String(d.Method2URL1);
+	labelMethod2URL2->Text = gcnew String(d.Method2URL2);
+	labelMethod2URL3->Text = gcnew String(d.Method2URL3);
+	labelMethod2URL4->Text = gcnew String(d.Method2URL4);
+	labelMethod2URL5->Text = gcnew String(d.Method2URL5);
+	labelMethod2URL6->Text = gcnew String(d.Method2URL6);
+	labelMethod2URL7->Text = gcnew String(d.Method2URL7);
+	labelMethod2URL8->Text = gcnew String(d.Method2URL8);
+	labelMethod2URL9->Text = gcnew String(d.Method2URL9);
+	labelMethod2URL10->Text = gcnew String(d.Method2URL10);
+
+	labelMethod6URL1->Text = gcnew String(d.Method6URL1);
+	labelMethod6URL2->Text = gcnew String(d.Method6URL2);
+	labelMethod6URL3->Text = gcnew String(d.Method6URL3);
+	labelMethod6URL4->Text = gcnew String(d.Method6URL4);
+	labelMethod6URL5->Text = gcnew String(d.Method6URL5);
+	labelMethod6URL6->Text = gcnew String(d.Method6URL6);
+	labelMethod6URL7->Text = gcnew String(d.Method6URL7);
+	labelMethod6URL8->Text = gcnew String(d.Method6URL8);
+	labelMethod6URL9->Text = gcnew String(d.Method6URL9);
+	labelMethod6URL10->Text = gcnew String(d.Method6URL10);
+
 	textBox结论->Text = gcnew String(d.summing_up);
 }
 
@@ -993,7 +1015,13 @@ void VCVS实验监控::LoadData(ST_VCVS实验 &d) {
 	 labeltrial1_2IL_7->Text = gcnew String(d.trial1_2IL_7);
 	 labeltrial1_2IL_8->Text = gcnew String(d.trial1_2IL_8);
 
-
+	 textBoxtrial1_2RL_1->Text = gcnew String(d.trial1_2RL_1);
+	 textBoxtrial1_2RL_2->Text = gcnew String(d.trial1_2RL_2);
+	 textBoxtrial1_2RL_3->Text = gcnew String(d.trial1_2RL_3);
+	 textBoxtrial1_2RL_4->Text = gcnew String(d.trial1_2RL_4);
+	 textBoxtrial1_2RL_5->Text = gcnew String(d.trial1_2RL_5);
+	 textBoxtrial1_2RL_6->Text = gcnew String(d.trial1_2RL_6);
+	 textBoxtrial1_2RL_7->Text = gcnew String(d.trial1_2RL_7);
 
 	 labeltrial2_1IL_1->Text = gcnew String(d.trial2_1IL_1);
 	 labeltrial2_1IL_2->Text = gcnew String(d.trial2_1IL_2);
@@ -1012,6 +1040,14 @@ void VCVS实验监控::LoadData(ST_VCVS实验 &d) {
 	labeltrial2_2V2_5->Text = gcnew String(d.trial2_2V2_5);
 	labeltrial2_2V2_6->Text = gcnew String(d.trial2_2V2_6);
 	labeltrial2_2V2_7->Text = gcnew String(d.trial2_2V2_7);
+
+	labeltrial2_2IL_1->Text = gcnew String(d.trial2_2IL_1);
+	labeltrial2_2IL_2->Text = gcnew String(d.trial2_2IL_2);
+	labeltrial2_2IL_3->Text = gcnew String(d.trial2_2IL_3);
+	labeltrial2_2IL_4->Text = gcnew String(d.trial2_2IL_4);
+	labeltrial2_2IL_5->Text = gcnew String(d.trial2_2IL_5);
+	labeltrial2_2IL_6->Text = gcnew String(d.trial2_2IL_6);
+	labeltrial2_2IL_7->Text = gcnew String(d.trial2_2IL_7);
 
 	 labeltrial3_1I1_1->Text = gcnew String(d.trial3_1I1_1);
 	 labeltrial3_1I1_2->Text = gcnew String(d.trial3_1I1_2);
@@ -1069,6 +1105,34 @@ void VCVS实验监控::LoadData(ST_VCVS实验 &d) {
 	labeltrial4_1IL_8->Text = gcnew String(d.trial4_1IL_8);
 
 
+	textBoxtrial4_2RL_1->Text = gcnew String(d.trial4_2RL_1);
+	textBoxtrial4_2RL_2->Text = gcnew String(d.trial4_2RL_2);
+	textBoxtrial4_2RL_3->Text = gcnew String(d.trial4_2RL_3);
+	textBoxtrial4_2RL_4->Text = gcnew String(d.trial4_2RL_4);
+	textBoxtrial4_2RL_5->Text = gcnew String(d.trial4_2RL_5);
+	textBoxtrial4_2RL_6->Text = gcnew String(d.trial4_2RL_6);
+	textBoxtrial4_2RL_7->Text = gcnew String(d.trial4_2RL_7);
+	textBoxtrial4_2RL_8->Text = gcnew String(d.trial4_2RL_8);
+
+	labeltrial4_2IL_1->Text = gcnew String(d.trial4_2IL_1);
+	labeltrial4_2IL_2->Text = gcnew String(d.trial4_2IL_2);
+	labeltrial4_2IL_3->Text = gcnew String(d.trial4_2IL_3);
+	labeltrial4_2IL_4->Text = gcnew String(d.trial4_2IL_4);
+	labeltrial4_2IL_5->Text = gcnew String(d.trial4_2IL_5);
+	labeltrial4_2IL_6->Text = gcnew String(d.trial4_2IL_6);
+	labeltrial4_2IL_7->Text = gcnew String(d.trial4_2IL_7);
+	labeltrial4_2IL_8->Text = gcnew String(d.trial4_2IL_8);
+
+	labeltrial4_2U2_1->Text = gcnew String(d.trial4_2U2_1);
+	labeltrial4_2U2_2->Text = gcnew String(d.trial4_2U2_2);
+	labeltrial4_2U2_3->Text = gcnew String(d.trial4_2U2_3);
+	labeltrial4_2U2_4->Text = gcnew String(d.trial4_2U2_4);
+	labeltrial4_2U2_5->Text = gcnew String(d.trial4_2U2_5);
+	labeltrial4_2U2_6->Text = gcnew String(d.trial4_2U2_6);
+	labeltrial4_2U2_7->Text = gcnew String(d.trial4_2U2_7);
+	labeltrial4_2U2_8->Text = gcnew String(d.trial4_2U2_8);
+
+	labeltrial4_1α->Text = gcnew String(d.trial4_1α);
 }
 
 
@@ -1432,8 +1496,8 @@ void RLC串联谐振电路的研究监控::LoadData(ST_RLC串联谐振电路的研究 &d) {
 	textBox结论->Text = gcnew String(d.summing_up);
 
 	textBoxTrial2_F->Text = gcnew String(d.Trial2_F) ;
-	textBoxTrial2_F->Text = gcnew String(d.Trial2_Uc);
-	textBoxTrial2_F->Text = gcnew String(d.Trial2_UL);
+	labelTrial2_Uc->Text = gcnew String(d.Trial2_Uc);
+	labelTrial2_UL->Text = gcnew String(d.Trial2_UL);
 
 	textBoxTrial5_F1->Text = gcnew String(d.Trial3_F1);
 	textBoxTrial5_F2->Text = gcnew String(d.Trial3_F2);
@@ -1462,6 +1526,14 @@ void RLC串联谐振电路的研究监控::LoadData(ST_RLC串联谐振电路的研究 &d) {
 	labelTrial3_UL_7->Text = gcnew String(d.Trial3_UL_7 );
 	labelTrial3_UL_8->Text = gcnew String(d.Trial3_UL_8 );
 
+	textBoxTrial3_F1->Text = gcnew String(d.Trial3_F1);
+	textBoxTrial3_F2->Text = gcnew String(d.Trial3_F2);
+	textBoxTrial3_F3->Text = gcnew String(d.Trial3_F3);
+	textBoxTrial3_F4->Text = gcnew String(d.Trial3_F4);
+	textBoxTrial3_F5->Text = gcnew String(d.Trial3_F5);
+	textBoxTrial3_F6->Text = gcnew String(d.Trial3_F6);
+	textBoxTrial3_F7->Text = gcnew String(d.Trial3_F7);
+	textBoxTrial3_F8->Text = gcnew String(d.Trial3_F8);
 
 	labelTrial3_Uc_1->Text = gcnew String(d.Trial3_Uc_1 );
 	labelTrial3_Uc_2->Text = gcnew String(d.Trial3_Uc_2 );

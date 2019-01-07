@@ -155,7 +155,7 @@ private: System::Windows::Forms::TextBox^  textBoxTrial2Score;
 
 private: System::Windows::Forms::Label^  label结论;
 private: System::Windows::Forms::Label^  label64;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::GroupBox^  groupBox5;
@@ -258,6 +258,14 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial1_F8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_F1 = (gcnew System::Windows::Forms::Label());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
@@ -283,6 +291,54 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial2_φ2_8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2_1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_φ1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_τ1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_T1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F8 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F7 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F6 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F5 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_F1 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
@@ -296,7 +352,6 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->label64 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
@@ -304,62 +359,6 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->textBoxTrial1_F8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_F1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_F1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_T1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_τ2_1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_8 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_7 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_6 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_5 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_φ2_1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -676,6 +675,78 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->groupBox8->Text = L"RC网络的频率特性 实验内容1";
 			this->groupBox8->Enter += gcnew System::EventHandler(this, &RC网络的频率特性::groupBox8_Enter);
 			// 
+			// textBoxTrial1_F8
+			// 
+			this->textBoxTrial1_F8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F8->Location = System::Drawing::Point(797, 35);
+			this->textBoxTrial1_F8->Name = L"textBoxTrial1_F8";
+			this->textBoxTrial1_F8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F8->TabIndex = 230;
+			this->textBoxTrial1_F8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F7
+			// 
+			this->textBoxTrial1_F7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F7->Location = System::Drawing::Point(698, 35);
+			this->textBoxTrial1_F7->Name = L"textBoxTrial1_F7";
+			this->textBoxTrial1_F7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F7->TabIndex = 229;
+			this->textBoxTrial1_F7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F6
+			// 
+			this->textBoxTrial1_F6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F6->Location = System::Drawing::Point(600, 35);
+			this->textBoxTrial1_F6->Name = L"textBoxTrial1_F6";
+			this->textBoxTrial1_F6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F6->TabIndex = 228;
+			this->textBoxTrial1_F6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F5
+			// 
+			this->textBoxTrial1_F5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F5->Location = System::Drawing::Point(507, 35);
+			this->textBoxTrial1_F5->Name = L"textBoxTrial1_F5";
+			this->textBoxTrial1_F5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F5->TabIndex = 227;
+			this->textBoxTrial1_F5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F4
+			// 
+			this->textBoxTrial1_F4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F4->Location = System::Drawing::Point(413, 35);
+			this->textBoxTrial1_F4->Name = L"textBoxTrial1_F4";
+			this->textBoxTrial1_F4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F4->TabIndex = 226;
+			this->textBoxTrial1_F4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F3
+			// 
+			this->textBoxTrial1_F3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F3->Location = System::Drawing::Point(310, 36);
+			this->textBoxTrial1_F3->Name = L"textBoxTrial1_F3";
+			this->textBoxTrial1_F3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F3->TabIndex = 225;
+			this->textBoxTrial1_F3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F2
+			// 
+			this->textBoxTrial1_F2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F2->Location = System::Drawing::Point(216, 36);
+			this->textBoxTrial1_F2->Name = L"textBoxTrial1_F2";
+			this->textBoxTrial1_F2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F2->TabIndex = 224;
+			this->textBoxTrial1_F2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial1_F1
+			// 
+			this->textBoxTrial1_F1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_F1->Location = System::Drawing::Point(122, 36);
+			this->textBoxTrial1_F1->Name = L"textBoxTrial1_F1";
+			this->textBoxTrial1_F1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial1_F1->TabIndex = 223;
+			this->textBoxTrial1_F1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
@@ -984,6 +1055,438 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"RC网络的频率特性 实验内容2";
 			// 
+			// textBoxTrial2_φ2_8
+			// 
+			this->textBoxTrial2_φ2_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_8->Location = System::Drawing::Point(798, 246);
+			this->textBoxTrial2_φ2_8->Name = L"textBoxTrial2_φ2_8";
+			this->textBoxTrial2_φ2_8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_8->TabIndex = 270;
+			this->textBoxTrial2_φ2_8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_7
+			// 
+			this->textBoxTrial2_φ2_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_7->Location = System::Drawing::Point(699, 246);
+			this->textBoxTrial2_φ2_7->Name = L"textBoxTrial2_φ2_7";
+			this->textBoxTrial2_φ2_7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_7->TabIndex = 269;
+			this->textBoxTrial2_φ2_7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_6
+			// 
+			this->textBoxTrial2_φ2_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_6->Location = System::Drawing::Point(601, 246);
+			this->textBoxTrial2_φ2_6->Name = L"textBoxTrial2_φ2_6";
+			this->textBoxTrial2_φ2_6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_6->TabIndex = 268;
+			this->textBoxTrial2_φ2_6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_5
+			// 
+			this->textBoxTrial2_φ2_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_5->Location = System::Drawing::Point(508, 246);
+			this->textBoxTrial2_φ2_5->Name = L"textBoxTrial2_φ2_5";
+			this->textBoxTrial2_φ2_5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_5->TabIndex = 267;
+			this->textBoxTrial2_φ2_5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_4
+			// 
+			this->textBoxTrial2_φ2_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_4->Location = System::Drawing::Point(414, 246);
+			this->textBoxTrial2_φ2_4->Name = L"textBoxTrial2_φ2_4";
+			this->textBoxTrial2_φ2_4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_4->TabIndex = 266;
+			this->textBoxTrial2_φ2_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_3
+			// 
+			this->textBoxTrial2_φ2_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_3->Location = System::Drawing::Point(311, 247);
+			this->textBoxTrial2_φ2_3->Name = L"textBoxTrial2_φ2_3";
+			this->textBoxTrial2_φ2_3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_3->TabIndex = 265;
+			this->textBoxTrial2_φ2_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_2
+			// 
+			this->textBoxTrial2_φ2_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_2->Location = System::Drawing::Point(217, 247);
+			this->textBoxTrial2_φ2_2->Name = L"textBoxTrial2_φ2_2";
+			this->textBoxTrial2_φ2_2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_2->TabIndex = 264;
+			this->textBoxTrial2_φ2_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2_1
+			// 
+			this->textBoxTrial2_φ2_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2_1->Location = System::Drawing::Point(123, 247);
+			this->textBoxTrial2_φ2_1->Name = L"textBoxTrial2_φ2_1";
+			this->textBoxTrial2_φ2_1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2_1->TabIndex = 263;
+			this->textBoxTrial2_φ2_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_8
+			// 
+			this->textBoxTrial2_τ2_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_8->Location = System::Drawing::Point(797, 210);
+			this->textBoxTrial2_τ2_8->Name = L"textBoxTrial2_τ2_8";
+			this->textBoxTrial2_τ2_8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_8->TabIndex = 262;
+			this->textBoxTrial2_τ2_8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_7
+			// 
+			this->textBoxTrial2_τ2_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_7->Location = System::Drawing::Point(698, 210);
+			this->textBoxTrial2_τ2_7->Name = L"textBoxTrial2_τ2_7";
+			this->textBoxTrial2_τ2_7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_7->TabIndex = 261;
+			this->textBoxTrial2_τ2_7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_6
+			// 
+			this->textBoxTrial2_τ2_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_6->Location = System::Drawing::Point(600, 210);
+			this->textBoxTrial2_τ2_6->Name = L"textBoxTrial2_τ2_6";
+			this->textBoxTrial2_τ2_6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_6->TabIndex = 260;
+			this->textBoxTrial2_τ2_6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_5
+			// 
+			this->textBoxTrial2_τ2_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_5->Location = System::Drawing::Point(507, 210);
+			this->textBoxTrial2_τ2_5->Name = L"textBoxTrial2_τ2_5";
+			this->textBoxTrial2_τ2_5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_5->TabIndex = 259;
+			this->textBoxTrial2_τ2_5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_4
+			// 
+			this->textBoxTrial2_τ2_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_4->Location = System::Drawing::Point(413, 210);
+			this->textBoxTrial2_τ2_4->Name = L"textBoxTrial2_τ2_4";
+			this->textBoxTrial2_τ2_4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_4->TabIndex = 258;
+			this->textBoxTrial2_τ2_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_3
+			// 
+			this->textBoxTrial2_τ2_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_3->Location = System::Drawing::Point(310, 211);
+			this->textBoxTrial2_τ2_3->Name = L"textBoxTrial2_τ2_3";
+			this->textBoxTrial2_τ2_3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_3->TabIndex = 257;
+			this->textBoxTrial2_τ2_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_2
+			// 
+			this->textBoxTrial2_τ2_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_2->Location = System::Drawing::Point(216, 211);
+			this->textBoxTrial2_τ2_2->Name = L"textBoxTrial2_τ2_2";
+			this->textBoxTrial2_τ2_2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_2->TabIndex = 256;
+			this->textBoxTrial2_τ2_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2_1
+			// 
+			this->textBoxTrial2_τ2_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2_1->Location = System::Drawing::Point(122, 211);
+			this->textBoxTrial2_τ2_1->Name = L"textBoxTrial2_τ2_1";
+			this->textBoxTrial2_τ2_1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2_1->TabIndex = 255;
+			this->textBoxTrial2_τ2_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ8
+			// 
+			this->textBoxTrial2_φ8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ8->Location = System::Drawing::Point(797, 137);
+			this->textBoxTrial2_φ8->Name = L"textBoxTrial2_φ8";
+			this->textBoxTrial2_φ8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ8->TabIndex = 254;
+			this->textBoxTrial2_φ8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ7
+			// 
+			this->textBoxTrial2_φ7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ7->Location = System::Drawing::Point(698, 137);
+			this->textBoxTrial2_φ7->Name = L"textBoxTrial2_φ7";
+			this->textBoxTrial2_φ7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ7->TabIndex = 253;
+			this->textBoxTrial2_φ7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ6
+			// 
+			this->textBoxTrial2_φ6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ6->Location = System::Drawing::Point(600, 137);
+			this->textBoxTrial2_φ6->Name = L"textBoxTrial2_φ6";
+			this->textBoxTrial2_φ6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ6->TabIndex = 252;
+			this->textBoxTrial2_φ6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ5
+			// 
+			this->textBoxTrial2_φ5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ5->Location = System::Drawing::Point(507, 137);
+			this->textBoxTrial2_φ5->Name = L"textBoxTrial2_φ5";
+			this->textBoxTrial2_φ5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ5->TabIndex = 251;
+			this->textBoxTrial2_φ5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ4
+			// 
+			this->textBoxTrial2_φ4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ4->Location = System::Drawing::Point(413, 137);
+			this->textBoxTrial2_φ4->Name = L"textBoxTrial2_φ4";
+			this->textBoxTrial2_φ4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ4->TabIndex = 250;
+			this->textBoxTrial2_φ4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ3
+			// 
+			this->textBoxTrial2_φ3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ3->Location = System::Drawing::Point(310, 138);
+			this->textBoxTrial2_φ3->Name = L"textBoxTrial2_φ3";
+			this->textBoxTrial2_φ3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ3->TabIndex = 249;
+			this->textBoxTrial2_φ3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ2
+			// 
+			this->textBoxTrial2_φ2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ2->Location = System::Drawing::Point(216, 138);
+			this->textBoxTrial2_φ2->Name = L"textBoxTrial2_φ2";
+			this->textBoxTrial2_φ2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ2->TabIndex = 248;
+			this->textBoxTrial2_φ2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_φ1
+			// 
+			this->textBoxTrial2_φ1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_φ1->Location = System::Drawing::Point(122, 138);
+			this->textBoxTrial2_φ1->Name = L"textBoxTrial2_φ1";
+			this->textBoxTrial2_φ1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_φ1->TabIndex = 247;
+			this->textBoxTrial2_φ1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ8
+			// 
+			this->textBoxTrial2_τ8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ8->Location = System::Drawing::Point(798, 103);
+			this->textBoxTrial2_τ8->Name = L"textBoxTrial2_τ8";
+			this->textBoxTrial2_τ8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ8->TabIndex = 246;
+			this->textBoxTrial2_τ8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ7
+			// 
+			this->textBoxTrial2_τ7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ7->Location = System::Drawing::Point(699, 103);
+			this->textBoxTrial2_τ7->Name = L"textBoxTrial2_τ7";
+			this->textBoxTrial2_τ7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ7->TabIndex = 245;
+			this->textBoxTrial2_τ7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ6
+			// 
+			this->textBoxTrial2_τ6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ6->Location = System::Drawing::Point(601, 103);
+			this->textBoxTrial2_τ6->Name = L"textBoxTrial2_τ6";
+			this->textBoxTrial2_τ6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ6->TabIndex = 244;
+			this->textBoxTrial2_τ6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ5
+			// 
+			this->textBoxTrial2_τ5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ5->Location = System::Drawing::Point(508, 103);
+			this->textBoxTrial2_τ5->Name = L"textBoxTrial2_τ5";
+			this->textBoxTrial2_τ5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ5->TabIndex = 243;
+			this->textBoxTrial2_τ5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ4
+			// 
+			this->textBoxTrial2_τ4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ4->Location = System::Drawing::Point(414, 103);
+			this->textBoxTrial2_τ4->Name = L"textBoxTrial2_τ4";
+			this->textBoxTrial2_τ4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ4->TabIndex = 242;
+			this->textBoxTrial2_τ4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ3
+			// 
+			this->textBoxTrial2_τ3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ3->Location = System::Drawing::Point(311, 104);
+			this->textBoxTrial2_τ3->Name = L"textBoxTrial2_τ3";
+			this->textBoxTrial2_τ3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ3->TabIndex = 241;
+			this->textBoxTrial2_τ3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ2
+			// 
+			this->textBoxTrial2_τ2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ2->Location = System::Drawing::Point(217, 104);
+			this->textBoxTrial2_τ2->Name = L"textBoxTrial2_τ2";
+			this->textBoxTrial2_τ2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ2->TabIndex = 240;
+			this->textBoxTrial2_τ2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_τ1
+			// 
+			this->textBoxTrial2_τ1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_τ1->Location = System::Drawing::Point(123, 104);
+			this->textBoxTrial2_τ1->Name = L"textBoxTrial2_τ1";
+			this->textBoxTrial2_τ1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_τ1->TabIndex = 239;
+			this->textBoxTrial2_τ1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T8
+			// 
+			this->textBoxTrial2_T8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T8->Location = System::Drawing::Point(797, 65);
+			this->textBoxTrial2_T8->Name = L"textBoxTrial2_T8";
+			this->textBoxTrial2_T8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T8->TabIndex = 238;
+			this->textBoxTrial2_T8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T7
+			// 
+			this->textBoxTrial2_T7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T7->Location = System::Drawing::Point(698, 65);
+			this->textBoxTrial2_T7->Name = L"textBoxTrial2_T7";
+			this->textBoxTrial2_T7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T7->TabIndex = 237;
+			this->textBoxTrial2_T7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T6
+			// 
+			this->textBoxTrial2_T6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T6->Location = System::Drawing::Point(600, 65);
+			this->textBoxTrial2_T6->Name = L"textBoxTrial2_T6";
+			this->textBoxTrial2_T6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T6->TabIndex = 236;
+			this->textBoxTrial2_T6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T5
+			// 
+			this->textBoxTrial2_T5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T5->Location = System::Drawing::Point(507, 65);
+			this->textBoxTrial2_T5->Name = L"textBoxTrial2_T5";
+			this->textBoxTrial2_T5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T5->TabIndex = 235;
+			this->textBoxTrial2_T5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T4
+			// 
+			this->textBoxTrial2_T4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T4->Location = System::Drawing::Point(413, 65);
+			this->textBoxTrial2_T4->Name = L"textBoxTrial2_T4";
+			this->textBoxTrial2_T4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T4->TabIndex = 234;
+			this->textBoxTrial2_T4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T3
+			// 
+			this->textBoxTrial2_T3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T3->Location = System::Drawing::Point(310, 66);
+			this->textBoxTrial2_T3->Name = L"textBoxTrial2_T3";
+			this->textBoxTrial2_T3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T3->TabIndex = 233;
+			this->textBoxTrial2_T3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T2
+			// 
+			this->textBoxTrial2_T2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T2->Location = System::Drawing::Point(216, 66);
+			this->textBoxTrial2_T2->Name = L"textBoxTrial2_T2";
+			this->textBoxTrial2_T2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T2->TabIndex = 232;
+			this->textBoxTrial2_T2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_T1
+			// 
+			this->textBoxTrial2_T1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_T1->Location = System::Drawing::Point(122, 66);
+			this->textBoxTrial2_T1->Name = L"textBoxTrial2_T1";
+			this->textBoxTrial2_T1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_T1->TabIndex = 231;
+			this->textBoxTrial2_T1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F8
+			// 
+			this->textBoxTrial2_F8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F8->Location = System::Drawing::Point(797, 25);
+			this->textBoxTrial2_F8->Name = L"textBoxTrial2_F8";
+			this->textBoxTrial2_F8->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F8->TabIndex = 230;
+			this->textBoxTrial2_F8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F7
+			// 
+			this->textBoxTrial2_F7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F7->Location = System::Drawing::Point(698, 25);
+			this->textBoxTrial2_F7->Name = L"textBoxTrial2_F7";
+			this->textBoxTrial2_F7->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F7->TabIndex = 229;
+			this->textBoxTrial2_F7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F6
+			// 
+			this->textBoxTrial2_F6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F6->Location = System::Drawing::Point(600, 25);
+			this->textBoxTrial2_F6->Name = L"textBoxTrial2_F6";
+			this->textBoxTrial2_F6->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F6->TabIndex = 228;
+			this->textBoxTrial2_F6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F5
+			// 
+			this->textBoxTrial2_F5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F5->Location = System::Drawing::Point(507, 25);
+			this->textBoxTrial2_F5->Name = L"textBoxTrial2_F5";
+			this->textBoxTrial2_F5->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F5->TabIndex = 227;
+			this->textBoxTrial2_F5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F4
+			// 
+			this->textBoxTrial2_F4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F4->Location = System::Drawing::Point(413, 25);
+			this->textBoxTrial2_F4->Name = L"textBoxTrial2_F4";
+			this->textBoxTrial2_F4->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F4->TabIndex = 226;
+			this->textBoxTrial2_F4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F3
+			// 
+			this->textBoxTrial2_F3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F3->Location = System::Drawing::Point(310, 26);
+			this->textBoxTrial2_F3->Name = L"textBoxTrial2_F3";
+			this->textBoxTrial2_F3->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F3->TabIndex = 225;
+			this->textBoxTrial2_F3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F2
+			// 
+			this->textBoxTrial2_F2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F2->Location = System::Drawing::Point(216, 26);
+			this->textBoxTrial2_F2->Name = L"textBoxTrial2_F2";
+			this->textBoxTrial2_F2->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F2->TabIndex = 224;
+			this->textBoxTrial2_F2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
+			// textBoxTrial2_F1
+			// 
+			this->textBoxTrial2_F1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_F1->Location = System::Drawing::Point(122, 26);
+			this->textBoxTrial2_F1->Name = L"textBoxTrial2_F1";
+			this->textBoxTrial2_F1->Size = System::Drawing::Size(88, 27);
+			this->textBoxTrial2_F1->TabIndex = 223;
+			this->textBoxTrial2_F1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
@@ -1132,16 +1635,6 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->label64->TabIndex = 328;
 			this->label64->Text = L"实验结论";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1066, 1121);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 327;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &RC网络的频率特性::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(953, 1121);
@@ -1189,7 +1682,6 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->panel1->Controls->Add(this->label结论);
 			this->panel1->Controls->Add(this->groupBox8);
 			this->panel1->Controls->Add(this->label64);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Controls->Add(this->groupBox5);
@@ -1202,6 +1694,7 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &RC网络的频率特性::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &RC网络的频率特性::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1214,510 +1707,6 @@ private: System::Windows::Forms::Label^  textBoxTrial2_F1;
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
-			// 
-			// textBoxTrial1_F8
-			// 
-			this->textBoxTrial1_F8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F8->Location = System::Drawing::Point(797, 35);
-			this->textBoxTrial1_F8->Name = L"textBoxTrial1_F8";
-			this->textBoxTrial1_F8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F8->TabIndex = 230;
-			this->textBoxTrial1_F8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F7
-			// 
-			this->textBoxTrial1_F7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F7->Location = System::Drawing::Point(698, 35);
-			this->textBoxTrial1_F7->Name = L"textBoxTrial1_F7";
-			this->textBoxTrial1_F7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F7->TabIndex = 229;
-			this->textBoxTrial1_F7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F6
-			// 
-			this->textBoxTrial1_F6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F6->Location = System::Drawing::Point(600, 35);
-			this->textBoxTrial1_F6->Name = L"textBoxTrial1_F6";
-			this->textBoxTrial1_F6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F6->TabIndex = 228;
-			this->textBoxTrial1_F6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F5
-			// 
-			this->textBoxTrial1_F5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F5->Location = System::Drawing::Point(507, 35);
-			this->textBoxTrial1_F5->Name = L"textBoxTrial1_F5";
-			this->textBoxTrial1_F5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F5->TabIndex = 227;
-			this->textBoxTrial1_F5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F4
-			// 
-			this->textBoxTrial1_F4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F4->Location = System::Drawing::Point(413, 35);
-			this->textBoxTrial1_F4->Name = L"textBoxTrial1_F4";
-			this->textBoxTrial1_F4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F4->TabIndex = 226;
-			this->textBoxTrial1_F4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F3
-			// 
-			this->textBoxTrial1_F3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F3->Location = System::Drawing::Point(310, 36);
-			this->textBoxTrial1_F3->Name = L"textBoxTrial1_F3";
-			this->textBoxTrial1_F3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F3->TabIndex = 225;
-			this->textBoxTrial1_F3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F2
-			// 
-			this->textBoxTrial1_F2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F2->Location = System::Drawing::Point(216, 36);
-			this->textBoxTrial1_F2->Name = L"textBoxTrial1_F2";
-			this->textBoxTrial1_F2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F2->TabIndex = 224;
-			this->textBoxTrial1_F2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial1_F1
-			// 
-			this->textBoxTrial1_F1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_F1->Location = System::Drawing::Point(122, 36);
-			this->textBoxTrial1_F1->Name = L"textBoxTrial1_F1";
-			this->textBoxTrial1_F1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial1_F1->TabIndex = 223;
-			this->textBoxTrial1_F1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F8
-			// 
-			this->textBoxTrial2_F8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F8->Location = System::Drawing::Point(797, 25);
-			this->textBoxTrial2_F8->Name = L"textBoxTrial2_F8";
-			this->textBoxTrial2_F8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F8->TabIndex = 230;
-			this->textBoxTrial2_F8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F7
-			// 
-			this->textBoxTrial2_F7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F7->Location = System::Drawing::Point(698, 25);
-			this->textBoxTrial2_F7->Name = L"textBoxTrial2_F7";
-			this->textBoxTrial2_F7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F7->TabIndex = 229;
-			this->textBoxTrial2_F7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F6
-			// 
-			this->textBoxTrial2_F6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F6->Location = System::Drawing::Point(600, 25);
-			this->textBoxTrial2_F6->Name = L"textBoxTrial2_F6";
-			this->textBoxTrial2_F6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F6->TabIndex = 228;
-			this->textBoxTrial2_F6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F5
-			// 
-			this->textBoxTrial2_F5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F5->Location = System::Drawing::Point(507, 25);
-			this->textBoxTrial2_F5->Name = L"textBoxTrial2_F5";
-			this->textBoxTrial2_F5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F5->TabIndex = 227;
-			this->textBoxTrial2_F5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F4
-			// 
-			this->textBoxTrial2_F4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F4->Location = System::Drawing::Point(413, 25);
-			this->textBoxTrial2_F4->Name = L"textBoxTrial2_F4";
-			this->textBoxTrial2_F4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F4->TabIndex = 226;
-			this->textBoxTrial2_F4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F3
-			// 
-			this->textBoxTrial2_F3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F3->Location = System::Drawing::Point(310, 26);
-			this->textBoxTrial2_F3->Name = L"textBoxTrial2_F3";
-			this->textBoxTrial2_F3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F3->TabIndex = 225;
-			this->textBoxTrial2_F3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F2
-			// 
-			this->textBoxTrial2_F2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F2->Location = System::Drawing::Point(216, 26);
-			this->textBoxTrial2_F2->Name = L"textBoxTrial2_F2";
-			this->textBoxTrial2_F2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F2->TabIndex = 224;
-			this->textBoxTrial2_F2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_F1
-			// 
-			this->textBoxTrial2_F1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_F1->Location = System::Drawing::Point(122, 26);
-			this->textBoxTrial2_F1->Name = L"textBoxTrial2_F1";
-			this->textBoxTrial2_F1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_F1->TabIndex = 223;
-			this->textBoxTrial2_F1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T8
-			// 
-			this->textBoxTrial2_T8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T8->Location = System::Drawing::Point(797, 65);
-			this->textBoxTrial2_T8->Name = L"textBoxTrial2_T8";
-			this->textBoxTrial2_T8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T8->TabIndex = 238;
-			this->textBoxTrial2_T8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T7
-			// 
-			this->textBoxTrial2_T7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T7->Location = System::Drawing::Point(698, 65);
-			this->textBoxTrial2_T7->Name = L"textBoxTrial2_T7";
-			this->textBoxTrial2_T7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T7->TabIndex = 237;
-			this->textBoxTrial2_T7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T6
-			// 
-			this->textBoxTrial2_T6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T6->Location = System::Drawing::Point(600, 65);
-			this->textBoxTrial2_T6->Name = L"textBoxTrial2_T6";
-			this->textBoxTrial2_T6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T6->TabIndex = 236;
-			this->textBoxTrial2_T6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T5
-			// 
-			this->textBoxTrial2_T5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T5->Location = System::Drawing::Point(507, 65);
-			this->textBoxTrial2_T5->Name = L"textBoxTrial2_T5";
-			this->textBoxTrial2_T5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T5->TabIndex = 235;
-			this->textBoxTrial2_T5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T4
-			// 
-			this->textBoxTrial2_T4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T4->Location = System::Drawing::Point(413, 65);
-			this->textBoxTrial2_T4->Name = L"textBoxTrial2_T4";
-			this->textBoxTrial2_T4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T4->TabIndex = 234;
-			this->textBoxTrial2_T4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T3
-			// 
-			this->textBoxTrial2_T3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T3->Location = System::Drawing::Point(310, 66);
-			this->textBoxTrial2_T3->Name = L"textBoxTrial2_T3";
-			this->textBoxTrial2_T3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T3->TabIndex = 233;
-			this->textBoxTrial2_T3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T2
-			// 
-			this->textBoxTrial2_T2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T2->Location = System::Drawing::Point(216, 66);
-			this->textBoxTrial2_T2->Name = L"textBoxTrial2_T2";
-			this->textBoxTrial2_T2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T2->TabIndex = 232;
-			this->textBoxTrial2_T2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_T1
-			// 
-			this->textBoxTrial2_T1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_T1->Location = System::Drawing::Point(122, 66);
-			this->textBoxTrial2_T1->Name = L"textBoxTrial2_T1";
-			this->textBoxTrial2_T1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_T1->TabIndex = 231;
-			this->textBoxTrial2_T1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ8
-			// 
-			this->textBoxTrial2_τ8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ8->Location = System::Drawing::Point(798, 103);
-			this->textBoxTrial2_τ8->Name = L"textBoxTrial2_τ8";
-			this->textBoxTrial2_τ8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ8->TabIndex = 246;
-			this->textBoxTrial2_τ8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ7
-			// 
-			this->textBoxTrial2_τ7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ7->Location = System::Drawing::Point(699, 103);
-			this->textBoxTrial2_τ7->Name = L"textBoxTrial2_τ7";
-			this->textBoxTrial2_τ7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ7->TabIndex = 245;
-			this->textBoxTrial2_τ7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ6
-			// 
-			this->textBoxTrial2_τ6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ6->Location = System::Drawing::Point(601, 103);
-			this->textBoxTrial2_τ6->Name = L"textBoxTrial2_τ6";
-			this->textBoxTrial2_τ6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ6->TabIndex = 244;
-			this->textBoxTrial2_τ6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ5
-			// 
-			this->textBoxTrial2_τ5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ5->Location = System::Drawing::Point(508, 103);
-			this->textBoxTrial2_τ5->Name = L"textBoxTrial2_τ5";
-			this->textBoxTrial2_τ5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ5->TabIndex = 243;
-			this->textBoxTrial2_τ5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ4
-			// 
-			this->textBoxTrial2_τ4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ4->Location = System::Drawing::Point(414, 103);
-			this->textBoxTrial2_τ4->Name = L"textBoxTrial2_τ4";
-			this->textBoxTrial2_τ4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ4->TabIndex = 242;
-			this->textBoxTrial2_τ4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ3
-			// 
-			this->textBoxTrial2_τ3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ3->Location = System::Drawing::Point(311, 104);
-			this->textBoxTrial2_τ3->Name = L"textBoxTrial2_τ3";
-			this->textBoxTrial2_τ3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ3->TabIndex = 241;
-			this->textBoxTrial2_τ3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2
-			// 
-			this->textBoxTrial2_τ2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2->Location = System::Drawing::Point(217, 104);
-			this->textBoxTrial2_τ2->Name = L"textBoxTrial2_τ2";
-			this->textBoxTrial2_τ2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2->TabIndex = 240;
-			this->textBoxTrial2_τ2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ1
-			// 
-			this->textBoxTrial2_τ1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ1->Location = System::Drawing::Point(123, 104);
-			this->textBoxTrial2_τ1->Name = L"textBoxTrial2_τ1";
-			this->textBoxTrial2_τ1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ1->TabIndex = 239;
-			this->textBoxTrial2_τ1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ8
-			// 
-			this->textBoxTrial2_φ8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ8->Location = System::Drawing::Point(797, 137);
-			this->textBoxTrial2_φ8->Name = L"textBoxTrial2_φ8";
-			this->textBoxTrial2_φ8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ8->TabIndex = 254;
-			this->textBoxTrial2_φ8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ7
-			// 
-			this->textBoxTrial2_φ7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ7->Location = System::Drawing::Point(698, 137);
-			this->textBoxTrial2_φ7->Name = L"textBoxTrial2_φ7";
-			this->textBoxTrial2_φ7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ7->TabIndex = 253;
-			this->textBoxTrial2_φ7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ6
-			// 
-			this->textBoxTrial2_φ6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ6->Location = System::Drawing::Point(600, 137);
-			this->textBoxTrial2_φ6->Name = L"textBoxTrial2_φ6";
-			this->textBoxTrial2_φ6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ6->TabIndex = 252;
-			this->textBoxTrial2_φ6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ5
-			// 
-			this->textBoxTrial2_φ5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ5->Location = System::Drawing::Point(507, 137);
-			this->textBoxTrial2_φ5->Name = L"textBoxTrial2_φ5";
-			this->textBoxTrial2_φ5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ5->TabIndex = 251;
-			this->textBoxTrial2_φ5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ4
-			// 
-			this->textBoxTrial2_φ4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ4->Location = System::Drawing::Point(413, 137);
-			this->textBoxTrial2_φ4->Name = L"textBoxTrial2_φ4";
-			this->textBoxTrial2_φ4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ4->TabIndex = 250;
-			this->textBoxTrial2_φ4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ3
-			// 
-			this->textBoxTrial2_φ3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ3->Location = System::Drawing::Point(310, 138);
-			this->textBoxTrial2_φ3->Name = L"textBoxTrial2_φ3";
-			this->textBoxTrial2_φ3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ3->TabIndex = 249;
-			this->textBoxTrial2_φ3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2
-			// 
-			this->textBoxTrial2_φ2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2->Location = System::Drawing::Point(216, 138);
-			this->textBoxTrial2_φ2->Name = L"textBoxTrial2_φ2";
-			this->textBoxTrial2_φ2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2->TabIndex = 248;
-			this->textBoxTrial2_φ2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ1
-			// 
-			this->textBoxTrial2_φ1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ1->Location = System::Drawing::Point(122, 138);
-			this->textBoxTrial2_φ1->Name = L"textBoxTrial2_φ1";
-			this->textBoxTrial2_φ1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ1->TabIndex = 247;
-			this->textBoxTrial2_φ1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_8
-			// 
-			this->textBoxTrial2_τ2_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_8->Location = System::Drawing::Point(797, 210);
-			this->textBoxTrial2_τ2_8->Name = L"textBoxTrial2_τ2_8";
-			this->textBoxTrial2_τ2_8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_8->TabIndex = 262;
-			this->textBoxTrial2_τ2_8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_7
-			// 
-			this->textBoxTrial2_τ2_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_7->Location = System::Drawing::Point(698, 210);
-			this->textBoxTrial2_τ2_7->Name = L"textBoxTrial2_τ2_7";
-			this->textBoxTrial2_τ2_7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_7->TabIndex = 261;
-			this->textBoxTrial2_τ2_7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_6
-			// 
-			this->textBoxTrial2_τ2_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_6->Location = System::Drawing::Point(600, 210);
-			this->textBoxTrial2_τ2_6->Name = L"textBoxTrial2_τ2_6";
-			this->textBoxTrial2_τ2_6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_6->TabIndex = 260;
-			this->textBoxTrial2_τ2_6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_5
-			// 
-			this->textBoxTrial2_τ2_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_5->Location = System::Drawing::Point(507, 210);
-			this->textBoxTrial2_τ2_5->Name = L"textBoxTrial2_τ2_5";
-			this->textBoxTrial2_τ2_5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_5->TabIndex = 259;
-			this->textBoxTrial2_τ2_5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_4
-			// 
-			this->textBoxTrial2_τ2_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_4->Location = System::Drawing::Point(413, 210);
-			this->textBoxTrial2_τ2_4->Name = L"textBoxTrial2_τ2_4";
-			this->textBoxTrial2_τ2_4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_4->TabIndex = 258;
-			this->textBoxTrial2_τ2_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_3
-			// 
-			this->textBoxTrial2_τ2_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_3->Location = System::Drawing::Point(310, 211);
-			this->textBoxTrial2_τ2_3->Name = L"textBoxTrial2_τ2_3";
-			this->textBoxTrial2_τ2_3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_3->TabIndex = 257;
-			this->textBoxTrial2_τ2_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_2
-			// 
-			this->textBoxTrial2_τ2_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_2->Location = System::Drawing::Point(216, 211);
-			this->textBoxTrial2_τ2_2->Name = L"textBoxTrial2_τ2_2";
-			this->textBoxTrial2_τ2_2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_2->TabIndex = 256;
-			this->textBoxTrial2_τ2_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_τ2_1
-			// 
-			this->textBoxTrial2_τ2_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_τ2_1->Location = System::Drawing::Point(122, 211);
-			this->textBoxTrial2_τ2_1->Name = L"textBoxTrial2_τ2_1";
-			this->textBoxTrial2_τ2_1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_τ2_1->TabIndex = 255;
-			this->textBoxTrial2_τ2_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_8
-			// 
-			this->textBoxTrial2_φ2_8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_8->Location = System::Drawing::Point(798, 246);
-			this->textBoxTrial2_φ2_8->Name = L"textBoxTrial2_φ2_8";
-			this->textBoxTrial2_φ2_8->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_8->TabIndex = 270;
-			this->textBoxTrial2_φ2_8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_7
-			// 
-			this->textBoxTrial2_φ2_7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_7->Location = System::Drawing::Point(699, 246);
-			this->textBoxTrial2_φ2_7->Name = L"textBoxTrial2_φ2_7";
-			this->textBoxTrial2_φ2_7->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_7->TabIndex = 269;
-			this->textBoxTrial2_φ2_7->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_6
-			// 
-			this->textBoxTrial2_φ2_6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_6->Location = System::Drawing::Point(601, 246);
-			this->textBoxTrial2_φ2_6->Name = L"textBoxTrial2_φ2_6";
-			this->textBoxTrial2_φ2_6->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_6->TabIndex = 268;
-			this->textBoxTrial2_φ2_6->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_5
-			// 
-			this->textBoxTrial2_φ2_5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_5->Location = System::Drawing::Point(508, 246);
-			this->textBoxTrial2_φ2_5->Name = L"textBoxTrial2_φ2_5";
-			this->textBoxTrial2_φ2_5->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_5->TabIndex = 267;
-			this->textBoxTrial2_φ2_5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_4
-			// 
-			this->textBoxTrial2_φ2_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_4->Location = System::Drawing::Point(414, 246);
-			this->textBoxTrial2_φ2_4->Name = L"textBoxTrial2_φ2_4";
-			this->textBoxTrial2_φ2_4->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_4->TabIndex = 266;
-			this->textBoxTrial2_φ2_4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_3
-			// 
-			this->textBoxTrial2_φ2_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_3->Location = System::Drawing::Point(311, 247);
-			this->textBoxTrial2_φ2_3->Name = L"textBoxTrial2_φ2_3";
-			this->textBoxTrial2_φ2_3->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_3->TabIndex = 265;
-			this->textBoxTrial2_φ2_3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_2
-			// 
-			this->textBoxTrial2_φ2_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_2->Location = System::Drawing::Point(217, 247);
-			this->textBoxTrial2_φ2_2->Name = L"textBoxTrial2_φ2_2";
-			this->textBoxTrial2_φ2_2->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_2->TabIndex = 264;
-			this->textBoxTrial2_φ2_2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// textBoxTrial2_φ2_1
-			// 
-			this->textBoxTrial2_φ2_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_φ2_1->Location = System::Drawing::Point(123, 247);
-			this->textBoxTrial2_φ2_1->Name = L"textBoxTrial2_φ2_1";
-			this->textBoxTrial2_φ2_1->Size = System::Drawing::Size(88, 27);
-			this->textBoxTrial2_φ2_1->TabIndex = 263;
-			this->textBoxTrial2_φ2_1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// RC网络的频率特性
 			// 
@@ -1780,6 +1769,8 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 	e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
 }
 private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }

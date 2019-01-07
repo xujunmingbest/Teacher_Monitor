@@ -362,7 +362,7 @@ private: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, Sy
 		 void LoadListBox1();
 		 void GetCondition(vector<string> &contitions);
 		 void GetDataByCondition(vector<string> &files, vector<string> &contitions);
-
+		 void updateGrade(int listView1ItemIndex);
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
 	try {
 		LoadListBox1();
@@ -382,7 +382,7 @@ private: System::Void listView1_SelectedIndexChanged(System::Object^  sender, Sy
 private: System::Void listView1_DoubleClick(System::Object^  sender, System::EventArgs^  e) {
 	if (listView1->SelectedItems->Count > 0) {
 		OpenTrial(T_to_string(listView1->SelectedItems[0]->Name));
-		
+		updateGrade(listView1->SelectedIndices[0]);
 	}
 }
 

@@ -219,7 +219,7 @@ private: System::Windows::Forms::Label^  label4;
 private: System::Windows::Forms::Label^  label5;
 private: System::Windows::Forms::TextBox^  textBoxscore2;
 
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::GroupBox^  groupBox5;
@@ -332,7 +332,6 @@ private: System::Windows::Forms::Label^  label64;
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->label结论 = (gcnew System::Windows::Forms::Label());
 			this->label64 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
@@ -1277,7 +1276,6 @@ private: System::Windows::Forms::Label^  label64;
 			// 
 			this->groupBox1->Controls->Add(this->label结论);
 			this->groupBox1->Controls->Add(this->label64);
-			this->groupBox1->Controls->Add(this->button3);
 			this->groupBox1->Controls->Add(this->button2);
 			this->groupBox1->Controls->Add(this->button1);
 			this->groupBox1->Controls->Add(this->groupBox5);
@@ -1368,16 +1366,6 @@ private: System::Windows::Forms::Label^  label64;
 			this->label64->Size = System::Drawing::Size(95, 25);
 			this->label64->TabIndex = 209;
 			this->label64->Text = L"实验结论";
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1047, 539);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 208;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &叠加原理::button3_Click);
 			// 
 			// button2
 			// 
@@ -1967,6 +1955,7 @@ private: System::Windows::Forms::Label^  label64;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &叠加原理::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &叠加原理::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1985,7 +1974,7 @@ private: System::Windows::Forms::Label^  label64;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1525, 855);
+			this->ClientSize = System::Drawing::Size(1546, 855);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->groupBox1);
 			this->Name = L"叠加原理";
@@ -2010,10 +1999,13 @@ private: System::Windows::Forms::Label^  label64;
 		if (SelectedArea == "panel1") {
 			_NewBitmap = gcnew  Bitmap(panel1->Width, panel1->Height);
 			panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
+			e->HasMorePages = true;
+			SelectedArea = "finally";
 		}
 		else {
 			_NewBitmap = gcnew  Bitmap(groupBox1->Width, groupBox1->Height);
 			groupBox1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, groupBox1->Width, groupBox1->Height));
+			e->HasMorePages = false;
 		}
 		int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 		int y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
@@ -2052,14 +2044,15 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Priview();
-	SelectedArea = "groupBox1";
-	Priview();
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Print();
 	SelectedArea = "groupBox1";
 	Print();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

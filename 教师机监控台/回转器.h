@@ -265,7 +265,7 @@ private: System::Windows::Forms::TextBox^  textBoxScore4;
 private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
 private: System::Windows::Forms::Button^  button1;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::Panel^  panel1;
 private: System::Windows::Forms::Label^  textBoxTrial1_GAver_line7;
@@ -583,7 +583,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
@@ -3311,6 +3310,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &回转器::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &回转器::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -3355,16 +3355,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &回转器::button1_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1024, 1484);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 341;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &回转器::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(911, 1484);
@@ -3381,7 +3371,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->panel1->Controls->Add(this->groupBox14);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->groupBox8);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Controls->Add(this->groupBox2);
@@ -3450,7 +3439,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial1_U;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1575, 698);
+			this->ClientSize = System::Drawing::Size(1596, 698);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"回转器";
@@ -3505,20 +3494,20 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 		panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
 		x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
 		y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
+		e->HasMorePages = true;
+		SelectedArea = "finally";
 	}
 	else {
 		_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 		panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
 		x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
 		y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
-	
+		e->HasMorePages = false;
 	}
 	e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
 }
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
-	Priview();
-	SelectedArea = "panel2";
 	Priview();
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -3526,6 +3515,9 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	Print();
 	SelectedArea = "panel2";
 	Print();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

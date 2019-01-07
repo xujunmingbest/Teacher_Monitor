@@ -200,7 +200,7 @@ private: System::Windows::Forms::TextBox^  textBoxTrial3Score;
 private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
 private: System::Windows::Forms::Button^  button1;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
@@ -253,6 +253,8 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial1_P_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_P_1 = (gcnew System::Windows::Forms::Label());
 			this->label77 = (gcnew System::Windows::Forms::Label());
 			this->label78 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
@@ -294,6 +296,10 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->label24 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial2_P_4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_P_1 = (gcnew System::Windows::Forms::Label());
 			this->label52 = (gcnew System::Windows::Forms::Label());
 			this->label58 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
@@ -344,6 +350,9 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->label74 = (gcnew System::Windows::Forms::Label());
 			this->label75 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial3_QQ_3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_QQ_2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_QQ_1 = (gcnew System::Windows::Forms::Label());
 			this->label60 = (gcnew System::Windows::Forms::Label());
 			this->label76 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial3Score = (gcnew System::Windows::Forms::TextBox());
@@ -382,20 +391,10 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
-			this->textBoxTrial1_P_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_P_1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_P_1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_QQ_1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox1->SuspendLayout();
@@ -722,6 +721,28 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->groupBox8->TabIndex = 203;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"三相电路功率的测量  实验内容1";
+			// 
+			// textBoxTrial1_P_2
+			// 
+			this->textBoxTrial1_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_P_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_P_2->Location = System::Drawing::Point(776, 194);
+			this->textBoxTrial1_P_2->Name = L"textBoxTrial1_P_2";
+			this->textBoxTrial1_P_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial1_P_2->TabIndex = 224;
+			// 
+			// textBoxTrial1_P_1
+			// 
+			this->textBoxTrial1_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_P_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_P_1->Location = System::Drawing::Point(776, 150);
+			this->textBoxTrial1_P_1->Name = L"textBoxTrial1_P_1";
+			this->textBoxTrial1_P_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial1_P_1->TabIndex = 223;
 			// 
 			// label77
 			// 
@@ -1237,6 +1258,50 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->groupBox1->TabIndex = 204;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"三相电路功率的测量  实验内容2";
+			// 
+			// textBoxTrial2_P_4
+			// 
+			this->textBoxTrial2_P_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_4->Location = System::Drawing::Point(645, 308);
+			this->textBoxTrial2_P_4->Name = L"textBoxTrial2_P_4";
+			this->textBoxTrial2_P_4->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_4->TabIndex = 226;
+			// 
+			// textBoxTrial2_P_3
+			// 
+			this->textBoxTrial2_P_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_3->Location = System::Drawing::Point(645, 255);
+			this->textBoxTrial2_P_3->Name = L"textBoxTrial2_P_3";
+			this->textBoxTrial2_P_3->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_3->TabIndex = 225;
+			// 
+			// textBoxTrial2_P_2
+			// 
+			this->textBoxTrial2_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_2->Location = System::Drawing::Point(642, 200);
+			this->textBoxTrial2_P_2->Name = L"textBoxTrial2_P_2";
+			this->textBoxTrial2_P_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_2->TabIndex = 224;
+			// 
+			// textBoxTrial2_P_1
+			// 
+			this->textBoxTrial2_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_P_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_P_1->Location = System::Drawing::Point(642, 145);
+			this->textBoxTrial2_P_1->Name = L"textBoxTrial2_P_1";
+			this->textBoxTrial2_P_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial2_P_1->TabIndex = 223;
 			// 
 			// label52
 			// 
@@ -1845,6 +1910,39 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"三相电路功率的测量  实验内容3";
 			// 
+			// textBoxTrial3_QQ_3
+			// 
+			this->textBoxTrial3_QQ_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_3->Location = System::Drawing::Point(712, 233);
+			this->textBoxTrial3_QQ_3->Name = L"textBoxTrial3_QQ_3";
+			this->textBoxTrial3_QQ_3->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_3->TabIndex = 225;
+			// 
+			// textBoxTrial3_QQ_2
+			// 
+			this->textBoxTrial3_QQ_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_2->Location = System::Drawing::Point(712, 186);
+			this->textBoxTrial3_QQ_2->Name = L"textBoxTrial3_QQ_2";
+			this->textBoxTrial3_QQ_2->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_2->TabIndex = 224;
+			// 
+			// textBoxTrial3_QQ_1
+			// 
+			this->textBoxTrial3_QQ_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_QQ_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_QQ_1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_QQ_1->Location = System::Drawing::Point(712, 141);
+			this->textBoxTrial3_QQ_1->Name = L"textBoxTrial3_QQ_1";
+			this->textBoxTrial3_QQ_1->Size = System::Drawing::Size(110, 30);
+			this->textBoxTrial3_QQ_1->TabIndex = 223;
+			// 
 			// label60
 			// 
 			this->label60->AutoSize = true;
@@ -2262,16 +2360,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &三相电路功率的测量::button1_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1013, 1422);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 341;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &三相电路功率的测量::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(900, 1422);
@@ -2284,6 +2372,7 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &三相电路功率的测量::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &三相电路功率的测量::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -2303,7 +2392,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->panel1->Controls->Add(this->groupBox14);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->groupBox8);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Controls->Add(this->groupBox2);
@@ -2311,105 +2399,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_QQ_1;
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(1280, 1485);
 			this->panel1->TabIndex = 342;
-			// 
-			// textBoxTrial1_P_2
-			// 
-			this->textBoxTrial1_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_P_2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_P_2->Location = System::Drawing::Point(776, 194);
-			this->textBoxTrial1_P_2->Name = L"textBoxTrial1_P_2";
-			this->textBoxTrial1_P_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial1_P_2->TabIndex = 224;
-			// 
-			// textBoxTrial1_P_1
-			// 
-			this->textBoxTrial1_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_P_1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_P_1->Location = System::Drawing::Point(776, 150);
-			this->textBoxTrial1_P_1->Name = L"textBoxTrial1_P_1";
-			this->textBoxTrial1_P_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial1_P_1->TabIndex = 223;
-			// 
-			// textBoxTrial2_P_4
-			// 
-			this->textBoxTrial2_P_4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_P_4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_P_4->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_P_4->Location = System::Drawing::Point(645, 308);
-			this->textBoxTrial2_P_4->Name = L"textBoxTrial2_P_4";
-			this->textBoxTrial2_P_4->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_4->TabIndex = 226;
-			// 
-			// textBoxTrial2_P_3
-			// 
-			this->textBoxTrial2_P_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_P_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_P_3->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_P_3->Location = System::Drawing::Point(645, 255);
-			this->textBoxTrial2_P_3->Name = L"textBoxTrial2_P_3";
-			this->textBoxTrial2_P_3->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_3->TabIndex = 225;
-			// 
-			// textBoxTrial2_P_2
-			// 
-			this->textBoxTrial2_P_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_P_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_P_2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_P_2->Location = System::Drawing::Point(642, 200);
-			this->textBoxTrial2_P_2->Name = L"textBoxTrial2_P_2";
-			this->textBoxTrial2_P_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_2->TabIndex = 224;
-			// 
-			// textBoxTrial2_P_1
-			// 
-			this->textBoxTrial2_P_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_P_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_P_1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_P_1->Location = System::Drawing::Point(642, 145);
-			this->textBoxTrial2_P_1->Name = L"textBoxTrial2_P_1";
-			this->textBoxTrial2_P_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial2_P_1->TabIndex = 223;
-			// 
-			// textBoxTrial3_QQ_3
-			// 
-			this->textBoxTrial3_QQ_3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_QQ_3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_QQ_3->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_QQ_3->Location = System::Drawing::Point(712, 233);
-			this->textBoxTrial3_QQ_3->Name = L"textBoxTrial3_QQ_3";
-			this->textBoxTrial3_QQ_3->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_3->TabIndex = 225;
-			// 
-			// textBoxTrial3_QQ_2
-			// 
-			this->textBoxTrial3_QQ_2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_QQ_2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_QQ_2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_QQ_2->Location = System::Drawing::Point(712, 186);
-			this->textBoxTrial3_QQ_2->Name = L"textBoxTrial3_QQ_2";
-			this->textBoxTrial3_QQ_2->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_2->TabIndex = 224;
-			// 
-			// textBoxTrial3_QQ_1
-			// 
-			this->textBoxTrial3_QQ_1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_QQ_1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_QQ_1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_QQ_1->Location = System::Drawing::Point(712, 141);
-			this->textBoxTrial3_QQ_1->Name = L"textBoxTrial3_QQ_1";
-			this->textBoxTrial3_QQ_1->Size = System::Drawing::Size(110, 30);
-			this->textBoxTrial3_QQ_1->TabIndex = 223;
 			// 
 			// 三相电路功率的测量
 			// 
@@ -2474,6 +2463,9 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 	e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
 }
 private: System::Void 三相电路功率的测量_Load(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

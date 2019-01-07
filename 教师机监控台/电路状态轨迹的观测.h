@@ -69,7 +69,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::PictureBox^  pictureBox1;
 	private: System::Windows::Forms::GroupBox^  groupBox14;
 	private: System::Windows::Forms::Label^  labelTotalGrade;
-	private: System::Windows::Forms::Button^  button3;
+
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Panel^  panel1;
@@ -133,7 +133,6 @@ namespace 教师机监控台 {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
@@ -568,16 +567,6 @@ namespace 教师机监控台 {
 			this->labelTotalGrade->TabIndex = 0;
 			this->labelTotalGrade->Text = L"0";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1018, 2292);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 331;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &电路状态轨迹的观测::button3_Click);
-			// 
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(798, 2292);
@@ -606,7 +595,6 @@ namespace 教师机监控台 {
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->groupBox14);
 			this->panel1->Controls->Add(this->button2);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Location = System::Drawing::Point(21, 12);
 			this->panel1->Name = L"panel1";
@@ -635,6 +623,7 @@ namespace 教师机监控台 {
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &电路状态轨迹的观测::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &电路状态轨迹的观测::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -653,7 +642,7 @@ namespace 教师机监控台 {
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1467, 708);
+			this->ClientSize = System::Drawing::Size(1488, 708);
 			this->Controls->Add(this->panel1);
 			this->Name = L"电路状态轨迹的观测";
 			this->Text = L"电路状态轨迹的观测";
@@ -702,10 +691,14 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Priview();
+
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Print();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

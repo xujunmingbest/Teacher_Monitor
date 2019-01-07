@@ -127,7 +127,7 @@ namespace 教师机监控台 {
 private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
 private: System::Windows::Forms::Button^  button1;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
@@ -260,7 +260,6 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
@@ -1368,16 +1367,6 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &单相铁心变压器特性的测试::button1_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1017, 1550);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 343;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &单相铁心变压器特性的测试::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(904, 1550);
@@ -1390,6 +1379,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &单相铁心变压器特性的测试::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &单相铁心变压器特性的测试::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1411,7 +1401,6 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->groupBox3);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->label64);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Location = System::Drawing::Point(43, 31);
@@ -1490,6 +1479,8 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	Print();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }

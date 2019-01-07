@@ -101,7 +101,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  labelTotalGrade;
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::Button^  button3;
+
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Drawing::Printing::PrintDocument^  printDocument1;
 	private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
@@ -154,6 +154,16 @@ namespace 教师机监控台 {
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial1_cal_N = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_WW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_calW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_cal_meaW = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_mea_n = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_mea_time = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_accuracy = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_UN = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_N = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_IN = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
@@ -186,20 +196,9 @@ namespace 教师机监控台 {
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->textBoxTrial1_IN = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_N = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_UN = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_accuracy = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_mea_time = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_mea_n = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_cal_meaW = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_cal_calW = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_cal_WW = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_cal_N = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox8->SuspendLayout();
 			this->groupBox14->SuspendLayout();
@@ -520,6 +519,116 @@ namespace 教师机监控台 {
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"RLC元件阻抗特性的测定 实验内容1";
 			this->groupBox8->Enter += gcnew System::EventHandler(this, &单相电度表实验::groupBox8_Enter);
+			// 
+			// textBoxTrial1_cal_N
+			// 
+			this->textBoxTrial1_cal_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_N->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_N->Location = System::Drawing::Point(557, 512);
+			this->textBoxTrial1_cal_N->Name = L"textBoxTrial1_cal_N";
+			this->textBoxTrial1_cal_N->Size = System::Drawing::Size(132, 27);
+			this->textBoxTrial1_cal_N->TabIndex = 229;
+			// 
+			// textBoxTrial1_cal_WW
+			// 
+			this->textBoxTrial1_cal_WW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_WW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_WW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_WW->Location = System::Drawing::Point(444, 511);
+			this->textBoxTrial1_cal_WW->Name = L"textBoxTrial1_cal_WW";
+			this->textBoxTrial1_cal_WW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_WW->TabIndex = 228;
+			// 
+			// textBoxTrial1_cal_calW
+			// 
+			this->textBoxTrial1_cal_calW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_calW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_calW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_calW->Location = System::Drawing::Point(332, 511);
+			this->textBoxTrial1_cal_calW->Name = L"textBoxTrial1_cal_calW";
+			this->textBoxTrial1_cal_calW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_calW->TabIndex = 227;
+			// 
+			// textBoxTrial1_cal_meaW
+			// 
+			this->textBoxTrial1_cal_meaW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_cal_meaW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_cal_meaW->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_cal_meaW->Location = System::Drawing::Point(219, 511);
+			this->textBoxTrial1_cal_meaW->Name = L"textBoxTrial1_cal_meaW";
+			this->textBoxTrial1_cal_meaW->Size = System::Drawing::Size(96, 27);
+			this->textBoxTrial1_cal_meaW->TabIndex = 226;
+			// 
+			// textBoxTrial1_mea_n
+			// 
+			this->textBoxTrial1_mea_n->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_mea_n->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_mea_n->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_mea_n->Location = System::Drawing::Point(728, 317);
+			this->textBoxTrial1_mea_n->Name = L"textBoxTrial1_mea_n";
+			this->textBoxTrial1_mea_n->Size = System::Drawing::Size(92, 27);
+			this->textBoxTrial1_mea_n->TabIndex = 225;
+			// 
+			// textBoxTrial1_mea_time
+			// 
+			this->textBoxTrial1_mea_time->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_mea_time->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_mea_time->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_mea_time->Location = System::Drawing::Point(557, 317);
+			this->textBoxTrial1_mea_time->Name = L"textBoxTrial1_mea_time";
+			this->textBoxTrial1_mea_time->Size = System::Drawing::Size(153, 27);
+			this->textBoxTrial1_mea_time->TabIndex = 224;
+			// 
+			// textBoxTrial1_accuracy
+			// 
+			this->textBoxTrial1_accuracy->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_accuracy->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_accuracy->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_accuracy->Location = System::Drawing::Point(716, 150);
+			this->textBoxTrial1_accuracy->Name = L"textBoxTrial1_accuracy";
+			this->textBoxTrial1_accuracy->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_accuracy->TabIndex = 223;
+			// 
+			// textBoxTrial1_UN
+			// 
+			this->textBoxTrial1_UN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_UN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_UN->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_UN->Location = System::Drawing::Point(283, 152);
+			this->textBoxTrial1_UN->Name = L"textBoxTrial1_UN";
+			this->textBoxTrial1_UN->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_UN->TabIndex = 222;
+			// 
+			// textBoxTrial1_N
+			// 
+			this->textBoxTrial1_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_N->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_N->Location = System::Drawing::Point(716, 96);
+			this->textBoxTrial1_N->Name = L"textBoxTrial1_N";
+			this->textBoxTrial1_N->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_N->TabIndex = 221;
+			// 
+			// textBoxTrial1_IN
+			// 
+			this->textBoxTrial1_IN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_IN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_IN->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_IN->Location = System::Drawing::Point(283, 96);
+			this->textBoxTrial1_IN->Name = L"textBoxTrial1_IN";
+			this->textBoxTrial1_IN->Size = System::Drawing::Size(179, 27);
+			this->textBoxTrial1_IN->TabIndex = 220;
 			// 
 			// label6
 			// 
@@ -873,7 +982,6 @@ namespace 教师机监控台 {
 			// panel1
 			// 
 			this->panel1->Controls->Add(this->button2);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->groupBox7);
 			this->panel1->Controls->Add(this->groupBox14);
@@ -893,16 +1001,6 @@ namespace 教师机监控台 {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &单相电度表实验::button2_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(903, 997);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 338;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &单相电度表实验::button3_Click);
-			// 
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(683, 997);
@@ -915,6 +1013,7 @@ namespace 教师机监控台 {
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &单相电度表实验::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &单相电度表实验::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -927,116 +1026,6 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
-			// 
-			// textBoxTrial1_IN
-			// 
-			this->textBoxTrial1_IN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_IN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_IN->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_IN->Location = System::Drawing::Point(283, 96);
-			this->textBoxTrial1_IN->Name = L"textBoxTrial1_IN";
-			this->textBoxTrial1_IN->Size = System::Drawing::Size(179, 27);
-			this->textBoxTrial1_IN->TabIndex = 220;
-			// 
-			// textBoxTrial1_N
-			// 
-			this->textBoxTrial1_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_N->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_N->Location = System::Drawing::Point(716, 96);
-			this->textBoxTrial1_N->Name = L"textBoxTrial1_N";
-			this->textBoxTrial1_N->Size = System::Drawing::Size(179, 27);
-			this->textBoxTrial1_N->TabIndex = 221;
-			// 
-			// textBoxTrial1_UN
-			// 
-			this->textBoxTrial1_UN->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_UN->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_UN->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_UN->Location = System::Drawing::Point(283, 152);
-			this->textBoxTrial1_UN->Name = L"textBoxTrial1_UN";
-			this->textBoxTrial1_UN->Size = System::Drawing::Size(179, 27);
-			this->textBoxTrial1_UN->TabIndex = 222;
-			// 
-			// textBoxTrial1_accuracy
-			// 
-			this->textBoxTrial1_accuracy->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_accuracy->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_accuracy->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_accuracy->Location = System::Drawing::Point(716, 150);
-			this->textBoxTrial1_accuracy->Name = L"textBoxTrial1_accuracy";
-			this->textBoxTrial1_accuracy->Size = System::Drawing::Size(179, 27);
-			this->textBoxTrial1_accuracy->TabIndex = 223;
-			// 
-			// textBoxTrial1_mea_time
-			// 
-			this->textBoxTrial1_mea_time->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_mea_time->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_mea_time->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_mea_time->Location = System::Drawing::Point(557, 317);
-			this->textBoxTrial1_mea_time->Name = L"textBoxTrial1_mea_time";
-			this->textBoxTrial1_mea_time->Size = System::Drawing::Size(153, 27);
-			this->textBoxTrial1_mea_time->TabIndex = 224;
-			// 
-			// textBoxTrial1_mea_n
-			// 
-			this->textBoxTrial1_mea_n->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_mea_n->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_mea_n->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_mea_n->Location = System::Drawing::Point(728, 317);
-			this->textBoxTrial1_mea_n->Name = L"textBoxTrial1_mea_n";
-			this->textBoxTrial1_mea_n->Size = System::Drawing::Size(92, 27);
-			this->textBoxTrial1_mea_n->TabIndex = 225;
-			// 
-			// textBoxTrial1_cal_meaW
-			// 
-			this->textBoxTrial1_cal_meaW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_cal_meaW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_cal_meaW->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_cal_meaW->Location = System::Drawing::Point(219, 511);
-			this->textBoxTrial1_cal_meaW->Name = L"textBoxTrial1_cal_meaW";
-			this->textBoxTrial1_cal_meaW->Size = System::Drawing::Size(96, 27);
-			this->textBoxTrial1_cal_meaW->TabIndex = 226;
-			// 
-			// textBoxTrial1_cal_calW
-			// 
-			this->textBoxTrial1_cal_calW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_cal_calW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_cal_calW->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_cal_calW->Location = System::Drawing::Point(332, 511);
-			this->textBoxTrial1_cal_calW->Name = L"textBoxTrial1_cal_calW";
-			this->textBoxTrial1_cal_calW->Size = System::Drawing::Size(96, 27);
-			this->textBoxTrial1_cal_calW->TabIndex = 227;
-			// 
-			// textBoxTrial1_cal_WW
-			// 
-			this->textBoxTrial1_cal_WW->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_cal_WW->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_cal_WW->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_cal_WW->Location = System::Drawing::Point(444, 511);
-			this->textBoxTrial1_cal_WW->Name = L"textBoxTrial1_cal_WW";
-			this->textBoxTrial1_cal_WW->Size = System::Drawing::Size(96, 27);
-			this->textBoxTrial1_cal_WW->TabIndex = 228;
-			// 
-			// textBoxTrial1_cal_N
-			// 
-			this->textBoxTrial1_cal_N->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_cal_N->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_cal_N->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_cal_N->Location = System::Drawing::Point(557, 512);
-			this->textBoxTrial1_cal_N->Name = L"textBoxTrial1_cal_N";
-			this->textBoxTrial1_cal_N->Size = System::Drawing::Size(132, 27);
-			this->textBoxTrial1_cal_N->TabIndex = 229;
 			// 
 			// 单相电度表实验
 			// 
@@ -1094,6 +1083,8 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	Print();
 }
 private: System::Void groupBox8_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }

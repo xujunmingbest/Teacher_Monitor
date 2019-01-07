@@ -365,7 +365,7 @@ private: System::Windows::Forms::Label^  labeltrial4_1I1_1;
 private: System::Windows::Forms::Label^  label193;
 private: System::Windows::Forms::Label^  label194;
 private: System::Windows::Forms::Label^  label195;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button2;
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::GroupBox^  groupBox14;
@@ -438,30 +438,30 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea9 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series9 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea10 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend10 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series10 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea11 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend11 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series11 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea12 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend12 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series12 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea13 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend13 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series13 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea14 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend14 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series14 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea15 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend15 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series15 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea16 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^  legend16 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^  series16 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea2 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series2 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea3 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series3 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea4 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series4 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea5 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series5 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea6 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series6 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea7 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series7 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
+			System::Windows::Forms::DataVisualization::Charting::ChartArea^  chartArea8 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
+			System::Windows::Forms::DataVisualization::Charting::Legend^  legend8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
+			System::Windows::Forms::DataVisualization::Charting::Series^  series8 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(VCVS实验::typeid));
 			this->groupBox7 = (gcnew System::Windows::Forms::GroupBox());
 			this->labellab = (gcnew System::Windows::Forms::Label());
@@ -725,7 +725,6 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			this->label193 = (gcnew System::Windows::Forms::Label());
 			this->label194 = (gcnew System::Windows::Forms::Label());
 			this->label195 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
@@ -1196,16 +1195,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial1_2
 			// 
-			chartArea9->Name = L"ChartArea1";
-			this->chartTrial1_2->ChartAreas->Add(chartArea9);
-			legend9->Name = L"Legend1";
-			this->chartTrial1_2->Legends->Add(legend9);
+			chartArea1->Name = L"ChartArea1";
+			this->chartTrial1_2->ChartAreas->Add(chartArea1);
+			legend1->Name = L"Legend1";
+			this->chartTrial1_2->Legends->Add(legend1);
 			this->chartTrial1_2->Location = System::Drawing::Point(147, 245);
 			this->chartTrial1_2->Name = L"chartTrial1_2";
-			series9->ChartArea = L"ChartArea1";
-			series9->Legend = L"Legend1";
-			series9->Name = L"Series1";
-			this->chartTrial1_2->Series->Add(series9);
+			series1->ChartArea = L"ChartArea1";
+			series1->Legend = L"Legend1";
+			series1->Name = L"Series1";
+			this->chartTrial1_2->Series->Add(series1);
 			this->chartTrial1_2->Size = System::Drawing::Size(458, 300);
 			this->chartTrial1_2->TabIndex = 110;
 			this->chartTrial1_2->Text = L"chart2";
@@ -1428,6 +1427,7 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			this->groupBox1->TabIndex = 89;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"第一组";
+			this->groupBox1->Enter += gcnew System::EventHandler(this, &VCVS实验::groupBox1_Enter);
 			// 
 			// labeltrial1_1U1_9
 			// 
@@ -1562,16 +1562,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial1_1
 			// 
-			chartArea10->Name = L"ChartArea1";
-			this->chartTrial1_1->ChartAreas->Add(chartArea10);
-			legend10->Name = L"Legend1";
-			this->chartTrial1_1->Legends->Add(legend10);
+			chartArea2->Name = L"ChartArea1";
+			this->chartTrial1_1->ChartAreas->Add(chartArea2);
+			legend2->Name = L"Legend1";
+			this->chartTrial1_1->Legends->Add(legend2);
 			this->chartTrial1_1->Location = System::Drawing::Point(147, 178);
 			this->chartTrial1_1->Name = L"chartTrial1_1";
-			series10->ChartArea = L"ChartArea1";
-			series10->Legend = L"Legend1";
-			series10->Name = L"Series1";
-			this->chartTrial1_1->Series->Add(series10);
+			series2->ChartArea = L"ChartArea1";
+			series2->Legend = L"Legend1";
+			series2->Name = L"Series1";
+			this->chartTrial1_1->Series->Add(series2);
 			this->chartTrial1_1->Size = System::Drawing::Size(458, 300);
 			this->chartTrial1_1->TabIndex = 110;
 			this->chartTrial1_1->Text = L"chart1";
@@ -1910,16 +1910,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial2_2
 			// 
-			chartArea11->Name = L"ChartArea1";
-			this->chartTrial2_2->ChartAreas->Add(chartArea11);
-			legend11->Name = L"Legend1";
-			this->chartTrial2_2->Legends->Add(legend11);
+			chartArea3->Name = L"ChartArea1";
+			this->chartTrial2_2->ChartAreas->Add(chartArea3);
+			legend3->Name = L"Legend1";
+			this->chartTrial2_2->Legends->Add(legend3);
 			this->chartTrial2_2->Location = System::Drawing::Point(128, 225);
 			this->chartTrial2_2->Name = L"chartTrial2_2";
-			series11->ChartArea = L"ChartArea1";
-			series11->Legend = L"Legend1";
-			series11->Name = L"Series1";
-			this->chartTrial2_2->Series->Add(series11);
+			series3->ChartArea = L"ChartArea1";
+			series3->Legend = L"Legend1";
+			series3->Name = L"Series1";
+			this->chartTrial2_2->Series->Add(series3);
 			this->chartTrial2_2->Size = System::Drawing::Size(458, 300);
 			this->chartTrial2_2->TabIndex = 110;
 			this->chartTrial2_2->Text = L"chart3";
@@ -2176,16 +2176,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial2_1
 			// 
-			chartArea12->Name = L"ChartArea1";
-			this->chartTrial2_1->ChartAreas->Add(chartArea12);
-			legend12->Name = L"Legend1";
-			this->chartTrial2_1->Legends->Add(legend12);
+			chartArea4->Name = L"ChartArea1";
+			this->chartTrial2_1->ChartAreas->Add(chartArea4);
+			legend4->Name = L"Legend1";
+			this->chartTrial2_1->Legends->Add(legend4);
 			this->chartTrial2_1->Location = System::Drawing::Point(128, 203);
 			this->chartTrial2_1->Name = L"chartTrial2_1";
-			series12->ChartArea = L"ChartArea1";
-			series12->Legend = L"Legend1";
-			series12->Name = L"Series1";
-			this->chartTrial2_1->Series->Add(series12);
+			series4->ChartArea = L"ChartArea1";
+			series4->Legend = L"Legend1";
+			series4->Name = L"Series1";
+			this->chartTrial2_1->Series->Add(series4);
 			this->chartTrial2_1->Size = System::Drawing::Size(458, 300);
 			this->chartTrial2_1->TabIndex = 110;
 			this->chartTrial2_1->Text = L"chart4";
@@ -2544,16 +2544,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial3_2
 			// 
-			chartArea13->Name = L"ChartArea1";
-			this->chartTrial3_2->ChartAreas->Add(chartArea13);
-			legend13->Name = L"Legend1";
-			this->chartTrial3_2->Legends->Add(legend13);
+			chartArea5->Name = L"ChartArea1";
+			this->chartTrial3_2->ChartAreas->Add(chartArea5);
+			legend5->Name = L"Legend1";
+			this->chartTrial3_2->Legends->Add(legend5);
 			this->chartTrial3_2->Location = System::Drawing::Point(16, 274);
 			this->chartTrial3_2->Name = L"chartTrial3_2";
-			series13->ChartArea = L"ChartArea1";
-			series13->Legend = L"Legend1";
-			series13->Name = L"Series1";
-			this->chartTrial3_2->Series->Add(series13);
+			series5->ChartArea = L"ChartArea1";
+			series5->Legend = L"Legend1";
+			series5->Name = L"Series1";
+			this->chartTrial3_2->Series->Add(series5);
 			this->chartTrial3_2->Size = System::Drawing::Size(458, 300);
 			this->chartTrial3_2->TabIndex = 110;
 			this->chartTrial3_2->Text = L"chartTrial3_2";
@@ -2739,16 +2739,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial3_1
 			// 
-			chartArea14->Name = L"ChartArea1";
-			this->chartTrial3_1->ChartAreas->Add(chartArea14);
-			legend14->Name = L"Legend1";
-			this->chartTrial3_1->Legends->Add(legend14);
+			chartArea6->Name = L"ChartArea1";
+			this->chartTrial3_1->ChartAreas->Add(chartArea6);
+			legend6->Name = L"Legend1";
+			this->chartTrial3_1->Legends->Add(legend6);
 			this->chartTrial3_1->Location = System::Drawing::Point(13, 213);
 			this->chartTrial3_1->Name = L"chartTrial3_1";
-			series14->ChartArea = L"ChartArea1";
-			series14->Legend = L"Legend1";
-			series14->Name = L"Series1";
-			this->chartTrial3_1->Series->Add(series14);
+			series6->ChartArea = L"ChartArea1";
+			series6->Legend = L"Legend1";
+			series6->Name = L"Series1";
+			this->chartTrial3_1->Series->Add(series6);
 			this->chartTrial3_1->Size = System::Drawing::Size(458, 300);
 			this->chartTrial3_1->TabIndex = 110;
 			this->chartTrial3_1->Text = L"chartTrial3_1";
@@ -3189,16 +3189,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial4_2
 			// 
-			chartArea15->Name = L"ChartArea1";
-			this->chartTrial4_2->ChartAreas->Add(chartArea15);
-			legend15->Name = L"Legend1";
-			this->chartTrial4_2->Legends->Add(legend15);
+			chartArea7->Name = L"ChartArea1";
+			this->chartTrial4_2->ChartAreas->Add(chartArea7);
+			legend7->Name = L"Legend1";
+			this->chartTrial4_2->Legends->Add(legend7);
 			this->chartTrial4_2->Location = System::Drawing::Point(23, 237);
 			this->chartTrial4_2->Name = L"chartTrial4_2";
-			series15->ChartArea = L"ChartArea1";
-			series15->Legend = L"Legend1";
-			series15->Name = L"Series1";
-			this->chartTrial4_2->Series->Add(series15);
+			series7->ChartArea = L"ChartArea1";
+			series7->Legend = L"Legend1";
+			series7->Name = L"Series1";
+			this->chartTrial4_2->Series->Add(series7);
 			this->chartTrial4_2->Size = System::Drawing::Size(458, 300);
 			this->chartTrial4_2->TabIndex = 110;
 			this->chartTrial4_2->Text = L"chartTrial4_2";
@@ -3383,16 +3383,16 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// chartTrial4_1
 			// 
-			chartArea16->Name = L"ChartArea1";
-			this->chartTrial4_1->ChartAreas->Add(chartArea16);
-			legend16->Name = L"Legend1";
-			this->chartTrial4_1->Legends->Add(legend16);
+			chartArea8->Name = L"ChartArea1";
+			this->chartTrial4_1->ChartAreas->Add(chartArea8);
+			legend8->Name = L"Legend1";
+			this->chartTrial4_1->Legends->Add(legend8);
 			this->chartTrial4_1->Location = System::Drawing::Point(128, 215);
 			this->chartTrial4_1->Name = L"chartTrial4_1";
-			series16->ChartArea = L"ChartArea1";
-			series16->Legend = L"Legend1";
-			series16->Name = L"Series1";
-			this->chartTrial4_1->Series->Add(series16);
+			series8->ChartArea = L"ChartArea1";
+			series8->Legend = L"Legend1";
+			series8->Name = L"Series1";
+			this->chartTrial4_1->Series->Add(series8);
 			this->chartTrial4_1->Size = System::Drawing::Size(458, 300);
 			this->chartTrial4_1->TabIndex = 110;
 			this->chartTrial4_1->Text = L"chartTrial4_1";
@@ -3579,16 +3579,6 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			this->label195->Text = L"  （1）固定RL＝2KΩ，调节恒流源的输出电流IS，使其在0.05~0.7mA范围内取8个数值，测出IL，绘制IL＝F（I1）曲线，并由其线性部分求出转移电流比"
 				L"α。";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1011, 1254);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 327;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &VCVS实验::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(898, 1254);
@@ -3632,6 +3622,7 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &VCVS实验::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &VCVS实验::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -3658,7 +3649,6 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			// 
 			this->panel2->Controls->Add(this->groupBox11);
 			this->panel2->Controls->Add(this->groupBox14);
-			this->panel2->Controls->Add(this->button3);
 			this->panel2->Controls->Add(this->button1);
 			this->panel2->Controls->Add(this->button2);
 			this->panel2->Location = System::Drawing::Point(60, 3975);
@@ -3671,7 +3661,7 @@ private: System::Windows::Forms::Label^  textBoxtrial3_2RL_1;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1518, 718);
+			this->ClientSize = System::Drawing::Size(1539, 718);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->groupBox实验内容3);
@@ -3733,30 +3723,31 @@ private: System::Void VCVS实验_Load(System::Object^  sender, System::EventArgs^ 
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Priview();
-	SelectedArea = "实验2";
-	Priview();
-	SelectedArea = "实验3";
-	Priview();
-	SelectedArea = "panel2";
-	Priview();
 }
 private: System::Void printDocument1_PrintPage(System::Object^  sender, System::Drawing::Printing::PrintPageEventArgs^  e) {
 	Bitmap ^ _NewBitmap;
 	if (SelectedArea == "panel1") {
 		_NewBitmap = gcnew  Bitmap(panel1->Width, panel1->Height);
 		panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
+		SelectedArea = "实验2";
+		e->HasMorePages = true;
 	}
 	else if(SelectedArea == "实验2"){
 		_NewBitmap = gcnew  Bitmap(groupBox实验内容2->Width, groupBox实验内容2->Height);
 		groupBox实验内容2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, groupBox实验内容2->Width, groupBox实验内容2->Height));
+		e->HasMorePages = true;
+		SelectedArea = "实验3";
 	}
 	else if (SelectedArea == "实验3") {
 		_NewBitmap = gcnew  Bitmap(groupBox实验内容3->Width, groupBox实验内容3->Height);
 		groupBox实验内容3->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, groupBox实验内容3->Width, groupBox实验内容3->Height));
+		e->HasMorePages = true;
+		SelectedArea = "finally";
 	}
 	else {
 		_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 		panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
+		e->HasMorePages = false;
 	}
 	int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 	int y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
@@ -3803,6 +3794,11 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	SaveCorrectGrades();
 }
 private: System::Void groupBox实验内容2_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void groupBox1_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

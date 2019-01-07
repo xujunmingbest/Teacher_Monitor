@@ -109,7 +109,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button116;
 	private: System::Windows::Forms::Button^  button117;
 	private: System::Windows::Forms::Button^  button118;
-	private: System::Windows::Forms::TextBox^  textBoxtrial4_1α;
+	private: System::Windows::Forms::TextBox^  labeltrial4_1α;
+
 	private: System::Windows::Forms::Label^  label176;
 	private: System::Windows::Forms::DataVisualization::Charting::Chart^  chartTrial4_1;
 	private: System::Windows::Forms::Button^  button119;
@@ -358,18 +359,18 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button5;
 	private: System::Windows::Forms::Label^  labeltrial1_2V2_2;
 	private: System::Windows::Forms::Label^  labeltrial1_2V2_1;
-	private: System::Windows::Forms::Label^  label34;
-	private: System::Windows::Forms::Label^  label35;
+
+
 	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::Label^  label36;
-	private: System::Windows::Forms::Label^  label38;
-	private: System::Windows::Forms::Label^  label39;
-	private: System::Windows::Forms::Label^  label40;
-	private: System::Windows::Forms::Label^  label41;
+
+
+
+
+
 	private: System::Windows::Forms::Label^  label42;
 	private: System::Windows::Forms::Label^  label43;
 	private: System::Windows::Forms::Label^  label19;
-	private: System::Windows::Forms::Label^  label37;
+
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label44;
 	private: System::Windows::Forms::GroupBox^  groupBox2;
@@ -397,6 +398,14 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Button^  button8;
 	private: System::Windows::Forms::Button^  button7;
 	private: System::Windows::Forms::Label^  label1;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_8;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_7;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_6;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_5;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_4;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_3;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_2;
+private: System::Windows::Forms::TextBox^  textBoxtrial1_2RL_1;
 
 	protected:
 
@@ -856,7 +865,7 @@ namespace 教师机监控台 {
 			this->button116 = (gcnew System::Windows::Forms::Button());
 			this->button117 = (gcnew System::Windows::Forms::Button());
 			this->button118 = (gcnew System::Windows::Forms::Button());
-			this->textBoxtrial4_1α = (gcnew System::Windows::Forms::TextBox());
+			this->labeltrial4_1α = (gcnew System::Windows::Forms::TextBox());
 			this->label176 = (gcnew System::Windows::Forms::Label());
 			this->chartTrial4_1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->button119 = (gcnew System::Windows::Forms::Button());
@@ -1105,18 +1114,10 @@ namespace 教师机监控台 {
 			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->labeltrial1_2V2_2 = (gcnew System::Windows::Forms::Label());
 			this->labeltrial1_2V2_1 = (gcnew System::Windows::Forms::Label());
-			this->label34 = (gcnew System::Windows::Forms::Label());
-			this->label35 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label36 = (gcnew System::Windows::Forms::Label());
-			this->label38 = (gcnew System::Windows::Forms::Label());
-			this->label39 = (gcnew System::Windows::Forms::Label());
-			this->label40 = (gcnew System::Windows::Forms::Label());
-			this->label41 = (gcnew System::Windows::Forms::Label());
 			this->label42 = (gcnew System::Windows::Forms::Label());
 			this->label43 = (gcnew System::Windows::Forms::Label());
 			this->label19 = (gcnew System::Windows::Forms::Label());
-			this->label37 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label44 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
@@ -1144,6 +1145,14 @@ namespace 教师机监控台 {
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxtrial1_2RL_8 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_7 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_6 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_4 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_3 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_2 = (gcnew System::Windows::Forms::TextBox());
+			this->textBoxtrial1_2RL_1 = (gcnew System::Windows::Forms::TextBox());
 			this->groupBox11->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chartTrial4_2))->BeginInit();
 			this->groupBox10->SuspendLayout();
@@ -1814,7 +1823,7 @@ namespace 教师机监控台 {
 			this->groupBox12->Controls->Add(this->button116);
 			this->groupBox12->Controls->Add(this->button117);
 			this->groupBox12->Controls->Add(this->button118);
-			this->groupBox12->Controls->Add(this->textBoxtrial4_1α);
+			this->groupBox12->Controls->Add(this->labeltrial4_1α);
 			this->groupBox12->Controls->Add(this->label176);
 			this->groupBox12->Controls->Add(this->chartTrial4_1);
 			this->groupBox12->Controls->Add(this->button119);
@@ -2025,13 +2034,13 @@ namespace 教师机监控台 {
 			this->button118->Text = L"获取";
 			this->button118->UseVisualStyleBackColor = true;
 			// 
-			// textBoxtrial4_1α
+			// labeltrial4_1α
 			// 
-			this->textBoxtrial4_1α->Location = System::Drawing::Point(769, 581);
-			this->textBoxtrial4_1α->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->textBoxtrial4_1α->Name = L"textBoxtrial4_1α";
-			this->textBoxtrial4_1α->Size = System::Drawing::Size(132, 30);
-			this->textBoxtrial4_1α->TabIndex = 113;
+			this->labeltrial4_1α->Location = System::Drawing::Point(769, 581);
+			this->labeltrial4_1α->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->labeltrial4_1α->Name = L"labeltrial4_1α";
+			this->labeltrial4_1α->Size = System::Drawing::Size(132, 30);
+			this->labeltrial4_1α->TabIndex = 113;
 			// 
 			// label176
 			// 
@@ -4712,26 +4721,6 @@ namespace 教师机监控台 {
 			this->labeltrial1_2V2_1->Size = System::Drawing::Size(96, 30);
 			this->labeltrial1_2V2_1->TabIndex = 100;
 			// 
-			// label34
-			// 
-			this->label34->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label34->ForeColor = System::Drawing::Color::Black;
-			this->label34->Location = System::Drawing::Point(979, 101);
-			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(100, 26);
-			this->label34->TabIndex = 98;
-			this->label34->Text = L"∞";
-			// 
-			// label35
-			// 
-			this->label35->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label35->ForeColor = System::Drawing::Color::Black;
-			this->label35->Location = System::Drawing::Point(864, 101);
-			this->label35->Name = L"label35";
-			this->label35->Size = System::Drawing::Size(100, 26);
-			this->label35->TabIndex = 97;
-			this->label35->Text = L"500";
-			// 
 			// label2
 			// 
 			this->label2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
@@ -4741,56 +4730,6 @@ namespace 教师机监控台 {
 			this->label2->Size = System::Drawing::Size(83, 26);
 			this->label2->TabIndex = 89;
 			this->label2->Text = L"U1(V)";
-			// 
-			// label36
-			// 
-			this->label36->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label36->ForeColor = System::Drawing::Color::Black;
-			this->label36->Location = System::Drawing::Point(755, 101);
-			this->label36->Name = L"label36";
-			this->label36->Size = System::Drawing::Size(100, 26);
-			this->label36->TabIndex = 96;
-			this->label36->Text = L"400";
-			// 
-			// label38
-			// 
-			this->label38->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label38->ForeColor = System::Drawing::Color::Black;
-			this->label38->Location = System::Drawing::Point(525, 101);
-			this->label38->Name = L"label38";
-			this->label38->Size = System::Drawing::Size(100, 26);
-			this->label38->TabIndex = 94;
-			this->label38->Text = L"200";
-			// 
-			// label39
-			// 
-			this->label39->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label39->ForeColor = System::Drawing::Color::Black;
-			this->label39->Location = System::Drawing::Point(412, 101);
-			this->label39->Name = L"label39";
-			this->label39->Size = System::Drawing::Size(100, 26);
-			this->label39->TabIndex = 93;
-			this->label39->Text = L"100";
-			// 
-			// label40
-			// 
-			this->label40->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label40->ForeColor = System::Drawing::Color::Black;
-			this->label40->Location = System::Drawing::Point(304, 101);
-			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(100, 26);
-			this->label40->TabIndex = 92;
-			this->label40->Text = L"70";
-			// 
-			// label41
-			// 
-			this->label41->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label41->ForeColor = System::Drawing::Color::Black;
-			this->label41->Location = System::Drawing::Point(192, 101);
-			this->label41->Name = L"label41";
-			this->label41->Size = System::Drawing::Size(100, 26);
-			this->label41->TabIndex = 91;
-			this->label41->Text = L"50";
 			// 
 			// label42
 			// 
@@ -4820,16 +4759,6 @@ namespace 教师机监控台 {
 			this->label19->Size = System::Drawing::Size(973, 38);
 			this->label19->TabIndex = 87;
 			this->label19->Text = L"  1．测量受控源 VCVS的转移特性U2＝ F（U1）及负载特性 U2＝F（IL）实验线路如图 8－2。";
-			// 
-			// label37
-			// 
-			this->label37->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label37->ForeColor = System::Drawing::Color::Black;
-			this->label37->Location = System::Drawing::Point(640, 101);
-			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(100, 26);
-			this->label37->TabIndex = 95;
-			this->label37->Text = L"300";
 			// 
 			// label3
 			// 
@@ -4869,6 +4798,14 @@ namespace 教师机监控台 {
 			// 
 			// groupBox3
 			// 
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_8);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_7);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_6);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_5);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_4);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_3);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_2);
+			this->groupBox3->Controls->Add(this->textBoxtrial1_2RL_1);
 			this->groupBox3->Controls->Add(this->button18);
 			this->groupBox3->Controls->Add(this->button19);
 			this->groupBox3->Controls->Add(this->button20);
@@ -4904,14 +4841,6 @@ namespace 教师机监控台 {
 			this->groupBox3->Controls->Add(this->labeltrial1_2V2_3);
 			this->groupBox3->Controls->Add(this->labeltrial1_2V2_2);
 			this->groupBox3->Controls->Add(this->labeltrial1_2V2_1);
-			this->groupBox3->Controls->Add(this->label34);
-			this->groupBox3->Controls->Add(this->label35);
-			this->groupBox3->Controls->Add(this->label36);
-			this->groupBox3->Controls->Add(this->label37);
-			this->groupBox3->Controls->Add(this->label38);
-			this->groupBox3->Controls->Add(this->label39);
-			this->groupBox3->Controls->Add(this->label40);
-			this->groupBox3->Controls->Add(this->label41);
 			this->groupBox3->Controls->Add(this->label42);
 			this->groupBox3->Controls->Add(this->label43);
 			this->groupBox3->Controls->Add(this->label44);
@@ -5200,6 +5129,70 @@ namespace 教师机监控台 {
 			this->label1->TabIndex = 119;
 			this->label1->Text = L"VCVS、VCCS、CCVS、CCCS实验 实验内容";
 			// 
+			// textBoxtrial1_2RL_8
+			// 
+			this->textBoxtrial1_2RL_8->Location = System::Drawing::Point(976, 97);
+			this->textBoxtrial1_2RL_8->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_8->Name = L"textBoxtrial1_2RL_8";
+			this->textBoxtrial1_2RL_8->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_8->TabIndex = 327;
+			// 
+			// textBoxtrial1_2RL_7
+			// 
+			this->textBoxtrial1_2RL_7->Location = System::Drawing::Point(862, 97);
+			this->textBoxtrial1_2RL_7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_7->Name = L"textBoxtrial1_2RL_7";
+			this->textBoxtrial1_2RL_7->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_7->TabIndex = 326;
+			// 
+			// textBoxtrial1_2RL_6
+			// 
+			this->textBoxtrial1_2RL_6->Location = System::Drawing::Point(750, 97);
+			this->textBoxtrial1_2RL_6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_6->Name = L"textBoxtrial1_2RL_6";
+			this->textBoxtrial1_2RL_6->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_6->TabIndex = 325;
+			// 
+			// textBoxtrial1_2RL_5
+			// 
+			this->textBoxtrial1_2RL_5->Location = System::Drawing::Point(638, 97);
+			this->textBoxtrial1_2RL_5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_5->Name = L"textBoxtrial1_2RL_5";
+			this->textBoxtrial1_2RL_5->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_5->TabIndex = 324;
+			// 
+			// textBoxtrial1_2RL_4
+			// 
+			this->textBoxtrial1_2RL_4->Location = System::Drawing::Point(520, 97);
+			this->textBoxtrial1_2RL_4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_4->Name = L"textBoxtrial1_2RL_4";
+			this->textBoxtrial1_2RL_4->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_4->TabIndex = 323;
+			// 
+			// textBoxtrial1_2RL_3
+			// 
+			this->textBoxtrial1_2RL_3->Location = System::Drawing::Point(408, 97);
+			this->textBoxtrial1_2RL_3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_3->Name = L"textBoxtrial1_2RL_3";
+			this->textBoxtrial1_2RL_3->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_3->TabIndex = 322;
+			// 
+			// textBoxtrial1_2RL_2
+			// 
+			this->textBoxtrial1_2RL_2->Location = System::Drawing::Point(302, 97);
+			this->textBoxtrial1_2RL_2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_2->Name = L"textBoxtrial1_2RL_2";
+			this->textBoxtrial1_2RL_2->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_2->TabIndex = 321;
+			// 
+			// textBoxtrial1_2RL_1
+			// 
+			this->textBoxtrial1_2RL_1->Location = System::Drawing::Point(190, 97);
+			this->textBoxtrial1_2RL_1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->textBoxtrial1_2RL_1->Name = L"textBoxtrial1_2RL_1";
+			this->textBoxtrial1_2RL_1->Size = System::Drawing::Size(100, 30);
+			this->textBoxtrial1_2RL_1->TabIndex = 320;
+			// 
 			// VCVS实验监控
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
@@ -5249,6 +5242,7 @@ namespace 教师机监控台 {
 			this->groupBox2->ResumeLayout(false);
 			this->groupBox2->PerformLayout();
 			this->groupBox3->ResumeLayout(false);
+			this->groupBox3->PerformLayout();
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->ResumeLayout(false);

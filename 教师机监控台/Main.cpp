@@ -8,15 +8,16 @@
 #include "ScreenCapture.h"
 using namespace 教师机监控台;
 
-
-
-
+#include <DbgHelp.h>
+#include <sstream>
+#pragma comment(lib, "dbghelp.lib") 
+using namespace std;
 
 [STAThreadAttribute]
 //int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 void main(){
-	SystemStart();
 
+	SystemStart();
 
 	bool l = false;
 	Application::Run(gcnew Login(l));

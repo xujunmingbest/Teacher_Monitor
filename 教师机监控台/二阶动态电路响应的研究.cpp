@@ -72,7 +72,8 @@ void 二阶动态电路响应的研究::Priview()
 void 二阶动态电路响应的研究::Load一阶电路的响应测试Data(string &filename) {
 	fileName = &filename;
 	fileSql f;
-	ST_二阶动态电路响应的研究 d;
+	LocalPointer<ST_二阶动态电路响应的研究> tempdata;
+	ST_二阶动态电路响应的研究 *d = tempdata.data;
 	string path = filename;
 
 	string data = f.ReadStruct(path, sizeof(ST_二阶动态电路响应的研究));
@@ -80,9 +81,9 @@ void 二阶动态电路响应的研究::Load一阶电路的响应测试Data(string &filename) {
 		MessageBox::Show("学生成绩读取失败");
 		return;
 	}
-	memcpy(&d, data.c_str(), sizeof(ST_二阶动态电路响应的研究));
+	memcpy(d, data.c_str(), sizeof(ST_二阶动态电路响应的研究));
 
-	TrialInfo ti = d.ti;
+	TrialInfo ti = d->ti;
 	labelTrialName->Text = gcnew String(ti.TrialName);
 	labelstuName1->Text = gcnew String(ti.stuName1);
 	labelstuName2->Text = gcnew String(ti.stuName2);
@@ -95,9 +96,9 @@ void 二阶动态电路响应的研究::Load一阶电路的响应测试Data(string &filename) {
 	labeldate->Text = gcnew String(ti.date);
 	textBoxteacher->Text = gcnew String(ti.teacher);
 
-	textBoxTrial1Score->Text = d.ScoreTrial1.ToString();
-	textBoxTrial2Score->Text = d.ScoreTrial2.ToString();
-	textBoxTrial3Score->Text = d.ScoreTrial3.ToString();
+	textBoxTrial1Score->Text = d->ScoreTrial1.ToString();
+	textBoxTrial2Score->Text = d->ScoreTrial2.ToString();
+	textBoxTrial3Score->Text = d->ScoreTrial3.ToString();
 	labelTotalGrade->Text = ti.totalscore.ToString();
 
 	string Name = string(BMPTEMP) + "二阶动态电路响应的研究";
@@ -110,6 +111,7 @@ void 二阶动态电路响应的研究::Load一阶电路的响应测试Data(string &filename) {
 	String^ ImageLocationTrial3_3 = gcnew String(string(Name + "Trial3_3.bmp").c_str());
 	String^ ImageLocationTrial3_4 = gcnew String(string(Name + "Trial3_4.bmp").c_str());
 	//先删除原来有的文件
+	try {
 	IO::File::Delete(ImageLocationTrial1_1);
 	IO::File::Delete(ImageLocationTrial1_2);
 	IO::File::Delete(ImageLocationTrial1_3);
@@ -118,35 +120,40 @@ void 二阶动态电路响应的研究::Load一阶电路的响应测试Data(string &filename) {
 	IO::File::Delete(ImageLocationTrial3_2);
 	IO::File::Delete(ImageLocationTrial3_3);
 	IO::File::Delete(ImageLocationTrial3_4);
-	f.Writefile(T_to_string(ImageLocationTrial1_1), string(d.Trial1_1Bmp, sizeof(d.Trial1_1Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial1_2), string(d.Trial1_2Bmp, sizeof(d.Trial1_2Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial1_3), string(d.Trial1_3Bmp, sizeof(d.Trial1_3Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial2_1), string(d.Trial2_1Bmp, sizeof(d.Trial2_1Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial3_1), string(d.Trial3_1Bmp, sizeof(d.Trial3_1Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial3_2), string(d.Trial3_2Bmp, sizeof(d.Trial3_2Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial3_3), string(d.Trial3_3Bmp, sizeof(d.Trial3_3Bmp)));
-	f.Writefile(T_to_string(ImageLocationTrial3_4), string(d.Trial3_4Bmp, sizeof(d.Trial3_4Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial1_1), string(d->Trial1_1Bmp, sizeof(d->Trial1_1Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial1_2), string(d->Trial1_2Bmp, sizeof(d->Trial1_2Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial1_3), string(d->Trial1_3Bmp, sizeof(d->Trial1_3Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial2_1), string(d->Trial2_1Bmp, sizeof(d->Trial2_1Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial3_1), string(d->Trial3_1Bmp, sizeof(d->Trial3_1Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial3_2), string(d->Trial3_2Bmp, sizeof(d->Trial3_2Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial3_3), string(d->Trial3_3Bmp, sizeof(d->Trial3_3Bmp)));
+	f.Writefile(T_to_string(ImageLocationTrial3_4), string(d->Trial3_4Bmp, sizeof(d->Trial3_4Bmp)));
 
-	pictureBoxTrial1_1->ImageLocation = ImageLocationTrial1_1;
-	pictureBoxTrial1_2->ImageLocation = ImageLocationTrial1_2;
-	pictureBoxTrial1_3->ImageLocation = ImageLocationTrial1_3;
-	pictureBoxTrial2_1->ImageLocation = ImageLocationTrial2_1;
-	pictureBoxTrial3_1->ImageLocation = ImageLocationTrial3_1;
-	pictureBoxTrial3_2->ImageLocation = ImageLocationTrial3_2;
-	pictureBoxTrial3_3->ImageLocation = ImageLocationTrial3_3;
-	pictureBoxTrial3_4->ImageLocation = ImageLocationTrial3_4;
+		pictureBoxTrial1_1->ImageLocation = ImageLocationTrial1_1;
+		pictureBoxTrial1_2->ImageLocation = ImageLocationTrial1_2;
+		pictureBoxTrial1_3->ImageLocation = ImageLocationTrial1_3;
+		pictureBoxTrial2_1->ImageLocation = ImageLocationTrial2_1;
+		pictureBoxTrial3_1->ImageLocation = ImageLocationTrial3_1;
+		pictureBoxTrial3_2->ImageLocation = ImageLocationTrial3_2;
+		pictureBoxTrial3_3->ImageLocation = ImageLocationTrial3_3;
+		pictureBoxTrial3_4->ImageLocation = ImageLocationTrial3_4;
+	}
+	catch (System::Exception ^e) {
+	 
+	}
 
-	textBoxtrial2_α->Text = gcnew String(d.trial2_α);
-	textBoxtrial2_w->Text = gcnew String(d.trial2_w);
-	textBoxTrial3_1α->Text = gcnew String(d.trial3_1α);
-	textBoxTrial3_1w->Text = gcnew String(d.trial3_1w);
-	textBoxTrial3_2α->Text = gcnew String(d.trial3_2α);
-	textBoxTrial3_2w->Text = gcnew String(d.trial3_2w);
-	textBoxTrial3_3α->Text = gcnew String(d.trial3_3α);
-	textBoxTrial3_3w->Text = gcnew String(d.trial3_3w);
-	textBoxTrial3_4α->Text = gcnew String(d.trial3_4α);
-	textBoxTrial3_4w->Text = gcnew String(d.trial3_4w);
 
-	label结论->Text = gcnew String(d.summing_up);
+	textBoxtrial2_α->Text = gcnew String(d->trial2_α);
+	textBoxtrial2_w->Text = gcnew String(d->trial2_w);
+	textBoxTrial3_1α->Text = gcnew String(d->trial3_1α);
+	textBoxTrial3_1w->Text = gcnew String(d->trial3_1w);
+	textBoxTrial3_2α->Text = gcnew String(d->trial3_2α);
+	textBoxTrial3_2w->Text = gcnew String(d->trial3_2w);
+	textBoxTrial3_3α->Text = gcnew String(d->trial3_3α);
+	textBoxTrial3_3w->Text = gcnew String(d->trial3_3w);
+	textBoxTrial3_4α->Text = gcnew String(d->trial3_4α);
+	textBoxTrial3_4w->Text = gcnew String(d->trial3_4w);
+
+	label结论->Text = gcnew String(d->summing_up);
 }
 

@@ -252,7 +252,7 @@ private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
 
 private: System::Windows::Forms::Button^  button2;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
@@ -462,7 +462,6 @@ private: System::Windows::Forms::Label^  textBox结论;
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
@@ -2245,16 +2244,6 @@ private: System::Windows::Forms::Label^  textBox结论;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &RLC串联谐振电路的研究::button2_Click);
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1012, 798);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 337;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &RLC串联谐振电路的研究::button3_Click);
-			// 
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(792, 798);
@@ -2278,6 +2267,7 @@ private: System::Windows::Forms::Label^  textBox结论;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &RLC串联谐振电路的研究::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &RLC串联谐振电路的研究::printDocument1_PrintPage);
 			// 
 			// panel1
@@ -2299,7 +2289,6 @@ private: System::Windows::Forms::Label^  textBox结论;
 			this->panel2->Controls->Add(this->label105);
 			this->panel2->Controls->Add(this->groupBox14);
 			this->panel2->Controls->Add(this->button1);
-			this->panel2->Controls->Add(this->button3);
 			this->panel2->Controls->Add(this->button2);
 			this->panel2->Location = System::Drawing::Point(66, 1379);
 			this->panel2->Name = L"panel2";
@@ -2323,7 +2312,7 @@ private: System::Windows::Forms::Label^  textBox结论;
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1567, 839);
+			this->ClientSize = System::Drawing::Size(1433, 839);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"RLC串联谐振电路的研究";
@@ -2360,12 +2349,16 @@ private: System::Windows::Forms::Label^  textBox结论;
 	
 			x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
 			y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
+			SelectedArea = "finally";
+			e->HasMorePages = true;
 		}
 		else {
+			printDocument1->DefaultPageSettings->Landscape = true;
 			_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 			panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
 			x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
 			y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
+			e->HasMorePages = false;
 		}
 		e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
 	}
@@ -2381,8 +2374,8 @@ private: System::Void RLC串联谐振电路的研究_Load(System::Object^  sender, System
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Priview();
-	SelectedArea = "panel2";
-	Priview();
+	//SelectedArea = "panel2";
+	//Priview();
 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
@@ -2409,6 +2402,9 @@ private: System::Void textBoxTrial4Score_TextChanged(System::Object^  sender, Sy
 	CalScores();
 }
 private: System::Void panel2_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

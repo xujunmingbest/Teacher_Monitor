@@ -118,7 +118,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label105;
 	private: System::Windows::Forms::GroupBox^  groupBox14;
 	private: System::Windows::Forms::Label^  labelTotalGrade;
-	private: System::Windows::Forms::Button^  button3;
+
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::Button^  button2;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
@@ -508,7 +508,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_1;
 			this->label105 = (gcnew System::Windows::Forms::Label());
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
@@ -2271,16 +2270,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_1;
 			this->labelTotalGrade->TabIndex = 0;
 			this->labelTotalGrade->Text = L"0";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(1006, 1256);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 331;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &RLC元件阻抗特性的测定::button3_Click);
-			// 
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(786, 1256);
@@ -2303,6 +2292,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &RLC元件阻抗特性的测定::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &RLC元件阻抗特性的测定::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -2325,6 +2315,7 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_1;
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(1332, 1764);
 			this->panel1->TabIndex = 332;
+			this->panel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &RLC元件阻抗特性的测定::panel1_Paint);
 			// 
 			// panel2
 			// 
@@ -2333,7 +2324,6 @@ private: System::Windows::Forms::PictureBox^  pictureBoxTrial3_1;
 			this->panel2->Controls->Add(this->label105);
 			this->panel2->Controls->Add(this->groupBox14);
 			this->panel2->Controls->Add(this->button2);
-			this->panel2->Controls->Add(this->button3);
 			this->panel2->Controls->Add(this->button1);
 			this->panel2->Location = System::Drawing::Point(30, 1818);
 			this->panel2->Name = L"panel2";
@@ -2575,24 +2565,26 @@ private: System::Void textBoxTrial2Score_TextChanged(System::Object^  sender, Sy
 private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 	SelectedArea = "panel1";
 	Priview();
-	SelectedArea = "panel2";
-	Priview();
-	SelectedArea = "panel3";
-	Priview();
+
 }
 private: System::Void printDocument1_PrintPage(System::Object^  sender, System::Drawing::Printing::PrintPageEventArgs^  e) {
 	Bitmap ^ _NewBitmap;
 	if (SelectedArea == "panel1") {
 		_NewBitmap = gcnew  Bitmap(panel1->Width, panel1->Height);
 		panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
+		e->HasMorePages = true;
+		SelectedArea = "panel2";
 	}
 	else if(SelectedArea == "panel2"){
 		_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 		panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
+		e->HasMorePages = true;
+		SelectedArea = "finally";
 	}
 	else {
 			_NewBitmap = gcnew  Bitmap(panel3->Width, panel3->Height);
 			panel3->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel3->Width, panel3->Height));
+			e->HasMorePages = false;
 	}
 
 	int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
@@ -2648,6 +2640,11 @@ private: System::Void label4_Click(System::Object^  sender, System::EventArgs^  
 private: System::Void label3_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void panel2_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

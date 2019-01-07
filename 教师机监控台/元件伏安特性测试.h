@@ -396,7 +396,7 @@ private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
 private: System::Windows::Forms::Label^  label44;
 private: System::Windows::Forms::Label^  label29;
-private: System::Windows::Forms::Button^  button2;
+
 private: System::Windows::Forms::Button^  button6;
 private: System::Windows::Forms::Label^  label45;
 private: System::Windows::Forms::Label^  label47;
@@ -513,7 +513,6 @@ private: System::Windows::Forms::Button^  button1;
 			this->label27 = (gcnew System::Windows::Forms::Label());
 			this->groupBox稳压 = (gcnew System::Windows::Forms::GroupBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->label45 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
@@ -1538,7 +1537,6 @@ private: System::Windows::Forms::Button^  button1;
 			// groupBox稳压
 			// 
 			this->groupBox稳压->Controls->Add(this->button1);
-			this->groupBox稳压->Controls->Add(this->button2);
 			this->groupBox稳压->Controls->Add(this->button6);
 			this->groupBox稳压->Controls->Add(this->label45);
 			this->groupBox稳压->Controls->Add(this->label9);
@@ -1623,7 +1621,7 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(1170, 594);
+			this->button1->Location = System::Drawing::Point(1255, 594);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(146, 37);
 			this->button1->TabIndex = 207;
@@ -1631,19 +1629,9 @@ private: System::Windows::Forms::Button^  button1;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &元件伏安特性测试::button1_Click_1);
 			// 
-			// button2
-			// 
-			this->button2->Location = System::Drawing::Point(1403, 594);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 37);
-			this->button2->TabIndex = 206;
-			this->button2->Text = L"打印";
-			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Click += gcnew System::EventHandler(this, &元件伏安特性测试::button2_Click_1);
-			// 
 			// button6
 			// 
-			this->button6->Location = System::Drawing::Point(1322, 594);
+			this->button6->Location = System::Drawing::Point(1407, 594);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(75, 37);
 			this->button6->TabIndex = 205;
@@ -4152,6 +4140,7 @@ private: System::Windows::Forms::Button^  button1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &元件伏安特性测试::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &元件伏安特性测试::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -4246,12 +4235,16 @@ private: System::Void textBox5_TextChanged(System::Object^  sender, System::Even
 }
 private: System::Void label39_Click(System::Object^  sender, System::EventArgs^  e) {
 }
-private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-	NowPrint = "线性";
-	Priview();
-}
+
 		 String ^NowPrint = "线性";
 private: System::Void printDocument1_PrintPage(System::Object^  sender, System::Drawing::Printing::PrintPageEventArgs^  e) {
+	if (NowPrint == "稳压") {
+		e->HasMorePages = false;
+
+	}
+	else {
+		e->HasMorePages = true;
+	}
 	Bitmap ^ _NewBitmap;
 	_NewBitmap = PrintLoad();
 	int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
@@ -4270,14 +4263,14 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 private: System::Void button6_Click_1(System::Object^  sender, System::EventArgs^  e) {
 	NowPrint = "线性";
 	Priview();
-	NowPrint = "白炽";
-	Priview();
-	NowPrint = "锗管";
-	Priview();
-	NowPrint = "硅管";
-	Priview();
-	NowPrint = "稳压";
-	Priview();
+	//NowPrint = "白炽";
+	//Priview();
+	//NowPrint = "锗管";
+	//Priview();
+	//NowPrint = "硅管";
+	//Priview();
+	//NowPrint = "稳压";
+	//Priview();
 }
 
 private: System::Void button2_Click_1(System::Object^  sender, System::EventArgs^  e) {
@@ -4313,6 +4306,11 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 	SaveCorrectGrades();
 }
 private: System::Void groupBox7_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	NowPrint = "线性";
+	//Console::WriteLine( NowPrint );
 }
 };
 }

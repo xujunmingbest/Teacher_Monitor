@@ -155,6 +155,13 @@ void VCVS实验::LoadVCVS实验Data(string &filename) {
 	textBoxtrial2_2RL_6->Text = gcnew String(d.trial2_2RL_6);
 	textBoxtrial2_2RL_7->Text = gcnew String(d.trial2_2RL_7);
 
+	labeltrial2_2IL_1->Text = gcnew String(d.trial2_2IL_1);
+	labeltrial2_2IL_2->Text = gcnew String(d.trial2_2IL_2);
+	labeltrial2_2IL_3->Text = gcnew String(d.trial2_2IL_3);
+	labeltrial2_2IL_4->Text = gcnew String(d.trial2_2IL_4);
+	labeltrial2_2IL_5->Text = gcnew String(d.trial2_2IL_5);
+	labeltrial2_2IL_6->Text = gcnew String(d.trial2_2IL_6);
+	labeltrial2_2IL_7->Text = gcnew String(d.trial2_2IL_7);
 
 	labeltrial1_1U2_1->Text = gcnew String(d.trial1_1U2_1);
 	labeltrial1_1U2_2->Text = gcnew String(d.trial1_1U2_2);

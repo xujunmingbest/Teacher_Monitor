@@ -194,7 +194,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::GroupBox^  groupBox14;
 	private: System::Windows::Forms::Label^  labelTotalGrade;
 	private: System::Windows::Forms::Button^  button2;
-	private: System::Windows::Forms::Button^  button8;
+
 	private: System::Windows::Forms::Button^  button9;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
 private: System::Windows::Forms::PrintPreviewDialog^  printPreviewDialog1;
@@ -256,6 +256,12 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial2_cos_cal_line2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_cos_cal_line1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_R_line2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_R_line1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_cos_line2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial2_cos_line1 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
@@ -282,6 +288,9 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->groupBox8 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial1_Cal_UU = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_Mea_DU = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial1_Cal_U = (gcnew System::Windows::Forms::Label());
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->label23 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
@@ -300,6 +309,14 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->textBoxTrial3_cal_cos_line4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_cos_line3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_cos_line2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_cos_line1 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_I_line4 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_I_line3 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_I_line2 = (gcnew System::Windows::Forms::Label());
+			this->textBoxTrial3_cal_I_line1 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial3Score = (gcnew System::Windows::Forms::TextBox());
@@ -342,27 +359,9 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->textBoxTrial1_Cal_U = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_Mea_DU = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial1_Cal_UU = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_cos_line2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_cos_line1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_R_line2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_R_line1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_cos_cal_line2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial2_cos_cal_line1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_I_line4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_I_line3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_I_line2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_I_line1 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_cos_line4 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_cos_line3 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_cos_line2 = (gcnew System::Windows::Forms::Label());
-			this->textBoxTrial3_cal_cos_line1 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->groupBox8->SuspendLayout();
@@ -677,6 +676,74 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->groupBox1->TabIndex = 203;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"日光灯功率因数的提高 实验内容2";
+			// 
+			// textBoxTrial2_cos_cal_line2
+			// 
+			this->textBoxTrial2_cos_cal_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_cos_cal_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_cos_cal_line2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_cos_cal_line2->Location = System::Drawing::Point(829, 215);
+			this->textBoxTrial2_cos_cal_line2->Name = L"textBoxTrial2_cos_cal_line2";
+			this->textBoxTrial2_cos_cal_line2->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_cos_cal_line2->TabIndex = 228;
+			// 
+			// textBoxTrial2_cos_cal_line1
+			// 
+			this->textBoxTrial2_cos_cal_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_cos_cal_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_cos_cal_line1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_cos_cal_line1->Location = System::Drawing::Point(829, 139);
+			this->textBoxTrial2_cos_cal_line1->Name = L"textBoxTrial2_cos_cal_line1";
+			this->textBoxTrial2_cos_cal_line1->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_cos_cal_line1->TabIndex = 227;
+			// 
+			// textBoxTrial2_R_line2
+			// 
+			this->textBoxTrial2_R_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_R_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_R_line2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_R_line2->Location = System::Drawing::Point(726, 215);
+			this->textBoxTrial2_R_line2->Name = L"textBoxTrial2_R_line2";
+			this->textBoxTrial2_R_line2->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_R_line2->TabIndex = 226;
+			// 
+			// textBoxTrial2_R_line1
+			// 
+			this->textBoxTrial2_R_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_R_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_R_line1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_R_line1->Location = System::Drawing::Point(726, 139);
+			this->textBoxTrial2_R_line1->Name = L"textBoxTrial2_R_line1";
+			this->textBoxTrial2_R_line1->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_R_line1->TabIndex = 225;
+			// 
+			// textBoxTrial2_cos_line2
+			// 
+			this->textBoxTrial2_cos_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_cos_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_cos_line2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_cos_line2->Location = System::Drawing::Point(268, 214);
+			this->textBoxTrial2_cos_line2->Name = L"textBoxTrial2_cos_line2";
+			this->textBoxTrial2_cos_line2->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_cos_line2->TabIndex = 224;
+			this->textBoxTrial2_cos_line2->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::textBoxTrial2_cos_line2_Click);
+			// 
+			// textBoxTrial2_cos_line1
+			// 
+			this->textBoxTrial2_cos_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial2_cos_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial2_cos_line1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial2_cos_line1->Location = System::Drawing::Point(268, 138);
+			this->textBoxTrial2_cos_line1->Name = L"textBoxTrial2_cos_line1";
+			this->textBoxTrial2_cos_line1->Size = System::Drawing::Size(82, 25);
+			this->textBoxTrial2_cos_line1->TabIndex = 223;
+			this->textBoxTrial2_cos_line1->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::textBoxTrial2_cos_line1_Click);
 			// 
 			// label11
 			// 
@@ -1004,6 +1071,39 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->groupBox8->TabStop = false;
 			this->groupBox8->Text = L"日光灯功率因数的提高 实验内容1";
 			// 
+			// textBoxTrial1_Cal_UU
+			// 
+			this->textBoxTrial1_Cal_UU->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_Cal_UU->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_Cal_UU->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_Cal_UU->Location = System::Drawing::Point(1059, 125);
+			this->textBoxTrial1_Cal_UU->Name = L"textBoxTrial1_Cal_UU";
+			this->textBoxTrial1_Cal_UU->Size = System::Drawing::Size(147, 25);
+			this->textBoxTrial1_Cal_UU->TabIndex = 225;
+			// 
+			// textBoxTrial1_Mea_DU
+			// 
+			this->textBoxTrial1_Mea_DU->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_Mea_DU->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_Mea_DU->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_Mea_DU->Location = System::Drawing::Point(894, 125);
+			this->textBoxTrial1_Mea_DU->Name = L"textBoxTrial1_Mea_DU";
+			this->textBoxTrial1_Mea_DU->Size = System::Drawing::Size(147, 25);
+			this->textBoxTrial1_Mea_DU->TabIndex = 224;
+			// 
+			// textBoxTrial1_Cal_U
+			// 
+			this->textBoxTrial1_Cal_U->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial1_Cal_U->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial1_Cal_U->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial1_Cal_U->Location = System::Drawing::Point(632, 125);
+			this->textBoxTrial1_Cal_U->Name = L"textBoxTrial1_Cal_U";
+			this->textBoxTrial1_Cal_U->Size = System::Drawing::Size(243, 25);
+			this->textBoxTrial1_Cal_U->TabIndex = 223;
+			// 
 			// label22
 			// 
 			this->label22->AutoSize = true;
@@ -1256,6 +1356,94 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->groupBox2->TabIndex = 204;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"日光灯功率因数的提高 实验内容3";
+			// 
+			// textBoxTrial3_cal_cos_line4
+			// 
+			this->textBoxTrial3_cal_cos_line4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_cos_line4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_cos_line4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_cos_line4->Location = System::Drawing::Point(822, 354);
+			this->textBoxTrial3_cal_cos_line4->Name = L"textBoxTrial3_cal_cos_line4";
+			this->textBoxTrial3_cal_cos_line4->Size = System::Drawing::Size(127, 25);
+			this->textBoxTrial3_cal_cos_line4->TabIndex = 230;
+			// 
+			// textBoxTrial3_cal_cos_line3
+			// 
+			this->textBoxTrial3_cal_cos_line3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_cos_line3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_cos_line3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_cos_line3->Location = System::Drawing::Point(822, 273);
+			this->textBoxTrial3_cal_cos_line3->Name = L"textBoxTrial3_cal_cos_line3";
+			this->textBoxTrial3_cal_cos_line3->Size = System::Drawing::Size(127, 25);
+			this->textBoxTrial3_cal_cos_line3->TabIndex = 229;
+			// 
+			// textBoxTrial3_cal_cos_line2
+			// 
+			this->textBoxTrial3_cal_cos_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_cos_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_cos_line2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_cos_line2->Location = System::Drawing::Point(822, 194);
+			this->textBoxTrial3_cal_cos_line2->Name = L"textBoxTrial3_cal_cos_line2";
+			this->textBoxTrial3_cal_cos_line2->Size = System::Drawing::Size(127, 25);
+			this->textBoxTrial3_cal_cos_line2->TabIndex = 228;
+			// 
+			// textBoxTrial3_cal_cos_line1
+			// 
+			this->textBoxTrial3_cal_cos_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_cos_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_cos_line1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_cos_line1->Location = System::Drawing::Point(822, 114);
+			this->textBoxTrial3_cal_cos_line1->Name = L"textBoxTrial3_cal_cos_line1";
+			this->textBoxTrial3_cal_cos_line1->Size = System::Drawing::Size(127, 25);
+			this->textBoxTrial3_cal_cos_line1->TabIndex = 227;
+			// 
+			// textBoxTrial3_cal_I_line4
+			// 
+			this->textBoxTrial3_cal_I_line4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_I_line4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_I_line4->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_I_line4->Location = System::Drawing::Point(703, 354);
+			this->textBoxTrial3_cal_I_line4->Name = L"textBoxTrial3_cal_I_line4";
+			this->textBoxTrial3_cal_I_line4->Size = System::Drawing::Size(113, 25);
+			this->textBoxTrial3_cal_I_line4->TabIndex = 226;
+			// 
+			// textBoxTrial3_cal_I_line3
+			// 
+			this->textBoxTrial3_cal_I_line3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_I_line3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_I_line3->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_I_line3->Location = System::Drawing::Point(703, 273);
+			this->textBoxTrial3_cal_I_line3->Name = L"textBoxTrial3_cal_I_line3";
+			this->textBoxTrial3_cal_I_line3->Size = System::Drawing::Size(113, 25);
+			this->textBoxTrial3_cal_I_line3->TabIndex = 225;
+			// 
+			// textBoxTrial3_cal_I_line2
+			// 
+			this->textBoxTrial3_cal_I_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_I_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_I_line2->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_I_line2->Location = System::Drawing::Point(703, 194);
+			this->textBoxTrial3_cal_I_line2->Name = L"textBoxTrial3_cal_I_line2";
+			this->textBoxTrial3_cal_I_line2->Size = System::Drawing::Size(113, 25);
+			this->textBoxTrial3_cal_I_line2->TabIndex = 224;
+			// 
+			// textBoxTrial3_cal_I_line1
+			// 
+			this->textBoxTrial3_cal_I_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->textBoxTrial3_cal_I_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->textBoxTrial3_cal_I_line1->ForeColor = System::Drawing::Color::Black;
+			this->textBoxTrial3_cal_I_line1->Location = System::Drawing::Point(703, 114);
+			this->textBoxTrial3_cal_I_line1->Name = L"textBoxTrial3_cal_I_line1";
+			this->textBoxTrial3_cal_I_line1->Size = System::Drawing::Size(113, 25);
+			this->textBoxTrial3_cal_I_line1->TabIndex = 223;
 			// 
 			// label14
 			// 
@@ -1701,7 +1889,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			// 
 			this->panel1->Controls->Add(this->groupBox14);
 			this->panel1->Controls->Add(this->button2);
-			this->panel1->Controls->Add(this->button8);
 			this->panel1->Controls->Add(this->button9);
 			this->panel1->Controls->Add(this->groupBox7);
 			this->panel1->Controls->Add(this->groupBox2);
@@ -1743,16 +1930,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::button2_Click);
 			// 
-			// button8
-			// 
-			this->button8->Location = System::Drawing::Point(1026, 1473);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(101, 36);
-			this->button8->TabIndex = 345;
-			this->button8->Text = L"打印";
-			this->button8->UseVisualStyleBackColor = true;
-			this->button8->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::button8_Click);
-			// 
 			// button9
 			// 
 			this->button9->Location = System::Drawing::Point(913, 1473);
@@ -1765,6 +1942,7 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &日光灯功率因数的提高::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &日光灯功率因数的提高::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1777,195 +1955,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_cal_I_line1;
 			this->printPreviewDialog1->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"printPreviewDialog1.Icon")));
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
-			// 
-			// textBoxTrial1_Cal_U
-			// 
-			this->textBoxTrial1_Cal_U->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_Cal_U->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_Cal_U->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_Cal_U->Location = System::Drawing::Point(632, 125);
-			this->textBoxTrial1_Cal_U->Name = L"textBoxTrial1_Cal_U";
-			this->textBoxTrial1_Cal_U->Size = System::Drawing::Size(243, 25);
-			this->textBoxTrial1_Cal_U->TabIndex = 223;
-			// 
-			// textBoxTrial1_Mea_DU
-			// 
-			this->textBoxTrial1_Mea_DU->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_Mea_DU->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_Mea_DU->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_Mea_DU->Location = System::Drawing::Point(894, 125);
-			this->textBoxTrial1_Mea_DU->Name = L"textBoxTrial1_Mea_DU";
-			this->textBoxTrial1_Mea_DU->Size = System::Drawing::Size(147, 25);
-			this->textBoxTrial1_Mea_DU->TabIndex = 224;
-			// 
-			// textBoxTrial1_Cal_UU
-			// 
-			this->textBoxTrial1_Cal_UU->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial1_Cal_UU->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial1_Cal_UU->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial1_Cal_UU->Location = System::Drawing::Point(1059, 125);
-			this->textBoxTrial1_Cal_UU->Name = L"textBoxTrial1_Cal_UU";
-			this->textBoxTrial1_Cal_UU->Size = System::Drawing::Size(147, 25);
-			this->textBoxTrial1_Cal_UU->TabIndex = 225;
-			// 
-			// textBoxTrial2_cos_line2
-			// 
-			this->textBoxTrial2_cos_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_cos_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_cos_line2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_cos_line2->Location = System::Drawing::Point(268, 214);
-			this->textBoxTrial2_cos_line2->Name = L"textBoxTrial2_cos_line2";
-			this->textBoxTrial2_cos_line2->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_cos_line2->TabIndex = 224;
-			this->textBoxTrial2_cos_line2->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::textBoxTrial2_cos_line2_Click);
-			// 
-			// textBoxTrial2_cos_line1
-			// 
-			this->textBoxTrial2_cos_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_cos_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_cos_line1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_cos_line1->Location = System::Drawing::Point(268, 138);
-			this->textBoxTrial2_cos_line1->Name = L"textBoxTrial2_cos_line1";
-			this->textBoxTrial2_cos_line1->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_cos_line1->TabIndex = 223;
-			this->textBoxTrial2_cos_line1->Click += gcnew System::EventHandler(this, &日光灯功率因数的提高::textBoxTrial2_cos_line1_Click);
-			// 
-			// textBoxTrial2_R_line2
-			// 
-			this->textBoxTrial2_R_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_R_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_R_line2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_R_line2->Location = System::Drawing::Point(726, 215);
-			this->textBoxTrial2_R_line2->Name = L"textBoxTrial2_R_line2";
-			this->textBoxTrial2_R_line2->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_R_line2->TabIndex = 226;
-			// 
-			// textBoxTrial2_R_line1
-			// 
-			this->textBoxTrial2_R_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_R_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_R_line1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_R_line1->Location = System::Drawing::Point(726, 139);
-			this->textBoxTrial2_R_line1->Name = L"textBoxTrial2_R_line1";
-			this->textBoxTrial2_R_line1->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_R_line1->TabIndex = 225;
-			// 
-			// textBoxTrial2_cos_cal_line2
-			// 
-			this->textBoxTrial2_cos_cal_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_cos_cal_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_cos_cal_line2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_cos_cal_line2->Location = System::Drawing::Point(829, 215);
-			this->textBoxTrial2_cos_cal_line2->Name = L"textBoxTrial2_cos_cal_line2";
-			this->textBoxTrial2_cos_cal_line2->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_cos_cal_line2->TabIndex = 228;
-			// 
-			// textBoxTrial2_cos_cal_line1
-			// 
-			this->textBoxTrial2_cos_cal_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial2_cos_cal_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial2_cos_cal_line1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial2_cos_cal_line1->Location = System::Drawing::Point(829, 139);
-			this->textBoxTrial2_cos_cal_line1->Name = L"textBoxTrial2_cos_cal_line1";
-			this->textBoxTrial2_cos_cal_line1->Size = System::Drawing::Size(82, 25);
-			this->textBoxTrial2_cos_cal_line1->TabIndex = 227;
-			// 
-			// textBoxTrial3_cal_I_line4
-			// 
-			this->textBoxTrial3_cal_I_line4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_I_line4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_I_line4->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_I_line4->Location = System::Drawing::Point(703, 354);
-			this->textBoxTrial3_cal_I_line4->Name = L"textBoxTrial3_cal_I_line4";
-			this->textBoxTrial3_cal_I_line4->Size = System::Drawing::Size(113, 25);
-			this->textBoxTrial3_cal_I_line4->TabIndex = 226;
-			// 
-			// textBoxTrial3_cal_I_line3
-			// 
-			this->textBoxTrial3_cal_I_line3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_I_line3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_I_line3->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_I_line3->Location = System::Drawing::Point(703, 273);
-			this->textBoxTrial3_cal_I_line3->Name = L"textBoxTrial3_cal_I_line3";
-			this->textBoxTrial3_cal_I_line3->Size = System::Drawing::Size(113, 25);
-			this->textBoxTrial3_cal_I_line3->TabIndex = 225;
-			// 
-			// textBoxTrial3_cal_I_line2
-			// 
-			this->textBoxTrial3_cal_I_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_I_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_I_line2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_I_line2->Location = System::Drawing::Point(703, 194);
-			this->textBoxTrial3_cal_I_line2->Name = L"textBoxTrial3_cal_I_line2";
-			this->textBoxTrial3_cal_I_line2->Size = System::Drawing::Size(113, 25);
-			this->textBoxTrial3_cal_I_line2->TabIndex = 224;
-			// 
-			// textBoxTrial3_cal_I_line1
-			// 
-			this->textBoxTrial3_cal_I_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_I_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_I_line1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_I_line1->Location = System::Drawing::Point(703, 114);
-			this->textBoxTrial3_cal_I_line1->Name = L"textBoxTrial3_cal_I_line1";
-			this->textBoxTrial3_cal_I_line1->Size = System::Drawing::Size(113, 25);
-			this->textBoxTrial3_cal_I_line1->TabIndex = 223;
-			// 
-			// textBoxTrial3_cal_cos_line4
-			// 
-			this->textBoxTrial3_cal_cos_line4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_cos_line4->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_cos_line4->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_cos_line4->Location = System::Drawing::Point(822, 354);
-			this->textBoxTrial3_cal_cos_line4->Name = L"textBoxTrial3_cal_cos_line4";
-			this->textBoxTrial3_cal_cos_line4->Size = System::Drawing::Size(127, 25);
-			this->textBoxTrial3_cal_cos_line4->TabIndex = 230;
-			// 
-			// textBoxTrial3_cal_cos_line3
-			// 
-			this->textBoxTrial3_cal_cos_line3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_cos_line3->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_cos_line3->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_cos_line3->Location = System::Drawing::Point(822, 273);
-			this->textBoxTrial3_cal_cos_line3->Name = L"textBoxTrial3_cal_cos_line3";
-			this->textBoxTrial3_cal_cos_line3->Size = System::Drawing::Size(127, 25);
-			this->textBoxTrial3_cal_cos_line3->TabIndex = 229;
-			// 
-			// textBoxTrial3_cal_cos_line2
-			// 
-			this->textBoxTrial3_cal_cos_line2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_cos_line2->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_cos_line2->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_cos_line2->Location = System::Drawing::Point(822, 194);
-			this->textBoxTrial3_cal_cos_line2->Name = L"textBoxTrial3_cal_cos_line2";
-			this->textBoxTrial3_cal_cos_line2->Size = System::Drawing::Size(127, 25);
-			this->textBoxTrial3_cal_cos_line2->TabIndex = 228;
-			// 
-			// textBoxTrial3_cal_cos_line1
-			// 
-			this->textBoxTrial3_cal_cos_line1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->textBoxTrial3_cal_cos_line1->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->textBoxTrial3_cal_cos_line1->ForeColor = System::Drawing::Color::Black;
-			this->textBoxTrial3_cal_cos_line1->Location = System::Drawing::Point(822, 114);
-			this->textBoxTrial3_cal_cos_line1->Name = L"textBoxTrial3_cal_cos_line1";
-			this->textBoxTrial3_cal_cos_line1->Size = System::Drawing::Size(127, 25);
-			this->textBoxTrial3_cal_cos_line1->TabIndex = 227;
 			// 
 			// 日光灯功率因数的提高
 			// 
@@ -2035,6 +2024,9 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 private: System::Void textBoxTrial2_cos_line1_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 private: System::Void textBoxTrial2_cos_line2_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

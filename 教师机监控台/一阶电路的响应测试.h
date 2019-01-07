@@ -87,7 +87,7 @@ namespace 教师机监控台 {
 
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::Panel^  panel2;
-	private: System::Windows::Forms::Button^  button3;
+
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button1;
 	private: System::Windows::Forms::GroupBox^  groupBox5;
@@ -151,6 +151,7 @@ namespace 教师机监控台 {
 			this->label38 = (gcnew System::Windows::Forms::Label());
 			this->label39 = (gcnew System::Windows::Forms::Label());
 			this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial1Score = (gcnew System::Windows::Forms::TextBox());
@@ -158,6 +159,7 @@ namespace 教师机监控台 {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->pictureBoxTrial1_in = (gcnew System::Windows::Forms::PictureBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->textBoxTrial2Score = (gcnew System::Windows::Forms::TextBox());
@@ -172,15 +174,12 @@ namespace 教师机监控台 {
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->label64 = (gcnew System::Windows::Forms::Label());
 			this->label结论 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
 			this->printPreviewDialog1 = (gcnew System::Windows::Forms::PrintPreviewDialog());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->groupBox7->SuspendLayout();
 			this->groupBox2->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBoxTrial1_in))->BeginInit();
@@ -476,6 +475,17 @@ namespace 教师机监控台 {
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"实验内容一";
 			// 
+			// label8
+			// 
+			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label8->ForeColor = System::Drawing::Color::Black;
+			this->label8->Location = System::Drawing::Point(284, 516);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(158, 25);
+			this->label8->TabIndex = 316;
+			this->label8->Text = L"输入输出波形";
+			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
@@ -551,6 +561,17 @@ namespace 教师机监控台 {
 			this->groupBox1->TabIndex = 201;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"实验内容二";
+			// 
+			// label7
+			// 
+			this->label7->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label7->ForeColor = System::Drawing::Color::Black;
+			this->label7->Location = System::Drawing::Point(245, 515);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(158, 25);
+			this->label7->TabIndex = 316;
+			this->label7->Text = L"输入输出波形";
 			// 
 			// label1
 			// 
@@ -672,7 +693,6 @@ namespace 教师机监控台 {
 			// 
 			this->panel2->Controls->Add(this->label64);
 			this->panel2->Controls->Add(this->label结论);
-			this->panel2->Controls->Add(this->button3);
 			this->panel2->Controls->Add(this->groupBox1);
 			this->panel2->Controls->Add(this->button2);
 			this->panel2->Controls->Add(this->groupBox3);
@@ -702,16 +722,6 @@ namespace 教师机监控台 {
 			this->label结论->Size = System::Drawing::Size(814, 33);
 			this->label结论->TabIndex = 327;
 			this->label结论->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(887, 1377);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 325;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &一阶电路的响应测试::button3_Click);
 			// 
 			// button2
 			// 
@@ -756,6 +766,7 @@ namespace 教师机监控台 {
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &一阶电路的响应测试::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &一阶电路的响应测试::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -769,34 +780,12 @@ namespace 教师机监控台 {
 			this->printPreviewDialog1->Name = L"printPreviewDialog1";
 			this->printPreviewDialog1->Visible = false;
 			// 
-			// label7
-			// 
-			this->label7->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label7->ForeColor = System::Drawing::Color::Black;
-			this->label7->Location = System::Drawing::Point(245, 515);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(158, 25);
-			this->label7->TabIndex = 316;
-			this->label7->Text = L"输入输出波形";
-			// 
-			// label8
-			// 
-			this->label8->Font = (gcnew System::Drawing::Font(L"宋体", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(134)));
-			this->label8->ForeColor = System::Drawing::Color::Black;
-			this->label8->Location = System::Drawing::Point(284, 516);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(158, 25);
-			this->label8->TabIndex = 316;
-			this->label8->Text = L"输入输出波形";
-			// 
 			// 一阶电路的响应测试
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1579, 732);
+			this->ClientSize = System::Drawing::Size(1152, 732);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Name = L"一阶电路的响应测试";
@@ -824,8 +813,6 @@ namespace 教师机监控台 {
 	private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
 		SelectedArea = "panel1";
 		Priview();
-		SelectedArea = "panel2";
-		Priview();
 	}
 			 String ^SelectedArea = "";
 			 void  Priview();
@@ -839,10 +826,13 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 	if (SelectedArea == "panel1") {
 		_NewBitmap = gcnew  Bitmap(panel1->Width, panel1->Height);
 		panel1->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel1->Width, panel1->Height));
+		e->HasMorePages = true;
+		SelectedArea = "finally";
 	}
 	else {
 		_NewBitmap = gcnew  Bitmap(panel2->Width, panel2->Height);
 		panel2->DrawToBitmap(_NewBitmap, System::Drawing::Rectangle(0, 0, panel2->Width, panel2->Height));
+		e->HasMorePages = false;
 	}
 	int x = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Width;
 	int y = printDocument1->PrinterSettings->DefaultPageSettings->PaperSize->Height;
@@ -871,6 +861,9 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	SaveCorrectGrades();
 }
 private: System::Void groupBox7_Enter(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

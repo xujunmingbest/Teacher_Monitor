@@ -114,7 +114,7 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Label^  label12;
 	private: System::Windows::Forms::Label^  label13;
 	private: System::Windows::Forms::Label^  label14;
-	private: System::Windows::Forms::Button^  button3;
+
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::GroupBox^  groupBox5;
 	private: System::Windows::Forms::Label^  labelTotalGrade;
@@ -232,7 +232,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_1;
 			this->label12 = (gcnew System::Windows::Forms::Label());
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->groupBox5 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
@@ -1193,16 +1192,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_1;
 			this->label14->TabIndex = 63;
 			this->label14->Text = L"电压源输出（V）";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(882, 958);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 331;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &仪表量程的扩展::button3_Click);
-			// 
 			// button2
 			// 
 			this->button2->Location = System::Drawing::Point(769, 958);
@@ -1246,6 +1235,7 @@ private: System::Windows::Forms::Label^  textBoxTrial3_1;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &仪表量程的扩展::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &仪表量程的扩展::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -1262,7 +1252,6 @@ private: System::Windows::Forms::Label^  textBoxTrial3_1;
 			// panel1
 			// 
 			this->panel1->Controls->Add(this->groupBox7);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox8);
 			this->panel1->Controls->Add(this->button2);
 			this->panel1->Controls->Add(this->groupBox1);
@@ -1339,6 +1328,9 @@ private: System::Void printDocument1_PrintPage(System::Object^  sender, System::
 	e->Graphics->DrawImage(_NewBitmap, System::Drawing::Rectangle(0, 0, x, y), System::Drawing::Rectangle(0, 0, _NewBitmap->Width, _NewBitmap->Height), GraphicsUnit::Pixel);
 }
 private: System::Void panel1_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e) {
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
+	SelectedArea = "panel1";
 }
 };
 }

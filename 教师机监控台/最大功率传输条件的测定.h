@@ -195,7 +195,7 @@ private: System::Windows::Forms::Label^  label71;
 private: System::Windows::Forms::Label^  label72;
 private: System::Windows::Forms::GroupBox^  groupBox14;
 private: System::Windows::Forms::Label^  labelTotalGrade;
-private: System::Windows::Forms::Button^  button3;
+
 private: System::Windows::Forms::Button^  button1;
 private: System::Windows::Forms::Button^  button2;
 private: System::Drawing::Printing::PrintDocument^  printDocument1;
@@ -479,7 +479,6 @@ private: System::Windows::Forms::Label^  label64;
 			this->label72 = (gcnew System::Windows::Forms::Label());
 			this->groupBox14 = (gcnew System::Windows::Forms::GroupBox());
 			this->labelTotalGrade = (gcnew System::Windows::Forms::Label());
-			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->printDocument1 = (gcnew System::Drawing::Printing::PrintDocument());
@@ -2254,16 +2253,6 @@ private: System::Windows::Forms::Label^  label64;
 			this->labelTotalGrade->TabIndex = 0;
 			this->labelTotalGrade->Text = L"0";
 			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(999, 1536);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 36);
-			this->button3->TabIndex = 331;
-			this->button3->Text = L"打印";
-			this->button3->UseVisualStyleBackColor = true;
-			this->button3->Click += gcnew System::EventHandler(this, &最大功率传输条件的测定::button3_Click);
-			// 
 			// button1
 			// 
 			this->button1->Location = System::Drawing::Point(779, 1536);
@@ -2286,6 +2275,7 @@ private: System::Windows::Forms::Label^  label64;
 			// 
 			// printDocument1
 			// 
+			this->printDocument1->BeginPrint += gcnew System::Drawing::Printing::PrintEventHandler(this, &最大功率传输条件的测定::printDocument1_BeginPrint);
 			this->printDocument1->PrintPage += gcnew System::Drawing::Printing::PrintPageEventHandler(this, &最大功率传输条件的测定::printDocument1_PrintPage);
 			// 
 			// printPreviewDialog1
@@ -2305,7 +2295,6 @@ private: System::Windows::Forms::Label^  label64;
 			this->panel1->Controls->Add(this->groupBox7);
 			this->panel1->Controls->Add(this->label64);
 			this->panel1->Controls->Add(this->groupBox14);
-			this->panel1->Controls->Add(this->button3);
 			this->panel1->Controls->Add(this->groupBox1);
 			this->panel1->Controls->Add(this->button1);
 			this->panel1->Controls->Add(this->groupBox2);
@@ -2392,6 +2381,8 @@ private: System::Void textBoxScore2_TextChanged(System::Object^  sender, System:
 }
 private: System::Void textBoxScore1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
 	CalScores();
+}
+private: System::Void printDocument1_BeginPrint(System::Object^  sender, System::Drawing::Printing::PrintEventArgs^  e) {
 }
 };
 }
