@@ -184,7 +184,7 @@ namespace 教师机监控台 {
 		open查看学生电脑();
 	}
 
-			 bool GetWindowsChild(String ^FormName);
+			 Control^ GetWindowsChild(String ^FormName);
 			 void open查看学生电脑();
 			 void CloseAllMidchild();
 			 void open成绩接收();

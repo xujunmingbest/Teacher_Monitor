@@ -2,10 +2,11 @@
 #include "E:/c++/libsocket/libsocket/libsocket.h"
 #include "E:/clr中腾/电工电路试验台/电工电路试验台/Long_connection_control.h"
 #include  <vector>
-
+#include  "E:/c++/消息队列lib/消息队列lib/MsgQueue.h"
+#pragma comment(lib,"E:/c++/消息队列lib/Release/消息队列lib.lib")
 using namespace std;
 
-
+extern MsgQueue<S_CallTeacher> CallTeacherQueue;
 struct Students {
 	string Class; //班级
 	vector<string> fields; //字段
@@ -18,15 +19,15 @@ extern vector<Students> students;
 
 using namespace System::Threading;
 //队列互斥锁
-class QueueMutex {
-private:
-	HANDLE hMutex1;
-public:
-	bool Create(string &QueueName);
-	void Lock();
-	void UnLock();
-	~QueueMutex();
-};
+//class QueueMutex {
+//private:
+//	HANDLE hMutex1;
+//public:
+//	bool Create(string &QueueName);
+//	void Lock();
+//	void UnLock();
+//	~QueueMutex();
+//};
 extern QueueMutex cm;
 
 struct TrialStatus_s {

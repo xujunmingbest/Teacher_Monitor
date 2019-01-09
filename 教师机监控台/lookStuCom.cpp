@@ -73,7 +73,10 @@ void lookStuCom::GetComputers() {
 		listView1->BeginUpdate();
 		int j = 0;
 		for (int i = 0; i < Cominfos.size(); i++) {
-			listView1->Items->Add(gcnew String(Cominfos[i].ts.computerId) + "\n状态: " + gcnew String(Cominfos[i].ts.trialStatus));
+			listView1->Items->Add(gcnew String(Cominfos[i].ts.computerId)
+				+ "\n姓名1:" + gcnew String(Cominfos[i].ts.ti.stuName1)
+				+ "\n姓名2:"+gcnew String(Cominfos[i].ts.ti.stuName2)
+				+"\n状态: " +gcnew String(Cominfos[i].ts.trialStatus));
 			listView1->Items[j]->ImageIndex = 0;
 			listView1->Items[j]->Name = gcnew String(Cominfos[i].ts.computerId);
 			String ^TText = listView1->Items[j]->Text;
@@ -94,4 +97,24 @@ void lookStuCom::GetComputers() {
 		Console::Write(e->ToString());
 	}
 	mutex->ReleaseMutex();
+}
+
+void lookStuCom::RecvCallTeacherMessage() {
+	while (CallTeacherQueue.QueueEnable) {
+		S_CallTeacher sct = CallTeacherQueue.Consume();
+		String^msg = gcnew String(sct.ti.computerId) + " 消息通知:" +
+			gcnew String(sct.msg);
+		userLog->LogOutput(msg);
+	}
+}
+
+void lookStuCom::StartThreadCallTeacher() {
+	try {
+		t_CallTeacher->Abort();
+	}
+	catch (System::Exception ^ e) {
+
+	}
+	t_CallTeacher = gcnew Thread(gcnew ThreadStart(this,&lookStuCom::RecvCallTeacherMessage));
+	t_CallTeacher->Start();
 }

@@ -22,7 +22,7 @@ namespace 教师机监控台 {
 			CheckForIllegalCrossThreadCalls = false;
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->Font = gcnew System::Drawing::Font("宋体", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Pixel, ((unsigned char)(134)));
-
+			StartThreadCallTeacher();
 			//
 			//TODO:  在此处添加构造函数代码
 			//
@@ -45,8 +45,8 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::Panel^  panel2;
 
 	private: System::Windows::Forms::Button^  button1;
-	private: System::Windows::Forms::ColumnHeader^  columnHeader1;
-	private: System::Windows::Forms::ListView^  listView1;
+
+
 	private: System::Windows::Forms::Panel^  panel1;
 	private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^  停止实验ToolStripMenuItem;
@@ -54,6 +54,16 @@ namespace 教师机监控台 {
 	private: System::Windows::Forms::ToolStripMenuItem^  强制提交成绩ToolStripMenuItem;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::FolderBrowserDialog^  folderBrowserDialog1;
+	private: System::Windows::Forms::ListView^  listView1;
+	private: 日志控件::UserControl1^  userLog;
+
+	private: System::Windows::Forms::Label^  label1;
+
+
+
+
+
+
 
 
 
@@ -83,14 +93,15 @@ namespace 教师机监控台 {
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->columnHeader1 = (gcnew System::Windows::Forms::ColumnHeader());
-			this->listView1 = (gcnew System::Windows::Forms::ListView());
 			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
 			this->停止实验ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->恢复实验ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->强制提交成绩ToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->folderBrowserDialog1 = (gcnew System::Windows::Forms::FolderBrowserDialog());
+			this->userLog = (gcnew 日志控件::UserControl1());
+			this->listView1 = (gcnew System::Windows::Forms::ListView());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->panel2->SuspendLayout();
 			this->contextMenuStrip1->SuspendLayout();
 			this->panel1->SuspendLayout();
@@ -110,7 +121,7 @@ namespace 教师机监控台 {
 			this->panel2->Dock = System::Windows::Forms::DockStyle::Left;
 			this->panel2->Location = System::Drawing::Point(0, 0);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(159, 415);
+			this->panel2->Size = System::Drawing::Size(159, 641);
 			this->panel2->TabIndex = 2;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &lookStuCom::panel2_Paint);
 			// 
@@ -142,26 +153,6 @@ namespace 教师机监控台 {
 			this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &lookStuCom::button1_Click);
-			// 
-			// columnHeader1
-			// 
-			this->columnHeader1->Width = 325;
-			// 
-			// listView1
-			// 
-			this->listView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::ColumnHeader^  >(1) { this->columnHeader1 });
-			this->listView1->ContextMenuStrip = this->contextMenuStrip1;
-			this->listView1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->listView1->FullRowSelect = true;
-			this->listView1->LargeImageList = this->imageList1;
-			this->listView1->Location = System::Drawing::Point(0, 0);
-			this->listView1->Name = L"listView1";
-			this->listView1->Size = System::Drawing::Size(778, 415);
-			this->listView1->SmallImageList = this->imageList1;
-			this->listView1->TabIndex = 1;
-			this->listView1->UseCompatibleStateImageBehavior = false;
-			this->listView1->SelectedIndexChanged += gcnew System::EventHandler(this, &lookStuCom::listView1_SelectedIndexChanged);
-			this->listView1->DoubleClick += gcnew System::EventHandler(this, &lookStuCom::listView1_DoubleClick);
 			// 
 			// contextMenuStrip1
 			// 
@@ -197,18 +188,53 @@ namespace 教师机监控台 {
 			// 
 			// panel1
 			// 
+			this->panel1->Controls->Add(this->label1);
 			this->panel1->Controls->Add(this->listView1);
+			this->panel1->Controls->Add(this->userLog);
 			this->panel1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->panel1->Location = System::Drawing::Point(159, 0);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(778, 415);
+			this->panel1->Size = System::Drawing::Size(778, 641);
 			this->panel1->TabIndex = 3;
+			// 
+			// userLog
+			// 
+			this->userLog->Dock = System::Windows::Forms::DockStyle::Bottom;
+			this->userLog->Location = System::Drawing::Point(0, 329);
+			this->userLog->Name = L"userLog";
+			this->userLog->Size = System::Drawing::Size(778, 312);
+			this->userLog->TabIndex = 2;
+			// 
+			// listView1
+			// 
+			this->listView1->ContextMenuStrip = this->contextMenuStrip1;
+			this->listView1->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->listView1->LargeImageList = this->imageList1;
+			this->listView1->Location = System::Drawing::Point(0, 0);
+			this->listView1->Name = L"listView1";
+			this->listView1->Size = System::Drawing::Size(778, 329);
+			this->listView1->SmallImageList = this->imageList1;
+			this->listView1->StateImageList = this->imageList1;
+			this->listView1->TabIndex = 3;
+			this->listView1->UseCompatibleStateImageBehavior = false;
+			// 
+			// label1
+			// 
+			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->label1->Font = (gcnew System::Drawing::Font(L"宋体", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(134)));
+			this->label1->Location = System::Drawing::Point(6, 329);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(111, 23);
+			this->label1->TabIndex = 4;
+			this->label1->Text = L"学生求助信息";
+			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// lookStuCom
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 15);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(937, 415);
+			this->ClientSize = System::Drawing::Size(937, 641);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->panel2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
@@ -227,8 +253,12 @@ namespace 教师机监控台 {
 		ComputerLoad();
 	}
 			 void GetComputers();
-
-
+			 void ShowLight() {
+			 
+			 }
+			 Thread ^ t_CallTeacher;
+			 void StartThreadCallTeacher();
+			 void RecvCallTeacherMessage();
 			 Mutex ^mutex = gcnew Mutex;
 			 void GetGetLANIps();
 			 void ComputerLoad();

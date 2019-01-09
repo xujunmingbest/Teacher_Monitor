@@ -140,6 +140,9 @@
     <Reference Include="WeifenLuo.WinFormsUI.Docking">
       <HintPath>D:\software\DockPanel_2.4_Bin\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
     </Reference>
+    <Reference Include="日志控件">
+      <HintPath>..\..\..\csharp\日志控件\日志控件\bin\Debug\日志控件.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\c++\libfilesql\libfilesql\libfilesql.h" />

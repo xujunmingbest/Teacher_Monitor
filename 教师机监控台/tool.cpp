@@ -57,27 +57,6 @@ void GetLANIps() {
 	}
 }
 
-bool QueueMutex::Create(string &QueueName) {
-	hMutex1 = CreateMutex(NULL, FALSE, (QueueName + "MUTEX").c_str());
-	if (GetLastError() == ERROR_ALREADY_EXISTS)
-	{
-		return false;
-	}
-	return true;
-}
-
-	void QueueMutex::Lock() {
-		WaitForSingleObject(hMutex1, INFINITE);
-	}
-	void QueueMutex::UnLock() {
-		ReleaseMutex(hMutex1);
-	}
-
-	QueueMutex::~QueueMutex() {
-		CloseHandle(hMutex1);
-		hMutex1 = NULL;
-	}
-
 
 	using namespace System;
 	using namespace System::IO;
@@ -93,10 +72,17 @@ bool QueueMutex::Create(string &QueueName) {
 		Directory::CreateDirectory(gcnew String(BMPTEMP));
 		Directory::CreateDirectory(gcnew String(MONITORTEMP));
 		LanMutex.Create(string("Lan"));
-		grs.open();
-		lcs.Open();
+		CallTeacherQueue.Create(string("CallTeacherQueue"));
+		if (!grs.open()) {
+			MessageBox::Show("服务程序启动失败，程序退出");
+		}
+		if (!lcs.Open()) {
+			MessageBox::Show("服务程序启动失败，程序退出");
+		}
 		cm.Create(string("LongConnectServ"));
-		mt.Open();
+		if (!mt.Open()) {
+		MessageBox::Show("服务程序启动失败，程序退出");
+		}
 		lcs.GetStudents(STUINFOCSV);
 	}
 

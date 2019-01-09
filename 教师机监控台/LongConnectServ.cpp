@@ -3,7 +3,7 @@
 
 map<string, TrialStatus_s> cominfo;
 QueueMutex cm;
-
+MsgQueue<S_CallTeacher> CallTeacherQueue;
 
 bool LongConnectServ::Open() {
 	cs.SetServfun(RecvFun);
@@ -146,6 +146,13 @@ void LongConnectServ::RecvFun(SOCKET s) {
 				if (stuList.length() == 0) GenerateReply(Long_connection_Req[7], MsgRet[-5]);
 			    else retmsg = GenerateReply(Long_connection_Req[7], stuList);
 				md.Send(s, retmsg);
+			}
+			if (req == Long_connection_Req[8]) { //∫ÙΩ–¿œ ¶
+				if (CallTeacherQueue.QueueEnable) {
+					S_CallTeacher sct;
+					memcpy(&sct,s_s.c_str(), s_s.length());
+					CallTeacherQueue.Publish(sct);
+				}
 			}
 		}
 		else if (reply.length() != 0 ) {

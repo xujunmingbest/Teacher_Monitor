@@ -7,10 +7,11 @@ using namespace 教师机监控台;
 using namespace System::Threading;
 monitorTrial mt;
 #include <stdio.h>
-void monitorTrial::Open() {
-	cs.Open(10002);
+bool monitorTrial::Open() {
+	if (!cs.Open(10002)) return false;
 	cs.SetServfun(monitorTrial::RecvGrade);
 	cs.Acpt();
+	return true;
 }
 
 Form ^GetChildByName(String ^Name) {

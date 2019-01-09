@@ -14,8 +14,8 @@ using namespace 教师机监控台;
 using namespace std;
 
 [STAThreadAttribute]
-//int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
-void main(){
+int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+//void main(){
 
 	SystemStart();
 
